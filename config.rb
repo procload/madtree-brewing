@@ -4,7 +4,7 @@
 
 # Susy grids in Compass
 # First: gem install susy
-# require 'susy'
+require 'susy'
 
 # Change Compass configuration
 # compass_config do |config|
@@ -38,7 +38,7 @@
 ###
 
 # Automatic image dimensions on image_tag helper
-# activate :automatic_image_sizes
+activate :automatic_image_sizes
 
 # Methods defined in the helpers block are available in templates
 # helpers do
@@ -52,6 +52,9 @@ set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+# Activate live reload
+activate :livereload
 
 # Build-specific configuration
 configure :build do
