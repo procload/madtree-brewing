@@ -22,9 +22,10 @@
 </head>
   
 <body class="<%= page_classes %>">
+  <div class="wrapper">
   <header class="site-header">
     <section class="header-content">
-      <%= image_tag 'img-logo.png', alt: 'MadTree Brewing' %>
+      <%= image_tag "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", alt: 'MadTree Brewing', class: 'logo' %>
       <nav class="site-nav">
         <ul class="nav-list">
           <% ['beer', 'tap room', 'community'].each do |nav_item| %>
@@ -36,17 +37,16 @@
       </nav> <!-- /site-nav -->
     </section> <!-- /header-content -->
   </header> <!-- /site-header -->
-  <div class="wrapper">
     <section class="main-content" role="main">
       <%= yield %>
     </section> <!-- /main -->
-  </div> <!-- /wrapper -->
 
   <footer class="site-footer">
     <section class="footer-content">
       <p class="copyright">&copy; Copyright <%= copyright_years('2013') %> MadTree Brewing Co.</p> 
     </section> <!-- /footer-content -->
   </footer> <!-- /site-footer -->
+  </div> <!-- /wrapper -->
 <script>
 $(document).foundation();
 </script>

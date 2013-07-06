@@ -1,4 +1,6 @@
 @import 'partials/base';
+@import 'pages/home';
+@import 'pages/beer';
 
 // Global
 // --------------------------------------------------
@@ -14,6 +16,9 @@ body {
 h1, h2, h3,
 h4, h5, h6 {
   margin: 0 0 1em 0;
+  font-family: $headline-font-family;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 
@@ -22,12 +27,21 @@ h4, h5, h6 {
 
 .site-header {
   background: #000;
-  @include background(rgba(0,0,0,.8));
+  @include background(rgba(0,0,0,.85));
+  padding: calc-em(10px) 0;
+  margin-bottom: calc-em(32px);
   .header-content {
     @extend %container;
     @extend %group;
     > img {
       @include span-columns(4);
+    }
+    .logo {
+      float: left;
+      @include background(transparent image-url('img-logo.png') no-repeat top left);
+      background-size: contain;
+      width: 260px;
+      height: 120px;
     }
   } //header-content
 } //site-header
@@ -35,19 +49,29 @@ h4, h5, h6 {
 // Site Nav
 // --------------------------------------------------
 .site-nav {
-  @include span-columns(8 omega);
+  clear: both;
+  margin-top: -(calc-em(60px));
+  @include span-columns(4 omega);
+  position: relative;
   .nav-list {
-    float: right;
-  }
+  
+    text-align: justify;
+    font-size: .1px;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 100%;
+    }
+  } //nav-list
   .nav-item {
     font-family: $headline-font-family;
-    font-size: calc-em(28px);
+    font-size: calc-em(28px, .1px);
     a {
       text-transform: uppercase;
       color: $gray;
     }
-  }
-}
+  } //nav-item
+} //site-nav
 
 
 // Main Content
@@ -58,20 +82,31 @@ h4, h5, h6 {
 }
 .main-content {
   @extend %container;
-  
 }
+
+.sidebar-nav {
+  @include span-columns(3);
+}
+
+.content-area {
+  @include span-columns(9 omega);
+}
+
 // Footer
 // --------------------------------------------------
 
 .site-footer {
   background: #000;
   @include background(rgba(0,0,0,.8));
+  padding: calc-em(10px) 0;
   .footer-content {
     @extend %container;
     text-align: right;
-    color: $white;
   }
   .copyright {
-    font-size: calc-em(12px);
+    color: $white;
+    color: rgba(255,255,255,.4);
+    font-size: calc-em(11px);
+    margin: 0;
   }
 }

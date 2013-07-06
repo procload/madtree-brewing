@@ -12,5 +12,23 @@
   list-style-type: none;
 }
 
-// 2. Gist
+// 2. Content Area
 // ---------------------------------------------------
+.content-area {
+  background: $white;
+  background: rgba(255,255,255,.75);
+  border: 10px solid $white;
+  padding: calc-em(20px);
+  @include box-shadow(rgba(0,0,0,.3) 0 3px 4px);
+  @extend %group;
+}
+
+
+
+// 3. Tables
+// ---------------------------------------------------
+
+table {
+  background: none;
+  border: none;
+}

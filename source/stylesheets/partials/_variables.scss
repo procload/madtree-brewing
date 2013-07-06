@@ -65,6 +65,7 @@ $default-float: left;
 // $body-font-style: normal;
 
 $headline-font-family: "alternate-gothic-no-3-d";
+$headline-alt-font-family: "franklin-gothic-urw-cond";
 $headline-font-weight: 400;
 $headline-font-style: normal;
 
@@ -1161,7 +1162,7 @@ $headline-font-style: normal;
 // Background color for the table and even rows
 
 // $table-bg: #fff;
-// $table-even-row-bg: #f9f9f9;
+$table-even-row-bg: none;
 
 // Table cell border style
 
