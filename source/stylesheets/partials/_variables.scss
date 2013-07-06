@@ -7,7 +7,9 @@
 
 // Grays
 // -------------------------
+$white:                 #FFF;
 $black:                 #000;
+$gray:                  #8F8E8E;
 
 // Accent colors
 // -------------------------
@@ -22,8 +24,8 @@ $purple:                #7a43b6;
 // Susy Grid
 // --------------------------------------------------
 $total-columns  : 12;             // a 12-column grid
-$column-width   : 5em;            // each column is 4em wide
-$gutter-width   : 2em;            // 1em gutters between columns
+$column-width   : 4.375em;        // each column is 4.375em wide
+$gutter-width   : 1.25em;         // 1.25em gutters between columns
 $grid-padding   : $gutter-width;  // grid-padding equal to gutters
 
 
@@ -61,6 +63,10 @@ $default-float: left;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: normal;
 // $body-font-style: normal;
+
+$headline-font-family: "alternate-gothic-no-3-d";
+$headline-font-weight: 400;
+$headline-font-style: normal;
 
 // Font-smoothing
 

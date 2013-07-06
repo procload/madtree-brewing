@@ -1,0 +1,60 @@
+<nav class="beer-nav sidebar-nav">
+  <ul class="nav-list">
+    <% ['happy amber', 'psychopathy', 'gnarly brown', 'identity crisis', 'axis mundi', 'batch one', 'sprye'].each do |beer| %>
+    <li class="nav-item">
+      <%= link_to beer, '#' %>
+    </li> <!-- /nav-item -->
+    <% end %>
+  </ul> <!-- /nav -->
+</nav> <!-- /beer-nav -->
+
+<section class="content-area beer">
+  <div class="content-area-image">
+    
+  </div> <!-- /content-area-image -->
+  <div class="content-area-body">
+    <h2>Psychopathy</h2>
+    <p>The subtle malt backbone combats the bitterness and intensity of floral, grassy and citrus hop flavors. However, taste is perception. What's your slant?</p>
+    <table class="beer-details">
+      <tbody>
+        <tr>
+          <td>
+            ABV
+          </td>
+          <td>
+            6.9%
+          </td>
+        </tr>
+        <tr>
+          <td>
+            IBU
+          </td>
+          <td>
+            70
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Malts
+          </td>
+          <td>
+            2-Row, Vienna, Caramel 40L, Carapils
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Hops
+          </td>
+          <td>
+            Cascade, Chinook, Centennial
+          </td>
+        </tr>
+      </tbody>
+    </table> <!-- /beer-details -->
+  </div> <!-- /content-area-body -->
+  <footer class="content-area-footer">
+    <p class="beer-summary">
+      <span class="tagline">Drink Hoppy</span> <span class="style">India Pale Ale</span> <span class="abv">6.9% Alcohol By Volume</span>
+    </p>
+  </footer> <!-- /content-area-footer -->
+</section> <!-- /beer -->

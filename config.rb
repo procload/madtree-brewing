@@ -33,9 +33,21 @@ require 'susy'
 #   @which_fake_page = "Rendering a fake page with a variable"
 # end
 
-###
-# Helpers
-###
+###---------------------------------------------------- Helper Methods
+
+helpers do
+
+  def copyright_years(start_year)
+    end_year = Date.today.year
+    if start_year == end_year
+      start_year.to_s
+    else
+      start_year.to_s + '-' + end_year.to_s
+    end
+  end
+
+end
+#
 
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes

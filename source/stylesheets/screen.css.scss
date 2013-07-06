@@ -5,24 +5,73 @@
 body {
 }
 
+%container {
+  @include container;
+}
 
 // Typography
 // --------------------------------------------------
-
-
+h1, h2, h3,
+h4, h5, h6 {
+  margin: 0 0 1em 0;
+}
 
 
 // Header
 // --------------------------------------------------
 
+.site-header {
+  background: #000;
+  @include background(rgba(0,0,0,.8));
+  .header-content {
+    @extend %container;
+    @extend %group;
+    > img {
+      @include span-columns(4);
+    }
+  } //header-content
+} //site-header
+
+// Site Nav
+// --------------------------------------------------
+.site-nav {
+  @include span-columns(8 omega);
+  .nav-list {
+    float: right;
+  }
+  .nav-item {
+    font-family: $headline-font-family;
+    font-size: calc-em(28px);
+    a {
+      text-transform: uppercase;
+      color: $gray;
+    }
+  }
+}
+
 
 // Main Content
 // --------------------------------------------------
-
-
-
-
-
-
+.wrapper {
+  @include background(transparent image-url('background.jpg') no-repeat top left);
+  background-size: cover;
+}
+.main-content {
+  @extend %container;
+  
+}
 // Footer
 // --------------------------------------------------
+
+.site-footer {
+  background: #000;
+  @include background(rgba(0,0,0,.8));
+  .footer-content {
+    @extend %container;
+    text-align: right;
+    color: $white;
+  }
+  .copyright {
+    font-size: calc-em(12px);
+  }
+}

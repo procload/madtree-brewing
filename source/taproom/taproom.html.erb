@@ -1,0 +1,23 @@
+<nav class="sidebar-nav taproom-nav">
+  <h2>What's on Tap</h2>
+  <ul class="nav-list">
+    <% ['happy amber', 'psychopathy', 'gnarly brown', 'identity crisis', 'axis mundi', 'batch one'].each do |beer| %>
+    <li class="nav-item">
+      <%= link_to beer, '#' %>
+    </li> <!-- /nav-item -->
+    <% end %>
+  </ul> <!--/nav -->
+</nav> <!-- /taproom-nav -->
+
+<section class="content-area taproom">
+  <div class="taproom-slideshow">
+    <ul data-orbit>
+      <% 3.times do %>
+      <li>
+        <%= image_tag 'http://placehold.it/630/400' %>
+        <div class="orbit-caption">Vivamus at urna malesuada, consequat nisl a, blandit nulla.</div> <!-- /orbit-caption -->
+      </li>
+      <% end %>
+    </ul>
+  </div> <!-- /taproom-slideshow -->
+</section> <!-- /content-area -->

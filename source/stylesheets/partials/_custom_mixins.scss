@@ -1,6 +1,6 @@
 // MATH & LAYOUT
 // --------------------------------------------------
-@function calc-em($target-px, $context: $base-font-size) {
+@function calc-em($target-px, $context: $em-base) {
   @return ($target-px / $context) * 1em;
 }
 
