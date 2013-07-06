@@ -1,0 +1,47 @@
+body.index {
+
+  .main-content {
+    @extend %group;
+    position: relative;
+  }
+  .news {
+    @include span-columns(4);
+    .news-header,
+    .news-articles {
+      background: #FFF;
+      @include background(rgba(255,255,255,.7));
+      @include box-shadow(rgba(0,0,0,.2) 0 2px 3px);
+      padding: calc-em(8px);
+    } //news-header, //news-articles
+    .news-header {
+      margin-bottom: calc-em(8px);
+      h3 {
+        font-size: calc-em(16px);
+        margin-bottom: 0;
+      }
+    }
+    .news-article {
+      p {
+        font-size: calc-em(13px);
+      } 
+    }
+  }
+  .photo-grid {
+    @include span-columns(7 omega);
+
+    img {
+      border: 5px solid $black;
+    }
+    .photo-row {
+      @extend %group;
+    }
+    .photo-cell {
+      float: left;
+    }
+  }
+
+  .cans {
+    position: absolute;
+    bottom: 0;
+  }
+}
