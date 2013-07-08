@@ -25,12 +25,13 @@
   <div class="wrapper">
   <header class="site-header">
     <section class="header-content">
-      <%= image_tag "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", alt: 'MadTree Brewing', class: 'logo' %>
+      
+      <%= link_to image_tag("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", alt: 'MadTree Brewing', class: 'logo'), '/' %>
       <nav class="site-nav">
         <ul class="nav-list">
-          <% ['beer', 'tap room', 'community'].each do |nav_item| %>
+          <% ['beer', 'taproom', 'community'].each do |nav_item| %>
           <li class="nav-item">
-            <%= link_to nav_item, '#' %>
+            <%= link_to nav_item, "/#{nav_item}" %>
           </li>
           <% end %>
         </ul> <!-- /nav-list -->

@@ -1,6 +1,8 @@
 @import 'partials/base';
 @import 'pages/home';
 @import 'pages/beer';
+@import 'pages/community';
+@import 'pages/taproom';
 
 // Global
 // --------------------------------------------------
@@ -50,7 +52,7 @@ h4, h5, h6 {
 // --------------------------------------------------
 .site-nav {
   clear: both;
-  margin-top: -(calc-em(60px));
+  margin-top: -(calc-em(50px));
   @include span-columns(4 omega);
   position: relative;
   .nav-list {
@@ -82,6 +84,7 @@ h4, h5, h6 {
 }
 .main-content {
   @extend %container;
+  padding-bottom: calc-em(100px);
 }
 
 .sidebar-nav {

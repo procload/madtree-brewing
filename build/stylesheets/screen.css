@@ -5247,10 +5247,10 @@ a.th {
     clear: both; }
 
 /* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-.content-area, body.index .main-content, body.index .photo-grid .photo-row, body.beer .main-content, .site-header .header-content {
+.content-area, body.index .main-content, body.index .photo-grid .photo-row, body.beer .main-content, body.community .content-body-footer, .site-header .header-content {
   *zoom: 1; }
   /* line 22, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-  .content-area:before, body.index .main-content:before, body.index .photo-grid .photo-row:before, body.beer .main-content:before, .site-header .header-content:before, .content-area:after, body.index .main-content:after, body.index .photo-grid .photo-row:after, body.beer .main-content:after, .site-header .header-content:after {
+  .content-area:before, body.index .main-content:before, body.index .photo-grid .photo-row:before, body.beer .main-content:before, body.community .content-body-footer:before, .site-header .header-content:before, .content-area:after, body.index .main-content:after, body.index .photo-grid .photo-row:after, body.beer .main-content:after, body.community .content-body-footer:after, .site-header .header-content:after {
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -5327,8 +5327,9 @@ body.index .news {
   width: 32.07547%;
   float: left;
   margin-right: 1.88679%;
-  display: inline; }
-  /* line 10, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+  display: inline;
+  margin-bottom: 8.125em; }
+  /* line 11, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
   body.index .news .news-header,
   body.index .news .news-articles {
     background: #FFF;
@@ -5337,116 +5338,129 @@ body.index .news {
     -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 3px;
     box-shadow: rgba(0, 0, 0, 0.2) 0 2px 3px;
     padding: 0.5em; }
-  /* line 16, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
   body.index .news .news-header {
     margin-bottom: 0.5em; }
-    /* line 18, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+    /* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
     body.index .news .news-header h3 {
       font-size: 1em;
       margin-bottom: 0; }
   /* line 24, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+  body.index .news .news-articles {
+    padding-bottom: 6.25em; }
+  /* line 28, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
   body.index .news .news-article p {
     font-size: 0.8125em; }
-/* line 29, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+/* line 33, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
 body.index .photo-grid {
   width: 57.54717%;
   float: right;
   margin-right: 0;
   *margin-left: -1.25em;
   display: inline; }
-  /* line 32, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+  /* line 36, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
   body.index .photo-grid img {
-    border: 5px solid black; }
-  /* line 38, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+    border: 5px solid black;
+    height: 200px; }
+  /* line 43, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
   body.index .photo-grid .photo-cell {
     float: left; }
-/* line 43, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+    /* line 45, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+    body.index .photo-grid .photo-cell.tl {
+      width: 300px; }
+      /* line 46, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+      body.index .photo-grid .photo-cell.tl img {
+        border-bottom: none;
+        border-right: none; }
+    /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+    body.index .photo-grid .photo-cell.tr {
+      width: 246px; }
+      /* line 51, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+      body.index .photo-grid .photo-cell.tr img {
+        border-bottom: none; }
+    /* line 53, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+    body.index .photo-grid .photo-cell.bl {
+      width: 246px; }
+      /* line 54, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+      body.index .photo-grid .photo-cell.bl img {
+        border-right: none; }
+    /* line 57, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+    body.index .photo-grid .photo-cell.br {
+      width: 300px; }
+/* line 63, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
 body.index .cans {
   position: absolute;
-  bottom: 0; }
+  bottom: 100px;
+  left: 80px; }
 
 /* line 5, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
 body.beer.beer_psychopathy .content-body-header h2,
 body.beer.beer_psychopathy .content-area-footer .beer-summary {
   color: #998D2D; }
-/* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
-body.beer .sidebar-nav .nav-item .happy-amber {
-  text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
+/* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+body.beer .sidebar-nav .nav-list .happy-amber {
   display: block;
-  width: 110px;
-  height: 150px;
-  background: url("/images/beer/happy-amber/tap.png") no-repeat top left;
-  background-size: contain; }
-/* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
-body.beer .sidebar-nav .nav-item .psychopathy {
   text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
+  background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+  width: 76px;
+  height: 107px;
+  background-position: -4px 0; }
+/* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+body.beer .sidebar-nav .nav-list .psychopathy {
   display: block;
-  width: 110px;
-  height: 150px;
-  background: url("/images/beer/psychopathy/tap.png") no-repeat top left;
-  background-size: contain; }
-/* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
-body.beer .sidebar-nav .nav-item .gnarly-brown {
   text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
+  background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+  width: 76px;
+  height: 107px;
+  background-position: -86px 0; }
+/* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+body.beer .sidebar-nav .nav-list .gnarly-brown {
   display: block;
-  width: 110px;
-  height: 150px;
-  background: url("/images/beer/gnarly-brown/tap.png") no-repeat top left;
-  background-size: contain; }
-/* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
-body.beer .sidebar-nav .nav-item .identity-crisis {
   text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
+  background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+  width: 76px;
+  height: 107px;
+  background-position: -168px 0; }
+/* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+body.beer .sidebar-nav .nav-list .identity-crisis {
   display: block;
-  width: 110px;
-  height: 150px;
-  background: url("/images/beer/identity-crisis/tap.png") no-repeat top left;
-  background-size: contain; }
-/* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
-body.beer .sidebar-nav .nav-item .axis-mundi {
   text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
+  background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+  width: 76px;
+  height: 107px;
+  background-position: 0px -117px; }
+/* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+body.beer .sidebar-nav .nav-list .axis-mundi {
   display: block;
-  width: 110px;
-  height: 150px;
-  background: url("/images/beer/axis-mundi/tap.png") no-repeat top left;
-  background-size: contain; }
-/* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
-body.beer .sidebar-nav .nav-item .batch-one {
   text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
+  background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+  width: 76px;
+  height: 107px;
+  background-position: -82px -117px; }
+/* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+body.beer .sidebar-nav .nav-list .batch-one {
   display: block;
-  width: 110px;
-  height: 150px;
-  background: url("/images/beer/batch-one/tap.png") no-repeat top left;
-  background-size: contain; }
-/* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
-body.beer .sidebar-nav .nav-item .sprye {
   text-indent: -9999px;
-  white-space: nowrap;
-  overflow: hidden;
+  background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+  width: 76px;
+  height: 107px;
+  background-position: -164px -117px; }
+/* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+body.beer .sidebar-nav .nav-list .sprye {
   display: block;
-  width: 110px;
-  height: 150px;
-  background: url("/images/beer/sprye/tap.png") no-repeat top left;
-  background-size: contain; }
-/* line 29, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+  text-indent: -9999px;
+  background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+  width: 76px;
+  height: 107px;
+  background-position: -246px -117px; }
+/* line 43, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
 body.beer .content-area-body {
   width: 43.03797%;
   float: right;
   margin-right: 0;
   *margin-left: -1.25em;
   display: inline; }
-/* line 32, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+/* line 46, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
 body.beer .content-area-image {
   width: 54.43038%;
   float: left;
@@ -5454,31 +5468,31 @@ body.beer .content-area-image {
   display: inline;
   position: relative;
   padding-left: 1.25em; }
-  /* line 36, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+  /* line 50, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
   body.beer .content-area-image .can {
     position: absolute;
     top: 20px; }
-  /* line 40, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+  /* line 54, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
   body.beer .content-area-image .front-can {
     z-index: 2; }
-  /* line 43, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+  /* line 57, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
   body.beer .content-area-image .back-can {
     z-index: 1;
     right: 0; }
-/* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+/* line 63, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
 body.beer .content-body-header {
   padding-top: 4.6875em;
   padding-bottom: 0.3125em;
   background: transparent url("/images/beer/psychopathy/img-pint.png") no-repeat top right; }
-  /* line 53, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+  /* line 67, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
   body.beer .content-body-header h2 {
     font-size: 2.125em;
     margin: 0; }
-/* line 60, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+/* line 74, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
 body.beer .content-body p {
   font-size: 0.875em;
   line-height: 1.42857em; }
-/* line 66, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+/* line 80, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
 body.beer .content-area-footer {
   clear: both;
   width: 61.39241%;
@@ -5487,7 +5501,7 @@ body.beer .content-area-footer {
   *margin-left: -1.25em;
   display: inline;
   border-top: 1px solid black; }
-  /* line 70, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+  /* line 84, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
   body.beer .content-area-footer .beer-summary {
     margin: 0;
     font-family: "franklin-gothic-urw-cond";
@@ -5495,17 +5509,167 @@ body.beer .content-area-footer {
     text-align: justify;
     font-size: .1px;
     font-weight: 400; }
-    /* line 77, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+    /* line 91, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
     body.beer .content-area-footer .beer-summary:after {
       width: 100%;
       content: '';
       display: inline-block; }
-    /* line 82, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
+    /* line 96, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_beer.scss */
     body.beer .content-area-footer .beer-summary > span {
       font-size: 180em;
       display: inline-block; }
 
-/* line 10, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 3, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+body.community .community-nav {
+  font-family: "franklin-gothic-urw-cond";
+  text-transform: uppercase; }
+  /* line 6, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .community-nav .nav-item {
+    display: block; }
+  /* line 10, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .community-nav .active .subnav {
+    display: block; }
+  /* line 13, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .community-nav .active > a {
+    color: #f89406; }
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .community-nav a {
+    color: black; }
+  /* line 20, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .community-nav > .nav-list {
+    font-size: 1.3125em; }
+  /* line 23, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .community-nav .nav-header {
+    margin-bottom: 1em; }
+  /* line 26, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .community-nav .subnav {
+    display: none;
+    font-size: 0.7619em; }
+  /* line 30, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .community-nav .subnav-item {
+    list-style-type: disc; }
+/* line 35, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+body.community .content-area {
+  padding: 0; }
+/* line 39, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+body.community .content-area-image {
+  width: 43.03797%;
+  float: left;
+  margin-right: 2.53165%;
+  display: inline; }
+/* line 43, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+body.community .content-area-body {
+  width: 54.43038%;
+  float: right;
+  margin-right: 0;
+  *margin-left: -1.25em;
+  display: inline;
+  padding: 1.25em; }
+/* line 48, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+body.community .content-body-header h2 {
+  font-size: 2em;
+  margin: 0;
+  line-height: 1em; }
+/* line 53, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+body.community .content-body-header h3 {
+  font-size: 1.3125em;
+  margin: 0 0 0.47619em;
+  line-height: 1em; }
+/* line 60, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+body.community .content-body p {
+  font-size: 0.875em;
+  line-height: 1.42857em; }
+/* line 68, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+body.community .favorite-beer {
+  float: right; }
+  /* line 70, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .favorite-beer h3 {
+    font-size: 1.125em;
+    display: inline-block;
+    line-height: 1em;
+    margin: 0;
+    text-align: right;
+    padding-top: 0.77778em; }
+  /* line 78, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
+  body.community .favorite-beer img {
+    vertical-align: top; }
+
+/* line 3, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+body.taproom .taproom-nav h2 {
+  font-size: 1.75em;
+  line-height: 1em;
+  text-align: center;
+  margin: 0 0 0.5em; }
+/* line 10, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+body.taproom .nav-list {
+  margin-bottom: 2.25em; }
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  body.taproom .nav-list .happy-amber {
+    display: block;
+    text-indent: -9999px;
+    background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+    width: 76px;
+    height: 107px;
+    background-position: -4px 0; }
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  body.taproom .nav-list .psychopathy {
+    display: block;
+    text-indent: -9999px;
+    background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+    width: 76px;
+    height: 107px;
+    background-position: -86px 0; }
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  body.taproom .nav-list .gnarly-brown {
+    display: block;
+    text-indent: -9999px;
+    background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+    width: 76px;
+    height: 107px;
+    background-position: -168px 0; }
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  body.taproom .nav-list .identity-crisis {
+    display: block;
+    text-indent: -9999px;
+    background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+    width: 76px;
+    height: 107px;
+    background-position: 0px -117px; }
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  body.taproom .nav-list .axis-mundi {
+    display: block;
+    text-indent: -9999px;
+    background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+    width: 76px;
+    height: 107px;
+    background-position: -82px -117px; }
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  body.taproom .nav-list .batch-one {
+    display: block;
+    text-indent: -9999px;
+    background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+    width: 76px;
+    height: 107px;
+    background-position: -164px -117px; }
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  body.taproom .nav-list .sprye {
+    display: block;
+    text-indent: -9999px;
+    background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+    width: 76px;
+    height: 107px;
+    background-position: -246px -117px; }
+/* line 36, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+body.taproom .taproom-hours h2 {
+  margin: 0; }
+/* line 39, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+body.taproom .taproom-hours strong {
+  text-transform: uppercase; }
+/* line 43, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+body.taproom .content-area {
+  padding: 0; }
+
+/* line 12, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .site-header .header-content, .main-content, .site-footer .footer-content {
   *zoom: 1;
   max-width: 66.25em;
@@ -5520,7 +5684,7 @@ body.beer .content-area-footer {
     display: table;
     clear: both; }
 
-/* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 h1, h2, h3,
 h4, h5, h6 {
   margin: 0 0 1em 0;
@@ -5528,19 +5692,19 @@ h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 500; }
 
-/* line 28, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 30, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .site-header {
   background: #000;
   background: rgba(0, 0, 0, 0.85);
   padding: 0.625em 0;
   margin-bottom: 2em; }
-  /* line 36, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 38, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-header .header-content > img {
     width: 32.07547%;
     float: left;
     margin-right: 1.88679%;
     display: inline; }
-  /* line 39, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 41, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-header .header-content .logo {
     float: left;
     background: transparent url("/images/img-logo.png") no-repeat top left;
@@ -5548,47 +5712,51 @@ h4, h5, h6 {
     width: 260px;
     height: 120px; }
 
-/* line 51, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 53, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .site-nav {
   clear: both;
-  margin-top: -3.75em;
+  margin-top: -3.125em;
   width: 32.07547%;
   float: right;
   margin-right: 0;
   *margin-left: -1.25em;
   display: inline;
   position: relative; }
-  /* line 56, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 58, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-nav .nav-list {
     text-align: justify;
     font-size: .1px; }
-    /* line 60, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+    /* line 62, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
     .site-nav .nav-list:after {
       content: '';
       display: inline-block;
       width: 100%; }
-  /* line 66, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 68, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-nav .nav-item {
     font-family: "alternate-gothic-no-3-d";
     font-size: 280em; }
-    /* line 69, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+    /* line 71, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
     .site-nav .nav-item a {
       text-transform: uppercase;
       color: #8f8e8e; }
 
-/* line 79, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 81, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .wrapper {
   background: transparent url("/images/background.jpg") no-repeat top left;
   background-size: cover; }
 
-/* line 87, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 85, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+.main-content {
+  padding-bottom: 6.25em; }
+
+/* line 90, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .sidebar-nav {
   width: 23.58491%;
   float: left;
   margin-right: 1.88679%;
   display: inline; }
 
-/* line 91, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 94, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .content-area {
   width: 74.5283%;
   float: right;
@@ -5596,15 +5764,15 @@ h4, h5, h6 {
   *margin-left: -1.25em;
   display: inline; }
 
-/* line 98, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 101, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .site-footer {
   background: #000;
   background: rgba(0, 0, 0, 0.8);
   padding: 0.625em 0; }
-  /* line 102, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 105, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-footer .footer-content {
     text-align: right; }
-  /* line 106, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 109, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-footer .copyright {
     color: white;
     color: rgba(255, 255, 255, 0.4);

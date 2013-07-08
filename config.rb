@@ -48,7 +48,25 @@ helpers do
 
 end
 #
+data.beers.details.each do |beer|
+  proxy "/beer/#{beer[:url]}/index.html", "/beer/template.html", :locals => { :beer => beer }, :ignore => true
+end
 
+data.community.founders.details.each do |founder|
+  proxy "/community/#{founder[:url]}/index.html", "/community/template.html", :locals => { :founder => founder}, :ignore => true
+end
+
+data.community.artists.details.each do |artist|
+  proxy "/community/#{artist[:url]}/index.html", "/community/template.html", :locals => { :artist => artist}, :ignore => true
+end
+
+data.community.partners.details.each do |partner|
+  proxy "/community/#{partner[:url]}/index.html", "/community/template.html", :locals => { :partner => partner }, :ignore => true
+end
+
+data.community.charities.details.each do |charity|
+  proxy "/community/#{charity[:url]}/index.html", "/community/template.html", :locals => { :charity => charity}, :ignore => true
+end
 # Automatic image dimensions on image_tag helper
 activate :automatic_image_sizes
 

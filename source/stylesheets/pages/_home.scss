@@ -6,6 +6,7 @@ body.index {
   }
   .news {
     @include span-columns(4);
+    margin-bottom: calc-em(130px);
     .news-header,
     .news-articles {
       background: #FFF;
@@ -20,6 +21,9 @@ body.index {
         margin-bottom: 0;
       }
     }
+    .news-articles {
+      padding-bottom: calc-em(100px); 
+    }
     .news-article {
       p {
         font-size: calc-em(13px);
@@ -31,17 +35,34 @@ body.index {
 
     img {
       border: 5px solid $black;
+      height: 200px;
     }
     .photo-row {
       @extend %group;
     }
     .photo-cell {
       float: left;
+      &.tl {
+        img {border-bottom: none; border-right: none; };
+        width: 300px;
+      }
+      &.tr {
+        width: 246px;
+        img {border-bottom: none };
+      }
+      &.bl {
+        img { border-right: none; };
+        width: 246px;
+      }
+      &.br {
+        width: 300px;
+      }
     }
   }
 
   .cans {
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
+    left: 80px;
   }
 }

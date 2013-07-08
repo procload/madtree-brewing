@@ -4,24 +4,38 @@ body.beer {
     .content-body-header h2,
     .content-area-footer .beer-summary { color: #998D2D; }
   }
-  
-
 
   .main-content {
     @extend %group;
   }
-  
+
   .sidebar-nav {
-    .nav-item {
-      @each $beer in happy-amber, psychopathy, gnarly-brown, identity-crisis, axis-mundi, batch-one, sprye {
+    .nav-list {
+      $offset-x: -4;
+      $offset-y: 0;
+      $beer-list: happy-amber, psychopathy, gnarly-brown, identity-crisis, axis-mundi, batch-one, sprye;  
+      @for $i from 1 through length($beer-list) {
+        $beer: nth($beer-list, $i);
         .#{$beer} {
-          @include replace-text(110px, 150px, image-url("beer/#{$beer}/tap.png") no-repeat top left);
-          background-size: contain;
+          display: block;
+          text-indent: -9999px;
+          @include background(transparent image-url('taproom/spr-beers.png') top left no-repeat);
+          width: 76px;
+          height: 107px;
+          @if $i > 3 {
+            $offset-x: 0;
+            @if $i >= 4 {
+              $offset-x: ($offset-x - ($i - 4) * 82);
+            }
+            $offset-y: -117px;
+          }
+          background-position: ($offset-x + px) $offset-y;
+          $offset-x: ($offset-x - 82);
         }
-      } //end loop
-    }     
+      }
+    }
   }
- 
+
 
   .content-area-image {
   }
