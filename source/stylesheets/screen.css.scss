@@ -28,10 +28,9 @@ h4, h5, h6 {
 // --------------------------------------------------
 
 .site-header {
-  background: #000;
-  @include background(rgba(0,0,0,.85));
   padding: calc-em(10px) 0;
-  margin-bottom: calc-em(32px);
+  background: #181818;
+  background: rgba(24, 24, 24, .925);
   .header-content {
     @extend %container;
     @extend %group;
@@ -56,7 +55,6 @@ h4, h5, h6 {
   @include span-columns(4 omega);
   position: relative;
   .nav-list {
-  
     text-align: justify;
     font-size: .1px;
     &:after {
@@ -83,8 +81,27 @@ h4, h5, h6 {
   background-size: cover;
 }
 .main-content {
-  @extend %container;
-  padding-bottom: calc-em(100px);
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    background: none;
+    border-width: 0px 0px 50px 0px;
+    -webkit-border-image: url(/images/border-nav.png) 50 0  repeat;
+  }
+  &:after {
+    content: '';
+    display: block;
+    width: 100%;
+    border-width: 50px 0px 0px 0px;
+    -webkit-border-image: url(/images/border-footer.png) 50 0  repeat;
+  }
+  
+  .main-container {
+    padding-top: calc-em(30px);
+    padding-bottom: calc-em(100px);
+    @extend %container;
+  }
 }
 
 .sidebar-nav {
@@ -99,9 +116,10 @@ h4, h5, h6 {
 // --------------------------------------------------
 
 .site-footer {
-  background: #000;
-  @include background(rgba(0,0,0,.8));
+  background: #181818;
+  background: rgba(24, 24, 24, .93);
   padding: calc-em(10px) 0;
+
   .footer-content {
     @extend %container;
     text-align: right;

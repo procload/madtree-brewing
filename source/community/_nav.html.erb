@@ -17,36 +17,6 @@
         <% end %>
       </ul> <!-- /subnav -->
     </li> <!-- /nav-header -->
-    <li class="nav-item nav-header">
-      <%= link_to 'Artists', '#' %>
-      <ul class="nav subnav ">
-        <% artists.each do |artist| %>
-        <li class="subnav-item">
-          <%= link_to artist.name, artist.url, title: artist.name %> 
-        </li>
-        <% end %>
-      </ul> <!-- /subnav -->
-    </li> <!-- /nav-header -->
-    <li class="nav-item nav-header">
-      <%= link_to 'Partners', '#' %>
-      <ul class="nav subnav ">
-        <% partners.each do |partner| %>
-        <li class="subnav-item">
-          <%= link_to partner.name, partner.url, title: partner.name %> 
-        </li>
-        <% end %>
-      </ul> <!-- /subnav -->
-    </li> <!-- /nav-header -->
-    <li class="nav-item nav-header">
-      <%= link_to 'Charities', '#' %>
-      <ul class="nav subnav ">
-        <% charities.each do |charity| %>
-        <li class="subnav-item">
-          <%= link_to charity.name, charity.url, title: charity.name %> 
-        </li>
-        <% end %>
-      </ul> <!-- /subnav -->
-    </li> <!-- /nav-header -->
   </ul> <!-- /nav -->
 </nav> <!-- /community-nav -->
 

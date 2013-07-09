@@ -43,4 +43,20 @@ body.taproom {
   .content-area {
     padding: 0;
   }
+  .taproom-slideshow {
+    li {
+      > img {
+        width: 100%;
+      }
+    }
+  }
+  .growler {
+    margin-top: -(calc-em(60px));
+    @include background(transparent image-url('taproom/img-growler.png') no-repeat right);
+    font-size: calc-em(14px);
+    text-align: right;
+    line-height: calc-em(20px, 14px);
+    padding: calc-em(60px, 14px) 0 calc-em(50px, 14px) 0;
+    padding-right: calc-em(120px, 14px);
+  }
 }

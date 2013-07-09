@@ -1,19 +1,13 @@
 <% beer = locals[:beer] %>
-<nav class="beer-nav sidebar-nav">
-  <h2>Our Beers</h2>
-  <ul class="nav-list">
-    <% ['happy-amber', 'psychopathy', 'gnarly-brown', 'identity-crisis', 'axis-mundi', 'batch-one', 'sprye'].each do |beer| %>
-    <li class="nav-item">
-      <%= link_to beer, "beer/#{beer}", class: "#{beer}" %>
-    </li> <!-- /nav-item -->
-    <% end %>
-  </ul> <!-- /nav -->
-</nav> <!-- /beer-nav -->
-
+<%= partial 'beer/nav' %>
 <section class="content-area beer">
   <div class="content-area-image cans">
-    <%= image_tag "beer/#{beer[:url]}/img-front-can.png", class: 'front-can can' %>
-    <%= image_tag "beer/#{beer[:url]}/img-back-can.png", class: 'back-can can' %>
+    <% if ["psychopathy", "happy-amber", "gnarly-brown"].include? beer[:url] %>
+      <%= image_tag "beer/#{beer[:url]}/img-front-can.png", class: 'front-can can'  %>
+      <%= image_tag "beer/#{beer[:url]}/img-back-can.png", class: 'back-can can' %>
+    <% else %>
+      <%= image_tag "beer/#{beer[:url]}/img-tap.png", class: 'tap'  %>
+    <% end %>
   </div> <!-- /content-area-image -->
   <div class="content-area-body">
     <header class="content-body-header">

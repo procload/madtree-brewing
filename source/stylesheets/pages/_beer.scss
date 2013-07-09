@@ -6,14 +6,13 @@ body.beer {
   }
 
   .main-content {
-    @extend %group;
   }
 
   .sidebar-nav {
     .nav-list {
       $offset-x: -4;
       $offset-y: 0;
-      $beer-list: happy-amber, psychopathy, gnarly-brown, identity-crisis, axis-mundi, batch-one, sprye;  
+      $beer-list: happy-amber, gnarly-brown, psychopathy, identity-crisis, axis-mundi, batch-one, sprye;  
       @for $i from 1 through length($beer-list) {
         $beer: nth($beer-list, $i);
         .#{$beer} {
@@ -36,7 +35,6 @@ body.beer {
     }
   }
 
-
   .content-area-image {
   }
 
@@ -47,6 +45,10 @@ body.beer {
     @include span-columns(5, 9);
     position: relative;
     padding-left: calc-em(20px); 
+    .tap {
+      position: relative;
+      bottom: -50px;
+    }
     .can {
       position: absolute;
       top: 20px;

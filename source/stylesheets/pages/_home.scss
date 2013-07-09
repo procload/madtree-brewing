@@ -1,8 +1,9 @@
 body.index {
 
   .main-content {
-    @extend %group;
-    position: relative;
+    .main-container {
+      position: relative;
+    }
   }
   .news {
     @include span-columns(4);

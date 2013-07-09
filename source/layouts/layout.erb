@@ -29,17 +29,23 @@
       <%= link_to image_tag("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", alt: 'MadTree Brewing', class: 'logo'), '/' %>
       <nav class="site-nav">
         <ul class="nav-list">
-          <% ['beer', 'taproom', 'community'].each do |nav_item| %>
           <li class="nav-item">
-            <%= link_to nav_item, "/#{nav_item}" %>
+            <%= link_to "Beer", "/beer/happy-amber" %>
           </li>
-          <% end %>
+          <li class="nav-item">
+            <%= link_to "Taproom", "/taproom/" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Community", "/community/brady-duncan" %>
+          </li>
         </ul> <!-- /nav-list -->
       </nav> <!-- /site-nav -->
     </section> <!-- /header-content -->
   </header> <!-- /site-header -->
     <section class="main-content" role="main">
-      <%= yield %>
+      <div class="main-container">
+        <%= yield %>
+      </div>
     </section> <!-- /main -->
 
   <footer class="site-footer">
