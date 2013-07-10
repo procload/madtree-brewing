@@ -25,9 +25,21 @@ body.community {
     }
     .subnav {
       font-size: calc-em(16px, 21px);
+      margin: 0;
+      padding: 0;
+      @include respond-to('48em') {
+        margin-left: calc-em(16px, 16px);
+      }
     }
     .subnav-item {
-      list-style-type: disc; 
+      list-style-type: none;
+      display: inline-block;
+      padding-right: calc-em(20px);
+      @include respond-to('48em') {
+        display: block;
+        padding-right: 0;
+        list-style-type: disc; 
+      }
     }
   }
 
@@ -36,13 +48,17 @@ body.community {
   }
 
   .content-area-image {
-    @include span-columns(4, 9);
+    @include respond-to('48em') {
+      @include span-columns(4, 9);
+    }
   }
 
   .content-area-body {
-    @include span-columns(5 omega, 9);
+    @include respond-to(48em) {
+      @include span-columns(5 omega, 9);
+      padding-top: calc-em(140px);
+    }
     padding: calc-em(20px);
-    padding-top: calc-em(140px);
   }
   .content-body-header {
     h2 {

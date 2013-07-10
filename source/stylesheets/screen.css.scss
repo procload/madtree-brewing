@@ -56,7 +56,11 @@ h4, h5, h6 {
 // --------------------------------------------------
 .site-nav {
   padding-top: calc-em(35px);
-  @include span-columns(6 omega);
+  clear: both;
+  @include respond-to(48em) {
+    clear: none;
+    @include span-columns(6 omega);
+  }
   position: relative;
   .nav-list {
     text-align: justify;
@@ -76,15 +80,45 @@ h4, h5, h6 {
     }
   } //nav-item
   .hours-social {
+    @extend %group;
     .hours {
+      @include respond-to('48em') {
+        float: left;
+        line-height: 2em;
+      }
+      .time {
+        display: block;
+        @include respond-to(48em) {
+          display: inline;
+        }
+      }
       color: $orange;
       font-size: calc-em(13px);
-      text-align: right;
       margin-bottom: calc-em(6px, 13px);
+      @include respond-to('48em') {
+      
+        text-align: right;
+      }
     }
   }
 } //site-nav
 
+.social {
+  @include respond-to('48em') {
+    float: right;
+  }
+  margin: 0;
+  padding: 0;
+  li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    a {
+      color: $white;
+    }
+  }
+}
 
 // Main Content
 // --------------------------------------------------
@@ -117,11 +151,15 @@ h4, h5, h6 {
 }
 
 .sidebar-nav {
-  @include span-columns(3);
+  @include respond-to('48em') {
+    @include span-columns(3);
+  }
 }
 
 .content-area {
-  @include span-columns(9 omega);
+  @include respond-to('48em') {
+    @include span-columns(9 omega);
+  }
 }
 
 // Footer

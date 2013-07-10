@@ -54,10 +54,15 @@ body.beer {
   }
 
   .content-area-body {
-    @include span-columns(4 omega, 9);
+    @include respond-to('48em') {
+      @include span-columns(4 omega, 9);
+    }
   }
   .content-area-image {
-    @include span-columns(5, 9);
+    height: calc-em(400px);
+    @include respond-to('48em') {
+      @include span-columns(5, 9);
+    }
     position: relative;
     padding-left: calc-em(20px); 
     .tap {
@@ -73,7 +78,14 @@ body.beer {
     }
     .back-can {
       z-index: 1;
-      right: 0;
+      display: none;
+      @include respond-to(62.5em) {
+        display: block; 
+      }
+      @include respond-to(48em) {
+      
+        left: 180px;
+      }
     }
   } //content-area-image
 
@@ -96,7 +108,10 @@ body.beer {
 
   .content-area-footer {
     clear: both;
-    @include span-columns(5.5 omega, 9);
+    @include respond-to(48em) {
+    
+      @include span-columns(5.5 omega, 9);
+    }
     border-top: 1px solid $black;
     .beer-summary {
       margin: 0;
@@ -112,7 +127,16 @@ body.beer {
       }
       > span {
         font-size: calc-em(18px, .1px);
-        display: inline-block;
+        display: block;
+        &.divider {
+          display: none;
+          @include respond-to('48em') {
+            display: inline-block;
+          }
+        }
+        @include respond-to('48em') {
+          display: inline-block;
+        }
       }
     }
   }

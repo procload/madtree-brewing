@@ -6,8 +6,12 @@ body.index {
     }
   }
   .news {
-    @include span-columns(4);
-    margin-bottom: calc-em(130px);
+    margin-bottom: calc-em(32px);
+    @include respond-to('48em') {
+      //767px
+      @include span-columns(4);
+      margin-bottom: calc-em(130px);
+    }
     .news-header,
     .news-articles {
       background: #FFF;
@@ -23,7 +27,10 @@ body.index {
       }
     }
     .news-articles {
-      padding-bottom: calc-em(100px); 
+      @include respond-to('48em') {
+        //767px
+        padding-bottom: calc-em(100px); 
+      }
     }
     .news-article {
       p {
@@ -32,7 +39,12 @@ body.index {
     }
   }
   .photo-grid {
-    @include span-columns(7 omega);
+    margin-bottom: calc-em(32px);
+    @include respond-to('48em') {
+      //767px
+      margin-bottom: 0;
+      @include span-columns(7 omega);
+    }
     img {
       border: 5px solid $black;
       height: 200px;
@@ -41,28 +53,53 @@ body.index {
       @extend %group;
     }
     .photo-cell {
+
       float: left;
+      img {
+        width: 100%;
+        @include respond-to(48em) {
+        }
+      }
       &.tl {
+        width: 68%;
+        @include respond-to('48em') {
+          width: 300px;
+        }
         img {border-bottom: none; border-right: none; };
-        width: 300px;
       }
       &.tr {
-        width: 246px;
+        float: right;
+        width: 32%;
+        @include respond-to('48em') {
+          width: 246px;
+          float: left;
+        }
         img {border-bottom: none };
       }
       &.bl {
+        width: 32%;
+        @include respond-to('48em') {
+          width: 246px;
+        }
         img { border-right: none; };
-        width: 246px;
       }
       &.br {
-        width: 300px;
+        width: 68%;
+        float: right;
+        @include respond-to('48em') {
+          width: 300px;
+          float: left;
+        }
       }
     }
   }
 
   .cans {
-    position: absolute;
-    bottom: 100px;
-    left: 80px;
+    text-align: center;
+    @include respond-to('48em') {
+      position: absolute;
+      bottom: 100px;
+      left: 80px;
+    }
   }
 }
