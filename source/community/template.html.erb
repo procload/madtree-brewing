@@ -18,7 +18,7 @@
     </div> <!-- /content-body -->
     <footer class="content-body-footer">
       <div class="favorite-beer">
-        <h3><%= founder[:name] %>'s <br /> Favorite <br /> Beer</h3>
+        <h3><%= founder[:name].split(' ').first %>'s <br /> Favorite <br /> Beer</h3>
         <%= image_tag "community/#{founder[:url]}/img-can.png", alt: founder[:favorite] %>
       </div> <!-- /favorite-beer -->
     </footer> <!-- /content-body-footer -->

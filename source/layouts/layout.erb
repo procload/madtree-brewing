@@ -26,8 +26,11 @@
   <header class="site-header">
     <section class="header-content">
       
-      <%= link_to image_tag("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", alt: 'MadTree Brewing', class: 'logo'), '/' %>
+      <%= link_to image_tag("data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7", alt: 'MadTree Brewing', class: 'logo'), '/', class: 'brand' %>
       <nav class="site-nav">
+        <div class="hours-social">
+          <p class="hours">TAP ROOM HOURS: M&ndash;F 11am &ndash; 7pm SAT 11am &ndash; 9pm SUN 1pm &ndash; 5pm</p>
+        </div>
         <ul class="nav-list">
           <li class="nav-item">
             <%= link_to "Beer", "/beer/happy-amber" %>

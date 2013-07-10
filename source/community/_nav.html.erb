@@ -7,12 +7,14 @@
 
 <nav class="community-nav sidebar-nav">
   <ul class="nav-list">
-    <li class="nav-item nav-header active">
+    <% founders.each do |founder| %>
+      <li class="nav-item nav-header">
+    <% end %>
       <%= link_to 'Founders', '#' %>
       <ul class="nav subnav ">
         <% founders.each do |founder| %>
-        <li class="subnav-item">
-          <%= link_to founder.name, founder.url, title: founder.name %> 
+          <li class="subnav-item">
+          <%= link_to founder.name, founder.url, title: founder.name, class: current_page.url.include?(founder.url) ? 'active' : '' %> 
         </li>
         <% end %>
       </ul> <!-- /subnav -->

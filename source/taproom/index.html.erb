@@ -1,9 +1,12 @@
+<%
+  beers = data.beers.details
+%>
 <nav class="sidebar-nav taproom-nav">
   <h2>What's on Tap</h2>
   <ul class="nav-list">
-    <% ['happy-amber', 'psychopathy', 'gnarly-brown', 'identity-crisis', 'axis-mundi', 'batch-one'].each do |beer| %>
+    <% beers.each do |beer| %>
     <li class="nav-item">
-      <%= link_to beer, "/beer/#{beer}", class: beer %>
+      <%= link_to beer.name, "/beer/#{beer.url}", class: "#{beer.url}" %>
     </li> <!-- /nav-item -->
     <% end %>
   </ul> <!--/nav -->
@@ -23,7 +26,7 @@
           <strong>Sat</strong>
         </td>
         <td>
-          11am &ndash; 7pm
+          11am &ndash; 9pm
         </td>
       </tr>
       <tr>

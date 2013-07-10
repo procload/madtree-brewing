@@ -5,34 +5,49 @@ body.beer {
     .content-area-footer .beer-summary { color: #998D2D; }
   }
 
+  &.beer_happy-amber {
+    .content-body-header h2,
+    .content-area-footer .beer-summary { color: #b3380e; }
+  }
+
+  &.beer_gnarly-brown {
+    .content-body-header h2,
+    .content-area-footer .beer-summary { color: #4e1c00; }
+  }
+
   .main-content {
   }
 
   .sidebar-nav {
-    .nav-list {
-      $offset-x: -4;
-      $offset-y: 0;
-      $beer-list: happy-amber, gnarly-brown, psychopathy, identity-crisis, axis-mundi, batch-one, sprye;  
-      @for $i from 1 through length($beer-list) {
-        $beer: nth($beer-list, $i);
-        .#{$beer} {
-          display: block;
-          text-indent: -9999px;
-          @include background(transparent image-url('taproom/spr-beers.png') top left no-repeat);
-          width: 76px;
-          height: 107px;
-          @if $i > 3 {
-            $offset-x: 0;
-            @if $i >= 4 {
-              $offset-x: ($offset-x - ($i - 4) * 82);
-            }
-            $offset-y: -117px;
+  .nav-list {
+    margin-bottom: calc-em(36px);
+    $offset-x: -4;
+    $offset-y: 0;
+    $beer-list: happy-amber, gnarly-brown, psychopathy, identity-crisis, axis-mundi, batch-one, sprye;  
+    @for $i from 1 through length($beer-list) {
+      $beer: nth($beer-list, $i);
+      .#{$beer} {
+        display: block;
+        text-indent: -9999px;
+        @include background(transparent image-url('taproom/spr-beers.png') top left no-repeat);
+        width: 76px;
+        height: 107px;
+        @if $i > 3 {
+          $offset-x: 0;
+          @if $i >= 4 {
+            $offset-x: ($offset-x - ($i - 4) * 82);
           }
-          background-position: ($offset-x + px) $offset-y;
-          $offset-x: ($offset-x - 82);
+          $offset-y: -117px;
         }
-      }
-    }
+        @if $i == length($beer-list) {
+          $offset-x: 0;
+          $offset-y: -224px;
+        }
+        background-position: ($offset-x + px) $offset-y;
+        $offset-x: ($offset-x - 82);
+      } //beer
+    } //loop
+  }
   }
 
   .content-area-image {

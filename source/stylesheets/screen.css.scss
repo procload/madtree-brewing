@@ -37,8 +37,13 @@ h4, h5, h6 {
     > img {
       @include span-columns(4);
     }
-    .logo {
+    .brand {
+      display: block;
       float: left;
+      width: 260px;
+      height: 120px;
+    }
+    .logo {
       @include background(transparent image-url('img-logo.png') no-repeat top left);
       background-size: contain;
       width: 260px;
@@ -50,9 +55,8 @@ h4, h5, h6 {
 // Site Nav
 // --------------------------------------------------
 .site-nav {
-  clear: both;
-  margin-top: -(calc-em(50px));
-  @include span-columns(4 omega);
+  padding-top: calc-em(35px);
+  @include span-columns(6 omega);
   position: relative;
   .nav-list {
     text-align: justify;
@@ -71,6 +75,14 @@ h4, h5, h6 {
       color: $gray;
     }
   } //nav-item
+  .hours-social {
+    .hours {
+      color: $orange;
+      font-size: calc-em(13px);
+      text-align: right;
+      margin-bottom: calc-em(6px, 13px);
+    }
+  }
 } //site-nav
 
 
