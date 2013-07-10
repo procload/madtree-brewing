@@ -6641,12 +6641,12 @@ body.community .community-nav {
     @media only screen and (min-width: 48em) {
       /* line 34, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
       body.community .community-nav .subnav-item {
-        display: block;
+        display: list-item;
         padding-right: 0;
         list-style-type: disc; } }
     /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
     html.lt-ie9 body.community .community-nav .subnav-item {
-      display: block;
+      display: list-item;
       padding-right: 0;
       list-style-type: disc; }
 /* line 46, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_community.scss */
@@ -6829,7 +6829,7 @@ h4, h5, h6 {
 
 /* line 30, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .site-header {
-  padding: 0.625em 0;
+  padding: 0.625em 0 0;
   background: #181818;
   background: rgba(24, 24, 24, 0.925); }
   /* line 37, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
