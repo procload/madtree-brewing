@@ -177,7 +177,7 @@
 }
 
 @mixin ie8 {
-  html.ie8 & { // Using Paul Irish's conditional comments
+  html.lt-ie9 & { // Using Paul Irish's conditional comments
     @content;
   }
 }

@@ -48,6 +48,10 @@ h4, h5, h6 {
       background-size: contain;
       width: 260px;
       height: 120px;
+      @include ie8 {
+        @include background(transparent image-url('img-logo-ie.png') no-repeat top left);
+        
+      }
     }
   } //header-content
 } //site-header
