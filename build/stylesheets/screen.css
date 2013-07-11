@@ -6177,10 +6177,10 @@ ul.icons {
     clear: both; }
 
 /* line 19, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-.content-area, body.index .news .news-header, body.index .photo-grid .photo-row, body.beer .content-body-header, body.community .content-body-footer, .site-header .header-content, .site-nav .hours-social {
+.content-area, body.index .news .news-header, body.beer .content-body-header, body.community .content-body-footer, .site-header .header-content, .site-nav .hours-social {
   *zoom: 1; }
   /* line 22, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-  .content-area:before, body.index .news .news-header:before, body.index .photo-grid .photo-row:before, body.beer .content-body-header:before, body.community .content-body-footer:before, .site-header .header-content:before, .site-nav .hours-social:before, .content-area:after, body.index .news .news-header:after, body.index .photo-grid .photo-row:after, body.beer .content-body-header:after, body.community .content-body-footer:after, .site-header .header-content:after, .site-nav .hours-social:after {
+  .content-area:before, body.index .news .news-header:before, body.beer .content-body-header:before, body.community .content-body-footer:before, .site-header .header-content:before, .site-nav .hours-social:before, .content-area:after, body.index .news .news-header:after, body.beer .content-body-header:after, body.community .content-body-footer:after, .site-header .header-content:after, .site-nav .hours-social:after {
     visibility: hidden;
     display: block;
     font-size: 0;
@@ -6342,77 +6342,11 @@ body.index .photo-grid {
     margin-right: 0;
     *margin-left: -1.25em;
     display: inline; }
-  /* line 72, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-  body.index .photo-grid img {
-    border: 5px solid black;
-    height: 200px; }
-  /* line 79, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-  body.index .photo-grid .photo-cell {
-    float: left; }
-    /* line 82, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-    body.index .photo-grid .photo-cell img {
-      width: 100%; }
-    /* line 87, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-    body.index .photo-grid .photo-cell.tl {
-      width: 68%; }
-      @media only screen and (min-width: 48em) {
-        /* line 87, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-        body.index .photo-grid .photo-cell.tl {
-          width: 300px; } }
-      /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-      html.lt-ie9 body.index .photo-grid .photo-cell.tl {
-        width: 300px; }
-      /* line 92, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-      body.index .photo-grid .photo-cell.tl img {
-        border-bottom: none;
-        border-right: none; }
-    /* line 94, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-    body.index .photo-grid .photo-cell.tr {
-      float: right;
-      width: 32%; }
-      @media only screen and (min-width: 48em) {
-        /* line 94, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-        body.index .photo-grid .photo-cell.tr {
-          width: 246px;
-          float: left; } }
-      /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-      html.lt-ie9 body.index .photo-grid .photo-cell.tr {
-        width: 246px;
-        float: left; }
-      /* line 101, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-      body.index .photo-grid .photo-cell.tr img {
-        border-bottom: none; }
-    /* line 103, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-    body.index .photo-grid .photo-cell.bl {
-      width: 32%; }
-      @media only screen and (min-width: 48em) {
-        /* line 103, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-        body.index .photo-grid .photo-cell.bl {
-          width: 246px; } }
-      /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-      html.lt-ie9 body.index .photo-grid .photo-cell.bl {
-        width: 246px; }
-      /* line 108, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-      body.index .photo-grid .photo-cell.bl img {
-        border-right: none; }
-    /* line 110, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-    body.index .photo-grid .photo-cell.br {
-      width: 68%;
-      float: right; }
-      @media only screen and (min-width: 48em) {
-        /* line 110, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
-        body.index .photo-grid .photo-cell.br {
-          width: 300px;
-          float: left; } }
-      /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-      html.lt-ie9 body.index .photo-grid .photo-cell.br {
-        width: 300px;
-        float: left; }
-/* line 121, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+/* line 74, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
 body.index .cans {
   text-align: center; }
   @media only screen and (min-width: 48em) {
-    /* line 121, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
+    /* line 74, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_home.scss */
     body.index .cans {
       position: absolute;
       bottom: 100px;
