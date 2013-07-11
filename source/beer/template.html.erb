@@ -12,6 +12,9 @@
   <div class="content-area-body">
     <header class="content-body-header">
       <h2><%= beer[:name] %></h2>
+      <div class="pint">
+        <%= image_tag "beer/#{beer[:url]}/img-pint.png" %>
+      </div>
     </header>
     <div class="content-body">
     <%= content_tag :p, beer[:description] %>

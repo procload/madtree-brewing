@@ -20,10 +20,34 @@ body.index {
       padding: calc-em(8px);
     } //news-header, //news-articles
     .news-header {
+      @extend %group;
       margin-bottom: calc-em(8px);
       h3 {
         font-size: calc-em(16px);
         margin-bottom: 0;
+        @include span-columns(8);
+      }
+      .social {
+        @include span-columns(3 omega);
+        width: calc-em(50px);
+        margin: 0;
+        padding: 0;
+        li {
+          margin: 0;
+          padding: 0;
+          list-style-type: none;
+          display: inline-block;
+          &.twitter {
+            a {
+              color: #06ACEE;
+            }
+          }
+          &.facebook {
+            a {
+              color: #3B5998;
+            }
+          }
+        }
       }
     }
     .news-articles {

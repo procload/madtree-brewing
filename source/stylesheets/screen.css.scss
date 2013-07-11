@@ -103,22 +103,6 @@ h4, h5, h6 {
   }
 } //site-nav
 
-.social {
-  @include respond-to('48em') {
-    float: right;
-  }
-  margin: 0;
-  padding: 0;
-  li {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: inline-block;
-    a {
-      color: $white;
-    }
-  }
-}
 
 // Main Content
 // --------------------------------------------------

@@ -67,7 +67,7 @@ body.beer {
     padding-left: calc-em(20px); 
     .tap {
       position: relative;
-      bottom: -50px;
+      bottom: 15px;
     }
     .can {
       position: absolute;
@@ -92,10 +92,15 @@ body.beer {
   .content-body-header {
     padding-top: calc-em(75px);
     padding-bottom: calc-em(5px);
-    @include background(transparent image-url('beer/psychopathy/img-pint.png') no-repeat top right);
+    @extend %group;
     h2 {
       font-size: calc-em(34px);
       margin: 0;
+      @include span-columns(6,9);
+    }
+    .pint {
+      @include span-columns(3 omega, 9);
+      margin-top: -70px;
     }
   } //content-body-header
 
