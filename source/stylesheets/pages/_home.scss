@@ -69,53 +69,6 @@ body.index {
       margin-bottom: 0;
       @include span-columns(7 omega);
     }
-    img {
-      border: 5px solid $black;
-      height: 200px;
-    }
-    .photo-row {
-      @extend %group;
-    }
-    .photo-cell {
-
-      float: left;
-      img {
-        width: 100%;
-        @include respond-to(48em) {
-        }
-      }
-      &.tl {
-        width: 68%;
-        @include respond-to('48em') {
-          width: 300px;
-        }
-        img {border-bottom: none; border-right: none; };
-      }
-      &.tr {
-        float: right;
-        width: 32%;
-        @include respond-to('48em') {
-          width: 246px;
-          float: left;
-        }
-        img {border-bottom: none };
-      }
-      &.bl {
-        width: 32%;
-        @include respond-to('48em') {
-          width: 246px;
-        }
-        img { border-right: none; };
-      }
-      &.br {
-        width: 68%;
-        float: right;
-        @include respond-to('48em') {
-          width: 300px;
-          float: left;
-        }
-      }
-    }
   }
 
   .cans {
