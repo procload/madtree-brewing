@@ -4,7 +4,7 @@ title: Welcome to Middleman
 
 <section class="news">
   <header class="news-header">
-    <h3>News &amp; Events</h3> 
+    <h3>News &amp; Info</h3> 
     <ul class="social">
       <li>
         <%= link_to "<i class='icon-twitter'></i>", "#" %>
@@ -15,11 +15,21 @@ title: Welcome to Middleman
     </ul> <!-- /social -->
   </header> <!-- /news-header -->
   <section class="news-articles">
-    <% 3.times do %>
       <article class="news-article">
-      <p>Aenean risus ligula, iaculis a lacus ac, mattis rhoncus tortor. Aliquam lobortis, sem a pulvinar condimentum, mi nisi varius leo, in ultricies nisl ipsum sed sapien.</p>
+        <div class="hours">
+          <h4>Tap Room Hours</h4>
+          <p><strong>M&ndash;F</strong>: 11am &ndash; 7pm</p>
+          <p><strong>SAT</strong>: 11am &ndash; 7pm</p>
+          <p><strong>SUN</strong>: 11am &ndash; 7pm</p>
+        </div>
+        <h4>Address &amp; Phone Number</h4>
+        <div class="address">
+          <span class="">455 Duck Creek Rd.</span>
+          <span>Cincinnati, OH</span>
+          <span>513.555.5555</span>
+
+        </div>
     </article> <!-- /news-article -->
-  <% end %>
   </section>
 </section> <!-- /news -->
 
