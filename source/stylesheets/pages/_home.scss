@@ -37,6 +37,7 @@ body.index {
         font-size: calc-em(16px);
         margin-bottom: 0;
         @include span-columns(8);
+        line-height: calc-em(24px, 16px);
       }
       .social {
         @include span-columns(3 omega);
@@ -46,6 +47,7 @@ body.index {
         li {
           margin: 0;
           padding: 0;
+          line-height: 1em;
           list-style-type: none;
           display: inline-block;
           &.twitter {
