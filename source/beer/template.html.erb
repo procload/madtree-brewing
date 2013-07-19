@@ -13,7 +13,9 @@
     <header class="content-body-header">
       <h2><%= beer[:name] %></h2>
       <div class="pint">
+      <% unless ["axis-mundi", "pleasant-wheat", "flight-of-simcoe", "wheat-eater"].include? beer[:url] %>
         <%= image_tag "beer/#{beer[:url]}/img-pint.png" %>
+      <% end %>
       </div>
     </header>
     <div class="content-body">

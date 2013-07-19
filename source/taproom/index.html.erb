@@ -47,10 +47,9 @@
 <section class="content-area taproom">
   <div class="taproom-slideshow">
     <ul data-orbit data-options="bullets:false;">
-      <% 3.times do %>
+      <% 1.upto(4) do |i| %>
       <li>
-        <%= image_tag 'taproom/img-slide-1.png' %>
-        <div class="orbit-caption">Vivamus at urna malesuada, consequat nisl a, blandit nulla.</div> <!-- /orbit-caption -->
+      <%= image_tag "taproom/img-slide-#{i}.png" %>
       </li>
       <% end %>
     </ul>

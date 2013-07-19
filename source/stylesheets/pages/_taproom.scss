@@ -11,7 +11,7 @@ body.taproom {
     margin-bottom: calc-em(36px);
     $offset-x: -4;
     $offset-y: 0;
-    $beer-list: happy-amber, gnarly-brown, psychopathy, identity-crisis, axis-mundi, batch-one, sprye;  
+    $beer-list: happy-amber, gnarly-brown, psychopathy, identity-crisis, axis-mundi, pleasant-wheat, flight-of-simcoe, wheat-eater;  
     @for $i from 1 through length($beer-list) {
       $beer: nth($beer-list, $i);
       .#{$beer} {
@@ -26,10 +26,11 @@ body.taproom {
             $offset-x: ($offset-x - ($i - 4) * 82);
           }
           $offset-y: -117px;
-        }
-        @if $i == length($beer-list) {
-          $offset-x: 0;
-          $offset-y: -224px;
+          @if $i >= 7 {
+            $offset-x: 0;
+            $offset-x: ($offset-x - ($i - 7) * 82);
+            $offset-y: -224px;
+          }
         }
         background-position: ($offset-x + px) $offset-y;
         $offset-x: ($offset-x - 82);
