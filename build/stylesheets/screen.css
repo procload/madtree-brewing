@@ -6763,7 +6763,7 @@ body.taproom .nav-list {
     height: 107px;
     background-position: -82px -117px; }
   /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
-  body.taproom .nav-list .batch-one {
+  body.taproom .nav-list .pleasant-wheat {
     display: block;
     text-indent: -9999px;
     background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
@@ -6771,26 +6771,34 @@ body.taproom .nav-list {
     height: 107px;
     background-position: -164px -117px; }
   /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
-  body.taproom .nav-list .sprye {
+  body.taproom .nav-list .flight-of-simcoe {
     display: block;
     text-indent: -9999px;
     background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
     width: 76px;
     height: 107px;
     background-position: 0px -224px; }
-/* line 40, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  /* line 17, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+  body.taproom .nav-list .wheat-eater {
+    display: block;
+    text-indent: -9999px;
+    background: transparent url("/images/taproom/spr-beers.png") top left no-repeat;
+    width: 76px;
+    height: 107px;
+    background-position: -82px -224px; }
+/* line 41, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
 body.taproom .taproom-hours h2 {
   margin: 0; }
-/* line 43, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+/* line 44, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
 body.taproom .taproom-hours strong {
   text-transform: uppercase; }
-/* line 47, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+/* line 48, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
 body.taproom .content-area {
   padding: 0; }
-/* line 52, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+/* line 53, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
 body.taproom .taproom-slideshow li > img {
   width: 100%; }
-/* line 57, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
+/* line 58, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/pages/_taproom.scss */
 body.taproom .growler {
   margin-top: -3.75em;
   background: transparent url("/images/taproom/img-growler.png") no-repeat right;
