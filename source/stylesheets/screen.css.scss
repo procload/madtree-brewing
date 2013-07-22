@@ -63,12 +63,16 @@ h4, h5, h6 {
   clear: both;
   @include respond-to(48em) {
     clear: none;
-    @include span-columns(6 omega);
+    @include span-columns(8 omega);
   }
   position: relative;
   .nav-list {
     text-align: justify;
     font-size: .1px;
+    width: 50%;
+    @include respond-to('50em') {
+      float: right;
+    }
     &:after {
       content: '';
       display: inline-block;
@@ -85,6 +89,7 @@ h4, h5, h6 {
   } //nav-item
   .hours-social {
     @extend %group;
+    text-align: right;
     .hours {
       @include respond-to('48em') {
         float: left;

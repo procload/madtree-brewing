@@ -6867,7 +6867,7 @@ h4, h5, h6 {
     /* line 61, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
     .site-nav {
       clear: none;
-      width: 49.0566%;
+      width: 66.03774%;
       float: right;
       margin-right: 0;
       *margin-left: -1.25em;
@@ -6875,7 +6875,7 @@ h4, h5, h6 {
   /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
   html.lt-ie9 .site-nav {
     clear: none;
-    width: 49.0566%;
+    width: 66.03774%;
     float: right;
     margin-right: 0;
     *margin-left: -1.25em;
@@ -6883,58 +6883,69 @@ h4, h5, h6 {
   /* line 69, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-nav .nav-list {
     text-align: justify;
-    font-size: .1px; }
-    /* line 72, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+    font-size: .1px;
+    width: 50%; }
+    @media only screen and (min-width: 50em) {
+      /* line 69, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+      .site-nav .nav-list {
+        float: right; } }
+    /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
+    html.lt-ie9 .site-nav .nav-list {
+      float: right; }
+    /* line 76, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
     .site-nav .nav-list:after {
       content: '';
       display: inline-block;
       width: 100%; }
-  /* line 78, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 82, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-nav .nav-item {
     font-family: "alternate-gothic-no-3-d";
     font-size: 280em; }
-    /* line 81, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+    /* line 85, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
     .site-nav .nav-item a {
       text-transform: uppercase;
       color: #8f8e8e; }
-  /* line 88, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
-  .site-nav .hours-social .hours {
-    color: #c44702;
-    font-size: 0.8125em;
-    margin-bottom: 0.46154em; }
-    @media only screen and (min-width: 48em) {
-      /* line 88, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
-      .site-nav .hours-social .hours {
-        float: left;
-        line-height: 2em; } }
-    /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-    html.lt-ie9 .site-nav .hours-social .hours {
-      float: left;
-      line-height: 2em; }
+  /* line 90, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  .site-nav .hours-social {
+    text-align: right; }
     /* line 93, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
-    .site-nav .hours-social .hours .time {
-      display: block; }
+    .site-nav .hours-social .hours {
+      color: #c44702;
+      font-size: 0.8125em;
+      margin-bottom: 0.46154em; }
       @media only screen and (min-width: 48em) {
         /* line 93, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
-        .site-nav .hours-social .hours .time {
-          display: inline; } }
+        .site-nav .hours-social .hours {
+          float: left;
+          line-height: 2em; } }
       /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-      html.lt-ie9 .site-nav .hours-social .hours .time {
-        display: inline; }
-    @media only screen and (min-width: 48em) {
-      /* line 88, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
-      .site-nav .hours-social .hours {
-        text-align: right; } }
-    /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
-    html.lt-ie9 .site-nav .hours-social .hours {
-      text-align: right; }
+      html.lt-ie9 .site-nav .hours-social .hours {
+        float: left;
+        line-height: 2em; }
+      /* line 98, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+      .site-nav .hours-social .hours .time {
+        display: block; }
+        @media only screen and (min-width: 48em) {
+          /* line 98, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+          .site-nav .hours-social .hours .time {
+            display: inline; } }
+        /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
+        html.lt-ie9 .site-nav .hours-social .hours .time {
+          display: inline; }
+      @media only screen and (min-width: 48em) {
+        /* line 93, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+        .site-nav .hours-social .hours {
+          text-align: right; } }
+      /* line 49, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/partials/_custom_mixins.scss */
+      html.lt-ie9 .site-nav .hours-social .hours {
+        text-align: right; }
 
-/* line 113, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 118, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .wrapper {
   background: transparent url("/images/background.jpg") no-repeat top left;
   background-size: cover; }
 
-/* line 118, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 123, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .main-content:before {
   content: '';
   display: block;
@@ -6942,20 +6953,20 @@ h4, h5, h6 {
   background: none;
   border-width: 0px 0px 50px 0px;
   -webkit-border-image: url(/images/border-nav.png) 50 0 repeat; }
-/* line 126, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 131, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .main-content:after {
   content: '';
   display: block;
   width: 100%;
   border-width: 50px 0px 0px 0px;
   -webkit-border-image: url(/images/border-footer.png) 50 0 repeat; }
-/* line 134, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 139, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .main-content .main-container {
   padding-top: 1.875em;
   padding-bottom: 6.25em; }
 
 @media only screen and (min-width: 48em) {
-  /* line 141, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 146, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .sidebar-nav {
     width: 23.58491%;
     float: left;
@@ -6969,7 +6980,7 @@ html.lt-ie9 .sidebar-nav {
   display: inline; }
 
 @media only screen and (min-width: 48em) {
-  /* line 147, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 152, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .content-area {
     width: 74.5283%;
     float: right;
@@ -6984,15 +6995,15 @@ html.lt-ie9 .content-area {
   *margin-left: -1.25em;
   display: inline; }
 
-/* line 156, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+/* line 161, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
 .site-footer {
   background: #181818;
   background: rgba(24, 24, 24, 0.93);
   padding: 0.625em 0; }
-  /* line 161, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 166, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-footer .footer-content {
     text-align: right; }
-  /* line 165, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
+  /* line 170, /Users/rmerrill/Sites/madtree-brewing/source/stylesheets/screen.css.scss */
   .site-footer .copyright {
     color: white;
     color: rgba(255, 255, 255, 0.4);
