@@ -3,25 +3,24 @@
 %>
 <nav class="beer-nav sidebar-nav">
   <h2>Our Beers</h2>
-  <h3>Available Now</h3>
   <ul class="nav-list">
-    <h4>Available in Cans</h4>
+    <h4>Available in Cans &amp; Draft</h4>
     <% beers.each do |beer| %>
-    <li class="nav-item">
       <% if ["happy-amber", "gnarly-brown", "psychopathy"].include? beer.url %>
+      <li class="nav-item">
       <%= link_to beer.name, "/beer/#{beer.url}", class: "#{beer.url}" %>
+      </li> <!-- /nav-item -->
       <% end %>
-    </li> <!-- /nav-item -->
     <% end %>
   </ul> <!-- /nav -->
   <ul class="nav-list">
     <h4>Available in Draft Only</h4>
     <% beers.each do |beer| %>
+      <% if ["identity-crisis", "pleasant-wheat", "axis-mundi", "barrel-aged-axis-mundi"].include? beer.url %>
     <li class="nav-item">
-      <% if ["identity-crisis", "pleasant-wheat", "axis-mundi"].include? beer.url %>
       <%= link_to beer.name, "/beer/#{beer.url}", class: "#{beer.url}" %>
-      <% end %>
     </li> <!-- /nav-item -->
+      <% end %>
     <% end %>
   </ul> <!-- /nav -->
 </nav> <!-- /beer-nav -->

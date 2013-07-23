@@ -6,7 +6,9 @@
   <ul class="nav-list">
     <% beers.each do |beer| %>
     <li class="nav-item">
+    <% if ["happy-amber", "gnarly-brown", "psychopathy", "identity-crisis", "pleasant-wheat", "axis-mundi", "barrel-aged-axis-mundi"].include? beer[:url] %>
       <%= link_to beer.name, "/beer/#{beer.url}", class: "#{beer.url}" %>
+    <% end %>
     </li> <!-- /nav-item -->
     <% end %>
   </ul> <!--/nav -->
@@ -15,10 +17,26 @@
     <table class="hours-table">
       <tr>
         <td>
-          <strong>M&ndash;F</strong>
+          <strong>Wed</strong>
         </td>
         <td>
-          11am &ndash; 7pm
+          4pm &ndash; 10pm
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Thurs</strong>
+        </td>
+        <td>
+          4pm &ndash; 12pm
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <strong>Fri</strong>
+        </td>
+        <td>
+          4pm &ndash; 1am
         </td>
       </tr>
       <tr>
@@ -26,7 +44,7 @@
           <strong>Sat</strong>
         </td>
         <td>
-          11am &ndash; 9pm
+          12am &ndash; 1am
         </td>
       </tr>
       <tr>
@@ -34,7 +52,7 @@
           <strong>Sun</strong>
         </td>
         <td>
-          11am &ndash; 7pm
+          12pm &ndash; 8pm
         </td>
       </tr>
     </table>

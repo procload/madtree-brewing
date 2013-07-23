@@ -52,6 +52,8 @@ data.beers.details.each do |beer|
   proxy "/beer/#{beer[:url]}/index.html", "/beer/template.html", :locals => { :beer => beer }, :ignore => true
 end
 
+
+
 data.community.founders.details.each do |founder|
   proxy "/community/#{founder[:url]}/index.html", "/community/template.html", :locals => { :founder => founder}, :ignore => true
 end
