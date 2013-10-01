@@ -26,6 +26,8 @@ h1, h2, h3,
 h4, h5, h6 {
   line-height: 1.25;
   margin: 0 0 1em 0;
+  font-family: $font-family-display;
+  text-transform: uppercase;
 }
 
 h1 {
@@ -42,10 +44,13 @@ h3 {
 
 h4 {
   margin-bottom: .25em;
+  text-transform: uppercase;
 }
 
 h5 {
+  font-size: calc-em(18px);
   margin-bottom: .25em;
+  text-transform: uppercase;
 }
 
 p {
@@ -58,48 +63,101 @@ p {
 // Links
 // --------------------------------------------------
 
+a {
+  color: $red;
+}
+
 
 // Header
 // --------------------------------------------------
-.page-header {
+.site-header {
   @extend %group;
+  color: $gray-lighter;
+} //page-header
 
-}
+.header-toolbar {
+  background: $gray-dark; 
+  .toolbar-content {
+    @extend %container;
+    @extend %group;
+    padding-top: calc-em(6px);
+    padding-bottom: calc-em(6px);
+  } //toolbar-content 
+  .taproom-hours {
+    @include span-columns(6);
+    font-size: calc-em(13px);
+    line-height: calc-em(23px, 13px);
+    text-transform: uppercase;
+    span {
+      text-transform: none;
+    }
+  } //taproom-hours
+  .social-nav {
+    width: calc-em(110px);
+    float: right;
+  } //social-nav
+  .social-links {
+    @extend %zero-list;
+    li {
+      width: calc-em(18px);
+      height: calc-em(18px);
+      @include background(transparent image-url('sprites/spr-social.png') no-repeat 0 0);
+      text-indent: -9999px;
+      &.facebook {
+        background-position: 0 0;
+      }
+      &.foursquare {
+        background-position: 0 -25px;
+      }
+      &.google {
+        background-position: 0 -52px;
+      }
+      &.twitter {
+        background-position: 0 -78px;
+      }
+      &.yelp {
+        background-position: 0 -104px;
+      }
+    }
+  } //social-links
+} //header-toolbar
 
 // Navbar
 // --------------------------------------------------
 .navbar {
-  .main-nav {
-    @extend %container;
-    @extend %group;
-  }
+  background: $gray-darker;
+} //navbar
 
-  .brand {
-    font-size: calc-em(20px);
-    padding: calc-em(5px, 20px) 0;
-    @include span-columns(2);
-  }
+.navbar-inner {
+  @extend %container;
+  background: none;
+  @include box-shadow(none);
+  @include border-radius(0);
+  border: none;
+} //navbar-inner
 
-  .nav-collapse {
-    @extend %group;
-    @include span-columns(10 omega);
-    .nav {
-      @include span-columns(6, 10);
-    }
-    .navbar-form {
-      @include span-columns(4 omega, 10);
-      input {
-        height: calc-em(20px);
-
-      }
-      button {
-        margin-top: calc-em(4px, 14px);
-        line-height: calc-em(21px, 14px);
-        font-size: calc-em(14px);
-      }
-    }
+.main-nav {
+  @extend %zero-list;
+  font-size: .1px;
+  text-align: justify;
+  &:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
   }
-}
+  li {
+    display: inline-block;
+    width: 25%;
+  }
+  a {
+    display: block;
+    color: $white;
+    text-transform: uppercase;
+    font-size: calc-em(24px, .1px);
+    line-height: calc-em(36px, 24px);
+    font-family: $font-family-display;
+  }
+} //main-nav
 
 // Main Content
 // --------------------------------------------------
@@ -110,30 +168,42 @@ p {
   margin-bottom: calc-em(64px);
 } //main-content
 
-
-
-
 // Footer
 // --------------------------------------------------
 .site-footer {
+  background: $white;
+  padding: calc-em(32px) 0;
   .footer-content {
     @extend %container;
+    @extend %group;
   }
-  .contact-exxon {
-    text-align: center;
-    font-size: calc-em(12px);
-    margin-bottom: calc-em(6px, 12px);
-    padding-bottom: calc-em(6px, 12px);
-    border-bottom: 1px solid $gray-lighter;
-  }
-
-  .footer-nav {
-    .nav {
-      text-align: center;
-      li {
-        font-size: calc-em(12px);
-        display: inline-block;
-      }
+  .footer-nav-item {
+    @include span-columns(4);
+    @include nth-omega(3n);
+  } //footer-nav-item
+  .nav-item-header {
+    h4 {
+      letter-spacing: 3px;
+      color: $black;
+      font-size: calc-em(23px);
     }
+  }
+  .nav-item-body {
+    color: $red;
+   > ul {
+      @extend %zero-list;
+      > li {
+        display: block;
+        text-transform: uppercase;
+        font-family: $font-family-display;
+        margin-bottom: calc-em(16px);
+      }
+      p {
+        margin: 0;
+      }
+    } //ul
+  } //nav-item-body
+  .social-links {
+    @extend %zero-list;
   }
 }

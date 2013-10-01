@@ -1,32 +1,77 @@
 body.index {
+  .find-madtree {
+    @include span-columns(6);
+  } //find-madtree
+
+  .find-beer {
+    margin-bottom: calc-em(24px);
+    padding-bottom: calc-em(24px);
+    border-bottom: 1px solid $gray-dark;
+  } //find-beer
   
-  .page-header {
-    .home-slideshow {
-      @include respond-to('45em') {
-        @include span-columns(8);  
+  .address-phone {
+    @extend %group;
+    h5 {
+      color: $red;
+    }
+    .address,
+    .phone {
+      @include span-columns(3, 6);
+      @include nth-omega(2n);
+      p {
+        margin: 0;
       }
-      
+    } //address & //phone
+  } //address-phone
+
+
+  .address {
+
+  } //address
+  .phone {
+
+  } //phone
+  .upcoming-events {
+    @include span-columns(5 omega);
+  } //upcoming-events
+
+  .event-teaser {
+    margin-bottom: calc-em(24px);
+    &:last-of-type {
+      margin-bottom: 0;
     }
-    .header-callouts {
-      @include respond-to('45em') {
-        @include span-columns(4 omega);  
-      }
-    }
-  }
-  .page-body {
-    .homepage-news,
-    .homepage-meta,
-    .body-callouts {
-      @include span-columns(4);
-      h4 {
-        padding: calc-em(5px, 14px);
-        background: $gray-lighter;
-        font-size: calc-em(14px);
-      }
-    }
-    .body-callouts {
-      @include omega();
-    }
+    .date {
+      color: $red;
+    } //date
+  } //event-teaser
+  .teaser-header {
+    a {
+      color: $white;
+    } //a
+  } //teaser-header
+  .teaser-footer,
+  .section-footer {
+    font-size: calc-em(14px);
   }
 
-}
+  .section-footer {
+    text-transform: uppercase;
+  } //section-footer
+
+  .community-feedback {
+    clear: both;
+  } //community-feedback
+  
+  .twitter-stream {
+    @include span-columns(4);
+  } //twitter-stream
+
+  .instagram-stream {
+    @include span-columns(7 omega);
+  } //instagram-stream
+
+  .madtree-photo {
+    clear: both;
+  } //madtree-photo
+
+} //index
