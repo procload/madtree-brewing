@@ -164,7 +164,7 @@ a {
 
 .main-content {
   @extend %container;
-  @include susy-grid-background; 
+  /*@include susy-grid-background; */
   margin-bottom: calc-em(64px);
 } //main-content
 
