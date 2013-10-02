@@ -1,21 +1,60 @@
-.callout-with-image {
-  @extend %group;
-  .callout-image {
-    @include span-columns(1,4);
-    @include respond-to('45em') {
-      @include reset-columns(); 
-    }
-    @include respond-to('50em') {
-      @include span-columns(1,4);
-    }
+.tweet {
+  margin-bottom: calc-em(16px);
+  .tweet-content {
+    margin-bottom: calc-em(6px);
   }
-  .callout-text {
-    @include span-columns(3 omega,4);
-    @include respond-to('45em') {
-      @include reset-columns(); 
-    }
-    @include respond-to('50em') {
-      @include span-columns(3 omega,4);
+}
+
+.instagram-photos {
+  @extend %zero-list;
+  @extend %group;
+  text-align: justify;
+  font-size: .1px;
+  &:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
+  .photo {
+    display: inline-block;
+    font-size: calc-em(16px, .1px);
+    width: 15%;
+    margin-bottom: calc-em(16px);
+    img {
+      border: 5px solid $white;
+    }    
+  }
+}
+
+
+.form-control {
+  @include border-radius(0);
+  @include box-shadow(none);
+  border: none;
+  height: 39px;
+  .input-group & {
+    @include border-radius(0);
+  }
+}
+
+.btn {
+  @include border-radius(0);
+  @include box-shadow(none);
+  font-family: $font-family-display;
+  text-transform: uppercase;
+  color: $white;
+  border: none;
+  text-shadow: none;
+  font-size: calc-em(28px);
+  line-height: calc-em(40px, 28px);
+  padding: 0 calc-em(30px, 28px);
+  &:hover {
+    color: $white;
+  }
+  &.btn-default {
+    background: $red;
+    &:hover {
+      background: darken($red, 5%);
     }
   }
 }

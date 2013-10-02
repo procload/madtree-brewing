@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: $body-bg;
+  background: $body-bg image-url("backgrounds/subtle_carbon.png") repeat top left;
   color: $text-color;
   line-height: 1.5;
   font-size: 100%;
@@ -39,12 +39,13 @@ h2 {
 }
 
 h3 {
-
+  font-size: calc-em(32px);
+  margin: 0 0 calc-em(8px, 32px);
 }
 
 h4 {
   margin-bottom: .25em;
-  text-transform: uppercase;
+  font-size: calc-em(24px);
 }
 
 h5 {
@@ -126,6 +127,7 @@ a {
 // --------------------------------------------------
 .navbar {
   background: $gray-darker;
+  margin-bottom: calc-em(64px);
 } //navbar
 
 .navbar-inner {
@@ -216,7 +218,7 @@ a {
     color: $white;
     text-transform: uppercase;
     font-size: calc-em(28px, .1px);
-    line-height: calc-em(62px, 28pxpx);
+    line-height: calc-em(62px, 28px);
   }
 } //main-nav
 

@@ -1,12 +1,22 @@
 body.index {
   .find-madtree {
     @include span-columns(6);
+    h2 {
+      margin-bottom: 0;
+      font-size: calc-em(69px);
+    }
+    a {
+      color: $white;
+    }
   } //find-madtree
 
   .find-beer {
-    margin-bottom: calc-em(24px);
-    padding-bottom: calc-em(24px);
-    border-bottom: 1px solid $gray-dark;
+    padding: calc-em(24px);
+    @include background(transparent image-url('backgrounds/subtle_carbon_inverse.png') repeat top left);
+    margin-bottom: calc-em(32px);
+    .input-group {
+      margin-bottom: calc-em(16px);
+    }
   } //find-beer
   
   .address-phone {
@@ -16,30 +26,28 @@ body.index {
     }
     .address,
     .phone {
-      @include span-columns(3, 6);
-      @include nth-omega(2n);
       p {
         margin: 0;
+        font-weight: 300;
+        font-size: calc-em(26px);
       }
     } //address & //phone
   } //address-phone
 
 
   .address {
-
+      @include span-columns(4, 6);
   } //address
   .phone {
-
+      @include span-columns(2 omega, 6);
   } //phone
   .upcoming-events {
     @include span-columns(5 omega);
+    margin-bottom: calc-em(32px);
   } //upcoming-events
 
   .event-teaser {
     margin-bottom: calc-em(24px);
-    &:last-of-type {
-      margin-bottom: 0;
-    }
     .date {
       color: $red;
     } //date
@@ -60,6 +68,7 @@ body.index {
 
   .community-feedback {
     clear: both;
+    margin-bottom: calc-em(32px);
   } //community-feedback
   
   .twitter-stream {
