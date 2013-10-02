@@ -136,6 +136,66 @@ a {
   border: none;
 } //navbar-inner
 
+.header-hero {
+  @include background(transparent image-url('backgrounds/bg-home.png') no-repeat top left);
+  background-size: cover;
+  .hero-content {
+    @extend %container;
+    @extend %group;
+    overflow-y: hidden;
+    position: relative;
+    padding: calc-em(40px) 0 calc-em(180px);
+  }
+  .logo {
+    @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
+    float: left;
+  }
+  .top-beer-nav {
+    position: absolute;
+    width: 835px;
+    right: 0;
+  }
+  .beer-cans {
+  }
+  .happy-amber,
+  .psychopathy,
+  .gnarly-brown {
+    position: absolute;
+    a {
+      text-indent: -9999px;
+      display: block;
+    }
+  } //happy-amber, psychopathy, gnarly-brown
+  .happy-amber {
+    left: 0;
+    top: 200px;
+    a {
+      width: 323px;
+      height: 408px;
+      @include background(transparent image-url('beers/img-happy-amber-combined.png') no-repeat top left);
+    }
+  }
+  .gnarly-brown {
+    left: 260px;
+    top: 150px;
+    a {
+      width: 318px;
+      height: 406px;
+      @include background(transparent image-url('beers/img-gnarly-combined.png') no-repeat top left);
+    }
+  }
+  .psychopathy {
+    right: 0;
+    top: 100px;
+    a {
+      width: 326px;
+      height: 408px;
+      @include background(transparent image-url('beers/img-psycho-combined.png') no-repeat top left);
+    }
+  }
+}
+
+
 .main-nav {
   @extend %zero-list;
   font-size: .1px;
@@ -151,11 +211,12 @@ a {
   }
   a {
     display: block;
+    font-family: $nav-font-family;
+    font-weight: 300;
     color: $white;
     text-transform: uppercase;
-    font-size: calc-em(24px, .1px);
-    line-height: calc-em(36px, 24px);
-    font-family: $font-family-display;
+    font-size: calc-em(28px, .1px);
+    line-height: calc-em(62px, 28pxpx);
   }
 } //main-nav
 
