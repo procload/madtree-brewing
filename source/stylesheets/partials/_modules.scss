@@ -1,3 +1,15 @@
+#tweets {
+  li {
+    @extend %group;
+  }
+  .user {
+    display: block;
+    float: left;
+  }
+  .interact {
+    clear: both;
+  }
+}
 .tweet {
   margin-bottom: calc-em(16px);
   .tweet-content {

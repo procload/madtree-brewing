@@ -18,3 +18,6 @@ $ ->
 
     log('this `is` [c="color: red"]red[c]')
 
+    twitterFetcher.fetch('385564659522097152', 'tweets', 5, true, true, false);
+    
+
