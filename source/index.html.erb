@@ -1,76 +1,81 @@
-<section class="find-madtree">
-  <section class="find-beer">
-    <h2>Find Madtree Beer</h2>
-    <div class="input-group">
-      <input type="text" class="form-control">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-    </div><!-- /input-group -->
-    <%= link_to "Or browse by our list of retailers", "#" %>
-  </section> <!-- /find-beer -->
-  <section class="address-phone">
-    <div class="address">
-      <h5><i class="icon-map-marker"></i> Address</h5>
-      <p>5164 Kennedy Ave.</p>
-      <p>Cincinnati, OH 45213</p>
-    </div> <!-- /address -->
+<% content_for :site_header do %>
+  <%= partial 'partials/header-hero' %>
+  <%= partial 'partials/nav' %>
+<% end %>
 
-    <div class="phone">
-      <h5><i class="icon-phone"></i> Phone</h5>
-      <p>513-836-8733</p>
-    </div> <!-- /phone -->
-  </section> <!-- /address-phone -->
-</section> <!-- /find-madtree -->
 
-<section class="upcoming-events">
-  <header class="section-header upcoming-header">
-    <h3>Upcoming Events</h3>
-  </header> <!-- /upcoming-header -->
-  <% 3.times do %>
-  <article class="event-teaser">
-    <header class="teaser-header">
-      <a href="#"><span class="date">Oct. 16</span> &mdash; <strong>Expanded Taproom Space</strong></a>
-    </header> <!-- /teaser-header -->
-    <div class="teaser-body">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nummus in Croesi divitiis obscuratur, pars est tamen.</p>
-    </div> <!-- /teaser-body -->
-    <footer class="teaser-footer">
-      <%= link_to "Read more&hellip;", "#" %>
-    </footer> <!-- /teaser-footer -->
-  </article> <!-- /event-teaser -->
+<div class="container">
+  <section class="find-madtree">
+    <section class="find-beer">
+      <h2>Find Madtree Beer</h2>
+      <div class="input-group">
+        <input type="text" class="form-control">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Go!</button>
+        </span>
+      </div><!-- /input-group -->
+      <%= link_to "Or browse by our list of retailers", "#" %>
+    </section> <!-- /find-beer -->
+    <section class="address-phone">
+      <div class="address">
+        <h5><i class="icon-map-marker"></i> Address</h5>
+        <p>5164 Kennedy Ave.</p>
+        <p>Cincinnati, OH 45213</p>
+      </div> <!-- /address -->
+
+      <div class="phone">
+        <h5><i class="icon-phone"></i> Phone</h5>
+        <p>513-836-8733</p>
+      </div> <!-- /phone -->
+    </section> <!-- /address-phone -->
+  </section> <!-- /find-madtree -->
+
+  <section class="upcoming-events">
+    <header class="section-header upcoming-header">
+      <h3>Upcoming Events</h3>
+    </header> <!-- /upcoming-header -->
+    <% 3.times do %>
+      <article class="event-teaser">
+      <header class="teaser-header">
+        <a href="#"><span class="date">Oct. 16</span> &mdash; <strong>Expanded Taproom Space</strong></a>
+      </header> <!-- /teaser-header -->
+      <div class="teaser-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nummus in Croesi divitiis obscuratur, pars est tamen.</p>
+      </div> <!-- /teaser-body -->
+      <footer class="teaser-footer">
+        <%= link_to "Read more&hellip;", "#" %>
+      </footer> <!-- /teaser-footer -->
+    </article> <!-- /event-teaser -->
   <% end %>
-  <footer class="section-footer">
-    <%= link_to "View all upcoming events", "#" %>
-  </footer> <!-- /section-footer -->
+    <footer class="section-footer">
+      <%= link_to "View all upcoming events", "#" %>
+    </footer> <!-- /section-footer -->
+  </section> <!-- /upcoming-events -->
+</div>
 
-</section> <!-- /upcoming-events -->
-
-<section class="community-feedback">
-
+<section id="collage" class="community-feedback">
+  <div class="grid-sizer"></div>
+    <% (1..8).each do |i| %>
+      <div class="item">
+      <%= image_tag "collage/img-#{i}.png" %>
+    </div>
+    <% end %>
 </section> <!-- community-feedback -->
 
 
-<section class="twitter-stream">
-  <h4>Twitter</h4>
-  <div id="tweets"></div>
-  <% 6.times do %>
-    <%= partial 'partials/tweet' %>
-  <% end %>
-</section> <!-- /twitter-stream -->
+<div class="container">
+  <section class="twitter-stream">
+    <h4>Twitter</h4>
+    <div id="tweets"></div>
+  </section> <!-- /twitter-stream -->
 
-<section class="instagram-stream">
-  <h4>Instagram</h4>
-  <ul class="instagram-photos">
-    <% 30.times do %>
-      <li class="photo">
-        <%= link_to image_tag('http://placehold.it/75x75'), '#' %>
-      </li> <!-- /photo -->
-    <% end %>
-  </ul> <!-- /instagram-photos -->
-</section> <!-- /instagram-stream -->
-
+  <section class="instagram-stream">
+    <h4>Instagram</h4>
+    <ul id="#instagram-photos" class="instagram-photos">
+    </ul> <!-- /instagram-photos -->
+  </section> <!-- /instagram-stream -->
+</div>
 
 <section class="madtree-photo">
-
+  <%= image_tag "backgrounds/bg-about.png" %>
 </section> <!-- /madtree-photo -->

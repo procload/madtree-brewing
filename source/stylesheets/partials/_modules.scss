@@ -1,13 +1,22 @@
 #tweets {
-  li {
-    @extend %group;
-  }
-  .user {
-    display: block;
-    float: left;
+  ul {
+    @extend %zero-list;
+    li {
+      display: block;
+      p {
+        @include ellipsis;
+        white-space: normal;
+      }
+    }
   }
   .interact {
-    clear: both;
+    display: none;
+  }
+  .user {
+    img {
+      display: none;
+    }
+    span > span { display: none; }
   }
 }
 .tweet {
@@ -34,6 +43,8 @@
     margin-bottom: calc-em(16px);
     img {
       border: 5px solid $white;
+      width: calc-em(75px, 16px);
+      height: calc-em(75px, 16px);
     }    
   }
 }

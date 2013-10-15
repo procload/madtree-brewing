@@ -1,0 +1,28 @@
+<nav class="navbar section-navbar">
+  <div class="navbar-inner">
+    <ul class="section-nav">
+      <%= content_tag :li, link_to("Happy Amber", "#"), class: "active" %>
+      <%= content_tag :li, link_to("Psychopathy", "#") %>
+      <%= content_tag :li, link_to("Gnarly Brown", "#") %>
+      <%= content_tag :li, link_to("Identity Crisis", "#") %>
+      <%= content_tag :li, link_to("Axis Mundi", "#") %>
+      <li class="dropdown seasonal-beers">
+        <a href="#">Seasonal Beers <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <% 4.times do %>
+            <%= content_tag :li, link_to("Seasonal Beer", "#") %>
+          <% end %>
+        </ul> <!-- /dropdown-menu -->
+      </li> <!-- /Seasonal Beers -->
+      <li class="dropdown seasonal-beers">
+        <a href="#">Limited Releases <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <% 4.times do %>
+            <%= content_tag :li, link_to("Limited Release", "#") %>
+          <% end %>
+        </ul> <!-- /dropdown-menu -->
+      </li> <!-- /Limited Releases -->      
+    </ul> <!-- /section-nav -->
+  </div> <!-- /navbar-inner -->
+</nav> <!-- /navbar -->
+

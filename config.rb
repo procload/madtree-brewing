@@ -2,6 +2,7 @@ require "compass"
 require "susy"
 
 activate :livereload
+page '/channel.html', layout: 'none'
 
 ###
 # Helpers

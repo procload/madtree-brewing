@@ -1,4 +1,6 @@
 @import "partials/base";
+@import "pages/beers";
+@import "pages/happy-amber";
 @import "pages/home";
 
 // Global
@@ -121,6 +123,9 @@ a {
       }
     }
   } //social-links
+  .interior & {
+    margin-bottom: calc-em(176px);
+  }
 } //header-toolbar
 
 // Navbar
@@ -128,6 +133,14 @@ a {
 .navbar {
   background: $gray-darker;
   margin-bottom: calc-em(64px);
+  .interior & {
+    padding: calc-em(30px) 0;
+    margin-bottom: 0;
+  }
+  &.section-navbar {
+    padding: 0;
+    margin-bottom: calc-em(48px);
+  }
 } //navbar
 
 .navbar-inner {
@@ -136,6 +149,15 @@ a {
   @include box-shadow(none);
   @include border-radius(0);
   border: none;
+  .interior & {
+    position: relative;
+    .logo {
+      position: absolute;
+      top: -(calc-em(100px));
+      @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
+
+    }
+  }
 } //navbar-inner
 
 .header-hero {
@@ -220,15 +242,46 @@ a {
     font-size: calc-em(28px, .1px);
     line-height: calc-em(62px, 28px);
   }
+  .interior & {
+    float: right;
+    width: 60%;
+  }
 } //main-nav
+
+.section-navbar {
+  margin-bottom: calc-em(32px);
+}
+
+.section-nav {
+  @extend %zero-list;
+  font-family: $nav-font-family;
+  font-size: .1px;
+  text-align: justify;
+  &:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+  li {
+    display: inline-block;
+    font-size: calc-em(24px, .1px);
+    text-transform: uppercase;
+    a {
+      line-height: 2em;
+    }
+  }
+} //section-nav
+
 
 // Main Content
 // --------------------------------------------------
 
-.main-content {
+.container {
   @extend %container;
+}
+
+.main-content {
   /*@include susy-grid-background; */
-  margin-bottom: calc-em(64px);
 } //main-content
 
 // Footer

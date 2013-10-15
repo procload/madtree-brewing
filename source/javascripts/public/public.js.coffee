@@ -15,9 +15,33 @@ $ ->
       $(this).find("input[placeholder]").each ->
         @value = ""  if @value is $(this).attr("placeholder")
 
+    handleTweets = (tweets) ->
+      x = tweets.length
+      n = 0
+      element = document.getElementById("tweets")
+      html = ""
 
-    log('this `is` [c="color: red"]red[c]')
+      while n < x
+        tweetText = $("#{tweets[n]} p.tweet")[1].innerHTML
+        tweetUser = $($("#{tweets[n]} p.tweet")[0].innerHTML)
+        tweetUserLink = tweetUser[0].href
+        tweetUsername = tweetUser.children("span:last-child")[0].innerHTML
+        html += "<div class='tweet'>"
+        html += "<div class='tweet-content'><p>#{tweetText}</p></div>"
+        html += "<cite class='tweet-source'><a href='#{tweetUserLink}'>#{tweetUsername}</a></cite>"
+        html += "</div>"
+        n++
+      element.innerHTML = html
 
-    twitterFetcher.fetch('385564659522097152', 'tweets', 5, true, true, false);
+
+    twitterFetcher.fetch('385564659522097152', 'tweets', 5, true, true, false, 'default', false, handleTweets, false);
     
-
+      
+    feed = new Instafeed(
+      get: "tagged"
+      tagName: "awesome"
+      target: "#instagram-photos" 
+      clientId: "6add59c8eadf4ca0a4f718bfda1e3699"
+      template: '<li class="photo"><a href="{{link}}"><img src="{{image}}" /></a></li>'
+      )
+    feed.run()

@@ -1,0 +1,23 @@
+body.beers {
+  .beer-description {
+    @extend %group;
+    a {
+      color: $white;
+    }
+  } //beer-description
+  .beer-images {
+    @include span-columns(4);
+    text-align: center;
+  } //beer-images
+  .beer-details {
+    @include span-columns(7 omega);
+    h2 {
+      font-size: calc-em(42px);
+      margin: 0;
+    }
+    p {
+      font-size: calc-em(23px);
+      color: $black;
+    }
+  } //beer-details
+} //beers

@@ -1,0 +1,36 @@
+body.happy-amber {
+  background: $happy-amber; 
+  @include background($happy-amber image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
+  .site-header {
+    color: $happy-amber;
+  }
+  .header-toolbar {
+    background: #721F0A;
+    background: rgba(97,19,9,.80)
+  }
+  .navbar {
+    background: rgba(160,52,14,.87);
+    &.section-navbar {
+      background: #721F0A;
+      background: rgba(97,19,9,.80);
+      a {
+        color: $happy-amber;
+      }
+    }
+  }
+  .site-footer {
+    background: #721F0A;
+    a {
+      color: $happy-amber;
+    }
+  }
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $happy-amber;
+  }
+} //happy-amber
+
