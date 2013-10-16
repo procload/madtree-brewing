@@ -53,6 +53,22 @@
   </section> <!-- /upcoming-events -->
 </div>
 
+<section class="collage">
+  <ul class="collage-row">
+    <% 6.times do %>
+    <li><%= link_to image_tag("collage/img-collage-1.png"), "#" %></li>
+    <li><%= link_to image_tag("collage/img-collage-2.png"), "#" %></li>
+    <li><%= link_to image_tag("collage/img-collage-3.png"), "#" %></li>
+    <% end %>
+  </ul> <!-- /community-row -->
+  <ul class="collage-row offset">
+    <% 6.times do %>
+    <li><%= link_to image_tag("collage/img-collage-2.png"), "#" %></li>
+    <li><%= link_to image_tag("collage/img-collage-3.png"), "#" %></li>
+    <li><%= link_to image_tag("collage/img-collage-1.png"), "#" %></li>
+    <% end %>
+  </ul> <!-- /collage-row -->
+</section> <!-- /collage -->
 
 
 <div class="container">

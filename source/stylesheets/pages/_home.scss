@@ -43,7 +43,7 @@ body.index {
   } //phone
   .upcoming-events {
     @include span-columns(5 omega);
-    margin-bottom: calc-em(32px);
+    margin-bottom: calc-em(80px);
   } //upcoming-events
 
   .event-teaser {
@@ -66,13 +66,14 @@ body.index {
     text-transform: uppercase;
   } //section-footer
 
-  .community-feedback {
+  .collage {
     clear: both;
-    margin-bottom: calc-em(32px);
+    margin-bottom: calc-em(80px);
   } //community-feedback
   
   .twitter-stream {
     @include span-columns(4);
+    margin-bottom: calc-em(80px);
   } //twitter-stream
 
   .instagram-stream {

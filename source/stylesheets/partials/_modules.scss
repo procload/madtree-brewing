@@ -23,6 +23,10 @@
   margin-bottom: calc-em(16px);
   .tweet-content {
     margin-bottom: calc-em(6px);
+    p {
+      @include ellipsis;
+      white-space: inherit;
+    }
   }
 }
 
@@ -147,4 +151,32 @@
     }
   }
 
+}
+
+
+.collage {
+  overflow: hidden;
+}
+.collage-row {
+  @extend %zero-list;
+  width: 14000px;
+  @extend %group;
+  position: relative;
+  li {
+    float: left;
+  }
+  img {
+    border: 2px solid $black;
+  }
+  a {
+    display: block;
+    -webkit-filter: grayscale(1);    
+    @include transition(all .2s linear);
+    &:hover {
+      -webkit-filter: none;
+    }
+  }
+  &.offset {
+    left: -150px;
+  }
 }
