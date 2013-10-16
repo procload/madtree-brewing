@@ -1,0 +1,47 @@
+<% content_for :page_classes do %>
+  interior
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+  <%= partial '../partials/section-nav-community' %>
+<% end %>
+
+
+<div class="container">
+  <section class="founders">
+    <h2>Founders</h2>
+    <div class="founder-photos">
+      <ul class="photo-grid">
+        <li class="founder active"><%= link_to image_tag("community/brady.png"), "#", data: { target: "#brady" } %></li>
+        <li class="founder "><%= link_to image_tag("community/jeff.png"), "#", data: { target: "#jeff" } %></li>
+        <li class="founder "><%= link_to image_tag("community/kenny.png"), "#", data: { target: "#kenny" } %></li>
+        <% 3.times do %>
+          <li class="empty"><%= link_to image_tag("community/bg-about.png"), "#" %></li>
+        <% end %>
+      </ul>
+    </div> <!-- /founder-photos -->
+    <div class="founder-text">
+      <div class="founder-info active" id="brady">
+        <div class="content">
+          <h3>Brady Duncan</h3>
+          <h4>One of the founders</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quanta sit alias, nunc tantum possitne esse tanta. Cur ipse Pythagoras et Aegyptum lustravit et Persarum magos adiit? Quorum altera prosunt, nocent altera. Ego vero volo in virtute vim esse quam maximam; Non dolere, inquam, istud quam vim habeat postea videro; Duo Reges: constructio interrete. Cum praesertim illa perdiscere ludus esset. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi</p>
+        </div>
+      </div>
+      <div class="founder-info" id="jeff">
+        <div class="content">
+          <h3>Jeff Hunt</h3>
+          <h4>One of the founders</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quanta sit alias, nunc tantum possitne esse tanta. Cur ipse Pythagoras et Aegyptum lustravit et Persarum magos adiit? Quorum altera prosunt, nocent altera. Ego vero volo in virtute vim esse quam maximam; Non dolere, inquam, istud quam vim habeat postea videro; Duo Reges: constructio interrete. Cum praesertim illa perdiscere ludus esset. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi</p>
+        </div>
+      </div>
+      <div class="founder-info" id="kenny">
+        <div class="content">
+          <h3>Kenny McNutt</h3>
+          <h4>One of the founders</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quanta sit alias, nunc tantum possitne esse tanta. Cur ipse Pythagoras et Aegyptum lustravit et Persarum magos adiit? Quorum altera prosunt, nocent altera. Ego vero volo in virtute vim esse quam maximam; Non dolere, inquam, istud quam vim habeat postea videro; Duo Reges: constructio interrete. Cum praesertim illa perdiscere ludus esset. Quae cum praeponunt, ut sit aliqua rerum selectio, naturam videntur sequi</p>
+        </div>
+      </div>
+    </div> <!-- /foudner-text -->
+  </section>
+</div>

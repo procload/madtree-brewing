@@ -33,8 +33,8 @@ $ ->
         n++
       element.innerHTML = html
 
-
-    twitterFetcher.fetch('385564659522097152', 'tweets', 5, true, true, false, 'default', false, handleTweets, false);
+    
+    twitterFetcher.fetch('385564659522097152', 'tweets', 5, true, true, false, 'default', false, handleTweets, false) if $("body.index").length > 0
     
       
     feed = new Instafeed(
@@ -45,3 +45,10 @@ $ ->
       template: '<li class="photo"><a href="{{link}}"><img src="{{image}}" /></a></li>'
       )
     feed.run()
+
+    $(".founder a").click (e) ->
+      e.preventDefault()
+      target = $(this).data("target")
+      $(".founder-info.active").removeClass("active")
+      $(target).addClass("active")
+

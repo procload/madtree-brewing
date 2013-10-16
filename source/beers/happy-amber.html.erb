@@ -14,21 +14,25 @@
     <div class="beer-details">
       <h2>Happy Amber</h2>
       <p>This dry-hopped ale combines carmel and biscuit malt flavors in happy equilibrium with late addition American hops. The approachable balance is intentional although the name is "hoppy accident."</p>
+      <p>
       <%= link_to "<i class='icon-beaker'></i> Download the recipe for Happy Amber here", "#" %>
+      </p>
       <table class="table beer-stats">
-        <tr>
-          <th>ABV</th>
-          <td>6.9%</td>
-          <th>IBU</th>
-          <td>70</td>
+        <tr class="numbers">
+          <td rowspan="3" class="glass"><%= image_tag "beers/img-happy-amber-glass.png" %></td>
+          <th class="abv-label">ABV</th>
+          <td class="abv-amount">6.9%</td>
+          <th class="ibu-label">IBU</th>
+          <td class="ibu-amount">70</td>
+          <td class="space"></td>
         </tr>
         <tr>
           <th>Malts</th>
-          <td colspan="3">2-Row, Munich 10L, Melanoidin, Carmel 80L, Victory</td>
+          <td colspan="4" class="ingredients">2-Row, Munich 10L, Melanoidin, Carmel 80L, Victory</td>
         </tr>
         <tr>
           <th>Hops</th>
-          <td colspan="3">Cascade, Chinook</td>
+          <td colspan="4" class="ingredients hops">Cascade, Chinook</td>
         </tr>
       </table> <!-- /beer-stats -->
     </div> <!-- /beer-details -->

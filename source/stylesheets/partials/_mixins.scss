@@ -28,6 +28,23 @@
   }
 }
 
+// Responsive equal width layouts made easy
+%responsively-space {
+  @extend %zero-list;
+  font-size: .1px;
+  text-align: justify;
+  width: 100%;
+  display: inline-block;
+  &:after {
+    content: '';
+  }
+  li {
+    display: inline-block;
+    font-size: calc-em($base-font-size, .1px);
+  }
+}
+
+
 // Clearfix
 %group {
   *zoom:1;

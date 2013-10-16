@@ -1,6 +1,9 @@
-body.happy-amber {
+body.interior.happy-amber {
   background: $happy-amber; 
   @include background($happy-amber image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
+  .caret {
+    border-top-color: $happy-amber;
+  }
   .site-header {
     color: $happy-amber;
   }
@@ -31,6 +34,10 @@ body.happy-amber {
   }
   .nav-item-body {
     color: $happy-amber;
+  }
+  .beer-stats {
+    border-color: rgba(97,19,9,.50);
+    background: rgba(160,52,14,.6);
   }
 } //happy-amber
 

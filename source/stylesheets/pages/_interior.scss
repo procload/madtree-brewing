@@ -1,0 +1,13 @@
+body.interior {
+  .navbar {
+      background: #212121;
+      background: rgba(255,255,255,.10);
+    &.section-navbar {
+      background: #212121;
+      background: rgba(33,33,33,.80);
+      a {
+        color: $white;
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+body.community {
+  .founders {
+    @extend %group;
+    overflow: hidden;
+    margin-bottom: calc-em(128px);
+  }
+  .founder-photos {
+    background: rgba(255,255,255,.2);
+    float: left;
+    width: 60%;
+    padding: calc-em(10px);
+  }
+  .founder-text {
+    background: rgba(255,255,255,.2);
+    float: left;
+    padding: calc-em(10px);
+    width: 40%;
+    @include equalize-column; 
+  }
+  .founder-info {
+    display: none;
+    background: rgba(0,0,0,.4); 
+    padding: calc-em(20px);
+    &.active {
+      display: block;
+    }
+  }
+}

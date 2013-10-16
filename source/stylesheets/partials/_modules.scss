@@ -81,3 +81,70 @@
     }
   }
 }
+
+
+.beer-stats {
+  border-width: 5px;
+  border-style: solid;
+  font-family: $font-family-display;
+  font-size: calc-em(32px);
+  th {
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  tbody {
+    > tr > th,
+    > tr > td {
+      border: none;
+      &.glass {
+        padding: calc-em(20px, 32px) calc-em(30px, 32px);
+      }
+      &.abv-label {
+      
+      }
+      &.abv-amount {
+      }
+      &.space {
+        width: calc-em(150px, 32px);
+      }
+    }
+  }
+  .ingredients {
+    font-size: calc-em(16px, 32px);
+    font-family: $font-family-base;
+    &.hops {
+      padding-top: calc-em(18px, 16px);
+    }
+  }
+  .numbers {
+    text-transform: uppercase;
+  }
+}
+
+
+.photo-grid {
+  @extend %responsively-space;
+  li {
+    width: 33.333333%;
+    border: 1px solid $black;
+    a {
+      display: block;
+    }
+    img {
+      width: 100%;
+    }
+    &.empty {
+      &:nth-of-type(1n) {
+        opacity: .3;  
+      }
+      &:nth-of-type(2n) {
+        opacity: .6;  
+      }
+      &:nth-of-type(3n) {
+        opacity: .1;  
+      }
+    }
+  }
+
+}

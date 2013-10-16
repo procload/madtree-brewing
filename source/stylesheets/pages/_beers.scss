@@ -1,6 +1,7 @@
 body.beers {
   .beer-description {
     @extend %group;
+    margin-bottom: calc-em(64px);
     a {
       color: $white;
     }

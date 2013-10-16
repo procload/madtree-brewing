@@ -18,6 +18,7 @@
 </head>
 <body class="<%= page_classes %> <%= yield_content :page_classes %>">
 <div id="fb-root"></div>
+<!--
 <script>
 window.fbAsyncInit = function() {
         FB.init({ appId: '178334599020182',
@@ -35,6 +36,9 @@ window.fbAsyncInit = function() {
  
  
         // run once with current status and whenever the status changes
+    FB.api('/me', function(response) {
+      alert('Your name is ' + response.name);
+    });
     };
     (function() {
         var e = document.createElement('script'); e.async = true;
@@ -42,8 +46,9 @@ window.fbAsyncInit = function() {
             + '//connect.facebook.net/en_US/all.js';
         document.getElementById('fb-root').appendChild(e);
     }());
-</script>
-  
+
+</script> -->
+
   <header class="site-header">
     <%= partial 'partials/header-toolbar' %>
     <%= yield_content :site_header %>

@@ -1,7 +1,9 @@
 @import "partials/base";
 @import "pages/beers";
+@import "pages/community";
 @import "pages/happy-amber";
 @import "pages/home";
+@import "pages/interior";
 
 // Global
 // --------------------------------------------------
@@ -21,6 +23,9 @@ body {
   @include container;
 }
 
+img {
+  max-width: 100%;
+}
 
 // Typography
 // --------------------------------------------------
@@ -232,6 +237,7 @@ a {
   li {
     display: inline-block;
     width: 25%;
+    text-align: center;
   }
   a {
     display: block;
