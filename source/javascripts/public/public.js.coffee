@@ -39,10 +39,12 @@ $ ->
       
     feed = new Instafeed(
       get: "tagged"
-      tagName: "awesome"
-      target: "#instagram-photos" 
+      tagName: "madtreebrewing"
+      target: "instagram-photos" 
+      limit: "32"
+      resolution: "standard_resolution"
       clientId: "6add59c8eadf4ca0a4f718bfda1e3699"
-      template: '<li class="photo"><a href="{{link}}"><img src="{{image}}" /></a></li>'
+      template: '<li class="photo"><a href="{{link}}"><img src="{{image}}" /></a><div class="insta-modal"><a href="#" class="close-modal"><i class="icon-remove"></i></a><div class="insta-content"><img src="{{image}}" /></div></div></li>'
       )
     feed.run() if $("body.index").length > 0
 
@@ -52,3 +54,13 @@ $ ->
       $(".founder-info.active").removeClass("active")
       $(target).addClass("active")
 
+
+    $("#instagram-photos").on "click", ".photo a", (e) ->
+      e.preventDefault()
+      $(this).siblings(".insta-modal").addClass("insta-modal-show")
+      $(".insta-modal-overlay").addClass("insta-modal-show")
+
+    $("#instagram-photos").on "click", ".close-modal", (e) ->
+      e.preventDefault()
+      $(".insta-modal").removeClass("insta-modal-show")
+      $(".insta-modal-overlay").removeClass("insta-modal-show")

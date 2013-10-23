@@ -66,6 +66,10 @@ p {
   &:last-child {
     margin-bottom: 0;
   }
+  &.disclaimer {
+    font-size: calc-em(12px);
+    margin-bottom: 0;
+  }
 }
 
 // Links
@@ -111,20 +115,18 @@ a {
       height: calc-em(18px);
       @include background(transparent image-url('sprites/spr-social.png') no-repeat 0 0);
       text-indent: -9999px;
+      @include image-2x("sprites/spr-social.png", calc-em(20px), calc-em(20px));
       &.facebook {
         background-position: 0 0;
       }
-      &.foursquare {
-        background-position: 0 -25px;
-      }
-      &.google {
-        background-position: 0 -52px;
+      &.untappd {
+        background-position: 0 -24px;
       }
       &.twitter {
-        background-position: 0 -78px;
+        background-position: 0 -49px;
       }
       &.yelp {
-        background-position: 0 -104px;
+        background-position: 0 -76px;
       }
     }
   } //social-links

@@ -20,10 +20,10 @@ body.index {
   } //find-beer
   
   .address-phone {
-    @extend %group;
     h5 {
       color: $red;
     }
+    .email,
     .address,
     .phone {
       p {
@@ -31,7 +31,13 @@ body.index {
         font-weight: 300;
         font-size: calc-em(26px);
       }
-    } //address & //phone
+    } //address & //phone & //email
+    .address {
+      margin-bottom: calc-em(16px);
+    }
+    .email {
+      clear: both;
+    }
   } //address-phone
 
 
