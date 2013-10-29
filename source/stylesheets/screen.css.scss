@@ -133,7 +133,7 @@ a {
     }
   } //social-links
   .interior & {
-    margin-bottom: calc-em(176px);
+    margin-bottom: calc-em(110px);
   }
 } //header-toolbar
 
@@ -162,7 +162,7 @@ a {
     position: relative;
     .logo {
       position: absolute;
-      top: -(calc-em(100px));
+      top: -(calc-em(102px));
       @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
 
     }
@@ -177,7 +177,8 @@ a {
     @extend %group;
     overflow-y: hidden;
     position: relative;
-    padding: calc-em(40px) 0 calc-em(180px);
+    padding-top: calc-em(40px); 
+    padding-bottom: calc-em(180px);
   }
   .logo {
     @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
