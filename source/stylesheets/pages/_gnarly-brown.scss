@@ -1,0 +1,45 @@
+body.gnarly-brown {
+  background: $gnarly-brown; 
+  @include background($gnarly-brown image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
+  .caret {
+    border-top-color: $gnarly-brown;
+  }
+  .site-header {
+    color: $gnarly-brown;
+  }
+  .header-toolbar {
+    background: #721F0A;
+    background: rgba(141, 88, 27, .8);
+  }
+  .navbar {
+    background: rgba(141, 88, 27, .95);
+    &.section-navbar {
+      background: #721F0A;
+
+      background: rgba(141, 88, 27, .8);
+      a {
+        color: $gnarly-brown;
+      }
+    }
+  }
+  .site-footer {
+    background: #B47326;
+    a {
+      color: $gnarly-brown;
+    }
+  }
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $gnarly-brown;
+  }
+  .beer-stats {
+    border-color: rgba(141, 88, 27, .8);
+    background: rgba(141, 88, 27, .6);
+  }
+} //happy-amber
+
+

@@ -2,7 +2,9 @@ body.interior {
   .navbar {
       background: #212121;
       background: rgba(255,255,255,.10);
+      @include border-radius(0);
     &.section-navbar {
+      @include border-radius(0);
       background: #212121;
       background: rgba(33,33,33,.80);
       a {

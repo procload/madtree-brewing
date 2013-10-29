@@ -1,0 +1,40 @@
+<% content_for :page_classes do %>
+  interior psychopathy 
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+  <%= partial '../partials/section-nav-beer' %>
+<% end %>
+
+<div class="container">
+  <section class="beer-description">
+    <div class="beer-images">
+      <%= image_tag "beers/img-happy-amber-combined-rev.png" %>
+    </div> <!-- /beer-images -->
+    <div class="beer-details">
+      <h2>Psyc<span>hop</span>athy</h2>
+      <p>This dry-hopped ale combines carmel and biscuit malt flavors in happy equilibrium with late addition American hops. The approachable balance is intentional although the name is "hoppy accident."</p>
+      <p>
+      <%= link_to "<i class='icon-beaker'></i> Download the recipe for Happy Amber here", "#" %>
+      </p>
+      <table class="table beer-stats">
+        <tr class="numbers">
+          <td rowspan="3" class="glass"><%= image_tag "beers/img-happy-amber-glass.png" %></td>
+          <th class="abv-label">ABV</th>
+          <td class="abv-amount">6.9%</td>
+          <th class="ibu-label">IBU</th>
+          <td class="ibu-amount">70</td>
+          <td class="space"></td>
+        </tr>
+        <tr>
+          <th>Malts</th>
+          <td colspan="4" class="ingredients">2-Row, Munich 10L, Melanoidin, Carmel 80L, Victory</td>
+        </tr>
+        <tr>
+          <th>Hops</th>
+          <td colspan="4" class="ingredients hops">Cascade, Chinook</td>
+        </tr>
+      </table> <!-- /beer-stats -->
+    </div> <!-- /beer-details -->
+  </section> <!-- /beer-description -->
+</div>

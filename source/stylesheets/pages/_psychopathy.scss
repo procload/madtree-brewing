@@ -1,0 +1,54 @@
+body.psychopathy {
+  background: $psychopathy; 
+  @include background($psychopathy image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
+  .caret {
+    border-top-color: $psychopathy;
+  }
+  .site-header {
+    color: $psychopathy;
+  }
+  .header-toolbar {
+    background: #721F0A;
+    background: rgba(81, 78, 26, .8);
+  }
+  .navbar {
+    background: rgba(81, 78, 26, .95);
+    &.section-navbar {
+      background: #721F0A;
+
+      background: rgba(81, 78, 26, .8);
+      a {
+        color: $psychopathy;
+      }
+    }
+  }
+  .beer-details {
+    h2 {
+      color: #77732B;
+      color: rgba(81, 78, 26, 1);
+      > span {
+        color: $white;
+      }
+    }  
+  }
+  .site-footer {
+    background: #77732B;
+    a {
+      color: $psychopathy;
+    }
+  }
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $psychopathy;
+  }
+  .beer-stats {
+    border-color: rgba(81, 78, 26, .8);
+    background: rgba(81, 78, 26, .6);
+  }
+} //happy-amber
+
+
