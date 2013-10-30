@@ -152,6 +152,7 @@ a {
   z-index: 10;
 
   @include respond-to(41.25em) {
+    min-height: 0;
     position: static;
     top: auto;
     left: auto;
@@ -206,10 +207,14 @@ a {
   .hero-content {
     @extend %container;
     @extend %group;
-    overflow-y: hidden;
+    overflow: hidden;
     position: relative;
     padding-top: calc-em(40px); 
     padding-bottom: calc-em(180px);
+    @include respond-to(41.25em) {
+      overflow:visible;
+      overflow-y: hidden;
+    }
   }
   .logo {
     @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
@@ -250,22 +255,30 @@ a {
     }
   } //happy-amber, psychopathy, gnarly-brown
   .happy-amber {
-    /*left: 0;*/
     right: 230px;
-    /*top: 200px;*/
+    @include respond-to(41.25em) {
+      left: 0;
+      top: 200px;
+    }
     a {
-      /*width: 323px;*/
+      @include respond-to(41.25em) {
+        width: 323px;
+      }
       height: 408px;
       @include background(transparent image-url('beers/img-happy-amber-combined.png') no-repeat top left);
       background-size: contain;
     }
   }
   .gnarly-brown {
-    /*left: 260px;*/
     right: 80px;
-    /*top: 150px;*/
+    @include respond-to(41.25em) {
+      top: 150px;
+      left: 260px;
+    }
     a {
-      /*width: 318px;*/
+      @include respond-to(41.25em) {
+        width: 318px;
+      }
       height: 406px;
       @include background(transparent image-url('beers/img-gnarly-combined.png') no-repeat top left);
       background-size: contain;
@@ -273,9 +286,14 @@ a {
   }
   .psychopathy {
     right: -70px;
-    /*top: 100px;*/
+    @include respond-to(41.25em) {
+      right: 0;
+      top: 100px;
+    }
     a {
-      /*width: 326px;*/
+      @include respond-to(41.25em) {
+        width: 326px;
+      }
       height: 408px;
       @include background(transparent image-url('beers/img-psycho-combined.png') no-repeat top left);
       background-size: contain;
@@ -321,9 +339,15 @@ a {
     display: block;
     &:nth-child(odd) {
       background: lighten($gray-darker, 4%); 
+      @include respond-to(41.25em) {
+        background: none;
+      }
     }
     &:nth-child(even) {
       background: lighten($gray-darker, 2%); 
+      @include respond-to(41.25em) {
+        background: none;
+      }
     }
   }
     a {
@@ -336,6 +360,7 @@ a {
       color: $white;
       text-transform: uppercase;
       @include respond-to(41.25em) {
+        padding: 0;
         font-size: calc-em(28px, .1px);
         line-height: calc-em(62px, 28px);
       }
