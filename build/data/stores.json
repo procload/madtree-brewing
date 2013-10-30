@@ -1,0 +1,572 @@
+[
+	{
+		"id":0,
+		"company":"1215 Vine St. Wine Bar",
+		"address":"1215 Vine St., Cincinnati, OH 45202",
+		"lat":39.108862,
+		"lng":-84.514933,
+		"beer":"can"
+	},
+	{
+		"id":1,
+		"company":"2 Putt Tavern and Grill",
+		"address":"6040 St. Rt. 48, Maineville, OH 45039",
+		"lat":39.315059,
+		"lng":-84.22077,
+		"beer":"draft"
+	},
+	{
+		"id":2,
+		"company":"20th Century Theatre",
+		"address":"3036 madison rd, Cincinnati, OH 45209",
+		"lat":39.151709,"lng":-84.432567,
+		"beer":"draft, can"
+	},	
+	{	"id":3,
+		"company":"50 West Brewing Company",
+		"address":"7668 Wooster Pike, Cincinnati, OH 45227",
+		"lat":39.138508,"lng":-84.35273,
+		"beer":"draft"
+	},
+	{
+		"id":4,
+		"company":"A Bottle or Two",
+		"address":"11920 Montgomery Rd, Cincinnati, OH 45249",
+		"lat":39.285984,
+		"lng":-84.30918,
+		"beer":"can"
+	},
+	
+	{"id":5,"company":"A Tavola","address":"1220 Vine St, Cincinnati, OH 45202","lat":39.10892,"lng":-84.51491,"beer":"draft"},
+	
+	{"id":6,"company":"Allyn's Cafe","address":"3538 Columbia Parkway, Cincinnati, OH 45226","lat":39.116498,"lng":-84.437585,"beer":"draft"},
+	
+	{"id":7,"company":"Ameristop - Fairfield","address":"6330 Pleasant Ave., Fairfield, OH 45014","lat":39.310253,"lng":-84.561558,"beer":"can"},
+	
+	{"id":8,"company":"Ameristop - Fields Ertel","address":"8675 Fields Ertel Rd., Mason, OH 45040","lat":39.293154,"lng":-84.328604,"beer":"can"},
+	
+	{"id":9,"company":"Ameristop - Springdale Rd.","address":"5687 Springdale Rd., Cincinnati, OH 45247","lat":39.232856,"lng":-84.628007,"beer":"can"},
+	
+	{"id":10,"company":"Ameristop-Liberty Twp","address":"6583 Cin-Day Rd., Middletown, OH 45044","lat":39.515058,"lng":-84.398276,"beer":"can"},
+	
+	{"id":11,"company":"Ameristore","address":"6545 Harrison Ave. 1st Floor, Cincinnati, OH 45247","lat":39.193781,"lng":-84.660222,"beer":"can"},
+	
+	{"id":12,"company":"Arlin's Ludlow","address":"307 Ludlow Ave, Cincinnati, OH 45220","lat":39.143534,"lng":-84.519681,"beer":"draft"},
+	
+	{"id":13,"company":"Arnold's - Cincinnati","address":"210 E 8th St, Cincinnati, OH 45202","lat":39.105173,"lng":-84.510123,"beer":"draft, can"},
+	
+	{"id":14,"company":"Art for the Heart","address":"6980 Cambridge Ave., Mariemont, OH 45227","lat":39.148766,"lng":-84.372392,"beer":"can"},
+	
+	{"id":15,"company":"Art of Entertaining","address":"2019 Madison Rd., Cincinnati, OH 45208","lat":39.132136,"lng":-84.462112,"beer":"can"},
+	
+	{"id":16,"company":"Arthur's","address":"3518 Edwards Rd., Cincinnati, OH 45208","lat":39.140292,"lng":-84.443184,"beer":"draft, can"},
+	
+	{"id":17,"company":"At The Square","address":"1045 Central Ave., Middletown, OH 45042","lat":39.51662,"lng":-84.403821,"beer":"can"},
+	
+	{"id":18,"company":"Ault Park Advisory Council","address":"3600 Observatory Ave, Cincinnati, OH 45208","lat":39.135677,"lng":-84.415658,"beer":"draft"},
+	
+	{"id":19,"company":"Back Porch Saloon","address":"9626 Princeton-Glendale Road, Hamilton, OH 45011","lat":39.316618,"lng":-84.463472,"beer":"can"},
+	
+	{"id":20,"company":"Bakersfield OTR","address":"1213 Vine St., Cincinnati, OH 45202","lat":39.108795,"lng":-84.515119,"beer":"draft, can"},
+	
+	{"id":21,"company":"Barrio - Cincinnati","address":"3935 Spring Grove Ave., Cincinnati, OH 45223","lat":39.158038,"lng":-84.540116,"beer":"can"},
+	
+	{"id":22,"company":"Beans and Grapes","address":"6200 Montgomery Rd., Cincinnati, OH 45213","lat":39.182884,"lng":-84.425069,"beer":"can"},
+	
+	{"id":23,"company":"Beckett Wine and Liquor","address":"8212 Princeton-Glendale Rd., West Chester, OH 45069","lat":39.353092,"lng":-84.461179,"beer":"can"},
+	
+	{"id":24,"company":"Belmont Party Supply","address":"2621 S.Smithville Rd., Dayton, OH 45420","lat":39.728939,"lng":-84.141301,"beer":"draft"},
+	
+	{"id":25,"company":"Bigg's - Beechmont","address":"5218 Beechmont Ave., Cincinnati, OH 45230","lat":39.106955,"lng":-84.395436,"beer":"can"},
+	
+	{"id":26,"company":"Bigg's - Hyde Park","address":"3872 Paxton Avenue, Cincinnati, OH 45209","lat":39.145987,"lng":-84.430102,"beer":"draft, can"},
+	
+	{"id":27,"company":"Bigg's - Ridge/Remke","address":"3240 Highland Ave, Cincinnati, OH 45213","lat":39.16936,"lng":-84.428537,"beer":"can"},
+	
+	{"id":28,"company":"Bigg's - Western Hills","address":"5071 Glencrossing Way, Cincinnati, OH 45238","lat":39.12991,"lng":-84.612396,"beer":"can"},
+	
+	{"id":29,"company":"Blue Wisp Jazz Club","address":"700 Race St., Cincinnati, OH 45202","lat":39.103507,"lng":-84.515242,"beer":"draft"},
+	
+	{"id":30,"company":"BP - Pleasant Ridge","address":"6135 Montgomery Rd, Cincinnati, OH 45213","lat":39.183628,"lng":-84.425658,"beer":"can"},
+	
+	{"id":31,"company":"Brass Tap - U Square","address":"251 Calhoun St., Cincinnati, OH 45219","lat":39.128311,"lng":-84.516546,"beer":"draft, can"},
+	
+	{"id":32,"company":"Brentwood Spirits","address":"8621 Winton Rd., Cincinnati, OH 45231","lat":39.224714,"lng":-84.516733,"beer":"can"},
+	
+	{"id":33,"company":"Brew House","address":"1047 E. McMillan St., Cincinnati, OH 45206","lat":39.12547,"lng":-84.486688,"beer":"can"},
+	
+	{"id":34,"company":"Brew River Gastropub","address":"2062 Riverside Dr., Cincinnati, OH 45202","lat":39.12186,"lng":-84.475067,"beer":"draft, can"},
+	
+	{"id":35,"company":"Buffalo Wings and Rings - Fairfield","address":"5486 Dixie HWY, Fairfield, OH 45014","lat":39.334152,"lng":-84.524562,"beer":"draft"},
+	
+	{"id":36,"company":"Buz / Green Dog Cafe","address":"3543 Columbia Pkwy, Cincinnati, OH 45226","lat":39.115391,"lng":-84.43808,"beer":"draft, can"},
+	
+	{"id":37,"company":"Camp Dennison","address":"10005 Fletcher Rd., Camp Dennison, OH 45111","lat":39.210547,"lng":-84.291286,"beer":"draft"},
+	
+	{"id":38,"company":"Cappy's Carryout","address":"309 W Loveland Ave, Loveland, OH 45140","lat":39.268095,"lng":-84.260071,"beer":"can"},
+	
+	{"id":39,"company":"Carl's Deli","address":"2836 Observatory, Cincinnati, OH 45208","lat":39.137431,"lng":-84.437291,"beer":"can"},
+	
+	{"id":40,"company":"Carlisle Food Mart","address":"801 Central Avenue, Carlisle, OH 45005","lat":39.584328,"lng":-84.32606,"beer":"can"},
+	
+	{"id":41,"company":"Champps Restaurant - West Chester","address":"9424 Civic Centre Blvd., West Chester, OH 45069","lat":39.3235,"lng":-84.397465,"beer":"draft"},
+	
+	{"id":42,"company":"Cincinnati Beerfest","address":"151 W. 5th St., Cincinnati, OH 45202","lat":39.100345,"lng":-84.515718,"beer":"draft"},
+	
+	{"id":43,"company":"Cincinnati Dinner Train","address":"4725 Madison Rd., Cincinnati, OH 45227","lat":39.160663,"lng":-84.415298,"beer":"can"},
+	
+	{"id":44,"company":"Cincy By The Slice","address":"1207 Main St., Cincinnati, OH 45202","lat":39.109016,"lng":-84.511907,"beer":"draft"},
+	
+	{"id":45,"company":"Cintas Center","address":"3800 Victory Pkwy., Cincinnati, OH 45207","lat":39.151812,"lng":-84.469049,"beer":"can"},
+	
+	{"id":46,"company":"City Beverage Drive-Thru","address":"3661 Shaw Ave., Cincinnati, OH 45208","lat":39.144444,"lng":-84.439906,"beer":"can"},
+	
+	{"id":47,"company":"Civic Garden Center","address":"2715 Reading Rd., Cincinnati, OH 45206","lat":39.129814,"lng":-84.49837,"beer":"draft"},
+	
+	{"id":48,"company":"Claddagh - Mason","address":"5075 Deerfield Blvd, Mason, OH 45040-2505","lat":39.306563,"lng":-84.31439,"beer":"draft"},
+	
+	{"id":49,"company":"Clermont Springs Deli","address":"8427 Beechmont Ave., Cincinnati, OH 45255","lat":39.072303,"lng":-84.321122,"beer":"can"},
+	
+	{"id":50,"company":"Clifton International Market","address":"3232 Jefferson Ave., Cincinnati, OH 45220","lat":39.139141,"lng":-84.512015,"beer":"can"},
+	
+	{"id":51,"company":"Cock -N- Bull","address":"275 E Sharon Rd, Cincinnati, OH 45246","lat":39.271914,"lng":-84.458913,"beer":"draft"},
+	
+	{"id":52,"company":"Cock -N- Bull Hyde Park","address":"2653 Erie Ave., Cincinnati, OH 45208","lat":39.139742,"lng":-84.443988,"beer":"draft"},
+	
+	{"id":53,"company":"Comet, The","address":"4579 Hamilton Ave., Cincinnati, OH 45223","lat":39.17274,"lng":-84.543136,"beer":"draft, can"},
+	
+	{"id":54,"company":"Copper Blue","address":"900 Main St., Milford, OH 45150","lat":39.17767,"lng":-84.280031,"beer":"can"},
+	
+	{"id":55,"company":"Country Fresh Farm Market","address":"8315 Beechmont Ave., Cincinnati, OH 45255","lat":39.071365,"lng":-84.323949,"beer":"draft"},
+	
+	{"id":56,"company":"Country Fresh Farm Market","address":"8315 Beechmont Ave., Cincinnati, OH 45255","lat":39.071365,"lng":-84.323949,"beer":"can"},
+	
+	{"id":57,"company":"Dan King","address":"4650 Lake Forest Drive, Blue Ash, oh 45242","lat":39.255386,"lng":-84.377542,"beer":"can"},
+	
+	{"id":58,"company":"Daniel's Restaurant & Pub","address":"2735 Vine St., Cincinnati, OH 45219","lat":39.13154,"lng":-84.509687,"beer":"can"},
+	
+	{"id":59,"company":"De Sha's","address":"11320 Montgomery Rd., Cincinnati, OH 45249","lat":39.2716,"lng":-84.32796,"beer":"draft"},
+	
+	{"id":60,"company":"Delta Snack Shack","address":"430 Delta Ave, Cincinnati, OH 45226","lat":39.118383,"lng":-84.438444,"beer":"can"},
+	
+	{"id":61,"company":"Desales Market","address":"2841 Woodburn Ave., Cincinnati, OH 45206","lat":39.130039,"lng":-84.476732,"beer":"can"},
+	
+	{"id":62,"company":"Dewey's Pizza - Clifton","address":"265 Hosea Ave, Cincinnati, OH 45220","lat":39.143679,"lng":-84.518446,"beer":"draft"},
+	
+	{"id":63,"company":"Dewey's Pizza - Kenwood","address":"7767 Kenwood Rd, Cincinnati, OH 45236","lat":39.202127,"lng":-84.380107,"beer":"draft"},
+	
+	{"id":64,"company":"Dewey's Pizza - Montgomery","address":"11338 Montgomery Rd, Cincinnati, OH 45249","lat":39.271928,"lng":-84.327714,"beer":"draft"},
+	
+	{"id":65,"company":"Dewey's Pizza - Oakley","address":"3014 Madison Rd, Cincinnati, OH 45209","lat":39.151032,"lng":-84.433838,"beer":"draft"},
+	
+	{"id":66,"company":"Dewey's Pizza - West Chester","address":"7663 Cox Lane, West Chester, OH 45069","lat":39.355828,"lng":-84.366101,"beer":"draft"},
+	
+	{"id":67,"company":"Dilly Deli","address":"6818 Wooster Pike, Cincinnati, OH 45227","lat":39.145251,"lng":-84.376403,"beer":"draft, can"},
+	
+	{"id":68,"company":"Dingle House","address":"9102 Union Center Blvd, West Chester, OH 45069","lat":39.327803,"lng":-84.435271,"beer":"draft"},
+	
+	{"id":69,"company":"Django","address":"4046 Hamilton Ave., Cincinnati, OH 45223","lat":39.160055,"lng":-84.539254,"beer":"draft, can"},
+	
+	{"id":70,"company":"Doc's Place","address":"12 Mulberry St., Lebanon, OH 45036","lat":39.434607,"lng":-84.208687,"beer":"draft, can"},
+	
+	{"id":71,"company":"Donna's Carryout","address":"1919 Clenay Ave., Cincinnati, OH 45212","lat":39.148236,"lng":-84.465295,"beer":"can"},
+	
+	{"id":72,"company":"Dorothy Lane - Springboro","address":"740 N. Main St., Springboro, OH 45066","lat":39.577261,"lng":-84.230848,"beer":"draft, can"},
+	
+	{"id":73,"company":"Double Tree Suites Bistro - Blue Ash","address":"6300 E. Kemper Rd., Delver back dock by dumpster, OH 45241","lat":39.279883,"lng":-84.406761,"beer":"draft"},
+	
+	{"id":74,"company":"Dutch's Pony Keg DBA Dutchs Bar","address":"3378 Erie Ave., Cincinnati, OH 45208","lat":39.141427,"lng":-84.421578,"beer":"draft, can"},
+	
+	{"id":75,"company":"Eastside Cafe","address":"671 Ohio Pike, Withamsville, OH 45245","lat":39.06456,"lng":-84.289908,"beer":"can"},
+	
+	{"id":76,"company":"Eisers Drive Thru","address":"4403 Verne Ave, Cincinnati, OH 45209","lat":39.155817,"lng":-84.43212,"beer":"can"},
+	
+	{"id":77,"company":"Embers Restaurant","address":"8170 Montgomery Rd., Madeira, OH 45236","lat":39.204377,"lng":-84.368555,"beer":"can"},
+	
+	{"id":78,"company":"Everything's D Vine","address":"318 W. 4th St., Cincinnati, OH 45202","lat":39.099153,"lng":-84.518096,"beer":"can"},
+	
+	{"id":79,"company":"Exxon Beechwood","address":"3251 Mt. Carmel Rd., Cincinnati, OH 45244","lat":39.113973,"lng":-84.30799,"beer":"can"},
+	
+	{"id":80,"company":"FB","address":"126 W 6th St, Cincinnati, OH 45202","lat":39.102118,"lng":-84.515804,"beer":"can"},
+	
+	{"id":81,"company":"Firehouse Grill","address":"4785 Lake Forest Dr., Blue Ash, OH 45242","lat":39.251712,"lng":-84.378355,"beer":"draft"},
+	
+	{"id":82,"company":"Flip Daddy's","address":"7453 Wooster Pk, Cincinnati, OH 45227","lat":39.141584,"lng":-84.358999,"beer":"draft"},
+	
+	{"id":83,"company":"Flip Daddy's - Fields Ertel","address":"12071 Mason Montgomery Rd, Cincinnati, OH 45249","lat":39.290118,"lng":-84.316609,"beer":"draft"},
+	
+	{"id":84,"company":"Fries Cafe","address":"3247 Jefferson Ave., Cincinnati, OH 45220","lat":39.139755,"lng":-84.513074,"beer":"can"},
+	
+	{"id":85,"company":"Gaslight Cafe","address":"6104 Montgomery Rd, Cincinnati, OH 45213","lat":39.182054,"lng":-84.426896,"beer":"draft"},
+	
+	{"id":86,"company":"Glendale Chamber Of Commerce","address":"30 Village SQ, Glendale, OH 45246","lat":39.271567,"lng":-84.459668,"beer":"draft, can"},
+	
+	{"id":87,"company":"Goodfella's - Beechmont","address":"7466 Beechmont Ave. Suite 412, Cincinnati, OH 45255","lat":39.072831,"lng":-84.349766,"beer":"can"},
+	
+	{"id":88,"company":"Gordo's Pub & Grill","address":"4328 Montgomery Rd., Cincinnati, OH 45212","lat":39.156311,"lng":-84.458742,"beer":"draft, can"},
+	
+	{"id":89,"company":"Great American Ballpark","address":"100 Main St., Cincinnati, OH 45202","lat":39.097856,"lng":-84.508025,"beer":"draft, can"},
+	
+	{"id":90,"company":"Great Scott - Cincinnati","address":"1020 Ohio Pike, Cincinnati, OH 45245","lat":39.057242,"lng":-84.260718,"beer":"draft"},
+	
+	{"id":91,"company":"Grotto - Cincinnati","address":"1101 St. Gregory St., Cincinnati, OH 45202","lat":39.107925,"lng":-84.497741,"beer":"can"},
+	
+	{"id":92,"company":"Habanero","address":"358 Ludlow Ave., Cincinnati, OH 45220","lat":39.143867,"lng":-84.521795,"beer":"can"},
+	
+	{"id":93,"company":"Habit's Cafe","address":"3036 Madison Rd., Cincinnati, OH 45209","lat":39.151709,"lng":-84.432567,"beer":"draft"},
+	
+	{"id":94,"company":"Hatting's Super Market","address":"6148 Bridgetown Rd., Cincinnati, OH 45248","lat":39.157118,"lng":-84.650777,"beer":"can"},
+	
+	{"id":95,"company":"Heritage Tastings","address":"7664 Wooster Pike, Cincinnati, OH 45227","lat":39.13948,"lng":-84.353766,"beer":"can"},
+	
+	{"id":96,"company":"Holy Grail - Banks","address":"161 Joe Nuxhall Way, Cincinnati, OH 45202","lat":39.098045,"lng":-84.508866,"beer":"draft"},
+	
+	{"id":97,"company":"Hyatt Regency - Cincinnati","address":"151 W 5th St., Cincinnati, OH 45202","lat":39.100345,"lng":-84.515718,"beer":"draft, can"},
+	
+	{"id":98,"company":"Hyde Park Wine & Spirits","address":"2719 Madison Rd., Cincinnati, OH 45209","lat":39.145391,"lng":-84.442633,"beer":"can"},
+	
+	{"id":99,"company":"Igby's","address":"122 E 6th St., Cincinnati, OH 45202","lat":39.103011,"lng":-84.511037,"beer":"draft, can"},
+	
+	{"id":100,"company":"Incline Public House","address":"2601 W. 8th St., Cincinnati, OH 45204","lat":39.105074,"lng":-84.556595,"beer":"draft, can"},
+	
+	{"id":101,"company":"J. Alexander's - Cincinnati","address":"2629 Edmundson Rd., Cincinnati, OH 45209","lat":39.148479,"lng":-84.44325,"beer":"draft"},
+	
+	{"id":102,"company":"Jack Potts","address":"1150 Main Street, Cincinnati, OH 45202","lat":39.10859,"lng":-84.511492,"beer":"draft, can"},
+	
+	{"id":103,"company":"Jackie O's","address":"24 W Union St, Athens, OH 45701","lat":39.327617,"lng":-82.102377,"beer":"can"},
+	
+	{"id":104,"company":"Japp's","address":"1134 Main St., Cincinnati, OH 45202","lat":39.108849,"lng":-84.511292,"beer":"draft"},
+	
+	{"id":105,"company":"Jeff's Marathon","address":"6094 Bridgetown Rd., Cincinnati, OH 45248","lat":39.158177,"lng":-84.649313,"beer":"can"},
+	
+	{"id":106,"company":"Jeff's Quick Stop","address":"367 Bridge St., Loveland, OH 45140","lat":39.246217,"lng":-84.293776,"beer":"can"},
+	
+	{"id":107,"company":"Jefferson Social","address":"105 E Freedom Way, Cincinanti, OH 45205","lat":39.097179,"lng":-84.510286,"beer":"draft, can"},
+	
+	{"id":108,"company":"Jimmy G's","address":"435 Elm St., Cincinnati, OH 45205","lat":39.100465,"lng":-84.516313,"beer":"draft"},
+	
+	{"id":109,"company":"Joey's Deli","address":"315 W. McMillan, Cincinnati, OH 45219","lat":39.127884,"lng":-84.523415,"beer":"can"},
+	
+	{"id":110,"company":"Johnny's Campus Deli","address":"209 E. Sycamore St, Oxford, OH 45056","lat":39.515061,"lng":-84.738891,"beer":"can"},
+	
+	{"id":111,"company":"JP's Food Mart","address":"6380 Branch Hill-Guinea Pike, Cincinnati, OH 45140","lat":39.241139,"lng":-84.248952,"beer":"can"},
+	
+	{"id":112,"company":"Julian's Deli and Spirits","address":"200 W. Loveland Ave., Loveland, OH 45140","lat":39.268236,"lng":-84.258525,"beer":"can"},
+	
+	{"id":113,"company":"Jungle Jim's Fairfield","address":"5440 Dixie Hwy., Fairfield, OH 45014","lat":39.335751,"lng":-84.524303,"beer":"draft, can"},
+	
+	{"id":114,"company":"Jungle Jims - Eastgate","address":"4450 Eastgate South Drive, Cincinnati, OH 45245","lat":39.095777,"lng":-84.268434,"beer":"draft, can"},
+	
+	{"id":115,"company":"Kaze","address":"1400 Vine St., Cincinnati, OH 45202","lat":39.111065,"lng":-84.515171,"beer":"draft, can"},
+	
+	{"id":116,"company":"Kenwood Country Club","address":"6501 Kenwood Rd, Cincinnati, OH 45243","lat":39.183577,"lng":-84.386228,"beer":"can"},
+	
+	{"id":117,"company":"Keystone Bar & Grill","address":"3384 Erie Ave., Cincinnati, OH 45208","lat":39.141474,"lng":-84.421118,"beer":"draft"},
+	
+	{"id":118,"company":"Keystone Bar & Grill - Clifton","address":"249 Calhoun St., Cincinnati, OH 45219","lat":39.12831,"lng":-84.516543,"beer":"draft, can"},
+	
+	{"id":119,"company":"Kirby's","address":"378 Bridge St., Loveland, OH 45140","lat":39.246312,"lng":-84.292997,"beer":"draft"},
+	
+	{"id":120,"company":"Kroger 336 - Monroe","address":"3033 Heritage Green Dr, Monroe, OH 45050","lat":39.442801,"lng":-84.37775,"beer":"can"},
+	
+	{"id":121,"company":"Kroger 355 - Hyde Park","address":"3760 Paxton Ave, Cincinnati, OH 45209","lat":39.144519,"lng":-84.430121,"beer":"can"},
+	
+	{"id":122,"company":"Kroger 383 - Middletown","address":"7300 Yankee Rd, Middletown, OH 45044","lat":39.376862,"lng":-84.376381,"beer":"can"},
+	
+	{"id":123,"company":"Kroger 402 - Madeira","address":"6950 Miami Ave., Madeira, OH 45243","lat":39.187827,"lng":-84.361705,"beer":"can"},
+	
+	{"id":124,"company":"Kroger 418 - Norwood","address":"4500 Montgomery Rd., Norwood, OH 45212","lat":39.158617,"lng":-84.457332,"beer":"can"},
+	
+	{"id":125,"company":"Kroger 421 - Mariemont","address":"7385 Wooster Pike, Cincinnati, OH 45227","lat":39.141896,"lng":-84.361653,"beer":"can"},
+	
+	{"id":126,"company":"Kroger 435 - Branch Hill","address":"6388 Branch Hill Guinea Pike, Loveland, OH 45140","lat":39.229041,"lng":-84.255988,"beer":"can"},
+	
+	{"id":127,"company":"Kroger 915 - Beechmont","address":"7580 Beechmont Ave, Cincinnati, OH 45255","lat":39.072787,"lng":-84.347067,"beer":"can"},
+	
+	{"id":128,"company":"Kroger 921 - Milford","address":"1093 Goshen Pike, Milford, OH 45150","lat":39.168856,"lng":-84.266433,"beer":"can"},
+	
+	{"id":129,"company":"Kroger 942 - Blue Ash","address":"4100 Hunt Rd, Blue Ash, OH 45236","lat":39.226934,"lng":-84.397488,"beer":"can"},
+	
+	{"id":130,"company":"Kwik n Kold - Wyoming","address":"1511 Springfield Pike, Wyoming, OH 45215","lat":39.241557,"lng":-84.471652,"beer":"can"},
+	
+	{"id":131,"company":"La Poste","address":"3410 Telford St, Cincinnati, OH 45220","lat":39.144065,"lng":-84.520388,"beer":"draft"},
+	
+	{"id":132,"company":"LackMan","address":"1237 VIne Street, Cincinnati, OH 45202","lat":39.10931,"lng":-84.515321,"beer":"draft, can"},
+	
+	{"id":133,"company":"Langen Meats","address":"5855 Cheviot Rd., Cincinnati, OH 45247","lat":39.199799,"lng":-84.601097,"beer":"can"},
+	
+	{"id":134,"company":"Latitudes","address":"7454 Beechmont Ave Suite 303, Cincinnati, OH 45255","lat":39.072832,"lng":-84.349815,"beer":"draft"},
+	
+	{"id":135,"company":"Lavomatic Cafe","address":"1211 Vine St., Cincinnati, OH 45202","lat":39.108679,"lng":-84.515002,"beer":"draft, can"},
+	
+	{"id":136,"company":"Lehr's","address":"740 Main St., Milford, OH 45150","lat":39.176936,"lng":-84.284715,"beer":"can"},
+	
+	{"id":137,"company":"Listermann Oktoberfest","address":"1621 Dana Ave., Cincinnati, OH 45207","lat":39.145628,"lng":-84.47405,"beer":"draft"},
+	
+	{"id":138,"company":"Listing Loon, The","address":"4124 Hamilton Ave., Cincinnati, OH 45223","lat":39.161009,"lng":-84.539267,"beer":"can"},
+	
+	{"id":139,"company":"Local127","address":"413 Vine St, Cincinnati, OH 45202","lat":39.10043,"lng":-84.512939,"beer":"draft"},
+	
+	{"id":140,"company":"Longworth's","address":"1108 Saint Gregory St., Cincinnati, OH 45202","lat":39.107955,"lng":-84.49747,"beer":"draft, can"},
+	
+	{"id":141,"company":"Luckie's Pony Keg","address":"8600 Blue Ash Rd, Cincinnati, OH 45236","lat":39.215608,"lng":-84.38678,"beer":"can"},
+	
+	{"id":142,"company":"Lucky Dog Grille","address":"729 Reading Rd., Mason, OH 45040","lat":39.351473,"lng":-84.322536,"beer":"draft, can"},
+	
+	{"id":143,"company":"Ludlow Wines","address":"343 Ludlow Ave, Cincinnati, OH 45220","lat":39.143547,"lng":-84.521175,"beer":"can"},
+	
+	{"id":144,"company":"Mac's Pizza Pub","address":"205 W McMillian St, Cincinnati, OH 45219","lat":39.127844,"lng":-84.519595,"beer":"can"},
+	
+	{"id":145,"company":"Mac's Pizza Pub - Fairfax","address":"6309 Wooster Pike, Cincinnati, OH 45227","lat":39.14307,"lng":-84.386336,"beer":"draft"},
+	
+	{"id":146,"company":"Madeira Market","address":"7722 Laurel Ave., Madeira, OH 45243","lat":39.189688,"lng":-84.362187,"beer":"can"},
+	
+	{"id":147,"company":"Madeira Wine & Spirits","address":"6917 Miami Ave., Maderia, OH 45243","lat":39.187121,"lng":-84.363724,"beer":"can"},
+	
+	{"id":148,"company":"Main St. Gourmet","address":"9 S. Main St., Oxford, OH 45056","lat":39.510054,"lng":-84.742143,"beer":"can"},
+	
+	{"id":149,"company":"Main St. Wine & Spirits","address":"1252 W OHIO PK, Amelia, OH 45102","lat":39.047778,"lng":-84.243328,"beer":"can"},
+	
+	{"id":150,"company":"Main Stay Rock Bar","address":"301 W 5th St., Cincinnati, OH 45202","lat":39.100239,"lng":-84.517957,"beer":"can"},
+	
+	{"id":151,"company":"Mama Mimi's - Beechmont","address":"8312 Beechmont Ave., Cincinnati, OH 45255","lat":39.072954,"lng":-84.324183,"beer":"can"},
+	
+	{"id":152,"company":"Marathon - West Chester","address":"7809 Cin-Day Rd, West Chester, OH 45069","lat":39.341965,"lng":-84.406761,"beer":"can"},
+	
+	{"id":153,"company":"Maribelle's Tavern","address":"3235 Madison Rd, Cincinnati, OH 45209","lat":39.15476,"lng":-84.426647,"beer":"can"},
+	
+	{"id":154,"company":"Market Wines - Findlay Market","address":"128 W Elder St, Cincinnati, OH 45202","lat":39.115534,"lng":-84.519588,"beer":"can"},
+	
+	{"id":155,"company":"Marty's Corner Store","address":"6203 Branch Hill Guinea Pike, Milford, OH 45150","lat":39.214431,"lng":-84.240659,"beer":"can"},
+	
+	{"id":156,"company":"Marty's Hops & Vines","address":"6110 Hamilton Ave, Cincinnati, OH 45224","lat":39.202192,"lng":-84.547316,"beer":"draft, can"},
+	
+	{"id":157,"company":"Mason Pub & Patio","address":"753 Reading Rd., Mason, OH 45040","lat":39.349309,"lng":-84.326081,"beer":"draft"},
+	
+	{"id":158,"company":"Mayday Bar","address":"4227-31 Spring Grove Ave, Cincinnati, OH 45223","lat":39.159878,"lng":-84.532678,"beer":"can"},
+	
+	{"id":159,"company":"Mecklenburg Gardens","address":"302 E. University Ave, Cincinnati, OH 45219","lat":39.132701,"lng":-84.502638,"beer":"can"},
+	
+	{"id":160,"company":"Mellow Mushroom West Chester","address":"9238 Floer Dr., West Chester, OH 45069","lat":39.323185,"lng":-84.430432,"beer":"draft"},
+	
+	{"id":161,"company":"Meritage Restaurant","address":"1140 Congress Ave., Cincinnati, OH 45246","lat":39.276319,"lng":-84.467852,"beer":"draft, can"},
+	
+	{"id":162,"company":"Metropole at 21C","address":"609 Walnut St., Cincinnati, OH 45202","lat":39.103172,"lng":-84.512491,"beer":"draft, can"},
+	
+	{"id":163,"company":"Middletown Fine Wine and Spirits","address":"721 Breiel Blvd., Middletown, OH 45044","lat":39.502725,"lng":-84.354741,"beer":"can"},
+	
+	{"id":164,"company":"Minnick's Drive Thru","address":"2537 Pleasant Ave., Hamilton, OH 45015","lat":39.371051,"lng":-84.557757,"beer":"can"},
+	
+	{"id":165,"company":"Mio's Pizza - Anderson","address":"8298 Clough Pike, Cincinnati, OH 45244","lat":39.088312,"lng":-84.322361,"beer":"draft"},
+	
+	{"id":166,"company":"Mio's Pizza - Blue Ash","address":"9500 Kenwood Rd. Unit C&D, Blue Ash, OH 45242","lat":39.232003,"lng":-84.378273,"beer":"draft"},
+	
+	{"id":167,"company":"Mio's Pizza - Sutton","address":"1212 Sutton Rd., Cincinnati, OH 45230","lat":39.075894,"lng":-84.391879,"beer":"draft"},
+	
+	{"id":168,"company":"Moerlein Lager House","address":"115 Knuxhall Way, Cincinnati, OH 45202","lat":39.096414,"lng":-84.508464,"beer":"draft"},
+	
+	{"id":169,"company":"Molly Malone's","address":"6111 Montgomery Rd., Cincinnati, OH 45213","lat":39.182565,"lng":-84.426857,"beer":"draft, can"},
+	
+	{"id":170,"company":"Monty's on Montgomery","address":"4108 Montgomery Rd., Norwood, OH 45212","lat":39.154006,"lng":-84.460584,"beer":"can"},
+	
+	{"id":171,"company":"MOTR","address":"1345 main st, Cincinnati, OH 45202","lat":39.111082,"lng":-84.512358,"beer":"draft, can"},
+	
+	{"id":172,"company":"Mt Washinton Presbyterian Church_2","address":"6474 Beechmont Ave, Cincinnati, OH 45230","lat":39.088144,"lng":-84.378984,"beer":"draft"},
+	
+	{"id":173,"company":"Nada","address":"600 Walnut St, Cincinnati, OH 45202","lat":39.102969,"lng":-84.511412,"beer":"can"},
+	
+	{"id":174,"company":"National Exemplar","address":"6880 Wooster Pike, Mariemont, OH 45227","lat":39.14577,"lng":-84.376417,"beer":"can"},
+	
+	{"id":175,"company":"Nativity School","address":"5936 Ridge Ave., Cincinnati, OH 45213","lat":39.179809,"lng":-84.426339,"beer":"can"},
+	
+	{"id":176,"company":"Nectar","address":"1000 Delta Ave., Cincinnati, OH 45209","lat":39.128472,"lng":-84.429877,"beer":"can"},
+	
+	{"id":177,"company":"Neons","address":"208 E. 12th St., Cincinnati, OH 45205","lat":39.109416,"lng":-84.511197,"beer":"draft, can"},
+	
+	{"id":178,"company":"Nicholson's Pub","address":"625 Walnut Street, Cincinnati, OH 45202","lat":39.103304,"lng":-84.512594,"beer":"draft"},
+	
+	{"id":179,"company":"Noonan's Party Supply","address":"1350 Main Street, Hamilton, OH 45013","lat":39.421409,"lng":-84.590581,"beer":"can"},
+	
+	{"id":180,"company":"Northside Tavern","address":"4163 Hamilton Ave, Cincinnati, OH 45223","lat":39.162414,"lng":-84.540184,"beer":"draft"},
+	
+	{"id":181,"company":"Norwood Drive Thru","address":"5463 Montgomery Rd., Cincinnati, OH 45212","lat":39.173683,"lng":-84.444407,"beer":"can"},
+	
+	{"id":182,"company":"O Pub","address":"10 W. Park Pl., Oxford, OH 45056","lat":39.510917,"lng":-84.743365,"beer":"can"},
+	
+	{"id":183,"company":"O'Bryan's Wine-Landen","address":"8972 Columbia Rd., Loveland, OH 45140","lat":39.305416,"lng":-84.278498,"beer":"can"},
+	
+	{"id":184,"company":"O'Malleys in the Alley","address":"25 W. Ogden St., Cincinnati, OH 45202","lat":39.099442,"lng":-84.511512,"beer":"draft, can"},
+	
+	{"id":185,"company":"Oak Tavern","address":"3089 Madison Rd, Cincinnati, OH 45209","lat":39.15259,"lng":-84.430719,"beer":"draft"},
+	
+	{"id":186,"company":"Oak Tavern","address":"3089 Madison Rd, Cincinnati, OH 45209","lat":39.15259,"lng":-84.430719,"beer":"can"},
+	
+	{"id":187,"company":"Oakley Pub","address":"3924 Isabella, Cincinnati, OH 45209","lat":39.151137,"lng":-84.432241,"beer":"draft, can"},
+	
+	{"id":188,"company":"Oakley Wines","address":"4011 Allston St., Cincinnati, OH 45209","lat":39.151968,"lng":-84.433207,"beer":"can"},
+	
+	{"id":189,"company":"Olives @Ludlow Garage","address":"342 Ludlow ave, Cincinnati, OH 45220","lat":39.144088,"lng":-84.521274,"beer":"draft"},
+	
+	{"id":190,"company":"Oxford Spirits","address":"21 Lynn Ave., Oxford, OH 45056","lat":39.509831,"lng":-84.749949,"beer":"can"},
+	
+	{"id":191,"company":"Padrino","address":"111 Main St., Milford, OH 45150","lat":39.173145,"lng":-84.296354,"beer":"can"},
+	
+	{"id":192,"company":"Park n Vine","address":"1202 Main St., Cincinnati, OH 45202","lat":39.109362,"lng":-84.51142,"beer":"draft, can"},
+	
+	{"id":193,"company":"Parker's Blue Ash Grill","address":"4200 Cooper Rd, Blue Ash, OH 45242","lat":39.238155,"lng":-84.391383,"beer":"draft"},
+	
+	{"id":194,"company":"Paxton's","address":"126 W Loveland Ave, Loveland, OH 45140","lat":39.267991,"lng":-84.25813,"beer":"draft"},
+	
+	{"id":195,"company":"Pho Lang Thang","address":"114 W. Elder St., Cincinnati, OH 45202","lat":39.115481,"lng":-84.518891,"beer":"can"},
+	
+	{"id":196,"company":"Piazza Discepoli - White Oak","address":"5872 Cheviot Road, Cincinnati, OH 45247","lat":39.200243,"lng":-84.600765,"beer":"can"},
+	
+	{"id":197,"company":"Piccolo Wine Room","address":"23 Village Square, Cincinnati, OH 45246","lat":39.27087,"lng":-84.459433,"beer":"can"},
+	
+	{"id":198,"company":"Pick N Go","address":"4746 Spring Grove Ave., Cincinnati, OH 45232","lat":39.165488,"lng":-84.514535,"beer":"can"},
+	
+	{"id":199,"company":"Pleasant Hour Cafe","address":"6083 Montgomery Rd., Cincinnati, OH 45213","lat":39.182222,"lng":-84.428065,"beer":"can"},
+	
+	{"id":200,"company":"Pleasant Ridge Night","address":"6096 Montgomery Rd., Cincinnati, OH 45213","lat":39.181812,"lng":-84.427721,"beer":"draft"},
+	
+	{"id":201,"company":"Pub - Rookwood","address":"2692 Edmondson Rd., Norwood, OH 45209","lat":39.148899,"lng":-84.444231,"beer":"draft, can"},
+	
+	{"id":202,"company":"Putter's - Milford","address":"5723 Signal Hill Ct., Milford, OH 45150","lat":39.185861,"lng":-84.267056,"beer":"draft"},
+	
+	{"id":203,"company":"Quanhapa","address":"1331 Vine St., Cincinnati, OH 45202","lat":39.110393,"lng":-84.515404,"beer":"draft, can"},
+	
+	{"id":204,"company":"Quarter Barrel","address":"107 E. Church St., Oxford, OH 45056","lat":39.511311,"lng":-84.740336,"beer":"can"},
+	
+	{"id":205,"company":"Quarter Bistro","address":"6904 Wooster Pike, Cincinnati, OH 45227","lat":39.14517,"lng":-84.373097,"beer":"can"},
+	
+	{"id":206,"company":"Queen City Wine & Spirits","address":"113 E. 5th St., Cincinnati, OH 45202","lat":39.101331,"lng":-84.510999,"beer":"can"},
+	
+	{"id":207,"company":"Quik Pik","address":"4145 Montgomery Rd., Cincinnati, OH 45212","lat":39.15497,"lng":-84.460524,"beer":"can"},
+	
+	{"id":208,"company":"Rapid Run Carryout","address":"5179 Rapid Run Rd., Cincinnati, OH 45238","lat":39.111323,"lng":-84.613046,"beer":"can"},
+	
+	{"id":209,"company":"Ravine Market","address":"350 Warner St., Cincinnati, OH 45219","lat":39.125313,"lng":-84.525626,"beer":"can"},
+	
+	{"id":210,"company":"Relish Fusion Tapas","address":"5947 Deerfield Blvd., Mason, OH 45040","lat":39.30782,"lng":-84.320385,"beer":"can"},
+	
+	{"id":211,"company":"Remington Market","address":"9390 Loveland Madeira Rd., Cincinnati, OH 45242","lat":39.227107,"lng":-84.325339,"beer":"can"},
+	
+	{"id":212,"company":"Rhinehaus","address":"119 E. 12th St., Cincinnati, OH 45202","lat":39.108463,"lng":-84.512432,"beer":"draft"},
+	
+	{"id":213,"company":"Riddle Road Market","address":"533 Riddle Rd. #1, Cincinnati, OH 45220","lat":39.135595,"lng":-84.526185,"beer":"can"},
+	
+	{"id":214,"company":"Righteous Room","address":"641 Walnut St, Cincinnati, OH 45202","lat":39.103652,"lng":-84.512228,"beer":"can"},
+	
+	{"id":215,"company":"Riversbend Wine & Spirits","address":"6052 S. State Route 48, Maineville, OH 45039","lat":39.344961,"lng":-84.218969,"beer":"can"},
+	
+	{"id":216,"company":"Rookwood - Pottery","address":"1077 Celestial St., Cincinnati, OH 45202","lat":39.107086,"lng":-84.500694,"beer":"draft, can"},
+	
+	{"id":217,"company":"Root Cellar","address":"7699 Montgomery Rd., Cincinnati, OH 45236","lat":39.196949,"lng":-84.386018,"beer":"can"},
+	
+	{"id":218,"company":"Run Like Hell","address":"3617 Woodburn Ave., Cincinnati, OH 45207","lat":39.145498,"lng":-84.474457,"beer":"draft"},
+	
+	{"id":219,"company":"Rusty Bucket - Mason","address":"5035 Deerfield Blvd., Mason, OH 45040","lat":39.307789,"lng":-84.314808,"beer":"draft"},
+	
+	{"id":220,"company":"Ruth's Parkside Cafe","address":"4101 Spring Grove Ave., Cincinnati, OH 45223","lat":39.160302,"lng":-84.53716,"beer":"can"},
+	
+	{"id":221,"company":"Salem Gardens","address":"6396 Salem Rd., Cincinnati, OH 45230","lat":39.074954,"lng":-84.383119,"beer":"draft"},
+	
+	{"id":222,"company":"Sam's Corner Store","address":"7011 New Haven Rd, Harrison, OH 45030","lat":39.265744,"lng":-84.6729,"beer":"can"},
+	
+	{"id":223,"company":"Scene","address":"677 Walnut Ave, Cincinnati, OH 45202","lat":39.103838,"lng":-84.512002,"beer":"can"},
+	
+	{"id":224,"company":"Seeger's","address":"1001 W Main St, Lebanon, OH 45036","lat":39.434436,"lng":-84.225704,"beer":"can"},
+	
+	{"id":225,"company":"Senate","address":"1214 Vine St, Cincinnati, OH 45202","lat":39.108906,"lng":-84.514317,"beer":"draft"},
+	
+	{"id":226,"company":"Shaddocks Market","address":"4713 Central Ave., Middletown, OH 45042","lat":39.510469,"lng":-84.3447,"beer":"can"},
+	
+	{"id":227,"company":"Shell - Blue Ash","address":"10415 Kenwood Rd., Blue Ash, OH 45242","lat":39.251075,"lng":-84.375136,"beer":"can"},
+	
+	{"id":228,"company":"Smile Drive Thru","address":"5430 Glenway Ave., Cincinnati, OH 45238","lat":39.129452,"lng":-84.606465,"beer":"can"},
+	
+	{"id":229,"company":"Sports Depot Bar and Grill","address":"6701 Ruwes Oak Dr., Cincinnati, OH 45248","lat":39.195901,"lng":-84.675653,"beer":"can"},
+	
+	{"id":230,"company":"Springboro Wine and Spirits","address":"281 W Central Ave, Springboro, OH 45066","lat":39.559058,"lng":-84.241098,"beer":"can"},
+	
+	{"id":231,"company":"Stained 1054 Bistro","address":"1054 Central Ave., Middletown, OH 45044","lat":39.516206,"lng":-84.403826,"beer":"can"},
+	
+	{"id":232,"company":"Stone Creek Dining Company","address":"9386 Montgomery Rd., Cincinnati, OH 45242","lat":39.226578,"lng":-84.354841,"beer":"draft"},
+	
+	{"id":233,"company":"Stop-N-Go","address":"141 W. McMillan, Cincinnati, OH 45219","lat":39.12746,"lng":-84.517354,"beer":"can"},
+	
+	{"id":234,"company":"Sunoco - Bethel","address":"622 W. Plane St., Bethel, OH 45106","lat":38.965015,"lng":-84.090125,"beer":"can"},
+	
+	{"id":235,"company":"Sunoco - Ohio Pike","address":"1263 Ohio Pike, Amelia, OH 45102","lat":39.045695,"lng":-84.243651,"beer":"can"},
+	
+	{"id":236,"company":"Taft Museum of Art","address":"316 Pike St., Cincinnati, OH 45202","lat":39.102197,"lng":-84.502652,"beer":"can"},
+	
+	{"id":237,"company":"Tap n Go","address":"950 Pavilion St., Cincinnati, OH 45202","lat":39.107774,"lng":-84.497062,"beer":"draft, can"},
+	
+	{"id":238,"company":"Taste of Belgium - Short Vine","address":"2845 Vine St., Cincinnati, OH 45219","lat":39.132208,"lng":-84.509303,"beer":"draft, can"},
+	
+	{"id":239,"company":"Tavern on the Bend","address":"5471 North Bend Rd, Cincinnati, OH 45247","lat":39.190281,"lng":-84.600278,"beer":"draft"},
+	
+	{"id":240,"company":"Tavern on the Hill","address":"1111 St. Gregory St., Cincinnati, OH 45205","lat":39.108254,"lng":-84.498215,"beer":"draft, can"},
+	
+	{"id":241,"company":"Teller's","address":"2710 Erie Avenue, Cincinnati, OH 45208","lat":39.140009,"lng":-84.442785,"beer":"draft"},
+	
+	{"id":242,"company":"TGI Friday's - Beechmont","address":"7480 Beechmont Ave., Cincinnati, OH 45255","lat":39.072837,"lng":-84.350416,"beer":"draft"},
+	
+	{"id":243,"company":"The Corner Pub","address":"7833 Cooper Rd., Montgomery, OH 45242","lat":39.226368,"lng":-84.355134,"beer":"can"},
+	
+	{"id":244,"company":"The Works","address":"20 Great Millitzer Way, Loveland, OH 45140","lat":39.268948,"lng":-84.263826,"beer":"draft"},
+	
+	{"id":245,"company":"Thirsty's Oasis","address":"5589 S SR 741, Mason, OH 45040","lat":39.358758,"lng":-84.280148,"beer":"draft"},
+	
+	{"id":246,"company":"Traci's","address":"784 Loveland Miamiville Rd., Loveland, OH 45150","lat":39.228486,"lng":-84.257781,"beer":"can"},
+	
+	{"id":247,"company":"Trotta's Pizza & Drive Thru","address":"3501 Werk Rd., Cincinnati, OH 45248","lat":39.141011,"lng":-84.618885,"beer":"can"},
+	
+	{"id":248,"company":"Troy's Cafe & Catering","address":"4877 Smith Rd, West Chester, OH 45069","lat":39.351018,"lng":-84.453697,"beer":"can"},
+	
+	{"id":249,"company":"Twig's Liquor","address":"11018 Reading Rd, Cincinnati, OH 45241","lat":39.268824,"lng":-84.413054,"beer":"can"},
+	
+	{"id":250,"company":"UC Catskeller","address":"2766 Clifton Ave., Cincinnati, OH 45221","lat":39.133158,"lng":-84.520253,"beer":"draft, can"},
+	
+	{"id":251,"company":"Uncorked at the Spicy Olive","address":"7671 Cox Ln. Unit A, West Chester, OH 45069","lat":39.355561,"lng":-84.365666,"beer":"can"},
+	
+	{"id":252,"company":"Village Keg","address":"5 Enfield St., Greenhills, OH 45218","lat":39.26978,"lng":-84.521473,"beer":"can"},
+	
+	{"id":253,"company":"Village Shoppe & Go","address":"3011 Access Place, Cincinnati, OH 45241","lat":39.253684,"lng":-84.424252,"beer":"can"},
+	
+	{"id":254,"company":"Walgreens - Mitchell","address":"9 W Mitchell Ave., Cincinnati, OH 45217","lat":39.160815,"lng":-84.506125,"beer":"can"},
+	
+	{"id":255,"company":"Walgreens - Race St.","address":"601 Race St., Cincinnati, OH 45202","lat":39.102333,"lng":-84.51509,"beer":"can"},
+	
+	{"id":256,"company":"Walk on Woodburn","address":"2801 Woodburn Ave., Cincinnati, OH 45206","lat":39.129029,"lng":-84.47719,"beer":"draft"},
+	
+	{"id":257,"company":"Whole Foods - Cincinnati","address":"2693 Edmondson Rd., Cincinnati, OH 45209","lat":39.145638,"lng":-84.447205,"beer":"draft, can"},
+	
+	{"id":258,"company":"Whole Foods - Mason","address":"5805 Deerfield Blvd., Mason, OH 45040","lat":39.307662,"lng":-84.3164,"beer":"draft, can"},
+	
+	{"id":259,"company":"Wild Mike's - Green Township","address":"4498 Harrison Ave., Cincinnati, OH 45211","lat":39.164285,"lng":-84.630138,"beer":"can"},
+	
+	{"id":260,"company":"Wild Mikes","address":"7587 Bridgetown Road, Cincinnati, OH 45248","lat":39.164559,"lng":-84.699096,"beer":"draft, can"},
+	
+	{"id":261,"company":"Wine Connection","address":"1258 St. Rt. 28 (Goshen Pike), Milford, OH 45150","lat":39.16908,"lng":-84.267334,"beer":"can"},
+	
+	{"id":262,"company":"Wine Merchant","address":"3972 Edwards Rd, Cincinnati, OH 45209","lat":39.152059,"lng":-84.442115,"beer":"can"},
+	
+	{"id":263,"company":"Wine Source, The","address":"11802 Springfield Pike, Cincinnati, OH 45246","lat":39.292454,"lng":-84.485256,"beer":"can"},
+	
+	{"id":264,"company":"Wine Store - Montgomery","address":"9905 Montgomery Rd., Cincinnati, OH 45242","lat":39.235993,"lng":-84.350486,"beer":"can"},
+	
+	{"id":265,"company":"Wine World","address":"7737 Five Mile Rd., Cincinnati, OH 45230","lat":39.07496,"lng":-84.352106,"beer":"draft, can"},
+	
+	{"id":266,"company":"Winner's Market","address":"4203 Kirby Ave., Cincinnati, OH 45223","lat":39.164707,"lng":-84.547724,"beer":"can"},
+	
+	{"id":267,"company":"Woody's - Clifton","address":"339 Calhoun St., Cincinnati, OH 45219","lat":39.128347,"lng":-84.519972,"beer":"can"},
+	
+	{"id":268,"company":"Wurst Bar on the Square","address":"3204 Linwood Ave., Cincinnati, OH 45208","lat":39.128274,"lng":-84.429888,"beer":"can"},
+	
+	{"id":269,"company":"Wyoming Wines","address":"1208 Springfield Pike, Cincinnati, OH 45215","lat":39.236592,"lng":-84.471316,"beer":"can"},
+	
+	{"id":270,"company":"Zips","address":"1036 Delta Ave., Cincinnati, OH 45208","lat":39.129697,"lng":-84.429278,"beer":"draft, can"}
+]
+

@@ -11,6 +11,9 @@
   <script src="javascripts/libs/modernizr.js" type="text/javascript"></script>
   <link href="stylesheets/screen.css" media="screen" rel="stylesheet" type="text/css" />
 
+  <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAj3wwklhCUii3cPxvRnPYqgom0swss-BU&sensor=true">
+  </script>
   <!-- Typekit -->
   <script type="text/javascript" src="//use.typekit.net/sfl3ims.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -79,14 +82,25 @@
 
 <div class="container">
   <section class="find-madtree">
+
+    <div id="map-canvas">
+      <div id="map"></div>
+      <div id="loc-list">
+        <ul id="list"></ul>
+      </div>
+    </div>
     <section class="find-beer">
       <h2>Find Madtree Beer</h2>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter your address or zip code">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Find Beer!</button>
-        </span>
-      </div><!-- /input-group -->
+      <div id="form-container">
+        <form id="user-location" method="post" action="#">
+          <div class="input-group">
+            <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
+            <span class="input-group-btn">
+              <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
+            </span>
+          </div><!-- /input-group -->
+        </form>
+      </div>
       <a href="#">Or browse by our list of retailers</a>
       <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
     </section> <!-- /find-beer -->
