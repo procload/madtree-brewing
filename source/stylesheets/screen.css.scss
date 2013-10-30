@@ -164,7 +164,6 @@ a {
       position: absolute;
       top: -(calc-em(102px));
       @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
-
     }
   }
 } //navbar-inner

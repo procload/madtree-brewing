@@ -64,3 +64,13 @@ $ ->
       e.preventDefault()
       $(".insta-modal").removeClass("insta-modal-show")
       $(".insta-modal-overlay").removeClass("insta-modal-show")
+
+
+    $("#map-canvas").storeLocator
+      dataType: "json"
+      dataLocation: "/data/stores.json"
+      modalWindow: true
+      storeLimit: 5
+
+
+

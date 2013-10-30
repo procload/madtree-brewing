@@ -1,4 +1,8 @@
 body.index {
+  #map {
+    width: 100%;
+    height: 500px;
+  }
   .find-madtree {
     @include span-columns(6);
     h2 {

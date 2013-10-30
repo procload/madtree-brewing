@@ -4,4 +4,7 @@
 //= require libs/twitter
 //= require libs/isotope
 //= require libs/instafeed
+//= require libs/handlebars
+//= require libs/geoPosition
+//= require libs/jquery-store-locator
 //= require_tree ./public

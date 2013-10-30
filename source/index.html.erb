@@ -6,14 +6,25 @@
 
 <div class="container">
   <section class="find-madtree">
+
+    <div id="map-canvas">
+      <div id="map"></div>
+      <div id="loc-list">
+        <ul id="list"></ul>
+      </div>
+    </div>
     <section class="find-beer">
       <h2>Find Madtree Beer</h2>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Enter your address or zip code">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">Find Beer!</button>
-        </span>
-      </div><!-- /input-group -->
+      <div id="form-container">
+        <form id="user-location" method="post" action="#">
+          <div class="input-group">
+            <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
+            <span class="input-group-btn">
+              <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
+            </span>
+          </div><!-- /input-group -->
+        </form>
+      </div>
       <%= link_to "Or browse by our list of retailers", "#" %>
       <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
     </section> <!-- /find-beer -->
