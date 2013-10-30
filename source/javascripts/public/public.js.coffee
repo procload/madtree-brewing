@@ -73,4 +73,8 @@ $ ->
       storeLimit: 5
 
 
+    $(".find-beer h2").fitText(.66)
 
+    $(".nav-toggle").click (e) ->
+      e.preventDefault()
+      $(".main-nav").toggleClass("expanded")

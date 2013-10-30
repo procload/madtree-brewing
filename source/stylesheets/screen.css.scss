@@ -98,7 +98,9 @@ a {
     padding-bottom: calc-em(6px);
   } //toolbar-content 
   .taproom-hours {
-    @include span-columns(6);
+    @include respond-to(33.125em) {
+      @include span-columns(6);
+    }
     font-size: calc-em(13px);
     line-height: calc-em(23px, 13px);
     text-transform: uppercase;
@@ -107,8 +109,10 @@ a {
     }
   } //taproom-hours
   .social-nav {
-    width: calc-em(110px);
-    float: right;
+    @include respond-to(33.125em) {
+      width: calc-em(110px);
+      float: right;
+    }
   } //social-nav
   .social-links {
     @extend %zero-list;
@@ -140,6 +144,20 @@ a {
 // Navbar
 // --------------------------------------------------
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: calc-em(90px);
+  z-index: 10;
+
+  @include respond-to(41.25em) {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
+
   background: $gray-darker;
   margin-bottom: calc-em(64px);
   .interior & {
@@ -150,10 +168,24 @@ a {
     padding: 0;
     margin-bottom: calc-em(48px);
   }
+
+  .nav-toggle {
+    position: absolute;
+    font-size: calc-em(28px);
+    right: calc-em(10px, 28px);
+    top: calc-em(3px, 28px);
+    @include respond-to(41.25em) {
+      display: none;
+    }
+  }
+
 } //navbar
 
+
 .navbar-inner {
-  @extend %container;
+  @include respond-to(41.25em) {
+    @include container;
+  }
   background: none;
   @include box-shadow(none);
   @include border-radius(0);
@@ -181,7 +213,21 @@ a {
   }
   .logo {
     @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
-    float: left;
+    z-index: 11;
+    width: 140px;
+    height: 70px;
+    position: fixed;
+    top: 5px;
+    left: 20px;
+    background-size: contain;
+    @include respond-to(41.25em) {
+      float: left;
+      position: static;
+      top: auto;
+      left: auto;
+      width: 362px;
+      height: 183px;
+    }
   }
   .top-beer-nav {
     position: absolute;
@@ -194,64 +240,107 @@ a {
   .psychopathy,
   .gnarly-brown {
     position: absolute;
+    top: 0;
     a {
       text-indent: -9999px;
       display: block;
+      background-size: contain;
+      width: 200px;
+      height: 200px;
     }
   } //happy-amber, psychopathy, gnarly-brown
   .happy-amber {
-    left: 0;
-    top: 200px;
+    /*left: 0;*/
+    right: 230px;
+    /*top: 200px;*/
     a {
-      width: 323px;
+      /*width: 323px;*/
       height: 408px;
       @include background(transparent image-url('beers/img-happy-amber-combined.png') no-repeat top left);
+      background-size: contain;
     }
   }
   .gnarly-brown {
-    left: 260px;
-    top: 150px;
+    /*left: 260px;*/
+    right: 80px;
+    /*top: 150px;*/
     a {
-      width: 318px;
+      /*width: 318px;*/
       height: 406px;
       @include background(transparent image-url('beers/img-gnarly-combined.png') no-repeat top left);
+      background-size: contain;
     }
   }
   .psychopathy {
-    right: 0;
-    top: 100px;
+    right: -70px;
+    /*top: 100px;*/
     a {
-      width: 326px;
+      /*width: 326px;*/
       height: 408px;
       @include background(transparent image-url('beers/img-psycho-combined.png') no-repeat top left);
+      background-size: contain;
     }
   }
 }
 
 
+
 .main-nav {
   @extend %zero-list;
-  font-size: .1px;
-  text-align: justify;
+  height: 0;
+  overflow: hidden;
+  margin-top: calc-em(90px);
+  @include transition(.2s linear all); 
+  @include respond-to(41.25em) {
+    font-size: .1px;
+    height: auto;
+    margin-top: 0;
+    text-align: justify;
+    @include transition(none);
+  }
+
   &:after {
-    content: '';
-    width: 100%;
-    display: inline-block;
+    @include respond-to(41.25em) {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+  }
+
+  &.expanded {
+    height: auto; 
   }
   li {
-    display: inline-block;
-    width: 25%;
-    text-align: center;
-  }
-  a {
+    @include respond-to(41.25em) {
+      display: inline-block;
+      width: 25%;
+      text-align: center;
+    }
+
+
     display: block;
-    font-family: $nav-font-family;
-    font-weight: 300;
-    color: $white;
-    text-transform: uppercase;
-    font-size: calc-em(28px, .1px);
-    line-height: calc-em(62px, 28px);
+    &:nth-child(odd) {
+      background: lighten($gray-darker, 4%); 
+    }
+    &:nth-child(even) {
+      background: lighten($gray-darker, 2%); 
+    }
   }
+    a {
+      padding: calc-em(6px, 32px) calc-em(16px, 32px);
+      display: block;
+      font-size: calc-em(32px);
+      display: block;
+      font-family: $nav-font-family;
+      font-weight: 300;
+      color: $white;
+      text-transform: uppercase;
+      @include respond-to(41.25em) {
+        font-size: calc-em(28px, .1px);
+        line-height: calc-em(62px, 28px);
+      }
+    }
+  
   .interior & {
     float: right;
     width: 60%;
@@ -304,8 +393,11 @@ a {
     @extend %group;
   }
   .footer-nav-item {
-    @include span-columns(4);
-    @include nth-omega(3n);
+    @include respond-to(32.5em) {
+      //520px 
+      @include span-columns(4);
+      @include nth-omega(3n);
+    }
   } //footer-nav-item
   .nav-item-header {
     h4 {

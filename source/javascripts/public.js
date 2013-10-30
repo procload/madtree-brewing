@@ -6,5 +6,6 @@
 //= require libs/instafeed
 //= require libs/handlebars
 //= require libs/geoPosition
+//= require libs/fittext
 //= require libs/jquery-store-locator
 //= require_tree ./public

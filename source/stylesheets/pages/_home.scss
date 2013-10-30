@@ -4,7 +4,11 @@ body.index {
     height: 500px;
   }
   .find-madtree {
-    @include span-columns(6);
+    margin-bottom: calc-em(36px);
+    @include respond-to(40em) {
+      margin-bottom: 0;
+      @include span-columns(6);
+    }
     h2 {
       margin-bottom: 0;
       font-size: calc-em(69px);
@@ -33,7 +37,13 @@ body.index {
       p {
         margin: 0;
         font-weight: 300;
-        font-size: calc-em(26px);
+        font-size: calc-em(24px);
+        @include respond-to(57.5em) {
+          font-size: calc-em(21px);
+        }
+        @include respond-to(61.25em) {
+          font-size: calc-em(24px);
+        }
       }
     } //address & //phone & //email
     .address {
@@ -46,13 +56,34 @@ body.index {
 
 
   .address {
+    @include respond-to(33.75em) {
       @include span-columns(4, 6);
+    }
+    @include respond-to(40em) {
+      @include reset-columns(); 
+    }
+    @include respond-to(57.5em) {
+      @include span-columns(4, 6);
+    }
   } //address
   .phone {
+    @include respond-to(33.75em) {
       @include span-columns(2 omega, 6);
+    }
+    @include respond-to(40em) {
+      @include reset-columns(); 
+    }
+    @include respond-to(57.5em) {
+      @include span-columns(2 omega, 6);
+    }
   } //phone
   .upcoming-events {
-    @include span-columns(5 omega);
+    @include respond-to(40em) {
+      @include span-columns(6 omega);
+    }
+    @include respond-to(56.25em) {
+      @include span-columns(5 omega);
+    }
     margin-bottom: calc-em(80px);
   } //upcoming-events
 
@@ -82,17 +113,15 @@ body.index {
   } //community-feedback
   
   .twitter-stream {
-    @include span-columns(4);
     margin-bottom: calc-em(80px);
   } //twitter-stream
 
-  .instagram-stream {
-    @include span-columns(7 omega);
-  } //instagram-stream
 
   .madtree-photo {
     clear: both;
-    min-height: 200px;
+    @include respond-to(55.625em) {
+      min-height: 200px;
+    }
     img {
       width: 100%;
     }
@@ -102,7 +131,6 @@ body.index {
   #collage {
     /* Prevent vertical gaps */
     line-height: 0;
-
     -webkit-column-count: 5;
     -webkit-column-gap:   0px;
     -moz-column-count:    5;
