@@ -25,15 +25,12 @@
     <section class="header-toolbar">
   <div class="toolbar-content">
     <div class="taproom-hours">
-      Tap Room Hours:
+      <span class="more-text">Tap Room </span>Hours:
       <span class="day">
         M&ndash;F 11am&ndash;7pm
       </span> <!-- /day -->
       <span class="day">
         SAT 11am&ndash;7pm
-      </span> <!-- /day -->
-      <span class="day">
-        SUN 11am&ndash;7pm
       </span> <!-- /day -->
     </div> <!-- /tapoom-hours -->
 
@@ -91,19 +88,22 @@
       </div>
     </div>
     <section class="find-beer">
-      <h2>Find Madtree Beer</h2>
-      <div id="form-container">
-        <form id="user-location" method="post" action="#">
-          <div class="input-group">
-            <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
-            <span class="input-group-btn">
-              <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
-            </span>
-          </div><!-- /input-group -->
-        </form>
+      <div>
+        <h2>Find Madtree Beer</h2>
+        <div id="form-container">
+          <form id="user-location" method="post" action="#">
+            <div class="input-group">
+              <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
+              <span class="input-group-btn">
+                <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
+              </span>
+            </div><!-- /input-group -->
+          </form>
+        </div>
+        <a href="#">Or browse by our list of retailers</a>
+        <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
       </div>
-      <a href="#">Or browse by our list of retailers</a>
-      <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
+      <a class="redo-search" href="#"><i class='icon-compass'></i> Redo Search</a>
     </section> <!-- /find-beer -->
     <section class="address-phone">
       <div class="address">
@@ -118,7 +118,12 @@
       </div> <!-- /phone -->
       <div class="email">
         <h5><i class="icon-envelope"></i> Email</h5>
-        <p><a href="#">Email Madtree</a></p>
+        <p>
+        <a href="#">Keg/Dock Sales</a>
+        &mdash;
+          <a href="#">Outside Sales</a>
+      
+      </p>
       </div> <!-- /phone -->
     </section> <!-- /address-phone -->
   </section> <!-- /find-madtree -->
@@ -200,13 +205,11 @@
     </header> <!-- /nav-item-header -->
     <div class="nav-item-body">
       <ul>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
+        <li><a href="/beers/psychopathy.html">Psychopathy</a></li>
+        <li><a href="/beers/gnarly-brown.html">Gnarly Brown</a></li>
+        <li><a href="/beers/happy-amber.html">Happy Amber</a></li>
+        <li><a href="/beers/identity-crisis.html">Identity Crisis</a></li>
+        <li><a href="/beers/axis-mundi.html">Axis Mundi</a></li>
       </ul>
     </div> <!-- /nav-item-body -->
   </section> <!-- /footer-nav-item -->
@@ -216,9 +219,9 @@
     </header> <!-- /nav-item-header -->
     <div class="nav-item-body">
       <ul>
-        <li><a href="#">Founders</a></li>
-        <li><a href="#">Artists</a></li>
-        <li><a href="#">Partners</a></li>
+        <li><a href="/community/">Founders</a></li>
+        <li><a href="/community/artists.html">Artists</a></li>
+        <li><a href="/community/partners.html">Partners</a></li>
       </ul>
     </div> <!-- /nav-item-body -->
   </section> <!-- /footer-nav-item -->

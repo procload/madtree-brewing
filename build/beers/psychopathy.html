@@ -26,15 +26,12 @@
     <section class="header-toolbar">
   <div class="toolbar-content">
     <div class="taproom-hours">
-      Tap Room Hours:
+      <span class="more-text">Tap Room </span>Hours:
       <span class="day">
         M&ndash;F 11am&ndash;7pm
       </span> <!-- /day -->
       <span class="day">
         SAT 11am&ndash;7pm
-      </span> <!-- /day -->
-      <span class="day">
-        SUN 11am&ndash;7pm
       </span> <!-- /day -->
     </div> <!-- /tapoom-hours -->
 
@@ -50,10 +47,11 @@
 </section> <!-- /header-toolbar -->
 
       <nav class="navbar">
+  <a class="nav-toggle" href="#"><i class='icon-reorder'></i></a>
   <div class="navbar-inner">
     <a class="logo" href="/">MadTree Brewing Company</a>
     <ul class="main-nav">
-      <li><a href="/beers/happy-amber.html">Beers</a></li>
+      <li class="active"><a data-children="beer" href="/beers/happy-amber.html">Beers</a></li>
       <li><a href="#">News &amp; Events</a></li>
       <li><a href="#">Taproom</a></li>
       <li><a href="../community/">Community</a></li>
@@ -62,7 +60,7 @@
 </nav> <!-- /navbar -->
 
 
-  <nav class="navbar section-navbar">
+  <nav class="navbar section-navbar" data-group="beer">
   <div class="navbar-inner">
     <ul class="section-nav">
       <li class="active"><a href="/beers/happy-amber.html">Happy Amber</a></li>
@@ -152,13 +150,11 @@
     </header> <!-- /nav-item-header -->
     <div class="nav-item-body">
       <ul>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
-        <li><a href="#">Taproom</a></li>
+        <li><a href="/beers/psychopathy.html">Psychopathy</a></li>
+        <li><a href="/beers/gnarly-brown.html">Gnarly Brown</a></li>
+        <li><a href="/beers/happy-amber.html">Happy Amber</a></li>
+        <li><a href="/beers/identity-crisis.html">Identity Crisis</a></li>
+        <li><a href="/beers/axis-mundi.html">Axis Mundi</a></li>
       </ul>
     </div> <!-- /nav-item-body -->
   </section> <!-- /footer-nav-item -->
@@ -168,9 +164,9 @@
     </header> <!-- /nav-item-header -->
     <div class="nav-item-body">
       <ul>
-        <li><a href="#">Founders</a></li>
-        <li><a href="#">Artists</a></li>
-        <li><a href="#">Partners</a></li>
+        <li><a href="/community/">Founders</a></li>
+        <li><a href="/community/artists.html">Artists</a></li>
+        <li><a href="/community/partners.html">Partners</a></li>
       </ul>
     </div> <!-- /nav-item-body -->
   </section> <!-- /footer-nav-item -->
