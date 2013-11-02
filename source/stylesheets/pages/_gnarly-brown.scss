@@ -1,6 +1,6 @@
 body.gnarly-brown {
   background: $gnarly-brown; 
-  @include background($gnarly-brown image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
+  @include background($gnarly-brown image-url('backgrounds/bg-gnarly-brown.png') no-repeat top right);
   .caret {
     border-top-color: $gnarly-brown;
   }

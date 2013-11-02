@@ -3,11 +3,14 @@
 <div class="list-label">{{marker}}</div>
 <div class="list-details">
   <div class="list-content">
-    <div class="loc-name">{{company}} &mdash; <span>{{beer}}</span></div>
+    <div class="loc-name">{{company}}</div>
     <div class="loc-addr">{{address}}</div> 
     <div class="loc-phone">{{phone}}</div>
     {{#if distance}}<div class="loc-dist">{{distance}} {{length}}</div>
-    <div class="loc-directions"><a href="http://maps.google.com/maps?saddr={{origin}}&amp;daddr={{address}} {{address2}} {{city}}, {{state}} {{postal}}" target="_blank"><i class="icon-map-marker"></i> Directions</a></div>{{/if}}
+    <div class="loc-directions">
+      <a href="#" class="show-on-map"><i class="icon-map-marker"></i> Show on Map</i></a>
+      <a href="http://maps.google.com/maps?saddr={{origin}}&amp;daddr={{address}} {{address2}} {{city}}, {{state}} {{postal}}" target="_blank"><i class="icon-map-marker"></i> Directions</a>
+    </div>{{/if}}
   </div>
 </div>
 </li>

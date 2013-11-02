@@ -1,6 +1,6 @@
 body.psychopathy {
   background: $psychopathy; 
-  @include background($psychopathy image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
+  @include background($psychopathy image-url('backgrounds/bg-psychopathy.png') no-repeat top right);
   .caret {
     border-top-color: $psychopathy;
   }
@@ -15,7 +15,6 @@ body.psychopathy {
     background: rgba(81, 78, 26, .95);
     &.section-navbar {
       background: #721F0A;
-
       background: rgba(81, 78, 26, .8);
       a {
         color: $psychopathy;

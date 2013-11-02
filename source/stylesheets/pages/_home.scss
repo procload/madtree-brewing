@@ -1,7 +1,32 @@
 body.index {
   #map {
     width: 100%;
-    height: 500px;
+    height: 0;
+    &.now-showing {
+      height: 400px;
+    }
+  }
+  #user-location {
+    &.can-geolocate {
+      #address {
+        display: none;
+        @include respond-to(30em) {
+          display: table-cell;
+        }
+      }
+      .btn-default {
+        display: block;
+        width: 100%;
+        @include respond-to(30em) {
+          width: auto;
+          display: inline-block;
+        }
+      }
+    }
+  }
+  #loc-list {
+    max-height: calc-em(560px);
+    overflow: scroll;
   }
   .find-madtree {
     margin-bottom: calc-em(36px);
@@ -24,6 +49,22 @@ body.index {
     margin-bottom: calc-em(32px);
     .input-group {
       margin-bottom: calc-em(16px);
+    }
+    .redo-search {
+      display: none;
+    }
+    > div {
+      display: block;  
+    }
+    &.showing-results {
+      padding: calc-em(10px);
+      overflow: hidden;
+      .redo-search {
+        display: block; 
+      }
+      > div {
+        display: none;
+      }
     }
   } //find-beer
   

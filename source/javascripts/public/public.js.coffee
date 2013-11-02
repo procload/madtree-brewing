@@ -66,8 +66,8 @@ $ ->
     $("#map-canvas").storeLocator
       dataType: "json"
       dataLocation: "/data/stores.json"
-      modalWindow: true
-      storeLimit: 5
+      callbackSuccess: ->
+        $(".find-beer").addClass("showing-results")
 
 
     $(".find-beer h2").fitText(.66)
@@ -80,9 +80,43 @@ $ ->
 
     activeGroup = $(".main-nav .active a").data("children")
     if $(".section-navbar").data("group") == activeGroup
-      copiedNav = $(".section-navbar")
+      copiedNav = $(".section-navbar").clone()
       $(".main-nav .active").append(copiedNav)
 
     $(".main-nav .active a").click (e) ->
       e.preventDefault()
       $(this).siblings(".section-navbar").children(".navbar-inner").children(".section-nav").toggleClass("showing")
+
+    reverseGeocode = (lat, long) ->
+      geocoder = new google.maps.Geocoder()
+      latlng = new google.maps.LatLng(lat, long)
+      geocoder.geocode
+        latLng: latlng
+      , (results, status) ->
+        if status is google.maps.GeocoderStatus.OK
+          if results[1]
+            $("#address").val(results[0].formatted_address)
+          else
+           return 
+        else
+          return
+
+    latitude = 0;
+    longitude = 0;
+    success_callback = (p) ->
+      latitude = p.coords.latitude
+      longitude = p.coords.longitude
+      $("#user-location").addClass("can-geolocate")
+      reverseGeocode(latitude,longitude)
+      
+    error_callback = (p) ->
+
+    if geoPosition.init() # Geolocation Initialisation
+      geoPosition.getCurrentPosition success_callback, error_callback,
+        enableHighAccuracy: true
+    else
+      return
+
+    $("#loc-list").on "click", ".show-on-map", (e) ->
+      e.preventDefault()
+      $("#map").addClass("now-showing")

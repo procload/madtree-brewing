@@ -3,9 +3,9 @@ body.community {
     @extend %group;
     overflow: hidden;
     margin-bottom: calc-em(128px);
+    background: rgba(255,255,255,.2);
   }
   .founder-photos {
-    background: rgba(255,255,255,.2);
     padding: calc-em(10px);
     @include respond-to(50em) {
       //800px
@@ -14,12 +14,10 @@ body.community {
     }
   }
   .founder-text {
-    background: rgba(255,255,255,.2);
     padding: calc-em(10px);
     @include respond-to(50em) {
       //800px
       float: left;
-      @include equalize-column; 
       width: 40%;
     }
   }

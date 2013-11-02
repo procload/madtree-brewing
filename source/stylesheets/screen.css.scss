@@ -188,8 +188,11 @@ a {
   .interior & {
     margin-bottom: 0;
     @include respond-to(41.25em) {
+      padding: calc-em(30px) 0 0 0;
+       
+    }
+    @include respond-to(55.625em) {
       padding: calc-em(30px) 0;
-    
     }
   }
   &.section-navbar {
@@ -362,6 +365,10 @@ a {
     margin-top: 0;
     text-align: justify;
     @include transition(none);
+    padding-top: calc-em(90px, .1px);
+  }
+  @include respond-to(55.625em) {
+    padding-top: 0;
   }
 
   &:after {
@@ -413,7 +420,7 @@ a {
     }
   
   .interior & {
-    @include respond-to(41.25em) {
+    @include respond-to(55.625em) {
       float: right;
       width: 60%;
     }
@@ -447,10 +454,16 @@ a {
     }
   }
   li {
-    @include respond-to(38.75em) {
+    @include respond-to(41.25em) {
       display: inline-block;
-      font-size: calc-em(24px, .1px);
+      font-size: calc-em(17px, .1px);
       text-transform: uppercase;
+    }
+    @include respond-to(49.375em) {
+      font-size: calc-em(20px, .1px);  
+    }
+    @include respond-to(56.25em) {
+      font-size: calc-em(24px, .1px);  
     }
     a {
       line-height: 2em;
