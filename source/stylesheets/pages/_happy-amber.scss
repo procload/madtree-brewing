@@ -20,6 +20,20 @@ body.interior.happy-amber {
         color: $happy-amber;
       }
     }
+    .main-nav li {
+      &:nth-child(even) {
+        background: rgba(97,19,9,.80);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: rgba(97,19,9,1);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
   }
   .site-footer {
     background: #721F0A;

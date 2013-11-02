@@ -87,10 +87,24 @@ a {
 .site-header {
   @extend %group;
   color: $gray-lighter;
+  @include respond-to(41.25em) {
+    margin-bottom: calc-em(24px); 
+  }
 } //page-header
 
 .header-toolbar {
   background: $gray-dark; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  @include respond-to(41.25em) {
+    position: static;
+    top: auto;
+    left: auto;
+    right: auto;
+  }
   .toolbar-content {
     @extend %container;
     @extend %group;
@@ -98,18 +112,27 @@ a {
     padding-bottom: calc-em(6px);
   } //toolbar-content 
   .taproom-hours {
-    @include respond-to(33.125em) {
-      @include span-columns(6);
+    font-size: calc-em(11px);
+    line-height: calc-em(23px, 11px);
+    .more-text {
+      display: none;
+      @include respond-to(33.125em) {
+        display: inline;
+      }
     }
-    font-size: calc-em(13px);
-    line-height: calc-em(23px, 13px);
+    @include respond-to(33.125em) {
+      font-size: calc-em(13px);
+      @include span-columns(8);
+    }
     text-transform: uppercase;
     span {
       text-transform: none;
     }
   } //taproom-hours
   .social-nav {
+    display: none;
     @include respond-to(33.125em) {
+      display: block;
       width: calc-em(110px);
       float: right;
     }
@@ -137,7 +160,9 @@ a {
     }
   } //social-links
   .interior & {
-    margin-bottom: calc-em(110px);
+    @include respond-to(41.25em) {
+      margin-bottom: calc-em(110px);
+    }
   }
 } //header-toolbar
 
@@ -145,25 +170,27 @@ a {
 // --------------------------------------------------
 .navbar {
   position: fixed;
-  top: 0;
+  top: calc-em(35px);
   left: 0;
   right: 0;
-  min-height: calc-em(90px);
-  z-index: 10;
-
+  min-height: calc-em(50px);
+  z-index: 101;
+  background: $gray-darker;
   @include respond-to(41.25em) {
     min-height: 0;
     position: static;
     top: auto;
     left: auto;
     right: auto;
+    margin-bottom: calc-em(64px);
   }
 
-  background: $gray-darker;
-  margin-bottom: calc-em(64px);
   .interior & {
-    padding: calc-em(30px) 0;
     margin-bottom: 0;
+    @include respond-to(41.25em) {
+      padding: calc-em(30px) 0;
+    
+    }
   }
   &.section-navbar {
     padding: 0;
@@ -174,7 +201,13 @@ a {
     position: absolute;
     font-size: calc-em(28px);
     right: calc-em(10px, 28px);
-    top: calc-em(3px, 28px);
+    top: calc-em(6px, 28px);
+    &:hover,
+    &:focus,
+    &:active {
+      color: lighten($red, 10%);
+      text-decoration: none;
+    }
     @include respond-to(41.25em) {
       display: none;
     }
@@ -194,9 +227,19 @@ a {
   .interior & {
     position: relative;
     .logo {
-      position: absolute;
-      top: -(calc-em(102px));
-      @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
+      @include replace-text(362px, 183px, image-url('img-logo-alt.png') no-repeat top left); 
+      z-index: 102;
+      width: 110px;
+      height: 35px;
+      position: fixed;
+      top: 50px;
+      left: 20px;
+      background-size: contain;
+      @include respond-to(41.25em) {
+        position: absolute;
+        top: -(calc-em(102px));
+        @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
+      }
     }
   }
 } //navbar-inner
@@ -204,34 +247,38 @@ a {
 .header-hero {
   @include background(transparent image-url('backgrounds/bg-home.png') no-repeat top left);
   background-size: cover;
+  margin-bottom: calc-em(24px);
+  @include respond-to(41.25em) {
+    margin-bottom: 0;
+  }
   .hero-content {
     @extend %container;
     @extend %group;
     overflow: hidden;
     position: relative;
-    padding-top: calc-em(40px); 
+    padding-top: calc-em(120px); 
     padding-bottom: calc-em(180px);
     @include respond-to(41.25em) {
+      padding-top: calc-em(40px);
       overflow:visible;
       overflow-y: hidden;
     }
   }
   .logo {
-    @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
-    z-index: 11;
-    width: 140px;
-    height: 70px;
+    @include replace-text(362px, 183px, image-url('img-logo-alt.png') no-repeat top left); 
+    z-index: 102;
+    width: 110px;
+    height: 35px;
     position: fixed;
-    top: 5px;
+    top: 50px;
     left: 20px;
     background-size: contain;
     @include respond-to(41.25em) {
+      @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
       float: left;
       position: static;
       top: auto;
       left: auto;
-      width: 362px;
-      height: 183px;
     }
   }
   .top-beer-nav {
@@ -307,7 +354,7 @@ a {
   @extend %zero-list;
   height: 0;
   overflow: hidden;
-  margin-top: calc-em(90px);
+  margin-top: calc-em(60px);
   @include transition(.2s linear all); 
   @include respond-to(41.25em) {
     font-size: .1px;
@@ -334,7 +381,6 @@ a {
       width: 25%;
       text-align: center;
     }
-
 
     display: block;
     &:nth-child(odd) {
@@ -367,8 +413,10 @@ a {
     }
   
   .interior & {
-    float: right;
-    width: 60%;
+    @include respond-to(41.25em) {
+      float: right;
+      width: 60%;
+    }
   }
 } //main-nav
 
@@ -379,17 +427,31 @@ a {
 .section-nav {
   @extend %zero-list;
   font-family: $nav-font-family;
-  font-size: .1px;
-  text-align: justify;
+  height: 0;
+  overflow: hidden;
+  &.showing {
+    height: auto;
+    overflow: visible;
+  }
+  @include respond-to(41.25em) {
+    font-size: .1px;
+    text-align: justify;
+    height: auto;
+    overflow: visible;
+  }
   &:after {
-    content: '';
-    width: 100%;
-    display: inline-block;
+    @include respond-to(41.25em) {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
   }
   li {
-    display: inline-block;
-    font-size: calc-em(24px, .1px);
-    text-transform: uppercase;
+    @include respond-to(38.75em) {
+      display: inline-block;
+      font-size: calc-em(24px, .1px);
+      text-transform: uppercase;
+    }
     a {
       line-height: 2em;
     }
@@ -406,6 +468,12 @@ a {
 
 .main-content {
   /*@include susy-grid-background; */
+  .interior & {
+    padding-top: calc-em(120px);
+    @include respond-to(41.25em) {
+      padding-top: 0; 
+    }
+  }
 } //main-content
 
 // Footer
@@ -418,8 +486,10 @@ a {
     @extend %group;
   }
   .footer-nav-item {
+    margin-bottom: calc-em(16px);
     @include respond-to(32.5em) {
       //520px 
+      margin-bottom: 0;
       @include span-columns(4);
       @include nth-omega(3n);
     }
@@ -439,7 +509,7 @@ a {
         display: block;
         text-transform: uppercase;
         font-family: $font-family-display;
-        margin-bottom: calc-em(16px);
+        margin-bottom: calc-em(6px);
       }
       p {
         margin: 0;

@@ -72,6 +72,17 @@ $ ->
 
     $(".find-beer h2").fitText(.66)
 
+    $(".beer-details h2").fitText(.75)
+
     $(".nav-toggle").click (e) ->
       e.preventDefault()
       $(".main-nav").toggleClass("expanded")
+
+    activeGroup = $(".main-nav .active a").data("children")
+    if $(".section-navbar").data("group") == activeGroup
+      copiedNav = $(".section-navbar")
+      $(".main-nav .active").append(copiedNav)
+
+    $(".main-nav .active a").click (e) ->
+      e.preventDefault()
+      $(this).siblings(".section-navbar").children(".navbar-inner").children(".section-nav").toggleClass("showing")

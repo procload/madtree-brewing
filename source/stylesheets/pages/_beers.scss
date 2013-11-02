@@ -1,4 +1,12 @@
 body.beers {
+  .nav-toggle {
+    color: $white;
+    &:hover,
+    &:active,
+    &:focus {
+      color: darken($white, 10%);
+    }
+  }
   .beer-description {
     @extend %group;
     margin-bottom: calc-em(64px);
@@ -7,11 +15,17 @@ body.beers {
     }
   } //beer-description
   .beer-images {
-    @include span-columns(4);
     text-align: center;
+    margin-bottom: calc-em(16px);
+    @include respond-to(32.5em) {
+      @include span-columns(4);
+    }
   } //beer-images
   .beer-details {
-    @include span-columns(7 omega);
+    margin-bottom: calc-em(16px);
+    @include respond-to(32.5em) {
+      @include span-columns(7 omega);
+    }
     h2 {
       font-size: calc-em(42px);
       margin: 0;

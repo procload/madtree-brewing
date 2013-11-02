@@ -1,15 +1,38 @@
 body.interior {
+  .main-nav {
+    .section-navbar {
+      @include respond-to(41.25em) {
+        display: none; 
+      }
+    }
+    .active {
+      .section-nav.showing {
+        border-top: 1px solid rgba(0,0,0,.2);
+        a {
+          font-size: calc-em(21px);
+        }
+      }
+    }
+  }
   .navbar {
       background: #212121;
-      background: rgba(255,255,255,.10);
+      background: $black;
       @include border-radius(0);
     &.section-navbar {
       @include border-radius(0);
       background: #212121;
       background: rgba(33,33,33,.80);
+      position: static;
+      min-height: 0;
+      margin: 0;
       a {
         color: $white;
       }
+    }
+  }
+  .main-content {
+    @include respond-to(38.75em) {
+    
     }
   }
 }

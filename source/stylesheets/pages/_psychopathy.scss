@@ -21,6 +21,20 @@ body.psychopathy {
         color: $psychopathy;
       }
     }
+    .main-nav li {
+      &:nth-child(even) {
+        background: rgba(81, 78, 26, .8);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: rgba(81, 78, 26, 1);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
   }
   .beer-details {
     h2 {

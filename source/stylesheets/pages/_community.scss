@@ -6,16 +6,22 @@ body.community {
   }
   .founder-photos {
     background: rgba(255,255,255,.2);
-    float: left;
-    width: 60%;
     padding: calc-em(10px);
+    @include respond-to(50em) {
+      //800px
+      float: left;
+      width: 60%;
+    }
   }
   .founder-text {
     background: rgba(255,255,255,.2);
-    float: left;
     padding: calc-em(10px);
-    width: 40%;
-    @include equalize-column; 
+    @include respond-to(50em) {
+      //800px
+      float: left;
+      @include equalize-column; 
+      width: 40%;
+    }
   }
   .founder-info {
     display: none;

@@ -21,6 +21,20 @@ body.gnarly-brown {
         color: $gnarly-brown;
       }
     }
+    .main-nav li {
+      &:nth-child(even) {
+        background: rgba(141, 88, 27, .8);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: rgba(141, 88, 27, 1);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
   }
   .site-footer {
     background: #B47326;
