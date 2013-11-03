@@ -29,4 +29,12 @@ body.community {
       display: block;
     }
   }
+  .section-nav {
+    li {
+      @include respond-to(41.25em) {
+        width: 50%;
+        text-align: center;
+      }
+    }
+  }
 }

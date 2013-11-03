@@ -83,7 +83,7 @@ $ ->
       copiedNav = $(".section-navbar").clone()
       $(".main-nav .active").append(copiedNav)
 
-    $(".main-nav .active a").click (e) ->
+    $(".main-nav .active > a").click (e) ->
       e.preventDefault()
       if $(this).children(".icon-caret-right").length > 0
         $(this).children(".icon-caret-right").removeClass("icon-caret-right").addClass("icon-caret-down")
@@ -125,3 +125,31 @@ $ ->
     $("#loc-list").on "click", ".show-on-map", (e) ->
       e.preventDefault()
       $("#map").addClass("now-showing")
+
+    showTaproom = (long, lat) ->
+      myLatlng = new google.maps.LatLng(long, lat)
+      mapOptions =
+        zoom: 16
+        center: myLatlng
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+
+      map = new google.maps.Map(document.getElementById("taproom-map"), mapOptions)
+      contentString = '<div class="info-window">
+        <div class="loc-name">MadTree Brewing</span></div>
+        <div>5164 Kennedy Ave.<br /> Cincinnati, OH 45213</div>
+        <div>513-836-8733</div>
+      </div>'
+      
+      infowindow = new google.maps.InfoWindow(content: contentString)
+
+      marker = new google.maps.Marker(
+        position: myLatlng
+        map: map
+        title: "Hello World!"
+      )
+      infowindow.open map, marker
+
+      
+
+    if $("body.taproom").length > 0
+      showTaproom(39.166675, -84.420144)

@@ -8,7 +8,7 @@
       <%= content_tag :li, link_to("Identity Crisis", "/beers/identity-crisis.html"), class: (sub_page == "identity-crisis" ? "active" : "") %>
       <%= content_tag :li, link_to("Axis Mundi", "/beers/axis-mundi.html"), class: (sub_page == "axis-mundi" ? "active" : "") %>
       <li class="dropdown seasonal-beers">
-        <a href="#">Seasonal Beers <b class="caret"></b></a>
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Seasonal Beers <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <% 4.times do %>
             <%= content_tag :li, link_to("Seasonal Beer", "#") %>
@@ -16,7 +16,7 @@
         </ul> <!-- /dropdown-menu -->
       </li> <!-- /Seasonal Beers -->
       <li class="dropdown seasonal-beers">
-        <a href="#">Limited Releases <b class="caret"></b></a>
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Limited Releases <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <% 4.times do %>
             <%= content_tag :li, link_to("Limited Release", "#") %>

@@ -2,10 +2,8 @@
   <div class="navbar-inner">
     <ul class="section-nav">
       <% sub_page = data.page.sub_page %>
-      <%= content_tag :li, link_to("Founders", "#"), class: (sub_page == "founders" ? "active" : "") %>
-      <%= content_tag :li, link_to("Artists", "#"), class: (sub_page == "artists" ? "active" : "") %>
-      <%= content_tag :li, link_to("Partners", "#"), class: (sub_page == "partners" ? "active" : "") %>
-      <%= content_tag :li, link_to("Charities", "#"), class: (sub_page == "charities" ? "active" : "") %>
+      <%= content_tag :li, link_to("Employees", "../community/index.html"), class: (sub_page == "founders" ? "active" : "") %>
+      <%= content_tag :li, link_to("Artists", "../community/artists.html"), class: (sub_page == "artists" ? "active" : "") %>
     </ul> <!-- /section-nav -->
   </div> <!-- /navbar-inner -->
 </nav> <!-- /navbar -->

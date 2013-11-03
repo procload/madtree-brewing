@@ -1,0 +1,92 @@
+---
+current_page: "community"
+sub_page: "artists"
+---
+<% content_for :page_classes do %>
+  interior artists
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+  <%= partial '../partials/section-nav-community' %>
+<% end %>
+
+<div class="container">
+  <h2>Artists</h2>
+  <section class="founders">
+    <div class="founder-photos">
+      <ul class="photo-grid">
+        <li class="founder active"><%= link_to image_tag("community/artists/img-john.jpg"), "#", data: { target: "#john" } %></li>
+        <li class="founder"><%= link_to image_tag("community/artists/img-christopher.jpg"), "#", data: { target: "#christopher" } %></li>
+        <li class="founder"><%= link_to image_tag("community/artists/img-tom.jpg"), "#", data: { target: "#tom" } %></li>
+        <li class="founder"><%= link_to image_tag("community/artists/img-richard.jpg"), "#", data: { target: "#richard" } %></li>
+        <li class="founder"><%= link_to image_tag("img-tree-small.png"), "#", data: { target: "#margaret" } %></li>
+        <li class="founder"><%= link_to image_tag("community/artists/img-anthony.jpg"), "#", data: { target: "#anthony" } %></li>
+        <li class="founder"><%= link_to image_tag("community/artists/img-tony.jpg"), "#", data: { target: "#tony" } %></li>
+        <li class="founder"><%= link_to image_tag("img-tree-small.png"), "#", data: { target: "#charles" } %></li>
+        <li class="empty"><%= link_to image_tag("community/bg-about.png"), "#" %></li>
+      </ul> <!-- /photo-grid -->
+    </div> <!-- /founder-photos -->
+    <div class="founder-text">
+      <div class="founder-info active" id="john">
+        <div class="content">
+          <h3>John Pattison</h3>
+          <h4>Packaging and marketing materials designer</h4>
+          <p>John Pattison is an art director, designer, illustrator, chef and beer lover. He lives in Cincinnati, Ohio with his wife Cindy and kids Justin, Megan and Emma. When he needs to get away from city life, he packs up his favorite MadTree beers (all of them), his dog Pukes, and heads off to his 80-acre farm/cabin retreat in Kentucky.</p>
+          <%= link_to "View work", "http://johnpattison.viewbook.com/john_pattison" %>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
+      <div class="founder-info" id="christopher">
+        <div class="content">
+          <h3>Christopher S. Daniel</h3>
+          <h4>Treemark illustrator and taproom table fabricator</h4>
+          <p>Christopher S. Daniel is a sculptor working and living in Cincinnati, Ohio.  Christopher owns and operates Blue Hell Studio, a steel fabrication and blacksmithing business, creating one of a kind, unique ornamental and functional steel work.  Blue Hell Studio is the only blacksmith teaching facility in Cincinnati.  Christopher received his Bachelor of Fine Arts from West Virginia University in 1994, and received his Master of Fine Arts in 1997 from the University of Cincinnati’s School of Design, Architecture, Art and Planning. His career over the last 16 years has included working for the Cincinnati Art Museum as the Lead Art Handler of the Decorative Arts De-installation Project, teaching as an Adjunct Professor at the Art Academy of Cincinnati, working as a freelance Toy Sculptor and illustrator and for two years he served as the Executive Director of The Mockbee, Inc., Ohio’s largest not for profit gallery.</p>
+          <%= link_to "View work", "http://www.bluehellstudio.com" %>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
+      <div class="founder-info" id="tom">
+        <div class="content">
+          <h3>Tom Post</h3>
+          <h4>Happy Amber and The Great Pumpcan illustrator</h4>
+          <p>Growing up in Ohio, Tom can remember being excited about drawing as far back as age five. A freelance illustrator with a BFA in Fine Arts from Columbus College of Art and Design, he has a knack for creating unique, inspirational art for the project at hand. He has done advertising work for a variety of corporate clients and when time permits he pulls out his favorite medium, oil paints. Tom has been pursuing oil painting and expanding his teaching activities since 2001. He specializes in portraiture, figurative and painting en plein air. Tom is a member of the Cincinnati Art Club and his paintings are in the personal collection of various notable collectors. His works have been shown at The Cincinnati Nature Center, Homerama and can currently be seen at The Raymond Gallery in Hyde Park, Ohio.</p>
+          <%= link_to "View work", "http://tompostart.com" %>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
+      <div class="founder-info" id="richard">
+        <div class="content">
+          <h3>Richard Biever</h3>
+          <h4>Gnarly Brown illustrator</h4>
+          <p>Art is my passion – Creating beautiful images and showcasing the extraordinary in a picture. For the past 12 years, I’ve run my own business working with ad agencies and art directors across the U.S. Before that, I worked for an ad agency for 20 years. When I want to have fun, the guitar comes out playing some blues or rock, spending time with my family – my wife and 2 teenagers – and enjoying a good dark beer. </p>
+          <%= link_to "View work", "http://www.copperlion.com/" %>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
+      <div class="founder-info" id="margaret">
+        <div class="content">
+          <h3>Margaret Weiner</h3>
+          <h4>PsycHOPathy illustrator</h4>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
+      <div class="founder-info" id="anthony">
+        <div class="content">
+          <h3>Anthony “Tank” Mansfield</h3>
+          <h4>Sprye illustrator</h4>
+          <p>Anthony "Tank" Mansfield is a visual artist who lives in Cincinnati, Ohio. His work is shown and collected nationally by a number of fans, included some who have permanently had his drawings inked into their skin. His subject matter tends to vary due to the various projects he works on but trees, robots, and video games are his most common reoccurring themes. He holds a Bachelor of Fine Arts from Ohio University and a Masters of Art Education from The Ohio State University.</p>
+          <%= link_to "View work", "http://www.anthonytankmansfield.com" %>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
+      <div class="founder-info" id="tony">
+        <div class="content">
+          <h3>Tony Gilardi</h3>
+          <h4>Identity Crisis illustrator</h4>
+          <p>In 1996, at the College of Mount St. Joseph, I completed a BFA in Graphic Design.  Also at Mount St. Joseph, in 2001, I completed an MA in Art Education.  Since 1997 I have taught Art, both at the middle-grades level and currently at the senior high level, in the Northwest Local School district.  I’ve stayed active creating and exhibiting artwork in galleries and venues throughout the Cincinnati area, and have had a chance to design a logo or two along the way.  My work ranges from high-value graphite drawings to mixed-media abstracts.  Nature, and in particular trees, seem to be my principal inspirations.  Currently I live in West Harrison, IN, with my wife.  I’ve been a homebrewer for 15 years, and have grown my own hops for the last 8 years.  I heartily recommend homebrewing and hop-growing to all.</p>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
+      <div class="founder-info" id="charles">
+        <div class="content">
+          <h3>Charles S. Doll IV</h3>
+          <h4>Dead Flowers illustrator</h4>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
+    </div> <!-- /founder-text -->
+  </section> <!-- /founders -->
+</div>
+

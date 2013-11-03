@@ -1,4 +1,8 @@
 body.beers {
+  @include background($body-bg image-url('backgrounds/bg-beer-default.png') no-repeat top right);
+  .caret {
+    border-top-color: $white;
+  }
   .nav-toggle {
     color: $white;
     &:hover,
@@ -29,10 +33,11 @@ body.beers {
     h2 {
       font-size: calc-em(42px);
       margin: 0;
+      color: $white;
     }
     p {
       font-size: calc-em(23px);
-      color: $black;
+      color: $white;
     }
   } //beer-details
   .beer-detail-header {
@@ -46,6 +51,11 @@ body.beers {
       float: left;
       line-height: 1.5em;
       width: 88%;
+    }
+  }
+  .beer-stats {
+    th {
+      color: $white;
     }
   }
 } //beers

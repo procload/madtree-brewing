@@ -40,6 +40,21 @@ body.interior.happy-amber {
       }
     } //main-nav
   }
+  .navbar-inner {
+    .logo {
+      @include respond-to(41.25em) {
+        @include replace-text(362px, 183px, image-url('img-logo-ha.png') no-repeat top left);         
+      }
+    }
+  }
+  .beer-details {
+    h2 {
+      color: $happy-amber-alt;
+    } //h2 
+    p {
+      color: $happy-amber-alt;
+    }
+  } //beer-details
   .site-footer {
     background: #721F0A;
     a {

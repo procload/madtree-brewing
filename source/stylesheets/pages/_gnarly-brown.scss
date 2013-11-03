@@ -41,6 +41,21 @@ body.gnarly-brown {
       }
     } //main-nav
   }
+  .navbar-inner {
+    .logo {
+      @include respond-to(41.25em) {
+        @include replace-text(362px, 183px, image-url('img-logo-gb.png') no-repeat top left);         
+      }
+    }
+  }
+  .beer-details {
+    h2 {
+      color: $gnarly-brown-alt;
+    } //h2 
+    p {
+      color: $gnarly-brown-alt;
+    }
+  } //beer-details
   .site-footer {
     background: #B47326;
     a {

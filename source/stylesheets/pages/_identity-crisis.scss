@@ -7,10 +7,14 @@ body.identity-crisis {
   .site-header {
     color: $identity-crisis;
   } //site-header
+  .header-toolbar {
+    background: $black;
+    color: $gray-light;
+  }
   .navbar {
-    background: rgba(53,53,53,.95);
+    background: rgba(0,0,0,.25);
     &.section-navbar {
-      background: rgba(53,53,53,.8);
+      background: rgba(0,0,0,.8);
       a {
         color: $gray-light;
       }
@@ -21,6 +25,9 @@ body.identity-crisis {
       } //active
     } //section-navbar
     .main-nav li {
+      a {
+        color: $identity-crisis-alt;
+      }
       &:nth-child(even) {
         background: rgba(53,53,53,.8);
         @include respond-to(41.25em) {
@@ -35,16 +42,23 @@ body.identity-crisis {
       }
     } //main-nav
   } //navbar
+  .navbar-inner {
+    .logo {
+      @include respond-to(41.25em) {
+        @include replace-text(362px, 183px, image-url('img-logo-ic.png') no-repeat top left);         
+      }
+    }
+  }
   .beer-details {
     h2 {
-      color: $white;
+      color: $identity-crisis-alt;
     } //h2 
     p {
-      color: $gray-lighter;
+      color: $identity-crisis-alt;
     }
   } //beer-details
   .site-footer {
-    background: #535353;
+    background: $black;
     a {
       color: $white;
     } //a
@@ -58,8 +72,8 @@ body.identity-crisis {
     color: $white;
   }
   .beer-stats {
-    border-color: rgba(53,53,53,.8);
-    background: rgba(53,53,53,.6);
+    background: rgba(0,0,0,.4);
+    border-color: rgba(0,0,0,.8);
     th {
       color: $gray-lighter;
     }

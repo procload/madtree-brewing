@@ -508,6 +508,26 @@ a {
       line-height: 2em;
     } //a
   } //li
+  .dropdown-menu {
+    padding: 0;
+    li {
+      font-size: calc-em(16px);
+      display: block;
+      &:first-child {
+        @include border-radius(4px 4px 0 0);
+        a {
+          @include border-radius(4px 4px 0 0);
+        }
+      }
+      &:last-child {
+        @include border-radius(0 0 4px 4px);
+        a {
+          @include border-radius(0 0 4px 4px);
+        }
+      }
+    }
+
+  }
 } //section-nav
 
 // Main Content
