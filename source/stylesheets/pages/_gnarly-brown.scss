@@ -20,6 +20,11 @@ body.gnarly-brown {
       a {
         color: $gnarly-brown;
       }
+      li.active {
+        a {
+          color: $white;
+        }
+      } //active
     }
     .main-nav li {
       &:nth-child(even) {

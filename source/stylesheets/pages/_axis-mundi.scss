@@ -1,0 +1,74 @@
+body.axis-mundi {
+  background: $identity-crisis; 
+  @include background($identity-crisis image-url('backgrounds/bg-identity-crisis.png') no-repeat top right);
+
+  .caret {
+    border-top-color: $identity-crisis;
+  }
+
+  .site-header {
+    color: $identity-crisis;
+  } //site-header
+
+  .navbar {
+    background: rgba(53,53,53,.95);
+    &.section-navbar {
+      background: rgba(53,53,53,.8);
+      a {
+        color: $gray-light;
+      }
+      li.active {
+        a {
+          color: $white;
+        }
+      } //active
+    } //section-navbar
+    .main-nav li {
+      &:nth-child(even) {
+        background: rgba(53,53,53,.8);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: rgba(53,53,53,1);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
+  } //navbar
+  .beer-details {
+    h2 {
+      color: $white;
+    } //h2 
+    p {
+      color: $gray-lighter;
+    }
+  } //beer-details
+  .site-footer {
+    background: #535353;
+    a {
+      color: $white;
+    } //a
+  } //site-footer
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $white;
+  }
+  .beer-stats {
+    border-color: rgba(53,53,53,.8);
+    background: rgba(53,53,53,.6);
+    th {
+      color: $gray-lighter;
+    }
+  }
+} //axis-mundi
+
+
+
+

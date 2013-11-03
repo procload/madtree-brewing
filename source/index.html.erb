@@ -3,16 +3,14 @@
   <%= partial 'partials/nav' %>
 <% end %>
 
-
 <div class="container">
   <section class="find-madtree">
-
     <div id="map-canvas">
       <div id="map"></div>
       <div id="loc-list">
-        <ul id="list"></ul>
-      </div>
-    </div>
+        <ul id="list"></ul> <!-- /list -->
+      </div> <!-- /loc-list -->
+    </div> <!-- /map-canvas -->
     <section class="find-beer">
       <div>
         <h2>Find Madtree Beer</h2>
@@ -22,10 +20,10 @@
               <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
               <span class="input-group-btn">
                 <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
-              </span>
+              </span> <!-- /input-group-btn -->
             </div><!-- /input-group -->
-          </form>
-        </div>
+          </form> <!-- /user-location -->
+        </div> <!-- /form-container -->
         <%= link_to "Or browse by our list of retailers", "#" %>
         <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
       </div>
@@ -37,7 +35,6 @@
         <p>5164 Kennedy Ave.</p>
         <p>Cincinnati, OH 45213</p>
       </div> <!-- /address -->
-
       <div class="phone">
         <h5><i class="icon-phone"></i> Phone</h5>
         <p>513-836-8733</p>
@@ -47,9 +44,8 @@
         <p>
         <%= link_to "Keg/Dock Sales", "#" %>
         &mdash;
-          <%= link_to "Outside Sales", "#" %>
-      
-      </p>
+        <%= link_to "Outside Sales", "#" %>
+        </p>
       </div> <!-- /phone -->
     </section> <!-- /address-phone -->
   </section> <!-- /find-madtree -->
@@ -59,7 +55,7 @@
       <h3>Upcoming Events</h3>
     </header> <!-- /upcoming-header -->
     <% 3.times do %>
-      <article class="event-teaser">
+    <article class="event-teaser">
       <header class="teaser-header">
         <a href="#"><span class="date">Oct. 16</span> &mdash; <strong>Expanded Taproom Space</strong></a>
       </header> <!-- /teaser-header -->
@@ -70,24 +66,22 @@
         <%= link_to "Read more&hellip;", "#" %>
       </footer> <!-- /teaser-footer -->
     </article> <!-- /event-teaser -->
-  <% end %>
+    <% end %>
     <footer class="section-footer">
       <%= link_to "View all upcoming events", "#" %>
     </footer> <!-- /section-footer -->
   </section> <!-- /upcoming-events -->
-</div>
+</div> <!-- /container -->
 
 <section class="collage">
   <%= partial "partials/instagram-content" %>
 </section> <!-- /collage -->
-
 
 <div class="container">
   <section class="twitter-stream">
     <h4>Twitter</h4>
     <div id="tweets"></div>
   </section> <!-- /twitter-stream -->
-
 </div>
 
 <section class="madtree-photo">

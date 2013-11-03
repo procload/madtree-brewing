@@ -35,4 +35,17 @@ body.beers {
       color: $black;
     }
   } //beer-details
+  .beer-detail-header {
+    @extend %group;
+    .pint {
+      float: left;
+      margin-right: 5%;
+      width: 7%;
+    }    
+    h2 {
+      float: left;
+      line-height: 1.5em;
+      width: 88%;
+    }
+  }
 } //beers

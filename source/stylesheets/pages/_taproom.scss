@@ -1,0 +1,13 @@
+body.taproom {
+  .taproom-info,
+  .beer-merch {
+    @extend %container;
+    @extend %group;
+  }
+  .taproom-location {
+    @include span-columns(5);
+  }
+  .taproom-about {
+    @include span-columns(7 omega);
+  }
+}

@@ -1,11 +1,12 @@
 <nav class="navbar section-navbar" data-group="beer">
   <div class="navbar-inner">
     <ul class="section-nav">
-      <%= content_tag :li, link_to("Happy Amber", "/beers/happy-amber.html"), class: "active" %>
-      <%= content_tag :li, link_to("Psychopathy", "/beers/psychopathy.html") %>
-      <%= content_tag :li, link_to("Gnarly Brown", "/beers/gnarly-brown.html") %>
-      <%= content_tag :li, link_to("Identity Crisis", "#") %>
-      <%= content_tag :li, link_to("Axis Mundi", "#") %>
+      <% sub_page = data.page.sub_page %>
+      <%= content_tag :li, link_to("Happy Amber", "/beers/happy-amber.html"), class: (sub_page == "happy-amber" ? "active" : "") %>
+      <%= content_tag :li, link_to("Psychopathy", "/beers/psychopathy.html"), class: (sub_page == "psychopathy" ? "active" : "") %>
+      <%= content_tag :li, link_to("Gnarly Brown", "/beers/gnarly-brown.html"), class: (sub_page == "gnarly-brown" ? "active" : "") %>
+      <%= content_tag :li, link_to("Identity Crisis", "/beers/identity-crisis.html"), class: (sub_page == "identity-crisis" ? "active" : "") %>
+      <%= content_tag :li, link_to("Axis Mundi", "/beers/axis-mundi.html"), class: (sub_page == "axis-mundi" ? "active" : "") %>
       <li class="dropdown seasonal-beers">
         <a href="#">Seasonal Beers <b class="caret"></b></a>
         <ul class="dropdown-menu">

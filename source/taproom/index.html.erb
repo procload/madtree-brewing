@@ -1,6 +1,79 @@
+---
+current_page: "taproom"
+---
 <% content_for :page_classes do %>
   interior
 <% end %>
 <% content_for :site_header do %>
   <%= partial '../partials/interior-nav' %>
 <% end %>
+
+<section class="taproom-info">
+  <section class="taproom-location">
+    <div class="taproom-map"></div>
+    <div class="taproom-address-phone">
+      <section class="address-phone">
+        <div class="address">
+          <h5><i class="icon-map-marker"></i> Address</h5>
+          <p>5164 Kennedy Ave.</p>
+          <p>Cincinnati, OH 45213</p>
+        </div> <!-- /address -->
+        <div class="phone">
+          <h5><i class="icon-phone"></i> Phone</h5>
+          <p>513-836-8733</p>
+        </div> <!-- /phone -->
+      </section> <!-- /address-phone -->
+    </div> <!-- /taproom-address -->
+  </section> <!-- /taproom-location -->
+  <section class="taproom-about">
+    <header class="taproom-about-header">
+      <h2>The MadTree Taproom</h2>
+    </header> <!-- /taproom-about-header -->
+    <div class="taproom-about-body">
+      <p>
+        <%= lorem.sentences 3 %>.
+      </p>
+      <p>
+        <%= lorem.sentences 5 %>.
+      </p>
+      <h3>Taproom Hours</h3>
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <th>
+              Monday &mdash; Friday
+            </th>
+            <td>
+              11am&ndash;7pm
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Saturday
+            </th>
+            <td>
+              11am&ndash;7pm
+            </td>
+          </tr>
+          <tr>
+            <th>
+              Monday &mdash; Friday
+            </th>
+            <td>
+              Sunday
+            </td>
+          </tr>
+        </tbody>
+      </table> <!-- /table-striped -->
+    </div> <!--/taproom-about-body -->
+  </section> <!-- /taproom-about -->
+</section> <!-- /taproom-info -->
+
+<section class="beer-merch">
+  <section class="beer-prices">
+    <h3>Beer Prices</h3>
+  </section> <!-- /beer-prices -->
+  <section class="merch-info">
+    <h3>Merchandise</h3>
+  </section> <!-- /merch-info -->
+</section> <!-- /beer-merch -->

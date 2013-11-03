@@ -19,6 +19,11 @@ body.interior.happy-amber {
       a {
         color: $happy-amber;
       }
+      li.active {
+        a {
+          color: $white;
+        }
+      } //active
     }
     .main-nav li {
       &:nth-child(even) {

@@ -85,6 +85,11 @@ $ ->
 
     $(".main-nav .active a").click (e) ->
       e.preventDefault()
+      if $(this).children(".icon-caret-right").length > 0
+        $(this).children(".icon-caret-right").removeClass("icon-caret-right").addClass("icon-caret-down")
+      else
+        $(this).children(".icon-caret-down").removeClass("icon-caret-down").addClass("icon-caret-right")
+
       $(this).siblings(".section-navbar").children(".navbar-inner").children(".section-nav").toggleClass("showing")
 
     reverseGeocode = (lat, long) ->

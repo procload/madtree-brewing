@@ -19,6 +19,11 @@ body.psychopathy {
       a {
         color: $psychopathy;
       }
+      li.active {
+        a {
+          color: $white;
+        }
+      } //active
     }
     .main-nav li {
       &:nth-child(even) {

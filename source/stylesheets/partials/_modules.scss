@@ -105,7 +105,7 @@
         padding: calc-em(20px, 32px) calc-em(30px, 32px);
       }
       &.abv-label {
-      
+
       }
       &.abv-amount {
       }
@@ -139,6 +139,10 @@
       width: 100%;
     }
     &.empty {
+      display: none;
+      @include respond-to(50em) {
+        display: inline-block;
+      }
       &:nth-of-type(1n) {
         opacity: .3;  
       }
@@ -286,6 +290,55 @@
           > span {
             font-weight: 500;
             text-transform: capitalize;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+.address-phone {
+  h5 {
+    color: $red;
+  }
+  .email,
+  .address,
+  .phone {
+    p {
+      margin: 0;
+      font-weight: 300;
+      font-size: calc-em(24px);
+      @include respond-to(57.5em) {
+        font-size: calc-em(21px);
+      }
+      @include respond-to(61.25em) {
+        font-size: calc-em(24px);
+      }
+    }
+  } //address & //phone & //email
+  .address {
+    margin-bottom: calc-em(16px);
+  }
+  .email {
+    clear: both;
+  }
+} //address-phone
+
+
+.table {
+  &.table-striped {
+    > tbody {
+      > tr {
+        > th,
+        > td {
+          border-color: rgba(0,0,0,.8);
+        }
+        &:nth-child(odd) {
+          > th,
+          > td {
+            background-color: rgba(255,255,255,.2);
           }
         }
       }

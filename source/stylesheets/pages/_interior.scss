@@ -26,7 +26,12 @@ body.interior {
       min-height: 0;
       margin: 0;
       a {
-        color: $white;
+        color: $gray-light;
+      }
+      .active {
+        a {
+          color: $white;
+        }
       }
     }
   }

@@ -6,6 +6,9 @@
 @import "pages/happy-amber";
 @import "pages/psychopathy";
 @import "pages/gnarly-brown";
+@import "pages/identity-crisis";
+@import "pages/axis-mundi";
+@import "pages/taproom";
 
 // Global
 // --------------------------------------------------
@@ -37,15 +40,12 @@ h4, h5, h6 {
   margin: 0 0 1em 0;
   font-family: $font-family-display;
   text-transform: uppercase;
-}
+} //h1, h2, h3, h4, h5, h6
 
 h1 {
   font-size: calc-em(60px);
 }
 
-h2 {
-
-}
 
 h3 {
   font-size: calc-em(32px);
@@ -72,7 +72,7 @@ p {
     font-size: calc-em(12px);
     margin-bottom: 0;
   }
-}
+} //p
 
 // Links
 // --------------------------------------------------
@@ -80,7 +80,6 @@ p {
 a {
   color: $red;
 }
-
 
 // Header
 // --------------------------------------------------
@@ -114,19 +113,19 @@ a {
   .taproom-hours {
     font-size: calc-em(11px);
     line-height: calc-em(23px, 11px);
+    text-transform: uppercase;
     .more-text {
       display: none;
       @include respond-to(33.125em) {
         display: inline;
       }
-    }
+    } //more-text
+    span {
+      text-transform: none;
+    } //span
     @include respond-to(33.125em) {
       font-size: calc-em(13px);
       @include span-columns(8);
-    }
-    text-transform: uppercase;
-    span {
-      text-transform: none;
     }
   } //taproom-hours
   .social-nav {
@@ -147,23 +146,23 @@ a {
       @include image-2x("sprites/spr-social.png", calc-em(20px), calc-em(20px));
       &.facebook {
         background-position: 0 0;
-      }
+      } //facebook
       &.untappd {
         background-position: 0 -24px;
-      }
+      } //untappd
       &.twitter {
         background-position: 0 -49px;
-      }
+      } //twitter
       &.yelp {
         background-position: 0 -76px;
-      }
-    }
+      } //yelp
+    } //li
   } //social-links
   .interior & {
     @include respond-to(41.25em) {
       margin-bottom: calc-em(110px);
     }
-  }
+  } //interior
 } //header-toolbar
 
 // Navbar
@@ -182,24 +181,21 @@ a {
     top: auto;
     left: auto;
     right: auto;
-    margin-bottom: calc-em(64px);
+    margin-bottom: 0;
   }
-
   .interior & {
     margin-bottom: 0;
     @include respond-to(41.25em) {
       padding: calc-em(30px) 0 0 0;
-       
     }
     @include respond-to(55.625em) {
       padding: calc-em(30px) 0;
     }
-  }
+  } //interior
   &.section-navbar {
     padding: 0;
     margin-bottom: calc-em(48px);
-  }
-
+  } //section-navbar
   .nav-toggle {
     position: absolute;
     font-size: calc-em(28px);
@@ -214,19 +210,17 @@ a {
     @include respond-to(41.25em) {
       display: none;
     }
-  }
-
+  } //nav-toggle
 } //navbar
 
-
 .navbar-inner {
-  @include respond-to(41.25em) {
-    @include container;
-  }
   background: none;
   @include box-shadow(none);
   @include border-radius(0);
   border: none;
+  @include respond-to(41.25em) {
+    @include container;
+  }
   .interior & {
     position: relative;
     .logo {
@@ -243,17 +237,19 @@ a {
         top: -(calc-em(102px));
         @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
       }
-    }
-  }
+    } //logo
+  } //interior
 } //navbar-inner
 
 .header-hero {
   @include background(transparent image-url('backgrounds/bg-home.png') no-repeat top left);
   background-size: cover;
   margin-bottom: calc-em(24px);
+
   @include respond-to(41.25em) {
     margin-bottom: 0;
   }
+
   .hero-content {
     @extend %container;
     @extend %group;
@@ -266,7 +262,8 @@ a {
       overflow:visible;
       overflow-y: hidden;
     }
-  }
+  } //hero-content
+
   .logo {
     @include replace-text(362px, 183px, image-url('img-logo-alt.png') no-repeat top left); 
     z-index: 102;
@@ -283,14 +280,14 @@ a {
       top: auto;
       left: auto;
     }
-  }
+  } //logo
+
   .top-beer-nav {
     position: absolute;
     width: 835px;
     right: 0;
-  }
-  .beer-cans {
-  }
+  } //top-beer-nav
+
   .happy-amber,
   .psychopathy,
   .gnarly-brown {
@@ -302,8 +299,9 @@ a {
       background-size: contain;
       width: 200px;
       height: 200px;
-    }
+    } //a
   } //happy-amber, psychopathy, gnarly-brown
+
   .happy-amber {
     right: 230px;
     @include respond-to(41.25em) {
@@ -311,14 +309,15 @@ a {
       top: 200px;
     }
     a {
-      @include respond-to(41.25em) {
-        width: 323px;
-      }
       height: 408px;
       @include background(transparent image-url('beers/img-happy-amber-combined.png') no-repeat top left);
       background-size: contain;
-    }
-  }
+      @include respond-to(41.25em) {
+        width: 323px;
+      }
+    } //a
+  } //happy-amber
+
   .gnarly-brown {
     right: 80px;
     @include respond-to(41.25em) {
@@ -326,14 +325,15 @@ a {
       left: 260px;
     }
     a {
-      @include respond-to(41.25em) {
-        width: 318px;
-      }
       height: 406px;
       @include background(transparent image-url('beers/img-gnarly-combined.png') no-repeat top left);
       background-size: contain;
-    }
-  }
+      @include respond-to(41.25em) {
+        width: 318px;
+      }
+    } //a
+  } //gnarly-brown
+
   .psychopathy {
     right: -70px;
     @include respond-to(41.25em) {
@@ -347,11 +347,10 @@ a {
       height: 408px;
       @include background(transparent image-url('beers/img-psycho-combined.png') no-repeat top left);
       background-size: contain;
-    }
-  }
-}
+    } //a
+  } //psychopathy
 
-
+} //header-hero
 
 .main-nav {
   @extend %zero-list;
@@ -365,10 +364,6 @@ a {
     margin-top: 0;
     text-align: justify;
     @include transition(none);
-    padding-top: calc-em(90px, .1px);
-  }
-  @include respond-to(55.625em) {
-    padding-top: 0;
   }
 
   &:after {
@@ -377,19 +372,19 @@ a {
       width: 100%;
       display: inline-block;
     }
-  }
+  } //:after
 
   &.expanded {
     height: auto; 
-  }
+  } //expanded
+
   li {
+    display: block;
     @include respond-to(41.25em) {
       display: inline-block;
-      width: 25%;
+      width: 33.333333%;
       text-align: center;
     }
-
-    display: block;
     &:nth-child(odd) {
       background: lighten($gray-darker, 4%); 
       @include respond-to(41.25em) {
@@ -402,34 +397,60 @@ a {
         background: none;
       }
     }
-  }
-    a {
-      padding: calc-em(6px, 32px) calc-em(16px, 32px);
-      display: block;
-      font-size: calc-em(32px);
-      display: block;
-      font-family: $nav-font-family;
-      font-weight: 300;
-      color: $white;
-      text-transform: uppercase;
-      @include respond-to(41.25em) {
-        padding: 0;
-        font-size: calc-em(28px, .1px);
-        line-height: calc-em(62px, 28px);
-      }
+  } //li
+
+  a {
+    padding: calc-em(6px, 32px) calc-em(16px, 32px);
+    display: block;
+    font-size: calc-em(32px);
+    display: block;
+    font-family: $nav-font-family;
+    font-weight: 300;
+    color: $white;
+    text-transform: uppercase;
+    @include respond-to(41.25em) {
+      padding: 0;
+      font-size: calc-em(28px, .1px);
+      line-height: calc-em(62px, 28px);
     }
+  } //a
   
   .interior & {
+    @include respond-to(41.25em) {
+      padding-top: calc-em(90px, .1px);
+    }
     @include respond-to(55.625em) {
+      padding-top: 0;
       float: right;
       width: 60%;
     }
-  }
+    li {
+      i {
+        display: none;  
+      } //i
+      a {
+        @include opacity(.7);
+      } //a
+      &.active {
+        i {
+          display: inline-block;  
+          float: right;
+          line-height: 1.25em;
+          @include respond-to(41.25em) {
+            display: none; 
+          }
+        } //i
+        a {
+          @include opacity(1);
+        } //a
+      } //active
+    } //li
+  } //interior
 } //main-nav
 
 .section-navbar {
   margin-bottom: calc-em(32px);
-}
+} //section-navbar
 
 .section-nav {
   @extend %zero-list;
@@ -439,7 +460,25 @@ a {
   &.showing {
     height: auto;
     overflow: visible;
-  }
+    li {
+      a {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        @include respond-to(41.25em) {
+          border: none;
+        }
+      } //a
+      &:last-child {
+        a {
+          border: none;
+        }
+      } //last-child
+      &.active {
+        a {
+          color: $white;
+        }
+      } //active
+    } //li
+  } //showing
   @include respond-to(41.25em) {
     font-size: .1px;
     text-align: justify;
@@ -452,7 +491,7 @@ a {
       width: 100%;
       display: inline-block;
     }
-  }
+  } //after
   li {
     @include respond-to(41.25em) {
       display: inline-block;
@@ -467,10 +506,9 @@ a {
     }
     a {
       line-height: 2em;
-    }
-  }
+    } //a
+  } //li
 } //section-nav
-
 
 // Main Content
 // --------------------------------------------------

@@ -1,3 +1,7 @@
+---
+current_page: "community"
+sub_page: "founders"
+---
 <% content_for :page_classes do %>
   interior
 <% end %>
@@ -5,7 +9,6 @@
   <%= partial '../partials/interior-nav' %>
   <%= partial '../partials/section-nav-community' %>
 <% end %>
-
 
 <div class="container">
   <h2>Founders</h2>
@@ -18,7 +21,7 @@
         <% 3.times do %>
           <li class="empty"><%= link_to image_tag("community/bg-about.png"), "#" %></li>
         <% end %>
-      </ul>
+      </ul> <!-- /photo-grid -->
     </div> <!-- /founder-photos -->
     <div class="founder-text">
       <div class="founder-info active" id="brady">
@@ -30,8 +33,8 @@
             <h5>Favorite Beer: <span>Psychopathy</span></h5>
             <%= image_tag "community/img-can-psychopathy.png" %>
           </div> <!-- /favorite-beer -->
-        </div>
-      </div>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
       <div class="founder-info" id="jeff">
         <div class="content">
           <h3>Jeff Hunt</h3>
@@ -41,8 +44,8 @@
             <h5>Favorite Beer: <span>Gnarly Brown</span></h5>
             <%= image_tag "community/img-can-gnarly.png" %>
           </div> <!-- /favorite-beer -->
-        </div>
-      </div>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info -->
       <div class="founder-info" id="kenny">
         <div class="content">
           <h3>Kenny McNutt</h3>
@@ -52,8 +55,8 @@
             <h5>Favorite Beer: <span>Happy Amber</span></h5>
             <%= image_tag "community/img-can-amber.png" %>
           </div> <!-- /favorite-beer -->
-        </div>
-      </div>
-    </div> <!-- /foudner-text -->
-  </section>
+        </div> <!-- /content -->
+      </div> <!-- /founder-info --> 
+    </div> <!-- /founder-text -->
+  </section> <!-- /founders -->
 </div>

@@ -68,32 +68,6 @@ body.index {
     }
   } //find-beer
   
-  .address-phone {
-    h5 {
-      color: $red;
-    }
-    .email,
-    .address,
-    .phone {
-      p {
-        margin: 0;
-        font-weight: 300;
-        font-size: calc-em(24px);
-        @include respond-to(57.5em) {
-          font-size: calc-em(21px);
-        }
-        @include respond-to(61.25em) {
-          font-size: calc-em(24px);
-        }
-      }
-    } //address & //phone & //email
-    .address {
-      margin-bottom: calc-em(16px);
-    }
-    .email {
-      clear: both;
-    }
-  } //address-phone
 
 
   .address {
