@@ -64,8 +64,7 @@
   <div class="navbar-inner">
     <ul class="main-nav">
       <li><a href="/beers/happy-amber.html">Beers</a></li>
-      <li><a href="#">News &amp; Events</a></li>
-      <li><a href="#">Taproom</a></li>
+      <li><a href="../taproom/">Taproom</a></li>
       <li><a href="../community/">Community</a></li>
     </ul> <!-- /main-nav -->
   </div> <!-- /navbar-inner -->
@@ -77,16 +76,14 @@
   
   <main class="main-content">
     
-
 <div class="container">
   <section class="find-madtree">
-
     <div id="map-canvas">
       <div id="map"></div>
       <div id="loc-list">
-        <ul id="list"></ul>
-      </div>
-    </div>
+        <ul id="list"></ul> <!-- /list -->
+      </div> <!-- /loc-list -->
+    </div> <!-- /map-canvas -->
     <section class="find-beer">
       <div>
         <h2>Find Madtree Beer</h2>
@@ -96,10 +93,10 @@
               <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
               <span class="input-group-btn">
                 <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
-              </span>
+              </span> <!-- /input-group-btn -->
             </div><!-- /input-group -->
-          </form>
-        </div>
+          </form> <!-- /user-location -->
+        </div> <!-- /form-container -->
         <a href="#">Or browse by our list of retailers</a>
         <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
       </div>
@@ -111,7 +108,6 @@
         <p>5164 Kennedy Ave.</p>
         <p>Cincinnati, OH 45213</p>
       </div> <!-- /address -->
-
       <div class="phone">
         <h5><i class="icon-phone"></i> Phone</h5>
         <p>513-836-8733</p>
@@ -121,9 +117,8 @@
         <p>
         <a href="#">Keg/Dock Sales</a>
         &mdash;
-          <a href="#">Outside Sales</a>
-      
-      </p>
+        <a href="#">Outside Sales</a>
+        </p>
       </div> <!-- /phone -->
     </section> <!-- /address-phone -->
   </section> <!-- /find-madtree -->
@@ -133,7 +128,7 @@
       <h3>Upcoming Events</h3>
     </header> <!-- /upcoming-header -->
     
-      <article class="event-teaser">
+    <article class="event-teaser">
       <header class="teaser-header">
         <a href="#"><span class="date">Oct. 16</span> &mdash; <strong>Expanded Taproom Space</strong></a>
       </header> <!-- /teaser-header -->
@@ -144,8 +139,8 @@
         <a href="#">Read more&hellip;</a>
       </footer> <!-- /teaser-footer -->
     </article> <!-- /event-teaser -->
-  
-      <article class="event-teaser">
+    
+    <article class="event-teaser">
       <header class="teaser-header">
         <a href="#"><span class="date">Oct. 16</span> &mdash; <strong>Expanded Taproom Space</strong></a>
       </header> <!-- /teaser-header -->
@@ -156,8 +151,8 @@
         <a href="#">Read more&hellip;</a>
       </footer> <!-- /teaser-footer -->
     </article> <!-- /event-teaser -->
-  
-      <article class="event-teaser">
+    
+    <article class="event-teaser">
       <header class="teaser-header">
         <a href="#"><span class="date">Oct. 16</span> &mdash; <strong>Expanded Taproom Space</strong></a>
       </header> <!-- /teaser-header -->
@@ -168,12 +163,12 @@
         <a href="#">Read more&hellip;</a>
       </footer> <!-- /teaser-footer -->
     </article> <!-- /event-teaser -->
-  
+    
     <footer class="section-footer">
       <a href="#">View all upcoming events</a>
     </footer> <!-- /section-footer -->
   </section> <!-- /upcoming-events -->
-</div>
+</div> <!-- /container -->
 
 <section class="collage">
   <ul id="instagram-photos" class="collage-row">
@@ -182,13 +177,11 @@
 
 </section> <!-- /collage -->
 
-
 <div class="container">
   <section class="twitter-stream">
     <h4>Twitter</h4>
     <div id="tweets"></div>
   </section> <!-- /twitter-stream -->
-
 </div>
 
 <section class="madtree-photo">
