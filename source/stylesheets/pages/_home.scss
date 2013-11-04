@@ -5,6 +5,9 @@ body.index {
     &.now-showing {
       height: 400px;
     }
+    img {
+      max-width: none;
+    }
   }
   #user-location {
     &.can-geolocate {
