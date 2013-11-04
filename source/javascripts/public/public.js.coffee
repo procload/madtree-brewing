@@ -115,11 +115,12 @@ $ ->
       
     error_callback = (p) ->
 
-    if geoPosition.init() # Geolocation Initialisation
-      geoPosition.getCurrentPosition success_callback, error_callback,
-        enableHighAccuracy: true
-    else
-      return
+    if $("body.home").length > 0 
+      if geoPosition.init() # Geolocation Initialisation
+        geoPosition.getCurrentPosition success_callback, error_callback,
+          enableHighAccuracy: true
+      else
+        return
 
     $("#loc-list").on "click", ".show-on-map", (e) ->
       e.preventDefault()
