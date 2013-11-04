@@ -172,7 +172,7 @@ a {
   top: calc-em(35px);
   left: 0;
   right: 0;
-  min-height: calc-em(50px);
+  min-height: calc-em(60px);
   z-index: 101;
   background: $gray-darker;
   @include respond-to(41.25em) {
@@ -218,6 +218,7 @@ a {
   @include box-shadow(none);
   @include border-radius(0);
   border: none;
+  @extend %group;
   @include respond-to(41.25em) {
     @include container;
   }
@@ -239,6 +240,12 @@ a {
       }
     } //logo
   } //interior
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  
 } //navbar-inner
 
 .header-hero {
@@ -354,11 +361,15 @@ a {
 
 .main-nav {
   @extend %zero-list;
-  height: 0;
-  overflow: hidden;
+  height: 1px;
+  display: block;
   margin-top: calc-em(60px);
   @include transition(.2s linear all); 
+  max-height: calc-em(340px);
+  overflow-x: visible;
   @include respond-to(41.25em) {
+    max-height: none;
+    display: block;
     font-size: .1px;
     height: auto;
     margin-top: 0;
@@ -366,7 +377,13 @@ a {
     @include transition(none);
   }
 
+  &:before {
+    content: " ";
+    display: table;
+  }
   &:after {
+    content: " ";
+    display: table;
     @include respond-to(41.25em) {
       content: '';
       width: 100%;
@@ -374,8 +391,17 @@ a {
     }
   } //:after
 
+  &.gone {
+    display: none;
+    @include respond-to(41.25em) {
+      content: '';
+      width: 100%;
+      display: inline-block;
+    }
+  }
   &.expanded {
-    height: auto; 
+    overflow-y: auto;
+    height: auto;
   } //expanded
 
   li {

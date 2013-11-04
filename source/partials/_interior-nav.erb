@@ -2,7 +2,7 @@
   <%= link_to "<i class='icon-reorder'></i>", "#", class: "nav-toggle" %>
   <div class="navbar-inner">
     <%= link_to "MadTree Brewing Company", "/", class: "logo" %>
-    <ul class="main-nav">
+    <ul class="main-nav gone">
       <% current_page = data.page.current_page %>
       <%= content_tag :li, link_to("Beers <i class='icon-caret-right'></i>", "../beers/happy-amber.html", data: { children: "beer" }), class: (current_page == "beers" ? "active" : "")  %>
       <%= content_tag :li, link_to("Taproom <i class='icon-caret-right'></i>", "../taproom/"), class: (current_page == "taproom" ? "active" : "") %>

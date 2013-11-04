@@ -75,6 +75,7 @@ $ ->
 
     $(".nav-toggle").click (e) ->
       e.preventDefault()
+      $(".main-nav").toggleClass("gone")
       $(".main-nav").toggleClass("expanded")
 
     activeGroup = $(".main-nav .active a").data("children")
