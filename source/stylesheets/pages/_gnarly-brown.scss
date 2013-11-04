@@ -21,7 +21,7 @@ body.gnarly-brown {
         color: $gnarly-brown;
       }
       li.active {
-        a {
+       > a {
           color: $white;
         }
       } //active

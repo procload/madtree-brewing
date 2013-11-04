@@ -32,8 +32,7 @@ $ ->
         n++
       element.innerHTML = html
 
-    
-    twitterFetcher.fetch('385564659522097152', 'tweets', 3, true, true, false, 'default', false, handleTweets, false) if $("body.index").length > 0
+    twitterFetcher.fetch('397202470268452864', 'tweets', 5, true, true, false, 'default', false, handleTweets, false) if $("body.index").length > 0
     
       
     feed = new Instafeed(

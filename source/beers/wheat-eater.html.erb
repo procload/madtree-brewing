@@ -1,0 +1,43 @@
+---
+current_page: "beers"
+sub_page: "wheat-eater"
+---
+<% content_for :page_classes do %>
+  interior 
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+  <%= partial '../partials/section-nav-beer' %>
+<% end %>
+
+<div class="container">
+  <section class="beer-description">
+    <div class="beer-images">
+      <%= image_tag "beers/wheat-eater/img-tap.png" %>
+    </div> <!-- /beer-images -->
+    <div class="beer-details">
+      <header class="beer-detail-header">
+        <h2>Wheat Eater</h2>
+      </header> <!-- /beer-detail-header -->
+      <p>A light, slightly sweet, crisp Kölsch ale with notes of citrus and orange marmalade. Inspired by Michael Makin, a Starfire student with a passion for life and beer, the Wheat Eater was brewed in collaboration with Fifty West Brewing Company.</p>
+      <table class="table beer-stats">
+        <tr class="numbers">
+          <th class="abv-label">ABV</th>
+          <td class="abv-amount">5.4%</td>
+          <th class="ibu-label">IBU</th>
+          <td class="ibu-amount">18</td>
+        </tr>
+        <tr>
+          <th>Malts</th>
+          <td colspan="3" class="ingredients">Pilsen, Red Wheat</td>
+        </tr>
+        <tr>
+          <th>Hops</th>
+          <td colspan="3" class="ingredients hops">Galena, Pacifica, Falconer’s Flight</td>
+        </tr>
+      </table> <!-- /beer-stats -->
+    </div> <!-- /beer-details -->
+  </section> <!-- /beer-description -->
+</div>
+
+

@@ -29,15 +29,43 @@ body.interior {
         color: $gray-light;
       }
       .active {
-        a {
+        > a {
           color: $white;
         }
       }
     }
   }
-  .main-content {
-    @include respond-to(38.75em) {
-    
+  .section-nav {
+    .dropdown-menu {
+      position: static;
+      width: 100%;
+      @include border-radius(0);
+      @include box-shadow(none);
+      margin: 0;
+      border: none;
+      @include respond-to(41.25em) {
+        @include border-radius(4px);
+        position: absolute;
+        width: auto;
+        @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+        margin: 2px 0 0;
+        border: 1px solid #cccccc;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+      }
+      li {
+        &:first-child {
+          @include border-radius(0);
+          @include respond-to(41.25em) {
+            @include border-radius(4px 4px 0 0);
+          }
+        }
+        &:last-child {
+          @include border-radius(0);
+          @include respond-to(41.25em) {
+            @include border-radius(0 0 4px 4px);
+          }
+        }
+      }
     }
   }
 }

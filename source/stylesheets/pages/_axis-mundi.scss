@@ -19,7 +19,7 @@ body.axis-mundi {
         color: $gray-light;
       }
       li.active {
-        a {
+      > a {
           color: $white;
         }
       } //active

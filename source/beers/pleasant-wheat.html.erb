@@ -1,0 +1,43 @@
+---
+current_page: "beers"
+sub_page: "pleasant-wheat"
+---
+<% content_for :page_classes do %>
+  interior 
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+  <%= partial '../partials/section-nav-beer' %>
+<% end %>
+
+<div class="container">
+  <section class="beer-description">
+    <div class="beer-images">
+      <%= image_tag "beers/pleasant-wheat/img-tap.png" %>
+    </div> <!-- /beer-images -->
+    <div class="beer-details">
+      <header class="beer-detail-header">
+        <h2>Pleasant Wheat</h2>
+      </header> <!-- /beer-detail-header -->
+      <p>A crisp and refreshing summer ale that pleasantly blends grapefruit, citrus, and lemon zest flavors with the slight sweetness of malted wheat.</p>
+      <table class="table beer-stats">
+        <tr class="numbers">
+          <th class="abv-label">ABV</th>
+          <td class="abv-amount">4.7%</td>
+          <th class="ibu-label">IBU</th>
+          <td class="ibu-amount">29</td>
+        </tr>
+        <tr>
+          <th>Malts</th>
+          <td colspan="3" class="ingredients">2-Row, Wheat, Carapils, Munich 10L</td>
+        </tr>
+        <tr>
+          <th>Hops</th>
+          <td colspan="3" class="ingredients hops">Galena, Fuggle, Falconer’s Flight, Zythos</td>
+        </tr>
+      </table> <!-- /beer-stats -->
+    </div> <!-- /beer-details -->
+  </section> <!-- /beer-description -->
+</div>
+
+

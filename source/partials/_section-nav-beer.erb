@@ -7,20 +7,15 @@
       <%= content_tag :li, link_to("Gnarly Brown", "/beers/gnarly-brown.html"), class: (sub_page == "gnarly-brown" ? "active" : "") %>
       <%= content_tag :li, link_to("Identity Crisis", "/beers/identity-crisis.html"), class: (sub_page == "identity-crisis" ? "active" : "") %>
       <%= content_tag :li, link_to("Axis Mundi", "/beers/axis-mundi.html"), class: (sub_page == "axis-mundi" ? "active" : "") %>
-      <li class="dropdown seasonal-beers">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Seasonal Beers <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <% 4.times do %>
-            <%= content_tag :li, link_to("Seasonal Beer", "#") %>
-          <% end %>
-        </ul> <!-- /dropdown-menu -->
-      </li> <!-- /Seasonal Beers -->
-      <li class="dropdown seasonal-beers">
+      <% limited_releases = ["batch-one", "flight-of-simcoe", "pleasant-wheat", "sprye", "wheat-eater"] %>
+      <li class="dropdown seasonal-beers <%= 'active' if limited_releases.include? sub_page %>">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Limited Releases <b class="caret"></b></a>
         <ul class="dropdown-menu">
-          <% 4.times do %>
-            <%= content_tag :li, link_to("Limited Release", "#") %>
-          <% end %>
+          <%= content_tag :li, link_to("Batch One", "/beers/batch-one.html"), class: (sub_page == "batch-one" ? "active" : "") %>
+          <%= content_tag :li, link_to("Flight of Simcoe", "/beers/flight-of-simcoe.html"), class: (sub_page == "flight-of-simcoe" ? "active" : "") %>
+          <%= content_tag :li, link_to("Pleasant Wheat", "/beers/pleasant-wheat.html"), class: (sub_page == "pleasant-wheat" ? "active" : "") %>
+          <%= content_tag :li, link_to("Sprye", "/beers/sprye.html"), class: (sub_page == "sprye" ? "active" : "") %>
+          <%= content_tag :li, link_to("Wheat Eater", "/beers/wheat-eater.html"), class: (sub_page == "wheat-eater" ? "active" : "") %>
         </ul> <!-- /dropdown-menu -->
       </li> <!-- /Limited Releases -->      
     </ul> <!-- /section-nav -->

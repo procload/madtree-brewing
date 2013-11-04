@@ -20,7 +20,7 @@ body.psychopathy {
         color: $psychopathy;
       }
       li.active {
-        a {
+       > a {
           color: $white;
         }
       } //active

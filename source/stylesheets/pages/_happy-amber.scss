@@ -20,7 +20,7 @@ body.interior.happy-amber {
         color: $happy-amber;
       }
       li.active {
-        a {
+       > a {
           color: $white;
         }
       } //active

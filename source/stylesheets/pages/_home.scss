@@ -129,6 +129,9 @@ body.index {
   
   .twitter-stream {
     margin-bottom: calc-em(80px);
+    @include respond-to(41.25em) {
+      @include span-columns(6);
+    }
   } //twitter-stream
 
 
