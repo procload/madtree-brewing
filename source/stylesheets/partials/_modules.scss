@@ -323,6 +323,9 @@
   }
   .email {
     clear: both;
+    p {
+      font-size: calc-em(21px);
+    }
   }
 } //address-phone
 

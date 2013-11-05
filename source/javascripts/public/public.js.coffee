@@ -51,6 +51,8 @@ $ ->
       target = $(this).data("target")
       $(".founder-info.active").removeClass("active")
       $(target).addClass("active")
+      $(".founder").removeClass("active")
+      $(this).closest(".founder").addClass("active")
 
     $("#instagram-photos").on "click", ".photo a", (e) ->
       e.preventDefault()
@@ -123,9 +125,9 @@ $ ->
       else
         return
 
-    $("#loc-list").on "click", ".show-on-map", (e) ->
-      e.preventDefault()
-      $("#map").addClass("now-showing")
+    #$("#loc-list").on "click", ".show-on-map", (e) ->
+      #e.preventDefault()
+      #$("#map").addClass("now-showing")
 
     showTaproom = (long, lat) ->
       myLatlng = new google.maps.LatLng(long, lat)
