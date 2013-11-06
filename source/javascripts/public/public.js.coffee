@@ -74,6 +74,7 @@ $ ->
     $(".find-beer h2").fitText(.66)
 
     $(".beer-details h2").fitText(.75)
+    
 
     $(".nav-toggle").click (e) ->
       e.preventDefault()
@@ -148,7 +149,7 @@ $ ->
       marker = new google.maps.Marker(
         position: myLatlng
         map: map
-        title: "Hello World!"
+        title: "MadTree Brewery"
       )
       infowindow.open map, marker
 

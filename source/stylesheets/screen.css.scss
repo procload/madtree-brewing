@@ -113,19 +113,24 @@ a {
   .taproom-hours {
     font-size: calc-em(11px);
     line-height: calc-em(23px, 11px);
-    text-transform: uppercase;
     .more-text {
       display: none;
       @include respond-to(33.125em) {
         display: inline;
       }
     } //more-text
-    span {
-      text-transform: none;
-    } //span
+    strong {
+      color: $white;
+    }
     @include respond-to(33.125em) {
       font-size: calc-em(13px);
       @include span-columns(8);
+    }
+    .day {
+      @include respond-to(33.125em) {
+        display: inline-block;
+        margin-right: calc-em(6px, 11px);
+      } 
     }
   } //taproom-hours
   .social-nav {
@@ -604,8 +609,6 @@ a {
       @extend %zero-list;
       > li {
         display: block;
-        text-transform: uppercase;
-        font-family: $font-family-display;
         margin-bottom: calc-em(6px);
       }
       p {
@@ -614,6 +617,7 @@ a {
     } //ul
   } //nav-item-body
   .social-links {
+    font-size: calc-em(24px);
     @extend %zero-list;
   }
 }

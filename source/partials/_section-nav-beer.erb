@@ -7,15 +7,36 @@
       <%= content_tag :li, link_to("Gnarly Brown", "/beers/gnarly-brown.html"), class: (sub_page == "gnarly-brown" ? "active" : "") %>
       <%= content_tag :li, link_to("Identity Crisis", "/beers/identity-crisis.html"), class: (sub_page == "identity-crisis" ? "active" : "") %>
       <%= content_tag :li, link_to("Axis Mundi", "/beers/axis-mundi.html"), class: (sub_page == "axis-mundi" ? "active" : "") %>
-      <% limited_releases = ["batch-one", "flight-of-simcoe", "pleasant-wheat", "sprye", "wheat-eater"] %>
+      <%= content_tag :li, link_to("Kolsch", "/beers/kolsch.html"), class: (sub_page == "kolsch" ? "active" : "") %>
+      <%= content_tag :li, link_to("Galaxy High", "/beers/galaxy-high.html"), class: (sub_page == "galaxy-high" ? "active" : "") %>
+      <% seasonals = ["sprye", "daywalker", "pleasant-wheat", "the-great-pumpcan", "thundersnow" ] %>
+      <li class="dropdown seasonal-beers <%= 'active' if seasonals.include? sub_page %>">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Seasonals <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <%= content_tag :li, link_to("Sprye", "/beers/sprye.html"), class: (sub_page == "sprye" ? "active" : "") %>
+          <%= content_tag :li, link_to("Daywalker", "/beers/daywalker.html"), class: (sub_page == "daywalker" ? "active" : "") %>
+          <%= content_tag :li, link_to("Pleasant Wheat", "/beers/pleasant-wheat.html"), class: (sub_page == "pleasant-wheat" ? "active" : "") %>
+          <%= content_tag :li, link_to("The Great PumpCan", "/beers/pumpcan.html"), class: (sub_page == "the-great-pumpcan" ? "active" : "") %>
+          <%= content_tag :li, link_to("Thundersnow", "/beers/thundersnow.html"), class: (sub_page == "thundersnow" ? "active" : "") %>
+        </ul> <!-- /dropdown-menu -->
+      </li> <!-- /Limited Releases -->      
+      <% limited_releases = ["batch-one", "wheat-eater", "axis-mundi-bourbon", "flight-of-simcoe", "gnarly-brown-vanilla", "gnarly-brown-coffee", "pilgrim-pale-ale", "unhappy-amber", "everything-went-black", "rubus-cacao", "old-battering-ram", "flolsch", "dead-flowers"] %>
       <li class="dropdown seasonal-beers <%= 'active' if limited_releases.include? sub_page %>">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Limited Releases <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <%= content_tag :li, link_to("Batch One", "/beers/batch-one.html"), class: (sub_page == "batch-one" ? "active" : "") %>
-          <%= content_tag :li, link_to("Flight of Simcoe", "/beers/flight-of-simcoe.html"), class: (sub_page == "flight-of-simcoe" ? "active" : "") %>
-          <%= content_tag :li, link_to("Pleasant Wheat", "/beers/pleasant-wheat.html"), class: (sub_page == "pleasant-wheat" ? "active" : "") %>
-          <%= content_tag :li, link_to("Sprye", "/beers/sprye.html"), class: (sub_page == "sprye" ? "active" : "") %>
           <%= content_tag :li, link_to("Wheat Eater", "/beers/wheat-eater.html"), class: (sub_page == "wheat-eater" ? "active" : "") %>
+          <%= content_tag :li, link_to("Bourbon Barrel Aged Axis Mundi", "/beers/axis-mundi-bourbon.html"), class: (sub_page == "axis-mundi-bourbon" ? "active" : "") %>
+          <%= content_tag :li, link_to("Flight of Simcoe", "/beers/flight-of-simcoe.html"), class: (sub_page == "flight-of-simcoe" ? "active" : "") %>
+          <%= content_tag :li, link_to("Gnarly Brown Vanilla", "/beers/gnarly-brown-vanilla.html"), class: (sub_page == "gnarly-brown-vanilla" ? "active" : "") %>
+          <%= content_tag :li, link_to("Gnarly Brown Coffee", "/beers/gnarly-brown-coffee.html"), class: (sub_page == "gnarly-brown-coffee" ? "active" : "") %>
+          <%= content_tag :li, link_to("Pilgrim Pale Ale", "/beers/pilgrim-pale-ale.html"), class: (sub_page == "pilgrim-pale-ale" ? "active" : "") %>
+          <%= content_tag :li, link_to("Un-Happy Amber", "/beers/unhappy-amber.html"), class: (sub_page == "unhappy-amber" ? "active" : "") %>
+          <%= content_tag :li, link_to("Everything Went Black", "/beers/everything-went-black.html"), class: (sub_page == "everything-went-black" ? "active" : "") %>
+          <%= content_tag :li, link_to("Rubus Cacao", "/beers/rubus-cacao.html"), class: (sub_page == "rubus-cacao" ? "active" : "") %>
+          <%= content_tag :li, link_to("Old Battering Ram", "/beers/old-battering-ram.html"), class: (sub_page == "old-battering-ram" ? "active" : "") %>
+          <%= content_tag :li, link_to("Flolsch", "/beers/flolsch.html"), class: (sub_page == "flolsch" ? "active" : "") %>
+          <%= content_tag :li, link_to("Dead Flowers", "/beers/dead-flowers.html"), class: (sub_page == "dead-flowers" ? "active" : "") %>
         </ul> <!-- /dropdown-menu -->
       </li> <!-- /Limited Releases -->      
     </ul> <!-- /section-nav -->

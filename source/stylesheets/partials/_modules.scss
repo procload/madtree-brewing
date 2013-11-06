@@ -90,11 +90,13 @@
 .beer-stats {
   border-width: 5px;
   border-style: solid;
-  font-family: $font-family-display;
   font-size: calc-em(32px);
+  font-weight: 300;
   th {
     color: $black;
+    font-family: $font-family-display; 
     text-transform: uppercase;
+    font-weight: 400;
   }
 
   tbody {

@@ -47,10 +47,15 @@ body.index {
     padding: calc-em(24px);
     @include background(transparent image-url('backgrounds/subtle_carbon_inverse.png') repeat top left);
     margin-bottom: calc-em(32px);
+    .btn-default {
+      font-family: $nav-font-family; 
+      font-weight: 300;
+    }
     .input-group {
       margin-bottom: calc-em(16px);
     }
-    .redo-search {
+    .redo-search,
+    .search-result-info {
       display: none;
     }
     > div {
@@ -59,6 +64,7 @@ body.index {
     &.showing-results {
       padding: calc-em(10px);
       overflow: hidden;
+      .search-result-info,
       .redo-search {
         display: block; 
       }

@@ -1,9 +1,9 @@
 ---
 current_page: "beers"
-sub_page: "sprye"
+sub_page: "flosch"
 ---
 <% content_for :page_classes do %>
-  interior sprye 
+  interior flosch 
 <% end %>
 <% content_for :site_header do %>
   <%= partial '../partials/interior-nav' %>
@@ -13,33 +13,37 @@ sub_page: "sprye"
 <div class="container">
   <section class="beer-description">
     <div class="beer-images">
-      <%= image_tag "beers/sprye/img-tap.png" %>
     </div> <!-- /beer-images -->
     <div class="beer-details">
       <header class="beer-detail-header">
         <div class="pint">
           <%= image_tag "beers/sprye/img-pint.png" %>
         </div>
-        <h2>Sprye</h2>
+        <h2>Flölsch</h2>
       </header> <!-- /beer-detail-header -->
-      <p>A sessionable pale ale brewed with rye lending to an earthy, spicy flavor complemented by a heavy dose of Simcoe®, post-fermentation.</p>
+      <p>Brewed with ancho chiles, limes and ginger</p>
       <table class="table beer-stats">
         <tr class="numbers">
           <th class="abv-label">ABV</th>
-          <td class="abv-amount">5%</td>
+          <td class="abv-amount">4.7%</td>
           <th class="ibu-label">IBU</th>
           <td class="ibu-amount"></td>
         </tr>
         <tr>
           <th>Malts</th>
-          <td colspan="3" class="ingredients">Rye, Flaked Barley, Munich 10L, Melanoidin</td>
+          <td colspan="3" class="ingredients">2-Row, Red Wheat, Caramel 60L, Vienna, Flaked Barley</td>
         </tr>
         <tr>
           <th>Hops</th>
-          <td colspan="3" class="ingredients hops">Centennial, Chinook, Simcoe</td>
+          <td colspan="3" class="ingredients hops">Cascade, Pacifica</td>
+        </tr>
+        <tr>
+          <th>Adjuncts</th>
+          <td colspan="3" class="ingredients">Lime Juice, Ginger, Ancho Chilies</td>
         </tr>
       </table> <!-- /beer-stats -->
     </div> <!-- /beer-details -->
   </section> <!-- /beer-description -->
 </div>
+
 
