@@ -206,6 +206,7 @@ a {
     font-size: calc-em(28px);
     right: calc-em(10px, 28px);
     top: calc-em(6px, 28px);
+    z-index: 9999;
     &:hover,
     &:focus,
     &:active {
