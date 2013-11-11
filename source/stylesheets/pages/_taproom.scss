@@ -10,6 +10,7 @@ body.taproom {
   .beer-merch {
     @extend %container;
     @extend %group;
+    margin-bottom: calc-em(64px);
   }
   .taproom-location {
     margin-bottom: calc-em(16px);

@@ -125,8 +125,8 @@ a {
       color: $white;
     }
     @include respond-to(33.125em) {
-      font-size: calc-em(13px);
-      @include span-columns(8);
+      font-size: calc-em(12px);
+      @include span-columns(9);
     }
     .day {
       @include respond-to(33.125em) {
@@ -151,6 +151,7 @@ a {
       @include background(transparent image-url('sprites/spr-social.png') no-repeat 0 0);
       text-indent: -9999px;
       @include image-2x("sprites/spr-social.png", calc-em(20px), calc-em(20px));
+      vertical-align: middle;
       &.facebook {
         background-position: 0 0;
       } //facebook
@@ -163,6 +164,9 @@ a {
       &.yelp {
         background-position: 0 -76px;
       } //yelp
+      a {
+        display: block;
+      }
     } //li
   } //social-links
   .interior & {
