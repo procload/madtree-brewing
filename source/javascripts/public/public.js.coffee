@@ -42,8 +42,10 @@ $ ->
       limit: "32"
       resolution: "standard_resolution"
       clientId: "6add59c8eadf4ca0a4f718bfda1e3699"
-      template: '<li class="photo"><a href="{{link}}"><img src="{{image}}" /></a><div class="insta-modal"><a href="#" class="close-modal"><i class="icon-remove"></i></a><div class="insta-content"><img src="{{image}}" /></div></div></li>'
+      template: '<li class="photo"><a href="{{link}}" data-toggle="modal" data-target="#myModal{{id}}"><img src={{image}} /></a><div class="modal fade" id="myModal{{id}}" tabindex="-1" role="dialog" aria-labelledby="myModal{{id}}" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></div><div class="modal-body"><img src="{{image}}" /></div></div></div></div></li>'
       )
+   
+
     feed.run() if $("body.index").length > 0
 
     $(".founder a").click (e) ->
@@ -54,15 +56,6 @@ $ ->
       $(".founder").removeClass("active")
       $(this).closest(".founder").addClass("active")
 
-    $("#instagram-photos").on "click", ".photo a", (e) ->
-      e.preventDefault()
-      $(this).siblings(".insta-modal").addClass("insta-modal-show")
-      $(".insta-modal-overlay").addClass("insta-modal-show")
-
-    $("#instagram-photos").on "click", ".close-modal", (e) ->
-      e.preventDefault()
-      $(".insta-modal").removeClass("insta-modal-show")
-      $(".insta-modal-overlay").removeClass("insta-modal-show")
 
     $("#map-canvas").storeLocator
       dataType: "json"

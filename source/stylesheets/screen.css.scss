@@ -109,10 +109,12 @@ a {
     @extend %group;
     padding-top: calc-em(6px);
     padding-bottom: calc-em(6px);
+    padding-left: calc-em(6px);
+    padding-right: calc-em(6px);
   } //toolbar-content 
   .taproom-hours {
-    font-size: calc-em(11px);
-    line-height: calc-em(23px, 11px);
+    font-size: calc-em(10px);
+    line-height: calc-em(23px, 10px);
     .more-text {
       display: none;
       @include respond-to(33.125em) {
@@ -231,12 +233,12 @@ a {
   .interior & {
     position: relative;
     .logo {
-      @include replace-text(362px, 183px, image-url('img-logo-alt.png') no-repeat top left); 
+      @include replace-text(362px, 183px, image-url('img-logo-small.png') no-repeat top left); 
       z-index: 102;
-      width: 110px;
-      height: 35px;
+      width: 82px;
+      height: 41px;
       position: fixed;
-      top: 50px;
+      top: 40px;
       left: 20px;
       background-size: contain;
       @include respond-to(41.25em) {
@@ -278,12 +280,12 @@ a {
   } //hero-content
 
   .logo {
-    @include replace-text(362px, 183px, image-url('img-logo-alt.png') no-repeat top left); 
+    @include replace-text(362px, 183px, image-url('img-logo-small.png') no-repeat top left); 
     z-index: 102;
-    width: 110px;
-    height: 35px;
+    width: 82px;
+    height: 41px;
     position: fixed;
-    top: 50px;
+    top: 45px;
     left: 20px;
     background-size: contain;
     @include respond-to(41.25em) {

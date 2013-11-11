@@ -350,3 +350,21 @@
     }
   }
 }
+
+
+.modal-content {
+  background: none;
+  .close {
+    color: $white;
+    @include opacity(1);
+    font-size: calc-em(48px);
+    display: block;
+    line-height: 1em;
+    position: relative;
+    z-index: 9999;
+  }
+}
+
+.modal-header {
+  border: none;
+}
