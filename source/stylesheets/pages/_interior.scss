@@ -37,7 +37,7 @@ body.interior {
   }
   .section-nav {
     .dropdown-menu {
-      position: static;
+      position: relative;
       width: 100%;
       @include border-radius(0);
       @include box-shadow(none);

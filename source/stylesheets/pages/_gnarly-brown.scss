@@ -1,6 +1,11 @@
 body.gnarly-brown {
   background: $gnarly-brown; 
   @include background($gnarly-brown image-url('backgrounds/bg-gnarly-brown.png') no-repeat top right);
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    color: $white;
+    background: $gnarly-brown; 
+  }
   .caret {
     border-top-color: $gnarly-brown;
   }

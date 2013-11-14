@@ -1,6 +1,9 @@
 body.axis-mundi {
-  background: $axis-mundi; 
-  @include background($axis-mundi image-url('backgrounds/bg-identity-crisis.png') no-repeat top right);
+  @include background($axis-mundi image-url('backgrounds/bg-beer-default.png') no-repeat top right);
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    background: $axis-mundi; 
+  }
   .caret {
     border-top-color: $axis-mundi;
   }

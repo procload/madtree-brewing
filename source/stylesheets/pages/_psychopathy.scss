@@ -1,6 +1,11 @@
 body.psychopathy {
   background: $psychopathy; 
   @include background($psychopathy image-url('backgrounds/bg-psychopathy.png') no-repeat top right);
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    color: $white;
+    background: $psychopathy; 
+  }
   .caret {
     border-top-color: $psychopathy;
   }

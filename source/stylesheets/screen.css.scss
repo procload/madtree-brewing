@@ -124,7 +124,7 @@ a {
     strong {
       color: $white;
     }
-    @include respond-to(33.125em) {
+    @include respond-to(42.5em) {
       font-size: calc-em(12px);
       @include span-columns(9);
     }
@@ -137,7 +137,7 @@ a {
   } //taproom-hours
   .social-nav {
     display: none;
-    @include respond-to(33.125em) {
+    @include respond-to(42.5em) {
       display: block;
       width: calc-em(110px);
       float: right;
@@ -443,7 +443,7 @@ a {
     font-size: calc-em(32px);
     display: block;
     font-family: $nav-font-family;
-    font-weight: 300;
+    font-weight: 500;
     color: $white;
     text-transform: uppercase;
     @include respond-to(41.25em) {

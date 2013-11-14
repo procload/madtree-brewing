@@ -76,8 +76,10 @@ $ ->
 
     activeGroup = $(".main-nav .active a").data("children")
     if $(".section-navbar").data("group") == activeGroup
-      copiedNav = $(".section-navbar").clone()
-      $(".main-nav .active").append(copiedNav)
+      copiedNav = $(".section-navbar").clone().addClass("cloned")
+      $(".main-nav > .active").append(copiedNav)
+
+
 
     $(".main-nav .active > a").click (e) ->
       e.preventDefault()
@@ -85,7 +87,6 @@ $ ->
         $(this).children(".icon-caret-right").removeClass("icon-caret-right").addClass("icon-caret-down")
       else
         $(this).children(".icon-caret-down").removeClass("icon-caret-down").addClass("icon-caret-right")
-
       $(this).siblings(".section-navbar").children(".navbar-inner").children(".section-nav").toggleClass("showing")
 
     reverseGeocode = (lat, long) ->
@@ -152,10 +153,10 @@ $ ->
       showTaproom(39.166675, -84.420144)
 
 
-    data =
-      client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
-      client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
+    #data =
+      #client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
+      #client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
 
 
-    $.getJSON "http://api.untappd.com/v4/brewery/info/16735", data, (result) ->
-      console.log result
+    #$.getJSON "http://api.untappd.com/v4/brewery/info/16735", data, (result) ->
+      #console.log result

@@ -1,5 +1,10 @@
 body.beers {
   @include background($body-bg image-url('backgrounds/bg-beer-default.png') no-repeat top right);
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    color: $white;
+    background: $body-bg; 
+  }
   .caret {
     border-top-color: $white;
   }
@@ -51,6 +56,16 @@ body.beers {
       float: left;
       line-height: 1.5em;
       width: 88%;
+      margin-bottom: 0;
+      .chef-series {
+        display: block;
+        clear: both;
+        font-size: .3em;
+        line-height: 1em;
+        font-family: $font-family-base;
+        margin-bottom: 2em;
+        text-transform: none;
+      }
     }
   }
   .beer-stats {

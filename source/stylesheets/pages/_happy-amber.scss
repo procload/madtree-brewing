@@ -1,6 +1,11 @@
 body.interior.happy-amber {
   background: $happy-amber; 
   @include background($happy-amber image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    color: $white;
+    background: $happy-amber; 
+  }
   .caret {
     border-top-color: $happy-amber;
   }
