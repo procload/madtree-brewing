@@ -3,6 +3,10 @@ require "susy"
 
 activate :livereload
 
+
+page "/index.html", :layout => "interstitial"
+
+
 ###
 # Helpers
 ###

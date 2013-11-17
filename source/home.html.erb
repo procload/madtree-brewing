@@ -1,0 +1,122 @@
+<% content_for :page_classes do %>
+  home 
+<% end %>
+<% content_for :site_header do %>
+  <%= partial 'partials/header-hero' %>
+  <%= partial 'partials/nav' %>
+<% end %>
+
+<div class="container">
+  <section class="find-madtree">
+    <div id="map-canvas">
+      <div id="map"></div>
+      <div id="loc-list">
+        <ul id="list"></ul> <!-- /list -->
+      </div> <!-- /loc-list -->
+    </div> <!-- /map-canvas -->
+    <section class="find-beer">
+      <div>
+        <h2>Find Madtree Beer</h2>
+        <div id="form-container">
+          <form id="user-location" method="post" action="#">
+            <div class="input-group">
+              <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
+              <span class="input-group-btn">
+                <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
+              </span> <!-- /input-group-btn -->
+            </div><!-- /input-group -->
+          </form> <!-- /user-location -->
+        </div> <!-- /form-container -->
+        <%= link_to "Or browse by our list of retailers", "#" %>
+        <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
+      </div>
+      <div class="search-result-info">
+        <p class="disclaimer"><strong>Note:</strong></p>
+        <p class="disclaimer">Accounts listed have purchased at least one MadTree product in the last 2 months. Please call the retailer to inquire if they currently carry the product.</p>
+        <p class="disclaimer">There are several accounts (ie. Dutch's, Jungle Jims, and Whole Foods) that serve for on promise consumption as well as carryout</p>
+      </div>
+    </section> <!-- /find-beer -->
+    <section class="address-phone">
+      <div class="address">
+        <h5><i class="icon-map-marker"></i> Address</h5>
+        <p>5164 Kennedy Ave.</p>
+        <p>Cincinnati, OH 45213</p>
+      </div> <!-- /address -->
+      <div class="phone">
+        <h5><i class="icon-phone"></i> Phone</h5>
+        <p>513-836-8733</p>
+      </div> <!-- /phone -->
+      <div class="email">
+        <h5><i class="icon-envelope"></i> Email</h5>
+        <p>
+        <%= link_to "Keg/Dock Sales", "mailto:docksales@madtreebrewing.com" %>
+        &mdash;
+        <%= link_to "Outside Sales", "sales@madtreebrewing.com" %>
+        &mdash;
+        <%= link_to "Taproom", "mailto:taproom@madtreebrewing.com" %>
+        &mdash;
+        <%= link_to "Misc", "info@madtreebrewing.com" %>
+        </p>
+      </div> <!-- /phone -->
+    </section> <!-- /address-phone -->
+  </section> <!-- /find-madtree -->
+
+  <section class="upcoming-events">
+    <header class="section-header upcoming-header">
+      <h3>Upcoming Events</h3>
+    </header> <!-- /upcoming-header -->
+    <article class="event-teaser">
+      <header class="teaser-header">
+        <a href="https://www.facebook.com/events/703715436306274/"><span class="date">Nov. 18 at 7pm</span> &mdash; <strong>MadTree Beer Tasting at Paxton's</strong></a>
+      </header> <!-- /teaser-header -->
+      <div class="teaser-body">
+        <p>$25 includes tastings of 5 beers &amp; a pint! Appetizers will also be provided! Madtree Brewing Brewmasters will be here to talk about their beer! Don't wait, seating is limited! Reservations are required! Give us a call to sign up! (513) 583-1717</p>
+      </div> <!-- /teaser-body -->
+      <footer class="teaser-footer">
+        <%= link_to "Read more&hellip;", "https://www.facebook.com/events/703715436306274/" %>
+      </footer> <!-- /teaser-footer -->
+    </article> <!-- /event-teaser -->
+    <article class="event-teaser">
+      <header class="teaser-header">
+        <a href="https://www.facebook.com/events/555359174550360/"><span class="date">Nov. 19th at 5pm</span> &mdash; <strong>MadTree Brewing Fundraiser for Philippines Typhoon Relief Efforts</strong></a>
+      </header> <!-- /teaser-header -->
+      <div class="teaser-body">
+        <p>The recent typhoon that hit the Philippines has caused grave destruction. To assist the relief efforts, MadTree will be open on Tuesday, November 19th from 5-9pm and the brewery will donate 100% of its proceeds from every pint sold to the American Red Cross. Food will also be available from Maribelle's. Please join us on Tuesday to support this cause!</p>
+      </div> <!-- /teaser-body -->
+      <footer class="teaser-footer">
+        <%= link_to "Read more&hellip;", "https://www.facebook.com/events/555359174550360/" %>
+      </footer> <!-- /teaser-footer -->
+    </article> <!-- /event-teaser -->
+    <article class="event-teaser">
+      <header class="teaser-header">
+        <a href="https://www.facebook.com/events/758857184141473/?ref_dashboard_filter=calendar"><span class="date">Nov. 27 at 8pm</span> &mdash; <strong>MadTree and 20th Century Theater Present Thanksgiv'n Rock'n Eve</strong></a>
+      </header> <!-- /teaser-header -->
+      <div class="teaser-body">
+        <p>Thanksgiv'n Rock'n Eve BLOWOUT! Featuring <%= link_to "The Cliftones", "https://www.facebook.com/pages/The-Cliftones/165576663487915" %> with special guests <%= link_to "Heavy Hinges", "https://www.facebook.com/HeavyHinges"%> and a very special acoustic set by Josh Eagle.</p>
+        <p>Tickets are $14 and get $2 admission discount by bringing canned goods for a food drive.</p>
+        <p>Tickets available at <%= link_to "The 20th Century Theater", "https://www.facebook.com/events/758857184141473/?ref_dashboard_filter=calendar" %> 513-731-8000.</p>
+      </div> <!-- /teaser-body -->
+      <footer class="teaser-footer">
+        <%= link_to "Read more&hellip;", "https://www.facebook.com/events/758857184141473/?ref_dashboard_filter=calendar" %>
+      </footer> <!-- /teaser-footer -->
+    </article> <!-- /event-teaser -->
+    <footer class="section-footer">
+      <%= link_to "View all upcoming events", "https://www.facebook.com/MadTree/events" %>
+    </footer> <!-- /section-footer -->
+  </section> <!-- /upcoming-events -->
+</div> <!-- /container -->
+
+<section class="collage">
+  <%= partial "partials/instagram-content" %>
+</section> <!-- /collage -->
+
+<div class="container">
+  <section class="twitter-stream">
+    <h4>Twitter</h4>
+    <div id="tweets"></div>
+  </section> <!-- /twitter-stream -->
+</div>
+
+<section class="madtree-photo">
+  <%= image_tag "backgrounds/bg-about.png" %>
+</section> <!-- /madtree-photo -->

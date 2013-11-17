@@ -32,7 +32,7 @@ $ ->
         n++
       element.innerHTML = html
 
-    twitterFetcher.fetch('397202470268452864', 'tweets', 5, true, true, false, 'default', false, handleTweets, false) if $("body.index").length > 0
+    twitterFetcher.fetch('397202470268452864', 'tweets', 5, true, true, false, 'default', false, handleTweets, false) if $("body.home").length > 0
     
       
     feed = new Instafeed(
@@ -46,7 +46,7 @@ $ ->
       )
    
 
-    feed.run() if $("body.index").length > 0
+    feed.run() if $("body.home").length > 0
 
     $(".founder a").click (e) ->
       e.preventDefault()

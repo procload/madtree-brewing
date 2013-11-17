@@ -1,0 +1,94 @@
+body.interstitial {
+  padding: calc-em(16px) 0;
+  @include respond-to(35em) {
+    padding: calc-em(64px) 0 0 0;
+  }
+  .main-content {
+    @extend %container;
+  }
+
+  
+
+  h1 {
+    @include replace-text(362px, 183px, image_url("img-logo.png") no-repeat center);
+    width: 100%;
+    margin-bottom: calc-em(6px);
+    background-size: contain;
+    @include respond-to(35em) {
+      margin: 0 0 calc-em(16px);
+    }
+  }
+  h2 {
+    margin: 0 0 calc-em(6px) 0;
+  }
+
+  h3 {
+    color: $red;
+    font-size: calc-em(24px);
+  }
+
+  .twenty-one-check {
+    text-align: center;
+    margin-bottom: calc-em(48px);
+  }
+
+  .interstitial-content {
+    max-width: calc-em(640px);
+    margin: 0 auto;
+    padding: calc-em(20px);
+    border: 5px solid rgba(255,255,255,.2);
+    background: rgba(255,255,255,.05);
+  }
+
+  .answers {
+    .btn {
+      background: $red;
+      display: block;
+      width: 100%;
+      margin-bottom: calc-em(6px);
+      @include respond-to(35em) {
+        width: 48%;
+        margin-bottom: 0;
+        display: inline-block;
+      }
+    }
+  }
+
+
+  .address {
+    margin-bottom: calc-em(16px);
+    p {
+      margin-bottom: 0
+    }
+  }
+  .brewery-info {
+    @extend %group; 
+  }
+
+  .taproom-hours {
+    margin-bottom: calc-em(16px);
+    @include respond-to(35em) {
+      margin-bottom: 0; 
+    }
+    .day {
+      display: block;
+    }
+  }
+
+  .hours,
+  .location {
+      @include respond-to(35em) {
+        width: 45%;
+        float: left;
+      }
+  }
+
+  .hours {
+  }
+
+  .location {
+      @include respond-to(35em) {
+        float: right; 
+      }  
+  }
+}
