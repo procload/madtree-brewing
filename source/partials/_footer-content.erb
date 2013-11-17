@@ -5,11 +5,13 @@
     </header> <!-- /nav-item-header -->
     <div class="nav-item-body">
       <ul>
+        <li><%= link_to "Happy Amber", "/beers/happy-amber.html" %></li>
         <li><%= link_to "Psychopathy", "/beers/psychopathy.html" %></li>
         <li><%= link_to "Gnarly Brown", "/beers/gnarly-brown.html" %></li>
-        <li><%= link_to "Happy Amber", "/beers/happy-amber.html" %></li>
         <li><%= link_to "Identity Crisis", "/beers/identity-crisis.html" %></li>
         <li><%= link_to "Axis Mundi", "/beers/axis-mundi.html" %></li>
+        <%= content_tag :li, link_to("K&ouml;lsch", "/beers/kolsch.html") %>
+        <%= content_tag :li, link_to("Galaxy High", "/beers/galaxy-high.html") %>
       </ul>
     </div> <!-- /nav-item-body -->
   </section> <!-- /footer-nav-item -->

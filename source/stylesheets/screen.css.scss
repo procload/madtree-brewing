@@ -481,6 +481,11 @@ a {
         a {
           @include opacity(1);
         } //a
+        &.taproom-nav-item {
+          i {
+            display: none;
+          } 
+        }
       } //active
     } //li
   } //interior

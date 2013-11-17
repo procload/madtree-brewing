@@ -54,19 +54,19 @@ body.beers {
     }    
     h2 {
       float: left;
-      line-height: 1.5em;
+      line-height: 1em;
       width: 88%;
       margin-bottom: 0;
+    }
       .chef-series {
         display: block;
         clear: both;
-        font-size: .3em;
+        font-size: calc-em(14px);
         line-height: 1em;
         font-family: $font-family-base;
         margin-bottom: 2em;
         text-transform: none;
       }
-    }
   }
   .beer-stats {
     th {

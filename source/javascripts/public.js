@@ -1,6 +1,5 @@
 //= require libs/jquery
 //= require bootstrap
-//= require libs/log
 //= require libs/twitter
 //= require libs/instafeed
 //= require libs/handlebars

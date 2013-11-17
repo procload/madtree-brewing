@@ -90,8 +90,12 @@
 .beer-stats {
   border-width: 5px;
   border-style: solid;
-  font-size: calc-em(32px);
+  font-size: calc-em(28px);
   font-weight: 300;
+
+  @include respond-to(23.75em) {
+    font-size: calc-em(32px);
+  }
   th {
     color: $black;
     font-family: $font-family-display; 
