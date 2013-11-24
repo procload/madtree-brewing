@@ -152,11 +152,19 @@ $ ->
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
 
+    untappdData =
+      client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
+      client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
 
-    #data =
-      #client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
-      #client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
-
-
-    #$.getJSON "http://api.untappd.com/v4/brewery/info/16735", data, (result) ->
-      #console.log result
+    $.getJSON "http://api.untappd.com/v4/brewery/info/16735", untappdData, (result) ->
+      untappd = 
+        beerCount: result.response.brewery.beer_count
+        breweryRating: result.response.brewery.rating.rating_score
+        totalBeers: result.response.brewery.stats.total_count
+        monthlyBeers: result.response.brewery.stats.monthly_count
+        weeklyBeers: result.response.brewery.stats.weekly_count
+        whosDrinking: result.response.brewery.checkins.items.slice(0,5)
+      if $("body.home").length > 0
+        source = $("#untappd_template").html()
+        template = Handlebars.compile(source)
+        $("#untappd").html(template(untappd))

@@ -115,8 +115,40 @@
     <h4>Twitter</h4>
     <div id="tweets"></div>
   </section> <!-- /twitter-stream -->
+  <%= partial 'partials/untappd' %>
 </div>
 
 <section class="madtree-photo">
   <%= image_tag "backgrounds/bg-about.png" %>
 </section> <!-- /madtree-photo -->
+
+<script id="untappd_template" type="text/x-handlebars-template">
+<table class="untappd table table-striped">
+  <tr class="consumed">
+    <th colspan="4">Total Beers Drank</th>
+  </tr>
+  <tr>
+    <td colspan="4" class="total">{{totalBeers}}</td>
+  </tr>
+  <tr class="breakdown">
+    <th>This Month</th>
+    <td>{{monthlyBeers}}</td>
+    <th class="">This Week</th>
+    <td>{{weeklyBeers}}</td>
+  </tr>
+  <tr class="ratings">
+    <th>Brewery Rating</th>
+    <td class="rating">{{breweryRating}}<span>/5</span></td>
+    <th >Total Beers</th>
+    <td  class="total-beer">{{beerCount}}</td>
+  </tr>
+  <tr>
+    <th>Who's drinking</th>
+    <td class="whos" colspan="3">
+     {{#each whosDrinking}}
+      <a href="http://untappd.com/user/{{this.user.user_name}}" target="_blank">{{this.user.user_name}}</a>
+     {{/each}}
+    </td>
+  </tr>
+</table>
+</script>
