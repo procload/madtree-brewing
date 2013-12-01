@@ -1,7 +1,7 @@
 require 'untappd'
 require 'json'
 desc "This task is called by the Heroku scheduler add-on"
-task :update_untappd => :environment do
+task :update_untappd do
   puts "Updating Untappd..."
 
   Untappd.configure do |config|
@@ -14,7 +14,7 @@ task :update_untappd => :environment do
 
   json = JSON.generate brewery.brewery
 
-  File.open("untappd.json","w") do |f|
+  File.open("source/untappd.json","w") do |f|
     f.write(json)
   end
   puts "done."
