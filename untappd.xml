@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <author>
+    <name>MadTree</name>
+  </author>
+  <id>http://madtreebrewing.com/feeds/untappd.rss</id>
+  <title>Feed for MadTree Brewing's Untappd Homepage Stats</title>
+  <updated>2013-11-29T15:50:43-05:00</updated>
+  <entry>
+    <id>http://untappd.com/user/phildebrandt</id>
+    <link href="http://untappd.com/user/phildebrandt"/>
+    <summary>foo</summary>
+    <title>phildebrandt</title>
+    <updated>2013-11-29T15:50:43-05:00</updated>
+    <dc:date>2013-11-29T15:50:43-05:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://untappd.com/user/Dubayawalta</id>
+    <link href="http://untappd.com/user/Dubayawalta"/>
+    <summary>foo</summary>
+    <title>Dubayawalta</title>
+    <updated>2013-11-29T15:50:43-05:00</updated>
+    <dc:date>2013-11-29T15:50:43-05:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://untappd.com/user/JBeck7100</id>
+    <link href="http://untappd.com/user/JBeck7100"/>
+    <summary>foo</summary>
+    <title>JBeck7100</title>
+    <updated>2013-11-29T15:50:43-05:00</updated>
+    <dc:date>2013-11-29T15:50:43-05:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://untappd.com/user/scottysmallz</id>
+    <link href="http://untappd.com/user/scottysmallz"/>
+    <summary>foo</summary>
+    <title>scottysmallz</title>
+    <updated>2013-11-29T15:50:43-05:00</updated>
+    <dc:date>2013-11-29T15:50:43-05:00</dc:date>
+  </entry>
+  <entry>
+    <id>http://untappd.com/user/scottysmallz</id>
+    <link href="http://untappd.com/user/scottysmallz"/>
+    <summary>foo</summary>
+    <title>scottysmallz</title>
+    <updated>2013-11-29T15:50:43-05:00</updated>
+    <dc:date>2013-11-29T15:50:43-05:00</dc:date>
+  </entry>
+  <dc:date>2013-11-29T15:50:43-05:00</dc:date>
+</feed>

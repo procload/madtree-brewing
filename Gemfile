@@ -2,6 +2,10 @@ source 'https://rubygems.org'
 
 gem "susy"
 
+gem "untappd"
+
+gem "koala"
+
 gem "middleman"
 gem 'middleman-smusher'
 

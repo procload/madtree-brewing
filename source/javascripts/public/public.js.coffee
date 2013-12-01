@@ -34,7 +34,9 @@ $ ->
 
     twitterFetcher.fetch('397202470268452864', 'tweets', 5, true, true, false, 'default', false, handleTweets, false) if $("body.home").length > 0
     
-      
+    $(window).bind "load", ->
+      rowTotal = $("#instagram-photos li").length
+
     feed = new Instafeed(
       get: "tagged"
       tagName: "madtreebrewing"
@@ -47,6 +49,8 @@ $ ->
    
 
     feed.run() if $("body.home").length > 0
+
+
 
     $(".founder a").click (e) ->
       e.preventDefault()
@@ -156,14 +160,14 @@ $ ->
       client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
       client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
 
-    $.getJSON "http://api.untappd.com/v4/brewery/info/16735", untappdData, (result) ->
+    $.getJSON "/untappd.json", (result) ->
       untappd = 
-        beerCount: result.response.brewery.beer_count
-        breweryRating: result.response.brewery.rating.rating_score
-        totalBeers: result.response.brewery.stats.total_count
-        monthlyBeers: result.response.brewery.stats.monthly_count
-        weeklyBeers: result.response.brewery.stats.weekly_count
-        whosDrinking: result.response.brewery.checkins.items.slice(0,5)
+        beerCount: result.beer_count
+        breweryRating: result.rating.rating_score
+        totalBeers: result.stats.total_count
+        monthlyBeers: result.stats.monthly_count
+        weeklyBeers: result.stats.weekly_count
+        whosDrinking: result.checkins.items.slice(0,5)
       if $("body.home").length > 0
         source = $("#untappd_template").html()
         template = Handlebars.compile(source)
