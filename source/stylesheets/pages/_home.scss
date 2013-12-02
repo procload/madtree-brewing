@@ -27,6 +27,7 @@ body.home {
   #loc-list {
     max-height: calc-em(560px);
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
   }
   .find-madtree {
     margin-bottom: calc-em(36px);

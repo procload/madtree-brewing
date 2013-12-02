@@ -167,6 +167,7 @@
 .collage {
   width: 100%;
   overflow: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .collage-row {
   @extend %zero-list;
