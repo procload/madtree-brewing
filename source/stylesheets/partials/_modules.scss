@@ -165,18 +165,27 @@
 
 
 .collage {
-  overflow: hidden;
+  width: 100%;
+  overflow: scroll;
 }
 .collage-row {
   @extend %zero-list;
-  width: 14000px;
   @extend %group;
-  position: relative;
+  overflow: scroll;
+  width: 2880px;
+  @include respond-to(47.5em) {
+    width: auto;
+  }
   li {
-    float: left;
-    overflow: hidden;
+    width: 144px;
+    height: 144px;
+    display: inline-block;
+  @include respond-to(47.5em) {
+    width: 10%;
     max-height: calc-em(150px);
-    max-width: calc-em(300px);
+    height: auto;
+    float: left;
+  }
     > a {
       display: block;
       -webkit-filter: grayscale(1);    
