@@ -166,13 +166,13 @@
 
 .collage {
   width: 100%;
-  overflow: scroll;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 .collage-row {
   @extend %zero-list;
   @extend %group;
-  overflow: scroll;
+  overflow: auto;
   width: 2880px;
   @include respond-to(47.5em) {
     width: auto;
