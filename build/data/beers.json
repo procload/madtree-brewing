@@ -1,0 +1,85 @@
+{
+  "beer" : {
+    "beer_name" : {
+      "fieldset" : "Beer Name and Description",
+      "type" : "Text",
+      "value" : "Happy Amber",
+      "config" : {
+        "label" : "Beer name"
+      }
+    },
+    "beer_description" : {
+      "type" : "Text",
+      "value" : "This dry-hopped ale combines carmel and biscuit malt flavors in happy equilibrium with late addition American hops. The approachable balance is intentional although the name is \"hoppy accident.\"",
+      "config" : {
+        "label" : "Beer description"
+      }
+    },
+    "beer_can" : {
+      "fieldset" : "Beer Can or Tap Handle Image",
+      "type" : "Image",
+      "value" : "beers/img-happy-amber-combined-rev.png",
+      "config" : {
+        "label" : "Can or Tap Handle"
+      }
+    },
+    "beer_illustration" : {
+      "fieldset" : "Beer Illustration",
+      "type" : "Image",
+      "value" : "backgrounds/bg-happy-amber.png",
+      "config" : {
+        "label" : "Beer Illustration"
+      }
+    },
+    "abv" : {
+      "fieldset" : "Beer Details",
+      "type" : "Text",
+      "value" : "6.0",
+      "config" : {
+        "label" : "ABV"
+      }
+    },
+    "malts" : {
+      "type" : "Text",
+      "value" : "Malts 2-Row, Munich 10L, Melanoidin, Carmel 80L, Victory",
+      "config" : {
+        "label" : "Malts"
+      }
+    },
+    "hops" : {
+      "type" : "Text",
+      "value" : "Cascade, Chinook",
+      "config" : {
+        "label" : "Hops"
+      }
+    },
+    "adjuncts" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Adjuncts"
+      }
+    },
+    "recipe" : {
+      "fieldset" : "Beer Recipe",
+      "type" : "Image",
+      "config" : {
+        "label" : "Recipe"
+      }
+    },
+    "primary_color" : {
+      "fieldset" : "Beer Colors",
+      "type" : "Text",
+      "value" : "#CD521F",
+      "config" : {
+        "label" : "Primary Color"
+      }
+    },
+    "secondary_color" : {
+      "type" : "Text",
+      "value" : "#CD521F",
+      "config" : {
+        "label" : "Secondary Color"
+      }
+    }
+  }
+}
