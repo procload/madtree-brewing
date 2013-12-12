@@ -18,22 +18,12 @@
   <section class="brewery-info">
     <section class="hours">
       <div class="taproom-hours">
-        <h3>Tap Room Hours:</h3>
-        <span class="day">
-          <strong>Wednesday</strong> 4pm&ndash;10pm 
-        </span> <!-- /day -->
-        <span class="day">
-          <strong>Thursday</strong> 4pm&ndash;12am
-        </span> <!-- /day -->
-        <span class="day">
-          <strong>Friday</strong> 4pm&ndash;1am
-        </span> <!-- /day -->
-        <span class="day">
-          <strong>Saturday</strong> 12pm&ndash;1am
-        </span> <!-- /day -->
-        <span class="day">
-          <strong>Sunday</strong> 12pm&ndash;8pm
-        </span> <!-- /day -->
+        <%= content_tag :h3, "Taproom Hours", data: { barley: "index_taproom_hours_title", barley_editor: "mini" } %>
+        <%= content_tag :span, "<strong>Wednesday</strong> 4pm&ndash;10pm", class: "day", data: { barley: "index_taproom_hours_wednesday", barley_editor: "simple" } %>
+        <%= content_tag :span, "<strong>Thursday</strong> 4pm&ndash;12am", class: "day", data: { barley: "index_taproom_hours_thursday", barley_editor: "simple" } %>
+        <%= content_tag :span, "<strong>Friday</strong> 4pm&ndash;1am", class: "day", data: { barley: "index_taproom_hours_friday", barley_editor: "simple" } %>
+        <%= content_tag :span, "<strong>Saturday</strong> 4pm&ndash;1am", class: "day", data: { barley: "index_taproom_hours_saturday", barley_editor: "simple" } %>
+        <%= content_tag :span, "<strong>Sunday</strong> 4pm&ndash;8pm", class: "day", data: { barley: "index_taproom_hours_sunday", barley_editor: "simple" } %>
       </div> <!-- /tapoom-hours -->
     </section> <!-- /hours -->
 

@@ -36,12 +36,12 @@ body.beers {
       @include span-columns(7 omega);
     }
     h2 {
-      font-size: calc-em(42px);
+      font-size: 42px;
       margin: 0;
       color: $white;
     }
     p {
-      font-size: calc-em(23px);
+      font-size: 23px;
       color: $white;
     }
   } //beer-details
@@ -61,7 +61,7 @@ body.beers {
       .chef-series {
         display: block;
         clear: both;
-        font-size: calc-em(14px);
+        font-size: 14px;
         line-height: 1em;
         font-family: $font-family-base;
         margin-bottom: 2em;
