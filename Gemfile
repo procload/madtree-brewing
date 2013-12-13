@@ -4,6 +4,7 @@ ruby '2.0.0'
 gem "susy"
 
 gem "untappd"
+gem 'newrelic_rpm'
 
 gem "koala"
 
