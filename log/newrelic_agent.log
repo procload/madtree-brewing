@@ -1,0 +1,265 @@
+# Logfile created on 2013-12-20 14:25:42 -0500 by logger.rb/36483
+[12/20/13 14:25:42 -0500 procload (14697)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:25:42 -0500 procload (14697)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:25:42 -0500 procload (14697)] INFO : Reading configuration from 
+[12/20/13 14:25:42 -0500 procload (14697)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:25:42 -0500 procload (14697)] INFO : Enabling the Request Sampler.
+[12/20/13 14:25:42 -0500 procload (14697)] INFO : Environment: development
+[12/20/13 14:25:42 -0500 procload (14697)] INFO : No known dispatcher detected.
+[12/20/13 14:25:42 -0500 procload (14697)] INFO : Application: development
+[12/20/13 14:25:42 -0500 procload (14697)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:25:45 -0500 procload (14697)] INFO : Installing Net instrumentation
+[12/20/13 14:25:45 -0500 procload (14697)] INFO : Finished instrumentation
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : Reading configuration from 
+[12/20/13 14:35:33 -0500 procload (15006)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : Enabling the Request Sampler.
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : Environment: development
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : No known dispatcher detected.
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : Application: development
+[12/20/13 14:35:33 -0500 procload (15006)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : Installing Net instrumentation
+[12/20/13 14:35:33 -0500 procload (15006)] INFO : Finished instrumentation
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : Reading configuration from 
+[12/20/13 14:37:30 -0500 procload (15157)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : Enabling the Request Sampler.
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : Environment: development
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : No known dispatcher detected.
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : Application: development
+[12/20/13 14:37:30 -0500 procload (15157)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : Installing Net instrumentation
+[12/20/13 14:37:30 -0500 procload (15157)] INFO : Finished instrumentation
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : Reading configuration from 
+[12/20/13 14:37:57 -0500 procload (15306)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : Enabling the Request Sampler.
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : Environment: development
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : No known dispatcher detected.
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : Application: development
+[12/20/13 14:37:57 -0500 procload (15306)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : Installing Net instrumentation
+[12/20/13 14:37:57 -0500 procload (15306)] INFO : Finished instrumentation
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : Reading configuration from 
+[12/20/13 14:38:15 -0500 procload (15489)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : Enabling the Request Sampler.
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : Environment: development
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : No known dispatcher detected.
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : Application: development
+[12/20/13 14:38:15 -0500 procload (15489)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : Installing Net instrumentation
+[12/20/13 14:38:15 -0500 procload (15489)] INFO : Finished instrumentation
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : Reading configuration from 
+[12/20/13 14:39:18 -0500 procload (15637)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : Enabling the Request Sampler.
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : Environment: development
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : No known dispatcher detected.
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : Application: development
+[12/20/13 14:39:18 -0500 procload (15637)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : Installing Net instrumentation
+[12/20/13 14:39:18 -0500 procload (15637)] INFO : Finished instrumentation
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : Reading configuration from 
+[12/20/13 14:39:39 -0500 procload (15784)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : Enabling the Request Sampler.
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : Environment: development
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : No known dispatcher detected.
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : Application: development
+[12/20/13 14:39:39 -0500 procload (15784)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : Installing Net instrumentation
+[12/20/13 14:39:39 -0500 procload (15784)] INFO : Finished instrumentation
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : Reading configuration from 
+[12/20/13 14:40:03 -0500 procload (15932)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : Enabling the Request Sampler.
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : Environment: development
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : No known dispatcher detected.
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : Application: development
+[12/20/13 14:40:03 -0500 procload (15932)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : Installing Net instrumentation
+[12/20/13 14:40:03 -0500 procload (15932)] INFO : Finished instrumentation
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : Reading configuration from 
+[12/20/13 14:41:47 -0500 procload (16083)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : Enabling the Request Sampler.
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : Environment: development
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : No known dispatcher detected.
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : Application: development
+[12/20/13 14:41:47 -0500 procload (16083)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : Installing Net instrumentation
+[12/20/13 14:41:47 -0500 procload (16083)] INFO : Finished instrumentation
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : Reading configuration from 
+[12/20/13 14:42:55 -0500 procload (16307)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : Enabling the Request Sampler.
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : Environment: development
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : No known dispatcher detected.
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : Application: development
+[12/20/13 14:42:55 -0500 procload (16307)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : Installing Net instrumentation
+[12/20/13 14:42:55 -0500 procload (16307)] INFO : Finished instrumentation
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : Reading configuration from 
+[12/20/13 14:45:25 -0500 procload (16753)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : Enabling the Request Sampler.
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : Environment: development
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : No known dispatcher detected.
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : Application: development
+[12/20/13 14:45:25 -0500 procload (16753)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : Installing Net instrumentation
+[12/20/13 14:45:25 -0500 procload (16753)] INFO : Finished instrumentation
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : Reading configuration from 
+[12/20/13 14:47:04 -0500 procload (17051)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : Enabling the Request Sampler.
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : Environment: development
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : No known dispatcher detected.
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : Application: development
+[12/20/13 14:47:04 -0500 procload (17051)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : Installing Net instrumentation
+[12/20/13 14:47:04 -0500 procload (17051)] INFO : Finished instrumentation
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : Reading configuration from 
+[12/20/13 14:47:27 -0500 procload (17346)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : Enabling the Request Sampler.
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : Environment: development
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : No known dispatcher detected.
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : Application: development
+[12/20/13 14:47:27 -0500 procload (17346)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : Installing Net instrumentation
+[12/20/13 14:47:27 -0500 procload (17346)] INFO : Finished instrumentation
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : Reading configuration from 
+[12/20/13 14:47:43 -0500 procload (17494)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : Enabling the Request Sampler.
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : Environment: development
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : No known dispatcher detected.
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : Application: development
+[12/20/13 14:47:43 -0500 procload (17494)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : Installing Net instrumentation
+[12/20/13 14:47:43 -0500 procload (17494)] INFO : Finished instrumentation
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : Reading configuration from 
+[12/20/13 14:48:20 -0500 procload (17644)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : Enabling the Request Sampler.
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : Environment: development
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : No known dispatcher detected.
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : Application: development
+[12/20/13 14:48:20 -0500 procload (17644)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : Installing Net instrumentation
+[12/20/13 14:48:20 -0500 procload (17644)] INFO : Finished instrumentation
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : Reading configuration from 
+[12/20/13 14:49:50 -0500 procload (17830)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : Enabling the Request Sampler.
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : Environment: development
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : No known dispatcher detected.
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : Application: development
+[12/20/13 14:49:50 -0500 procload (17830)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : Installing Net instrumentation
+[12/20/13 14:49:50 -0500 procload (17830)] INFO : Finished instrumentation
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : Reading configuration from 
+[12/20/13 14:50:24 -0500 procload (17977)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : Enabling the Request Sampler.
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : Environment: development
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : No known dispatcher detected.
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : Application: development
+[12/20/13 14:50:24 -0500 procload (17977)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : Installing Net instrumentation
+[12/20/13 14:50:24 -0500 procload (17977)] INFO : Finished instrumentation
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : Reading configuration from 
+[12/20/13 14:50:57 -0500 procload (18091)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : Enabling the Request Sampler.
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : Environment: development
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : No known dispatcher detected.
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : Application: development
+[12/20/13 14:50:57 -0500 procload (18091)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : Installing Net instrumentation
+[12/20/13 14:50:57 -0500 procload (18091)] INFO : Finished instrumentation
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : Reading configuration from 
+[12/20/13 14:52:00 -0500 procload (18206)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : Enabling the Request Sampler.
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : Environment: development
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : No known dispatcher detected.
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : Application: development
+[12/20/13 14:52:00 -0500 procload (18206)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : Installing Net instrumentation
+[12/20/13 14:52:00 -0500 procload (18206)] INFO : Finished instrumentation
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : Reading configuration from 
+[12/20/13 14:59:09 -0500 procload (19959)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : Enabling the Request Sampler.
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : Environment: development
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : No known dispatcher detected.
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : Application: development
+[12/20/13 14:59:09 -0500 procload (19959)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : Installing Net instrumentation
+[12/20/13 14:59:09 -0500 procload (19959)] INFO : Finished instrumentation
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : Reading configuration from 
+[12/20/13 15:06:58 -0500 procload (21051)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : Enabling the Request Sampler.
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : Environment: development
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : No known dispatcher detected.
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : Application: development
+[12/20/13 15:06:58 -0500 procload (21051)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : Installing Net instrumentation
+[12/20/13 15:06:58 -0500 procload (21051)] INFO : Finished instrumentation
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : Reading configuration from 
+[12/20/13 15:56:00 -0500 procload (23316)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : Enabling the Request Sampler.
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : Environment: development
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : No known dispatcher detected.
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : Application: development
+[12/20/13 15:56:00 -0500 procload (23316)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : Installing Net instrumentation
+[12/20/13 15:56:00 -0500 procload (23316)] INFO : Finished instrumentation
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : Reading configuration from 
+[12/20/13 16:00:00 -0500 procload (23510)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : Enabling the Request Sampler.
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : Environment: development
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : No known dispatcher detected.
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : Application: development
+[12/20/13 16:00:00 -0500 procload (23510)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : Installing Net instrumentation
+[12/20/13 16:00:00 -0500 procload (23510)] INFO : Finished instrumentation
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : Starting the New Relic agent in "development" environment.
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : To prevent agent startup add a NEWRELIC_ENABLE=false environment variable or modify the "development" section of your newrelic.yml.
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : Reading configuration from 
+[12/20/13 16:25:48 -0500 procload (26986)] ERROR : Unable to read configuration file : Is a directory - /Users/rmerrill/Sites/madtree-brewing
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : Enabling the Request Sampler.
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : Environment: development
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : No known dispatcher detected.
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : Application: development
+[12/20/13 16:25:48 -0500 procload (26986)] WARN : No license key found in newrelic.yml config. This often means your newrelic.yml is missing a section for the running environment 'development'
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : Installing Net instrumentation
+[12/20/13 16:25:48 -0500 procload (26986)] INFO : Finished instrumentation

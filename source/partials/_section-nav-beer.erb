@@ -1,7 +1,7 @@
 <nav class="navbar section-navbar" data-group="beer">
   <div class="navbar-inner">
     <ul class="section-nav">
-      <% sub_page = data.page.sub_page %>
+      <% sub_page = current_page  %>
       <%= content_tag :li, link_to("Happy Amber", "/beers/happy-amber.html"), class: (sub_page == "happy-amber" ? "active" : "") %>
       <%= content_tag :li, link_to("Psychopathy", "/beers/psychopathy.html"), class: (sub_page == "psychopathy" ? "active" : "") %>
       <%= content_tag :li, link_to("Gnarly Brown", "/beers/gnarly-brown.html"), class: (sub_page == "gnarly-brown" ? "active" : "") %>
