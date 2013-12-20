@@ -1,0 +1,12 @@
+<article class="event-teaser">
+  <header class="teaser-header">
+    <a href="<%= url %>"><span class="date"><%= date_time %></span> &mdash; <strong><%= title %> <%= "at #{location}" unless location == "" %></strong></a>
+  </header> <!-- /teaser-header -->
+  <div class="teaser-body">
+    <%= description %>
+  </div> <!-- /teaser-body -->
+  <footer class="teaser-footer">
+    <%= link_to "Read more&hellip;", url %>
+  </footer> <!-- /teaser-footer -->
+</article> <!-- /event-teaser -->
+

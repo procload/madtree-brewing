@@ -64,41 +64,19 @@
     <header class="section-header upcoming-header">
       <h3>Upcoming Events</h3>
     </header> <!-- /upcoming-header -->
-    <article class="event-teaser">
-      <header class="teaser-header">
-        <a href="https://www.facebook.com/events/237092999791416/"><span class="date">Dec. 10th at 6pm</span> &mdash; <strong>A Celebration of Life and Learning at the Listing Loon</strong></a>
-      </header> <!-- /teaser-header -->
-      <div class="teaser-body">
-        <p>A charity event to honor the lives of David Harris and Maci Harris. Proceeds form food and beverage sales will be donated to a scholarship fund in their names. Stay tuned for details on participating restaurant and other information. If you would like to volunteer your time or gift certificate donations, please contact Brian at <%= link_to "bjmul67@aol.com", "mailto:bjmul67@aol.com" %>, or leave a message on Facebook.</p>
-      </div> <!-- /teaser-body -->
-      <footer class="teaser-footer">
-        <%= link_to "Read more&hellip;", "https://www.facebook.com/events/237092999791416/ " %>
-      </footer> <!-- /teaser-footer -->
-    </article> <!-- /event-teaser -->
-    <article class="event-teaser">
-      <header class="teaser-header">
-        <a href="https://www.facebook.com/MadTree"><span class="date">Dec. 12 at 6pm</span> &mdash; <strong>CincyFeud MadTree Mural Unveiling</strong></a>
-      </header> <!-- /teaser-header -->
-      <div class="teaser-body">
-        <p>Join us for the unveiling of the CincyFeud mural won by <a href="https://www.facebook.com/MadTree">MadTree Brewing</a> and <a href="https://www.facebook.com/visionariesandvoices">Visionaries and Voices</a> and artist Courttney Cooper collaborated with MadTree to make an amazing piece of art for the brewery. A dedication will occur at 6:15pm with the unveiling immediately following.</p>
-        <p>This project was made possible by: Contemporary Cabinetry East.</p>
-        <p>In Collaboration with: Visionaries + Voices, MadTree Brewery, and Young Professionals for Autism.</p>
-      </div> <!-- /teaser-body -->
-      <footer class="teaser-footer">
-        <%= link_to "Read more&hellip;", "https://www.facebook.com/MadTree" %>
-      </footer> <!-- /teaser-footer -->
-    </article> <!-- /event-teaser -->
-    <article class="event-teaser">
-      <header class="teaser-header">
-        <a href="https://www.facebook.com/events/541205329305280 "><span class="date">Dec. 13 from 3pm&ndash;11pm</span> &mdash; <strong>Everything Went Black MadTree Tap Takeover at Firehouse Grill</strong></a>
-      </header> <!-- /teaser-header -->
-      <div class="teaser-body">
-        <p>We have a rare release of Barrel Aged Axis Mundi, regular Axis Mundi, and Everything Went Black Rye IPA for Friday the 13th! People will be taking home MadTree snifters when they order the Axis Mundi!</p>
-      </div> <!-- /teaser-body -->
-      <footer class="teaser-footer">
-        <%= link_to "Read more&hellip;", "https://www.facebook.com/events/541205329305280 " %>
-      </footer> <!-- /teaser-footer -->
-    </article> <!-- /event-teaser -->
+
+    <% events = data.events.details %>
+    <% events.each do |event| %>
+      <%= partial "partials/event",
+          locals: {
+            title: event.title,
+            date_time: event.date_time,
+            location: event.location,
+            description: event.description,
+            url: event.url
+          }
+      %>
+    <% end %>
 
     <footer class="section-footer">
       <%= link_to "View all upcoming events", "https://www.facebook.com/MadTree/events" %>

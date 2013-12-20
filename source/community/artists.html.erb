@@ -19,7 +19,7 @@ sub_page: "artists"
     <div class="founder-photos">
       <ul class="photo-grid">
         <% artists.each_with_index do |artist, i| %>
-          <% name = artist.name.split(" ").first.downcase %>
+          <% name = artist.name.gsub(/\s+/, "") %>
           <li class="founder <%= 'active' if i == 0 %>">
           <%= link_to(image_tag(artist.image), "#", data: { target: "##{name}" }) %>
           </li>
@@ -28,7 +28,7 @@ sub_page: "artists"
     </div> <!-- /founder-photos -->
     <div class="founder-text">
         <% artists.each_with_index do |artist, i| %>
-          <% name = artist.name.split(" ").first.downcase %>
+          <% name = artist.name.gsub(/\s+/, "") %>
           <div class="founder-info <%= 'active' if i == 0 %>" id="<%= name %>">
             <div class="content">
               <%= content_tag :h3, artist.name %>
