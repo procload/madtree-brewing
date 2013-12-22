@@ -19,21 +19,12 @@
     <section class="hours">
       <div class="taproom-hours">
         <h3>Tap Room Hours:</h3>
-        <span class="day">
-          <strong>Wednesday</strong> 4pm&ndash;10pm 
-        </span> <!-- /day -->
-        <span class="day">
-          <strong>Thursday</strong> 4pm&ndash;12am
-        </span> <!-- /day -->
-        <span class="day">
-          <strong>Friday</strong> 4pm&ndash;1am
-        </span> <!-- /day -->
-        <span class="day">
-          <strong>Saturday</strong> 12pm&ndash;1am
-        </span> <!-- /day -->
-        <span class="day">
-          <strong>Sunday</strong> 12pm&ndash;8pm
-        </span> <!-- /day -->
+        <% hours = data.hours.details %>
+        <% hours.each do |hours| %>
+          <% unless hours.last == "" %>
+            <%= content_tag :span, "<strong>#{hours.first}</strong> #{hours.last}", class: "day" %>
+          <% end %>
+        <% end %>
       </div> <!-- /tapoom-hours -->
     </section> <!-- /hours -->
 
@@ -42,12 +33,12 @@
       <h3>Contact Information</h3>
       <div class="address">
         <h5><i class="icon-map-marker"></i> Address</h5>
-        <p>5164 Kennedy Ave.</p>
-        <p>Cincinnati, OH 45213</p>
+        <p><%= data.contact.details.address %></p>
+        <p><%= data.contact.details.city %>, <%= data.contact.details.state %> <%= data.contact.details.zipcode %></p>
       </div> <!-- /address -->
       <div class="phone">
         <h5><i class="icon-phone"></i> Phone</h5>
-        <p>513-836-8733</p>
+        <p><%= data.contact.details.phone %></p>
       </div> <!-- /phone -->
 
     </section> <!-- /location -->

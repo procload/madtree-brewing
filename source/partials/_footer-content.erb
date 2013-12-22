@@ -33,17 +33,17 @@
     <div class="nav-item-body address">
       <ul>
         <li>
-          <strong>Phone</strong>: 513.836.8733 
+          <strong>Phone</strong>: <%= data.contact.details.phone %> 
         </li>
         <li>
-          <p>5164 Kennedy Ave.</p>
-          <p>Cincinnati, OH 45213</p>
+          <p><%= data.contact.details.address %></p>
+          <p><%= data.contact.details.city %>, <%= data.contact.details.state %> <%= data.contact.details.zipcode %></p>
         </li>
         <li>
         <ul class="social-links">
-          <li class="facebook"><%= link_to "<i class='icon-facebook'></i>", "http://facebook.com/madtree" %></li>
+          <li class="facebook"><%= link_to "<i class='icon-facebook'></i>", data.contact.details.facebook %></li>
           <li class="foursquare"><%= link_to "<i class='icon-foursquare'></i>", "http://4sq.com/T31jg0" %></li>
-          <li class="twitter"><%= link_to "<i class='icon-twitter'></i>", "http://twitter.com/madtreebrewing/" %></li>
+          <li class="twitter"><%= link_to "<i class='icon-twitter'></i>", data.contact.details.twitter %></li>
         </ul> <!-- /social-links -->
         </li>
       </ul>

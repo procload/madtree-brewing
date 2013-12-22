@@ -32,53 +32,29 @@ current_page: "taproom"
       <h2>The MadTree Taproom</h2>
     </header> <!-- /taproom-about-header -->
     <div class="taproom-about-body">
-      <p>
-      Carryout, bar, cafe, family hangout, club meeting&hellip; the MadTree taproom is a little bit of everything. Whether you want to fill up your growler ($10 and up) or you want to meet up with some of your friends for dinner and a beer, we are happy to have you drop in. Check <%= link_to "our Facebook page", "http://facebook.com/madtree" %> for the latest rotating taps and which local Chef is cooking something up.
-      </p>
+      <%= data.taproom.details.first.intro %>
+      <h3>What's on tap?</h3>
+      <ul class="tap-list">
+      <% data.taproom.ontap.each do |tap| %>
+        <li>
+        <a href="<%= tap.downcase.tr(" ", "-") %>">
+        <%= image_tag "beers/psychopathy/img-pint.png" %>
+        <%= tap %>
+        </a>
+        </li>
+      <% end %>
+      </ul>
       <h3>Did somebody say tours?</h3>
-      <p>MadTree offers tours to the public every Saturday at 3pm and 4pm.</p>
+      <%= data.taproom.details.first.tours %>
       <h3>Taproom Hours</h3>
       <table class="table table-striped">
         <tbody>
-          <tr>
-            <th>
-              Wednesday
-            </th>
-            <td>
-              4pm&ndash;10pm
-            </td>
-          </tr>
-          <tr>
-            <th>
-              Thursday
-            </th>
-            <td>
-              4pm&ndash;12am
-            </td>
-          </tr>
-          <tr>
-            <th>
-              Friday
-            </th>
-            <td>
-              4pm&ndash;12am
-            </td>
-          </tr>
-          <tr>
-            <th>
-              Saturday
-            </th>
-            <td>
-              12pm&ndash;1am
-            </td>
-          </tr>
-            <th>
-              Sunday
-            </th>
-            <td>
-              12&ndash;8pm
-            </td>
-          </tr>
+          <% hours = data.hours.details %>
+          <% hours.each do |hours| %>
+            <% unless hours.last == "" %>
+              <%= content_tag :tr, "<th>#{hours.first}</th> <td>#{hours.last}</td>" %>
+            <% end %>
+          <% end %>
         </tbody>
       </table> <!-- /table-striped -->
     </div> <!--/taproom-about-body -->

@@ -80,6 +80,10 @@ p {
 
 a {
   color: $red;
+  &:hover {
+    color: $red;
+    text-decoration: underline;
+  }
 }
 
 // Header
