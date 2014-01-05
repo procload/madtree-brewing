@@ -10,6 +10,7 @@ data.beers.details.each do |beer|
   proxy "/beer/#{beer[:url]}/index.html", "/beers/template.html", :locals => { :beer => beer }, :ignore => true
 end
 
+
 ###
 # Helpers
 ###

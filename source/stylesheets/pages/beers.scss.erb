@@ -1,0 +1,96 @@
+<% data.beers.details.each do |beer| %>
+  <%
+    primary_color = beer.primary_color
+    secondary_color = beer.secondary_color
+    text_color = beer.text_color
+    background_image = beer.background_image
+  %>
+
+  body.interior.<%= beer.url %> {
+    background: <%= primary_color %>; 
+    @include background(<%= primary_color %> image-url("<%= background_image %>") no-repeat top right);
+
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+      color: $white;
+      background: <%= primary_color %>; 
+    }
+
+    .caret {
+      border-top-color: <%= primary_color %>;
+    }
+    .site-header {
+      color: <%= primary_color %>;
+    }
+    .header-toolbar {
+      background: <%= secondary_color %>;
+      background: transparentize(<%= secondary_color %>, .2); 
+    }
+    .navbar {
+      background: darken(saturate(<%= primary_color %>, 15), 15);
+      background: transparentize(darken(saturate(<%= primary_color %>, 15), 15), .2);
+      &.section-navbar {
+        background: <%= secondary_color %>;
+        background: transparentize(<%= secondary_color %>, .2); 
+        a {
+          color: <%= primary_color %>;
+        }
+        li.active {
+          > a {
+            color: $white;
+          }
+        } //active
+      }
+      .main-nav li {
+        &:nth-child(even) {
+          background: <%= secondary_color %>;
+          background: transparentize(<%= secondary_color %>, .2); 
+          @include respond-to(41.25em) {
+            background: none;
+          }
+        }
+        &:nth-child(odd) {
+          background: rgba(97,19,9,1);
+          @include respond-to(41.25em) {
+            background: none;
+          }
+        }
+      } //main-nav
+    }
+    .navbar-inner {
+      .logo {
+        @include respond-to(41.25em) {
+          @include replace-text(362px, 183px, image-url('img-logo-ha.png') no-repeat top left);         
+        }
+      }
+    }
+    .beer-details {
+      h2 {
+        color: <%= text_color %>;
+      } //h2 
+      p {
+        color: <%= text_color %>;
+      }
+    } //beer-details
+    .site-footer {
+      background: <%= secondary_color %>;
+      background: transparentize(<%= secondary_color %>, .2); 
+      a {
+        color: <%= primary_color %>;
+      }
+    }
+    .nav-item-header {
+      h4 {
+        color: $white;
+      }
+    }
+    .nav-item-body {
+      color: <%= primary_color %>;
+    }
+    .beer-stats {
+      border-color: <%= secondary_color %>;
+      background: transparentize(<%= secondary_color %>, .8);
+    }
+
+  }
+<% end %>
