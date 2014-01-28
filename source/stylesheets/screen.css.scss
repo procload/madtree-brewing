@@ -156,7 +156,7 @@ a {
       height: calc-em(18px);
       @include background(transparent image-url('sprites/spr-social.png') no-repeat 0 0);
       text-indent: -9999px;
-      @include image-2x("sprites/spr-social.png", calc-em(20px), calc-em(20px));
+      @include image-2x("/images/sprites/spr-social@2x.png", calc-em(20px), calc-em(20px));
       vertical-align: middle;
       &.facebook {
         background-position: 0 0;

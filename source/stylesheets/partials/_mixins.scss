@@ -96,7 +96,7 @@
          (min-resolution: 1.3dppx) {
     /* on retina, use image that's scaled by 2 */
     background-image: url($image);
-    background-size: $width $height;
+    background-size: 100%;
   }
 }
 

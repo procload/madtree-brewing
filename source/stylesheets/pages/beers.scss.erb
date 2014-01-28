@@ -1,5 +1,6 @@
 <% data.beers.details.each do |beer| %>
   <%
+    custom_logo = beer.logo == "" ? "img-logo-ha.png" : beer.logo
     primary_color = beer.primary_color
     secondary_color = beer.secondary_color
     text_color = beer.text_color
@@ -60,7 +61,7 @@
     .navbar-inner {
       .logo {
         @include respond-to(41.25em) {
-          @include replace-text(362px, 183px, image-url('img-logo-ha.png') no-repeat top left);         
+          @include replace-text(362px, 183px, image-url("logos/<%=custom_logo%>") no-repeat top left);         
         }
       }
     }
