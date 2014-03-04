@@ -2,10 +2,14 @@
   <%
     custom_logo = beer.logo == "" ? "img-logo-ha.png" : beer.logo
     primary_color = beer.primary_color
-    secondary_color = beer.secondary_color
     text_color = beer.text_color
     background_image = beer.background_image
+
   %>
+
+  $secondary_color: adjust-hue(<%= primary_color %>, -22);
+  $secondary_color: darken($secondary_color, 30%);
+  $secondary_color: saturate($secondary_color, 10%);
 
   body.interior.<%= beer.url %> {
     background: <%= primary_color %>; 
@@ -24,15 +28,15 @@
       color: <%= primary_color %>;
     }
     .header-toolbar {
-      background: <%= secondary_color %>;
-      background: transparentize(<%= secondary_color %>, .2); 
+      background: $secondary_color;
+      background: transparentize($secondary_color, .2); 
     }
     .navbar {
       background: darken(saturate(<%= primary_color %>, 15), 15);
       background: transparentize(darken(saturate(<%= primary_color %>, 15), 15), .2);
       &.section-navbar {
-        background: <%= secondary_color %>;
-        background: transparentize(<%= secondary_color %>, .2); 
+        background: $secondary_color;
+        background: transparentize( $secondary_color, .2); 
         a {
           color: <%= primary_color %>;
         }
@@ -44,8 +48,8 @@
       }
       .main-nav li {
         &:nth-child(even) {
-          background: <%= secondary_color %>;
-          background: transparentize(<%= secondary_color %>, .2); 
+          background: $secondary_color;
+          background: transparentize($secondary_color, .2); 
           @include respond-to(41.25em) {
             background: none;
           }
@@ -74,8 +78,8 @@
       }
     } //beer-details
     .site-footer {
-      background: <%= secondary_color %>;
-      background: transparentize(<%= secondary_color %>, .2); 
+      background: $secondary_color;
+      background: transparentize($secondary_color, .2); 
       a {
         color: <%= primary_color %>;
       }
@@ -89,8 +93,8 @@
       color: <%= primary_color %>;
     }
     .beer-stats {
-      border-color: <%= secondary_color %>;
-      background: transparentize(<%= secondary_color %>, .8);
+      border-color: $secondary_color;
+      background: transparentize( $secondary_color, .8);
     }
 
   }
