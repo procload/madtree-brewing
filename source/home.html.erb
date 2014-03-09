@@ -61,6 +61,9 @@
   </section> <!-- /find-madtree -->
 
   <section class="upcoming-events">
+    <div class="event-contact">
+      <h4>Interested in booking an event at <%= link_to "our taproom", "/taproom.html" %>?</h4> Email <%= link_to "events@madtreebrewing.com", "mailto:events@madtreebrewing.com" %> for more information.
+    </div> <!-- /event-contact -->
     <header class="section-header upcoming-header">
       <h3>Upcoming Events</h3>
     </header> <!-- /upcoming-header -->
@@ -107,7 +110,10 @@
 <div class="container">
   <section class="twitter-stream">
     <h4>Twitter</h4>
-    <div id="tweets"></div>
+    <a class="twitter-timeline" data-theme="dark" data-chrome="nofooter noheader" href="https://twitter.com/MadTreeBrewing" data-widget-id="442704604644401152" >Tweets by @MadTreeBrewing</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+    
   </section> <!-- /twitter-stream -->
   <%= partial 'partials/untappd' %>
 </div>

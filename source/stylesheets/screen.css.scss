@@ -80,6 +80,9 @@ p {
 
 a {
   color: $red;
+  &:hover {
+    color: saturate($red, 20%);
+  }
 }
 
 // Header
@@ -149,21 +152,21 @@ a {
     li {
       width: calc-em(18px);
       height: calc-em(18px);
-      @include background(transparent image-url('sprites/spr-social.png') no-repeat 0 0);
+      @include background(transparent image-url('sprites/spr-social@2x.png') no-repeat 0 0);
       text-indent: -9999px;
-      @include image-2x("sprites/spr-social.png", calc-em(20px), calc-em(20px));
+      background-size: 18px;
       vertical-align: middle;
       &.facebook {
         background-position: 0 0;
       } //facebook
       &.untappd {
-        background-position: 0 -24px;
+        background-position: 0 -25px;
       } //untappd
       &.twitter {
-        background-position: 0 -49px;
+        background-position: 0 -51px;
       } //twitter
       &.yelp {
-        background-position: 0 -76px;
+        background-position: 0 -78px;
       } //yelp
       a {
         display: block;

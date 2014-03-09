@@ -32,8 +32,6 @@ $ ->
         n++
       element.innerHTML = html
 
-    twitterFetcher.fetch('397202470268452864', 'tweets', 5, true, true, false, 'default', false, handleTweets, false) if $("body.home").length > 0
-    
     #$(window).bind "load", ->
       #rowTotal = $("#instagram-photos li").length
 
@@ -47,10 +45,7 @@ $ ->
       template: '<li class="photo"><a href="{{link}}" data-toggle="modal" data-target="#myModal{{id}}"><img src={{image}} /></a><div class="modal fade" id="myModal{{id}}" tabindex="-1" role="dialog" aria-labelledby="myModal{{id}}" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></div><div class="modal-body"><img src="{{image}}" /></div></div></div></div></li>'
       )
    
-
     feed.run() if $("body.home").length > 0
-
-
 
     $(".founder a").click (e) ->
       e.preventDefault()
@@ -71,7 +66,6 @@ $ ->
     $(".find-beer h2").fitText(.66)
 
     $(".beer-details h2").fitText(.75)
-    
 
     $(".nav-toggle").click (e) ->
       e.preventDefault()
