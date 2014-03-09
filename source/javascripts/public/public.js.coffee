@@ -111,13 +111,14 @@ $ ->
       
     error_callback = (p) ->
 
-    if $("body.home").length > 0 
+
+    $("#user-location #address").focus ->
       if geoPosition.init() # Geolocation Initialisation
         geoPosition.getCurrentPosition success_callback, error_callback,
           enableHighAccuracy: true
       else
         return
-
+      
     #$("#loc-list").on "click", ".show-on-map", (e) ->
       #e.preventDefault()
       #$("#map").addClass("now-showing")
