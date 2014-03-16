@@ -7,6 +7,8 @@
 @import "pages/psychopathy";
 @import "pages/gnarly-brown";
 @import "pages/identity-crisis";
+@import "pages/lift";
+@import "pages/sprye";
 @import "pages/axis-mundi";
 @import "pages/taproom";
 @import "pages/interstitial";
@@ -313,7 +315,8 @@ a {
 
   .happy-amber,
   .psychopathy,
-  .gnarly-brown {
+  .gnarly-brown,
+  .lift {
     position: absolute;
     top: 0;
     a {
@@ -326,7 +329,7 @@ a {
   } //happy-amber, psychopathy, gnarly-brown
 
   .happy-amber {
-    right: 230px;
+    right: 23%;
     @include respond-to(41.25em) {
       left: 0;
       top: 200px;
@@ -341,11 +344,28 @@ a {
     } //a
   } //happy-amber
 
-  .gnarly-brown {
-    right: 80px;
+
+  .lift {
+    right: 8%;
     @include respond-to(41.25em) {
       top: 150px;
       left: 260px;
+    }
+    a {
+      height: 406px;
+      @include background(transparent image-url('beers/img-lift-combined.png') no-repeat top left);
+      background-size: contain;
+      @include respond-to(41.25em) {
+        width: 318px;
+      }
+    } //a
+  } //gnarly-brown
+
+  .gnarly-brown {
+    right: 38%; 
+    @include respond-to(41.25em) {
+      top: 250px;
+      left: -(230px);
     }
     a {
       height: 406px;
@@ -358,7 +378,7 @@ a {
   } //gnarly-brown
 
   .psychopathy {
-    right: -70px;
+    right: -7%;
     @include respond-to(41.25em) {
       right: 0;
       top: 100px;
