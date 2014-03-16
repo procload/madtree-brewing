@@ -609,7 +609,7 @@ a {
   .interior & {
     padding-top: calc-em(120px);
     @include respond-to(41.25em) {
-      padding-top: 0; 
+      padding-top: calc-em(40px); 
     }
   }
 } //main-content

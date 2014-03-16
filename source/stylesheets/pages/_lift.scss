@@ -48,8 +48,10 @@ body.lift {
   }
   .beer-details {
     h2 {
-      color: $lift-alt;
-    }  
+      color: $white;
+      @include text-shadow(#87702F 2px 3px 0);
+      letter-spacing: 2px;
+    }
     p {
       color: $lift-alt;
     }
