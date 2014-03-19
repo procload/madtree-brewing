@@ -1,0 +1,54 @@
+{
+  "events": [
+    {
+      "title" : "Pints for Pits Adoption Event",
+      "url" : "https://www.facebook.com/events/280499608772560/",
+      "description" : "Come celebrate St. Pitty's Day with Adore-A-Bull Rescue at MadTree!",
+      "date" : "Sunday, March 16",
+      "time" : "2 p.m."
+    },
+    {
+      "title" : "St. Patrick's Day",
+      "url" : "https://www.facebook.com/events/1477595329135006/",
+      "description" : "Happy green beer day! Well, we won't be serving any green beer, but we will have Mac the Willis Irish Red and Black Forest Milk Stout so you can get your Irish(ish) fix. ",
+      "date" : "Monday, March 17",
+      "time" : "Noon"
+    },
+    {
+      "title" : "Huit Hop Up Dinner",
+      "url" : "https://www.facebook.com/huitasian",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, March 19",
+      "time" : "6:30 p.m."
+    },
+    {
+      "title" : "NCAA Tournament",
+      "url" : "/taproom",
+      "description" : "Join us at the taproom to watch the first and second rounds of this year’s tournament.",
+      "date" : "Thursday, March 20",
+      "time" : "Noon"
+    },
+    {
+      "title" : "Incline Public House Hop Up Dinner",
+      "url" : "http://www.inclinepublichouse.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, March 26",
+      "time" : "6 p.m."
+    },
+    {
+      "title" : "Distasi Beer Dinner",
+      "url" : "http://www.400wyoming.com/",
+      "description" : "We'll be out serving your favorite MadTree beers at Distasi in Wyoming.",
+      "date" : "Wednesday, March 26",
+      "time" : "6:30 p.m."
+    },
+    {
+      "title" : "Cincinnati Rollergirls",
+      "url" : "http://cincinnatirollergirls.com/events",
+      "description" : "Come out to Cincinnati Gardens to watch the Rollergirls play a double-header against New Hampshire & Gem City. After the game head to the taproom for the after party.",
+      "date" : "Saturday, March 29",
+      "time" : "6 p.m."
+    }
+  ]
+}
+

@@ -68,63 +68,8 @@
       <h3>Upcoming Events</h3>
     </header> <!-- /upcoming-header -->
 
-  
-    <article class="event-teaser">
-      <header class="teaser-header">
-        <a href="https://www.facebook.com/events/1477595329135006/"><span class="date">Monday, Mar. 17 at Noon</span> &mdash; <strong>St. Patrick's Day</strong></a>
-      </header> <!-- /teaser-header -->
-      <div class="teaser-body">
-        <p>Happy green beer day! Well, we won't be serving any green beer, but we will have Mac the Willis Irish Red and Black Forest Milk Stout so you can get your Irish(ish) fix.</p>
-      </div> <!-- /teaser-body -->
-      <footer class="teaser-footer">
-        <%= link_to "Read more&hellip;", "https://www.facebook.com/events/1477595329135006/" %>
-      </footer> <!-- /teaser-footer -->
-    </article> <!-- /event-teaser -->
-
-    <article class="event-teaser">
-      <header class="teaser-header">
-        <a href="https://www.facebook.com/huitasian"><span class="date">Wednesday, Mar. 19 at 6:30pm</span> &mdash; <strong>Huit Hop Up Dinner</strong></a>
-      </header> <!-- /teaser-header -->
-      <div class="teaser-body">
-        <p>Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.</p>
-      </div> <!-- /teaser-body -->
-      <footer class="teaser-footer">
-        <%= link_to "Read more&hellip;", "https://www.facebook.com/huitasian" %>
-      </footer> <!-- /teaser-footer -->
-    </article> <!-- /event-teaser -->
-
-    <article class="event-teaser">
-      <header class="teaser-header">
-        <a href="/taproom"><span class="date">Thursday &amp; Friday, Mar. 20&ndash;21</span> &mdash; <strong>NCAA Tournament</strong></a>
-      </header> <!-- /teaser-header -->
-      <div class="teaser-body">
-        <p>Join us at the taproom to watch the first and second rounds of this year’s tournament. </p>
-      </div> <!-- /teaser-body -->
-    </article> <!-- /event-teaser -->
-
-    <article class="event-teaser">
-      <header class="teaser-header">
-        <a href="http://www.mecklenburgs.net/"><span class="date">Saturday, Mar. 22 at 5:30 p.m.</span> &mdash; <strong>Mecklenburg Gardens Beer Dinner</strong></a>
-      </header> <!-- /teaser-header -->
-      <div class="teaser-body">
-        <p>We'll be out serving your favorite MadTree beers at Mecklenburg Gardens in Clifton.</p>
-      </div> <!-- /teaser-body -->
-      <footer class="teaser-footer">
-        <%= link_to "Read more&hellip;", "http://www.mecklenburgs.net/" %>
-      </footer> <!-- /teaser-footer -->
-    </article> <!-- /event-teaser -->
-
-    <article class="event-teaser">
-      <header class="teaser-header">
-        <a href="https://www.facebook.com/HollerHopsandGrill"><span class="date">Saturday, Mar. 22 at 6pm</span> &mdash; <strong>Holler Hops Charity Event</strong></a>
-      </header> <!-- /teaser-header -->
-      <div class="teaser-body">
-        <p>We'll be out serving your favorite Madtree beers at Holler Hops in &amp; Grill's charity event in Florence.</p>
-      </div> <!-- /teaser-body -->
-      <footer class="teaser-footer">
-        <%= link_to "Read more&hellip;", "https://www.facebook.com/HollerHopsandGrill" %>
-      </footer> <!-- /teaser-footer -->
-    </article> <!-- /event-teaser -->
+    <div id="event-list">
+    </div>
 
     <footer class="section-footer">
       <%= link_to "View all upcoming events", "https://www.facebook.com/MadTree/events" %>
@@ -141,8 +86,6 @@
     <h4>Twitter</h4>
     <a class="twitter-timeline" width="410px" data-theme="dark"  data-chrome="nofooter noborders noheader transparent" href="https://twitter.com/MadTreeBrewing" data-widget-id="442704604644401152" >Tweets by @MadTreeBrewing</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-    
   </section> <!-- /twitter-stream -->
   <%= partial 'partials/untappd' %>
 </div>
@@ -150,6 +93,23 @@
 <section class="madtree-photo">
   <%= image_tag "backgrounds/bg-about.png" %>
 </section> <!-- /madtree-photo -->
+
+<script id="events_template" type="text/x-handlebars-template">
+
+{{#listFirstThree events}}
+<article class="event-teaser">
+  <header class="teaser-header">
+  <a href="{{url}}"><span class="date">{{date}} at {{time}}</span> &mdash; <strong>{{title}}</strong></a>
+  </header> <!-- /teaser-header -->
+  <div class="teaser-body">
+    <p>{{description}}</p>
+  </div> <!-- /teaser-body -->
+  <footer class="teaser-footer">
+    <%= link_to "Read more&hellip;", "{{url}}" %>
+  </footer> <!-- /teaser-footer -->
+</article> <!-- /event-teaser -->
+{{/listFirstThree}}
+</script>
 
 <script id="untappd_template" type="text/x-handlebars-template">
 <table class="untappd table table-striped">
