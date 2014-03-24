@@ -5,12 +5,19 @@
       <%= content_tag :li, link_to("Happy Amber", "/beers/happy-amber.html"), class: (sub_page == "happy-amber" ? "active" : "") %>
       <%= content_tag :li, link_to("Psychopathy", "/beers/psychopathy.html"), class: (sub_page == "psychopathy" ? "active" : "") %>
       <%= content_tag :li, link_to("Gnarly Brown", "/beers/gnarly-brown.html"), class: (sub_page == "gnarly-brown" ? "active" : "") %>
-      <%= content_tag :li, link_to("Identity Crisis", "/beers/identity-crisis.html"), class: (sub_page == "identity-crisis" ? "active" : "") %>
-      <%= content_tag :li, link_to("Axis Mundi", "/beers/axis-mundi.html"), class: (sub_page == "axis-mundi" ? "active" : "") %>
       <%= content_tag :li, link_to("Lift", "/beers/lift.html"), class: (sub_page == "lift" ? "active" : "") %>
-      <%= content_tag :li, link_to("Galaxy High", "/beers/galaxy-high.html"), class: (sub_page == "galaxy-high" ? "active" : "") %>
-      <% seasonals = ["sprye", "daywalker", "pleasant-wheat", "the-great-pumpcan", "thundersnow" ] %>
+
+      <% seasonals = ["identity-crisis","galaxy-high","axis-mundi"] %>
       <li class="dropdown seasonal-beers <%= 'active' if seasonals.include? sub_page %>">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Limited Year-Round <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <%= content_tag :li, link_to("Identity Crisis", "/beers/identity-crisis.html"), class: (sub_page == "identity-crisis" ? "active" : "") %>
+          <%= content_tag :li, link_to("Galaxy High", "/beers/galaxy-high.html"), class: (sub_page == "galaxy-high" ? "active" : "") %>
+          <%= content_tag :li, link_to("Axis Mundi", "/beers/axis-mundi.html"), class: (sub_page == "axis-mundi" ? "active" : "") %>
+        </ul>
+      </li> <!-- /limited-year-round -->
+      <% limited_releases = ["sprye", "daywalker", "pleasant-wheat", "the-great-pumpcan", "thundersnow", "batch-one", "wheat-eater", "axis-mundi-bourbon", "flight-of-simcoe", "gnarly-brown-vanilla", "gnarly-brown-coffee", "pilgrim-pale-ale", "unhappy-amber", "everything-went-black", "rubus-cacao", "old-battering-ram", "flolsch", "dead-flowers"] %>
+      <li class="dropdown seasonal-beers <%= 'active' if limited_releases.include? sub_page %>">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Seasonals <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <%= content_tag :li, link_to("Sprye", "/beers/sprye.html"), class: (sub_page == "sprye" ? "active" : "") %>
@@ -18,12 +25,6 @@
           <%= content_tag :li, link_to("Pleasant Wheat", "/beers/pleasant-wheat.html"), class: (sub_page == "pleasant-wheat" ? "active" : "") %>
           <%= content_tag :li, link_to("The Great PumpCan", "/beers/pumpcan.html"), class: (sub_page == "the-great-pumpcan" ? "active" : "") %>
           <%= content_tag :li, link_to("Thundersnow", "/beers/thundersnow.html"), class: (sub_page == "thundersnow" ? "active" : "") %>
-        </ul> <!-- /dropdown-menu -->
-      </li> <!-- /Limited Releases -->      
-      <% limited_releases = ["batch-one", "wheat-eater", "axis-mundi-bourbon", "flight-of-simcoe", "gnarly-brown-vanilla", "gnarly-brown-coffee", "pilgrim-pale-ale", "unhappy-amber", "everything-went-black", "rubus-cacao", "old-battering-ram", "flolsch", "dead-flowers"] %>
-      <li class="dropdown seasonal-beers <%= 'active' if limited_releases.include? sub_page %>">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Limited Releases <b class="caret"></b></a>
-        <ul class="dropdown-menu">
           <%= content_tag :li, link_to("Batch One", "/beers/batch-one.html"), class: (sub_page == "batch-one" ? "active" : "") %>
           <%= content_tag :li, link_to("Wheat Eater", "/beers/wheat-eater.html"), class: (sub_page == "wheat-eater" ? "active" : "") %>
           <%= content_tag :li, link_to("Bourbon Barrel Aged Axis Mundi", "/beers/axis-mundi-bourbon.html"), class: (sub_page == "axis-mundi-bourbon" ? "active" : "") %>
@@ -38,7 +39,7 @@
           <%= content_tag :li, link_to("Fl&ouml;lsch", "/beers/flolsch.html"), class: (sub_page == "flolsch" ? "active" : "") %>
           <%= content_tag :li, link_to("Dead Flowers", "/beers/dead-flowers.html"), class: (sub_page == "dead-flowers" ? "active" : "") %>
         </ul> <!-- /dropdown-menu -->
-      </li> <!-- /Limited Releases -->      
+      </li> <!-- /Limited Releases -->
     </ul> <!-- /section-nav -->
   </div> <!-- /navbar-inner -->
 </nav> <!-- /navbar -->
