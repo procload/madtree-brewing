@@ -48,6 +48,41 @@
       "description" : "Come out to Cincinnati Gardens to watch the Rollergirls play a double-header against New Hampshire & Gem City. After the game head to the taproom for the after party.",
       "date" : "Saturday, March 29",
       "time" : "6 p.m."
+    },
+    {
+      "title" : "Ales for Autism",
+      "url" : "https://www.facebook.com/events/256879201159544/",
+      "description" : "The Autism Society of Greater Cincinnati is the official Charity of the Month for MadTree for the month of April. We're kicking off support by giving $1 from every draft beer to the Autism Society on Tuesday, April 8th. In addition, all the dollars tossed up on the grates and $1 from all headbands sold in the month of April will be donated to the society.",
+      "date" : "Tuesday, April 8",
+      "time" : "5 p.m."
+    },
+    {
+      "title" : "Parkers Beer Dinner",
+      "url" : "https://www.facebook.com/parkersblueash",
+      "description" : "We'll be out serving your favorite MadTree beers at Parkers in Blue Ash.",
+      "date" : "Wednesday, April 9",
+      "time" : "6 p.m."
+    },
+    {
+      "title" : "Unbridled Spirits Tasting",
+      "url" : "https://www.facebook.com/pages/Liquor-Citys-Unbridled-Spirits/468739379908069",
+      "description" : "We'll be out serving your favorite MadTree beers at Unbridled Spirits in Florence.",
+      "date" : "Saturday, April 12",
+      "time" : "Noon"
+    },
+    {
+      "title" : "Ruth's Chris Tasting",
+      "url" : "http://www.ruthschris.com/",
+      "description" : "We'll be out serving your favorite MadTree beers at Ruth's Chris downtown.",
+      "date" : "Tuesday, April 15",
+      "time" : "3 p.m."
+    },
+    {
+      "title" : "Fox and Hound Tasting &amp; Takeover",
+      "url" : "http://www.foxandhound.com/",
+      "description" : "We'll be out serving your favorite MadTree beers at Fox and Hound in Mason.",
+      "date" : "Tuesday, April 15",
+      "time" : "6 p.m."
     }
   ]
 }
