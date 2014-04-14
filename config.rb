@@ -2,8 +2,6 @@ require "compass"
 require "susy"
 
 activate :livereload
-
-
 page "/index.html", :layout => "interstitial"
 
 data.beers.details.each do |beer|

@@ -25,6 +25,9 @@ sub_page: "happy-amber"
       <p><%= data.beers.details[0].name %></p>
 
       <p>This dry-hopped ale combines carmel and biscuit malt flavors in happy equilibrium with late addition American hops. The approachable balance is intentional although the name is "hoppy accident."</p>
+      <p>
+        <%= link_to "<i class='icon-beaker'></i> Download the Recipe", "/recipes/happyAmberRecipe.pdf" %>
+      </p>
       <table class="table beer-stats">
         <tr class="numbers">
           <th class="abv-label">ABV</th>

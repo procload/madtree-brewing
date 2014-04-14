@@ -3,7 +3,7 @@ current_page: "beers"
 sub_page: "rubus-cacao"
 ---
 <% content_for :page_classes do %>
-  interior sprye 
+  interior 
 <% end %>
 <% content_for :site_header do %>
   <%= partial '../partials/interior-nav' %>
@@ -21,6 +21,9 @@ sub_page: "rubus-cacao"
         <span class="chef-series">Brewers Series by Ryan Blevins</span>
       </header> <!-- /beer-detail-header -->
       <p>Raspberries and chocolate go together like two peas in a pod. But don't worry, there's no peas in the Rubus Cacao. Rather the sweet chocolate, roasty bitterness and dark raspberry fruit combine in perfect harmony. Who knows, the Rubus might even become the pea in your pod!</p>
+      <p>
+        <%= link_to "<i class='icon-beaker'></i> Download the Recipe", "/recipes/rubusCacaoRecipe.pdf" %>
+      </p>
       <table class="table beer-stats">
         <tr class="numbers">
           <th class="abv-label">ABV</th>

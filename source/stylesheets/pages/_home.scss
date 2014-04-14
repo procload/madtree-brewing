@@ -74,9 +74,6 @@ body.home {
       }
     }
   } //find-beer
-  
-
-
   .address {
     @include respond-to(33.75em) {
       @include span-columns(4, 6);
@@ -99,6 +96,17 @@ body.home {
       @include span-columns(2 omega, 6);
     }
   } //phone
+
+  .event-contact {
+    text-align: center;
+    @include background(transparent image-url('backgrounds/subtle_carbon_inverse.png') repeat top left);
+    padding: calc-em(20px) calc-em(34px);
+    margin-bottom: calc-em(32px);
+    h4 {
+      font-size: calc-em(32px);
+    }
+  }
+
   .upcoming-events {
     @include respond-to(40em) {
       @include span-columns(6 omega);
@@ -142,6 +150,7 @@ body.home {
   } //twitter-stream
 
   .untappd-stats {
+    margin-bottom: calc-em(32px);
     @include respond-to(41.25em) {
       @include span-columns(6 omega);
     }

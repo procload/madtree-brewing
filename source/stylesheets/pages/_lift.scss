@@ -1,0 +1,81 @@
+body.lift {
+  background: $lift; 
+  @include background($lift image-url('backgrounds/bg-lift.png') no-repeat top right);
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    color: $white;
+    background: $lift; 
+  }
+  .caret {
+    border-top-color: $lift;
+  }
+  .site-header {
+    color: $lift;
+  }
+  .header-toolbar {
+    background: $lift-alt;
+    background: transparentize($lift-alt, .2);
+  }
+  .navbar {
+    background: $lift-alt;
+    background: transparentize($lift-alt, .05);
+    &.section-navbar {
+      background: $lift-alt; 
+    background: transparentize($lift-alt, .2);
+      a {
+        color: $lift;
+      }
+      li.active {
+       > a {
+          color: $white;
+        }
+      } //active
+    }
+    .main-nav li {
+      &:nth-child(even) {
+        background: transparentize($lift-alt, .2);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: $lift-alt;
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
+  }
+  .beer-details {
+    h2 {
+      color: $white;
+      @include text-shadow(#87702F 2px 3px 0);
+      letter-spacing: 2px;
+    }
+    p {
+      color: $lift-alt;
+    }
+  }
+  .site-footer {
+    background: $lift-alt;
+    a {
+      color: $lift;
+    }
+  }
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $lift;
+  }
+  .beer-stats {
+    border-color: transparentize($lift-alt, .2);
+
+    background: transparentize($lift-alt, .4);
+  }
+} //happy-amber
+
+
+
