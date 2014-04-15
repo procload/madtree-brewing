@@ -38,20 +38,20 @@
     <section class="address-phone">
       <div class="address">
         <h5><i class="icon-map-marker"></i> Address</h5>
-        <p><%= data.contact.details.address %></p>
-        <p><%= data.contact.details.city %>, <%= data.contact.details.state %> <%= data.contact.details.zipcode %></p>
+        <p><%= data.contact.details[0].address %></p>
+        <p><%= data.contact.details[0].city %>, <%= data.contact.details[0].state %> <%= data.contact.details[0].zipcode %></p>
       </div> <!-- /address -->
       <div class="phone">
         <h5><i class="icon-phone"></i> Phone</h5>
-        <p><%= data.contact.details.phone %></p>
+        <p><%= data.contact.details[0].phone %></p>
       </div> <!-- /phone -->
       <div class="email">
         <h5><i class="icon-envelope"></i> Email</h5>
         <p>
-        <% data.contact.details.emails.each_with_index do |email, i| %>
-          <%= link_to email.title, "mailto:#{email.address}" %>
-          <%= "&mdash;" unless i == (data.contact.details.emails.length - 1) %>
-        <% end %>
+          <% data.contact.emails.each_with_index do |email, i| %>
+            <%= link_to email.title, "mailto:#{email.address}" %>
+            <%= "&mdash;" unless i == (data.contact.emails.length - 1) %>
+          <% end %>
         </p>
       </div> <!-- /phone -->
     </section> <!-- /address-phone -->

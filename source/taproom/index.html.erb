@@ -33,7 +33,7 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
       <h2>The MadTree Taproom</h2>
     </header> <!-- /taproom-about-header -->
     <div class="taproom-about-body">
-      <%= data.taproom.details.first.intro %>
+      <%= data.taproom.details[0].intro %>
       <h3>What's on tap?</h3>
       <ul class="tap-list">
       <% data.taproom.ontap.each do |tap| %>
@@ -46,14 +46,14 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
       <% end %>
       </ul>
       <h3>Did somebody say tours?</h3>
-      <%= data.taproom.details.first.tours %>
+      <%= data.taproom.details[0].tours %>
       <h3>Taproom Hours</h3>
       <table class="table table-striped">
         <tbody>
-          <% hours = data.hours.details %>
+          <% hours = data.hours %>
           <% hours.each do |hours| %>
-            <% unless hours.last == "" %>
-              <%= content_tag :tr, "<th>#{hours.first}</th> <td>#{hours.last}</td>" %>
+            <% unless hours.hours == "" %>
+              <%= content_tag :tr, "<th>#{hours.day}</th> <td>#{hours.hours}</td>" %>
             <% end %>
           <% end %>
         </tbody>

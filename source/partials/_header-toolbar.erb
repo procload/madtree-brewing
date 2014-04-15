@@ -1,11 +1,11 @@
 <section class="header-toolbar">
   <div class="toolbar-content">
     <div class="taproom-hours">
-      <% hours = data.hours.details %>
+      <% hours = data.hours %>
       <span class="more-text">Tap Room Hours:</span>
       <% hours.each do |hours| %>
-        <% unless hours.last == "" %>
-          <%= content_tag :span, "<strong>#{hours.first[0]}</strong> #{hours.last}", class: "day" %>
+        <% unless hours.hours == "" %>
+          <%= content_tag :span, "<strong>#{hours.day[0]}</strong> #{hours.hours}", class: "day" %>
         <% end %>
       <% end %>
     </div> <!-- /tapoom-hours -->

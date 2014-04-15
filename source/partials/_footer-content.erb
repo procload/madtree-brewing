@@ -36,14 +36,14 @@
           <strong>Phone</strong>: 513.836.8733
         </li>
         <li>
-          <p><%= data.contact.details.address %></p>
-          <p><%= data.contact.details.city %>, <%= data.contact.details.state %> <%= data.contact.details.zipcode %></p>
+          <p><%= data.contact.details[0].address %></p>
+          <p><%= data.contact.details[0].city %>, <%= data.contact.details[0].state %> <%= data.contact.details[0].zipcode %></p>
         </li>
         <li>
         <ul class="social-links">
-          <li class="facebook"><%= link_to "<i class='icon-facebook'></i>", data.contact.details.facebook %></li>
+          <li class="facebook"><%= link_to "<i class='icon-facebook'></i>", data.contact.details[0].facebook %></li>
           <li class="foursquare"><%= link_to "<i class='icon-foursquare'></i>", "http://4sq.com/T31jg0" %></li>
-          <li class="twitter"><%= link_to "<i class='icon-twitter'></i>", data.contact.details.twitter %></li>
+          <li class="twitter"><%= link_to "<i class='icon-twitter'></i>", data.contact.details[0].twitter %></li>
         </ul> <!-- /social-links -->
         </li>
       </ul>
