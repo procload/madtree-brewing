@@ -1,9 +1,9 @@
 ---
 current_page: "beers"
-sub_page: "daywalker"
+sub_page: "soldrifter"
 ---
 <% content_for :page_classes do %>
-  interior daywalker 
+  interior soldrifter 
 <% end %>
 <% content_for :site_header do %>
   <%= partial '../partials/interior-nav' %>
@@ -13,15 +13,14 @@ sub_page: "daywalker"
 <div class="container">
   <section class="beer-description">
     <div class="beer-images">
-      <%= image_tag "beers/daywalker/img-tap.png" %>
     </div> <!-- /beer-images -->
     <div class="beer-details">
       <header class="beer-detail-header">
-        <h2>Daywalker</h2>
+        <h2>Sol Drifter</h2>
       </header> <!-- /beer-detail-header -->
-      <p>A refreshing blonde ale made for extended periods of drinking during summer days well into the evening. With copious amounts of New Zealand Motueka hops lending lemon and lime notes, Daywalker ends with a crisp and tart strawberry finish.</p>
+      <p>A refreshing blonde ale made for extended periods of drinking during summer days well into the evening. With copious amounts of New Zealand Motueka hops lending lemon and lime notes, Sol Drifter ends with a crisp and tart strawberry finish.</p>
       <p>
-        <%= link_to "<i class='icon-beaker'></i> Email us for the Recipe", "mailto:recipes@madtreebrewing.com" %>
+        <%= link_to "<i class='icon-beaker'></i> Download the Recipe", "/recipes/solDrifterRecipe.pdf" %>
       </p>
       <table class="table beer-stats">
         <tr class="numbers">
