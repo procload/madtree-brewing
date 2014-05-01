@@ -34,6 +34,8 @@ $lift:                  #DCD788;
 $lift-alt:              #B16317;
 $sprye:                 #76C5B6;
 $sprye-alt:             #084F6C;
+$soldrifter:            #F97798;
+$soldrifter-alt:        #C90A40;
 
 $brand-primary:         #428bca !default;
 $brand-success:         #5cb85c !default;
@@ -62,6 +64,7 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 $nav-font-family:         "proxima-nova-extra-condensed";
+$font-family-script:      "flood-std", "Comic Sans";
 
 $font-size-base:          16px !default;
 $font-size-large:         ceil($font-size-base * 1.25) !default; // ~18px

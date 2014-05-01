@@ -1,0 +1,76 @@
+body.soldrifter {
+  background: $soldrifter; 
+  @include background($soldrifter image-url('backgrounds/bg-soldrifter.png') no-repeat top right);
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    color: $white;
+    background: $soldrifter; 
+  }
+  .caret {
+    border-top-color: $soldrifter;
+  }
+  .site-header {
+    color: $soldrifter;
+  }
+  .header-toolbar {
+    background: $soldrifter-alt;
+  }
+  .navbar {
+    background: #C90A40;
+    background: rgba(201, 10, 64, .95);
+    &.section-navbar {
+      background: #721F0A;
+    background: rgba(201, 10, 64, .7);
+      a {
+        color: $soldrifter;
+      }
+      li.active {
+       > a {
+          color: $white;
+        }
+      } //active
+    }
+    .main-nav li {
+      &:nth-child(even) {
+        background: rgba(81, 78, 26, .8);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: rgba(81, 78, 26, 1);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
+  }
+  .beer-details {
+    h2 {
+      color: #ECE975;
+      > span {
+        color: $white;
+      }
+    }  
+  }
+  .site-footer {
+    background: $soldrifter-alt; 
+    a {
+      color: $white;
+    }
+  }
+  .nav-item-header {
+    h4 {
+      color: #ECE975;
+    }
+  }
+  .nav-item-body {
+    color: $white;
+  }
+  .beer-stats {
+    background: rgba(201, 10, 64, .6);
+    border-color: rgba(201, 10, 64, .8);
+  }
+} //happy-amber
+
+
