@@ -133,6 +133,34 @@
       "date" : "Tuesday, April 29",
       "time" : "5 p.m."
     }
+      {
+      "title" : "Olives Local/Regional Beerfest",
+      "url" : "https://www.facebook.com/events/1421745624742879/",
+      "description" : "Olives in Clifton Gaslight will be serving beer from local & regional breweries, including MadTree. Admission is $25.",
+      "date" : "Thursday, May 8th",
+      "time" : "7 p.m."
+    },
+    {
+      "title" : "Middletown Kroger Tasting",
+      "url" : "https://www.kroger.com/",
+      "description" : "We'll be out serving your favorite MadTree beers at Kroger in Middletown.",
+      "date" : "Friday, May 9th",
+      "time" : "5 p.m."
+    },
+    {
+      "title" : "Cincinnati Rollergirls",
+      "url" : "https://www.facebook.com/events/1417826701812642/",
+      "description" : "Come out to Cincinnati Gardens to watch the Rollergirls play against Killamazoo Derby Darlins. After the game head to the taproom for the after party.",
+      "date" : "Saturday, May 10th",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Mazunte Hop Up Dinner",
+      "url" : "http://mazuntetacos.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, May 14th",
+      "time" : "6 p.m."
+    },
   ]
 }
 
