@@ -2,13 +2,11 @@
   <%
     custom_logo = beer.logo == "" ? "img-logo-ha.png" : beer.logo
     primary_color = beer.primary_color || ""
+    secondary_color = beer.secondary_color || ""
     text_color = beer.text_color || "#FFF"
     background_image = beer.background_image || ""
   %>
-
-  $secondary_color: adjust-hue(<%= primary_color %>, -22);
-  $secondary_color: darken($secondary_color, 30%);
-  $secondary_color: saturate($secondary_color, 10%);
+  $secondary_color : <%= secondary_color %>;
 
   body.interior.<%= beer.url %> {
     background: <%= primary_color %>; 
@@ -28,7 +26,6 @@
     }
     .header-toolbar {
       background: $secondary_color;
-      background: transparentize($secondary_color, .2); 
     }
     .navbar {
       background: darken(saturate(<%= primary_color %>, 15), 15);
@@ -69,6 +66,9 @@
       }
     }
     .beer-details {
+      @include respond-to(32.5em) {
+        @include span-columns(7 omega);
+      }
       h2 {
         color: <%= text_color %>;
       } //h2 
