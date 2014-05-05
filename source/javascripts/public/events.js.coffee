@@ -7,7 +7,6 @@ $ ->
 
   currentEvents = []
   isCurrent = (event) ->
-    console.log event.title
     now = moment()
     currentYear = moment().year()
     eventDate = moment(event.date).year(currentYear)
@@ -22,7 +21,6 @@ $ ->
     ret = ""
     i = 0
     j = 3
-    console.log currentEvents.length
     if currentEvents.length > 2
       while i < j
         ret = ret + options.fn(currentEvents[i])
