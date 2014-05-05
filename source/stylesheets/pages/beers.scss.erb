@@ -1,10 +1,9 @@
 <% data.beers.each do |beer| %>
   <%
     custom_logo = beer.logo == "" ? "img-logo-ha.png" : beer.logo
-    primary_color = beer.primary_color
-    text_color = beer.text_color
-    background_image = beer.background_image
-
+    primary_color = beer.primary_color || ""
+    text_color = beer.text_color || "#FFF"
+    background_image = beer.background_image || ""
   %>
 
   $secondary_color: adjust-hue(<%= primary_color %>, -22);
@@ -96,6 +95,5 @@
       border-color: $secondary_color;
       background: transparentize( $secondary_color, .8);
     }
-
   }
 <% end %>
