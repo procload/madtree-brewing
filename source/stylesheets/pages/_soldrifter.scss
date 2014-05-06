@@ -1,6 +1,6 @@
 body.soldrifter {
   background: $soldrifter; 
-  @include background($soldrifter image-url('backgrounds/bg-soldrifter.png') no-repeat top right);
+  @include background($soldrifter image-url('backgrounds/bg-sol-drifter.png') no-repeat left);
   .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
     color: $white;
