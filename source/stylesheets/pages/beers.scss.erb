@@ -19,11 +19,6 @@
       @include background(<%= primary_color %> image-url("<%= background_image %>") no-repeat top right);
     <% end %>
     
-    .dropdown-menu > li > a:hover,
-    .dropdown-menu > li > a:focus {
-      color: $white;
-      background: <%= primary_color %>; 
-    }
     .caret {
       border-top-color: <%= primary_color %>;
     }
@@ -47,6 +42,18 @@
             color: $white;
           }
         } //active
+        .dropdown-menu > li.active a {
+          background: $primary_color;
+          color: $white;
+        }
+        .dropdown-menu > li > a {
+          color: $secondary_color;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: <%= primary_color %>; 
+          }
+        }
       }
       .main-nav li {
         &:nth-child(even) {
