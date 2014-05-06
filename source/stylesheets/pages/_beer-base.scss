@@ -22,19 +22,28 @@ body.beers {
     a {
       color: $white;
     }
+    &.with-image {
+      .beer-images {
+        text-align: center;
+        margin-bottom: calc-em(16px);
+        @include respond-to(32.5em) {
+          @include span-columns(4);
+        }
+      } //beer-images
+      .beer-details {
+        @include respond-to(32.5em) {
+          @include span-columns(7 omega);
+        }
+      }
+      .beer-details-text,
+      .beer-stats {
+        @include reset-columns;
+      }
+    } //with-image
   } //beer-description
-  .beer-images {
-    text-align: center;
-    margin-bottom: calc-em(16px);
-    @include respond-to(32.5em) {
-      @include span-columns(4);
-    }
-  } //beer-images
   .beer-details {
     margin-bottom: calc-em(16px);
-    @include respond-to(32.5em) {
-      @include span-columns(7 omega);
-    }
+    @extend %group;
     h2 {
       font-size: calc-em(42px);
       margin: 0;
@@ -68,7 +77,18 @@ body.beers {
         text-transform: none;
       }
   }
+  .beer-details-text {
+    margin-bottom: 16px;
+    @include respond-to(46.25em) {
+      //760px
+      @include span-columns(7);
+    }
+  }
   .beer-stats {
+    @include respond-to(46.25em) {
+      //760px
+      @include span-columns(5 omega);
+    }
     th {
       color: $white;
     }

@@ -3,21 +3,27 @@
     custom_logo = beer.logo == "" ? "img-logo-ha.png" : beer.logo
     primary_color = beer.primary_color || ""
     secondary_color = beer.secondary_color || ""
+    tertiary_color = beer.tertiary_color || ""
     text_color = beer.text_color || "#FFF"
     background_image = beer.background_image || ""
   %>
+  $primary_color : <%= primary_color %>;
   $secondary_color : <%= secondary_color %>;
+  $tertiary_color  : <%= tertiary_color %>;
 
   body.interior.<%= beer.url %> {
-    background: <%= primary_color %>; 
-    @include background(<%= primary_color %> image-url("<%= background_image %>") no-repeat top right);
-
+    background-color: <%= primary_color %>; 
+    <% if background_image == "/images/backgrounds/bg-beer-default.png" %>
+      @include background(image-url("<%= background_image %>") no-repeat top right, image-url("backgrounds/subtle_carbon.png") repeat top left);
+    <% else %>
+      @include background(<%= primary_color %> image-url("<%= background_image %>") no-repeat top right);
+    <% end %>
+    
     .dropdown-menu > li > a:hover,
     .dropdown-menu > li > a:focus {
       color: $white;
       background: <%= primary_color %>; 
     }
-
     .caret {
       border-top-color: <%= primary_color %>;
     }
@@ -28,11 +34,11 @@
       background: $secondary_color;
     }
     .navbar {
-      background: darken(saturate(<%= primary_color %>, 15), 15);
-      background: transparentize(darken(saturate(<%= primary_color %>, 15), 15), .2);
+      background: $secondary_color;
+      background: transparentize(lighten($secondary_color, 3%),.1);
       &.section-navbar {
-        background: $secondary_color;
-        background: transparentize( $secondary_color, .2); 
+        background: $tertiary_color;
+        background: transparentize($tertiary_color,.1);
         a {
           color: <%= primary_color %>;
         }
@@ -66,26 +72,29 @@
       }
     }
     .beer-details {
-      @include respond-to(32.5em) {
-        @include span-columns(7 omega);
-      }
       h2 {
         color: <%= text_color %>;
+        &.no-image {
+          font-family: "flood-std";
+        }
       } //h2 
       p {
         color: <%= text_color %>;
+        > a {
+          color: $tertiary_color;
+        }
       }
+      
     } //beer-details
     .site-footer {
       background: $secondary_color;
-      background: transparentize($secondary_color, .2); 
       a {
         color: <%= primary_color %>;
       }
     }
     .nav-item-header {
       h4 {
-        color: $white;
+        color: $tertiary_color;
       }
     }
     .nav-item-body {

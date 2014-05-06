@@ -2,7 +2,7 @@
   beer_name = beer.name
   beer_url = beer.url
   beer_description = beer.description
-  beer_image = beer.image
+  beer_image = beer.image || ""
   beer_illustration = ""
   beer_recipe = beer.recipe || ""
   abv = beer.abv
@@ -26,16 +26,24 @@
 
 
 <div class="container">
-  <section class="beer-description">
+  <section class="beer-description <%= 'with-image' if beer_image != "" %>">
+    <% if beer_image != "" %>
     <div class="beer-images">
       <%= image_tag beer_image %>
     </div> <!-- /beer-images -->
+    <% end %>
     <div class="beer-details">
-      <header class="beer-detail-header">
-        <h2><%= beer_name %></h2>
-      </header> <!-- /beer-detail-header -->
-      <p><%= beer_description %></p>
-      <p><%= (beer_recipe != "") ? link_to("<i class='icon-beaker'></i> Download the recipe", "/recipes/#{beer_recipe}") : link_to("<i class='icon-beaker'></i> Email us for the recipe", "mailto:recipes@madtreebrewing.com") %>
+      <div class="beer-details-text">
+        <header class="beer-detail-header">
+          <% if beer_image == "" %>
+            <h2 class="no-image"><%= beer_name %></h2>
+          <% else %>
+            <h2><%= beer_name %></h2>
+          <% end %>
+        </header> <!-- /beer-detail-header -->
+        <p><%= beer_description %></p>
+        <p><%= (beer_recipe != "") ? link_to("<i class='icon-beaker'></i> Download the recipe", "/recipes/#{beer_recipe}") : link_to("<i class='icon-beaker'></i> Email us for the recipe", "mailto:recipes@madtreebrewing.com") %>
+      </div> <!-- /beer-details-text -->
       <table class="table beer-stats">
         <tr class="numbers">
           <th class="abv-label">ABV</th>
