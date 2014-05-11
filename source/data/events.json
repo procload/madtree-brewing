@@ -160,6 +160,62 @@
       "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
       "date" : "Wednesday, May 14",
       "time" : "6 p.m."
+    },
+    {
+      "title" : "Sol Drifter Release Party Benefiting YMCA",
+      "url" : "https://www.facebook.com/events/240961736097378/",
+      "description" : "On May 15th we'll be launching the Summer Seasonal, Sol Drifter. 50% of all Sol Drifter sales, beer and merchandise, will go to YMCA of Greater Cincinnati.",
+      "date" : "Thursday, May 15",
+      "time" : "4 p.m."
+    },
+    {
+      "title" : "Mason Kroger Tasting",
+      "url" : "https://www.kroger.com/",
+      "description" : "We'll be out serving your favorite MadTree beers at Kroger in Mason.",
+      "date" : "Friday, May 16",
+      "time" : "5 p.m."
+    },
+    {
+      "title" : "Meatball Kitchen Hop Up Dinner",
+      "url" : "http://www.meatballkitchenusa.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, May 21",
+      "time" : "6:30 p.m."
+    },
+    {
+      "title" : "Jungle Jim's Pint Night Takeover",
+      "url" : "http://www.junglejims.com/",
+      "description" : "Join us at the the Jungle Jim's in Eastgate for some of your favorite Madtree beers.",
+      "date" : "Friday, May 23",
+      "time" : "4:30 p.m."
+    },
+    {
+      "title" : "Findlay Market Craft Beer Series",
+      "url" : "https://www.facebook.com/events/1468273723410467/",
+      "description" : "Join us in the OTR Biergarten once a month this summer for an hour with our beer and food expert, Lindsay Bohanske, a Certifed Cicerone® and creator of the site Love Beer Love Food [.com].",
+      "date" : "Saturday, May 24",
+      "time" : "12:00 p.m."
+    },
+    {
+      "title" : "Findlay Market Craft Beer Series",
+      "url" : "https://www.facebook.com/events/1468273723410467/",
+      "description" : "Join us in the OTR Biergarten once a month this summer for an hour with our beer and food expert, Lindsay Bohanske, a Certifed Cicerone® and creator of the site Love Beer Love Food [.com].",
+      "date" : "Sunday, May 25",
+      "time" : "12:00 p.m."
+    },
+      {
+      "title" : "Marty's Hops & Vines Hop Up Dinner",
+      "url" : "http://martys-hopsandvines.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, May 28",
+      "time" : "6:30 p.m."
+    },
+    {
+      "title" : "Cork 'N Bottle Beer Tasting",
+      "url" : "http://www.corknbottle.com/",
+      "description" : "We'll be out serving your favorite MadTree beers at Cork 'N Bottle in Crestview Hills, Ky.",
+      "date" : "Friday, May 30",
+      "time" : "5:00 p.m."
     }
   ]
 }
