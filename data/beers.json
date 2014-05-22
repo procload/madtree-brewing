@@ -48,7 +48,7 @@
     },
     "hops" : {
       "type" : "Text",
-      "value" : "Cascade, Chinook",
+      "value" : "Cascade, Chinooks",
       "config" : {
         "label" : "Hops"
       }
