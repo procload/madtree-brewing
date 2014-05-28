@@ -1,6 +1,6 @@
 <% data.beers.each do |beer| %>
   <%
-    custom_logo = beer.logo == "" ? "img-logo-ha.png" : beer.logo
+    custom_logo = beer.logo == "" ? "img-logo.png" : beer.logo
     primary_color = beer.primary_color || ""
     secondary_color = beer.secondary_color || ""
     tertiary_color = beer.tertiary_color || ""
@@ -111,9 +111,9 @@
       
     } //beer-details
     .site-footer {
-      background: <%= (text_color == "#FFF") ? secondary_color : text_color %>;
+      background: $secondary_color;
       <% if no_design %>
-        background: $white;
+        background: #FFF;
       <% end %>
       a {
         color: <%= primary_color %>;
@@ -124,7 +124,7 @@
     }
     .nav-item-header {
       h4 {
-        color: $tertiary_color;
+        color: #FFF; 
         <% if no_design %>
           color: #000;
         <% end %>
@@ -134,8 +134,12 @@
       color: <%= primary_color %>;
     }
     .beer-stats {
+      color: <%= text_color %>;
       border-color: $secondary_color;
       background: transparentize( $secondary_color, .8);
+      th {
+        color: <%= text_color %>;
+      }
     }
   }
 <% end %>

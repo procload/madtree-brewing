@@ -96,7 +96,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-identity-crisis.png",
       "image" : "/images/beers/identity-crisis/img-tap.png",
-      "availability" : "limited",
+      "availability" : "limited-year-round",
       "logo" : "img-logo.png"
     },
     {
@@ -116,7 +116,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default-rev.png",
       "image" : "/images/beers/galaxy-high/img-tap.png",
-      "availability" : "limited",
+      "availability" : "limited-year-round",
       "logo" : "img-logo.png"
     },
     {
@@ -136,7 +136,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default-rev.png",
       "image" : "/images/beers/axis-mundi/img-handle.png",
-      "availability" : "limited",
+      "availability" : "limited-year-round",
       "logo" : "img-logo.png"
     },
     {
@@ -196,8 +196,8 @@
       "text_color" : "#333",
       "background_image" : "/images/backgrounds/bg-beer-default-rev.png",
       "image" : "/images/beers/pleasant-wheat/img-tap.png",
-      "availability" : "seasonal",
-      "logo" : ""
+      "availability" : "limited",
+      "logo" : "img-logo-ic.png"
     },
      {
       "name" : "The Great Pumpcan",
@@ -256,7 +256,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/batch-one/img-tap.png",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : "img-logo.png"
     },
     {
@@ -276,7 +276,7 @@
       "text_color" : "#333",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/wheat-eater/img-tap.png",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -296,7 +296,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/axis-mundi/img-handle.png",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -316,7 +316,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/flight-of-simcoe/img-tap.png",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -334,9 +334,9 @@
       "secondary_color" : "#915B1A",
       "tertiary_color" : "#461F03",
       "text_color" : "#FFF",
-      "background_image" : "/images/backgrounds/bg-beer-default.png",
+      "background_image" : "/images/backgrounds/bg-gnarly-brown.png",
       "image" : "/images/beers/",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -354,9 +354,9 @@
       "secondary_color" : "#915B1A",
       "tertiary_color" : "#461F03",
       "text_color" : "#FFF",
-      "background_image" : "/images/backgrounds/bg-beer-default.png",
+      "background_image" : "/images/backgrounds/bg-gnarly-brown.png",
       "image" : "/images/beers/",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -376,7 +376,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -390,13 +390,13 @@
       "ibu" : "71",
       "adjuncts" : "",
       "recipe" : "",
-      "primary_color" : "#CD521F",
-      "secondary_color" : "#611309",
-      "tertiary_color" : "#461F03",
+      "primary_color" : "#B13712",
+      "secondary_color" : "#5C180A",
+      "tertiary_color" : "#272113",
       "text_color" : "#FFF",
-      "background_image" : "/images/backgrounds/bg-beer-default.png",
+      "background_image" : "/images/backgrounds/bg-happy-amber.png",
       "image" : "/images/beers/unhappy-amber/img-tap.png",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -416,7 +416,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/ewb/img-tap.png",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -436,7 +436,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/rubus-cacao/img-tap.png",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -456,7 +456,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -476,7 +476,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     },
     {
@@ -496,7 +496,7 @@
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
       "image" : "/images/beers/dead-flowers/img-tap.png",
-      "availability" : "seasonal",
+      "availability" : "limited",
       "logo" : ""
     }
 ]
