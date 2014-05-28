@@ -48,7 +48,6 @@ $ ->
     feed.run() if $("body.home").length > 0
 
     $(".founder a").click (e) ->
-      e.preventDefault()
       target = $(this).data("target")
       $(".founder-info.active").removeClass("active")
       $(target).addClass("active")

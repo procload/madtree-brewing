@@ -47,9 +47,9 @@ body.psychopathy {
   }
   .beer-details {
     h2 {
-      color: rgba(81, 78, 26, 1);
+      color: $white;
       > span {
-        color: $white;
+        color: #044034
       }
     }  
   }

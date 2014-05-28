@@ -48,10 +48,10 @@ body.soldrifter {
   .beer-details {
     h2 {
       color: #ECE975;
-      > span {
-        color: $white;
-      }
-    }  
+    }
+    .drink-recipe {
+      color: #ECE975;
+    }
   }
   .site-footer {
     background: $soldrifter-alt; 
