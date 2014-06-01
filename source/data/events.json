@@ -216,6 +216,48 @@
       "description" : "We'll be out serving your favorite MadTree beers at Cork 'N Bottle in Crestview Hills, Ky.",
       "date" : "Friday, May 30",
       "time" : "5:00 p.m."
+    },
+    {
+      "title" : "Lavomatic / Lyrics That Rock Hop Up Dinner",
+      "url" : "http://lavomaticcafe.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, June 4",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Burgers and beer at Party Source",
+      "url" : "https://www.thepartysource.com/",
+      "description" : "We'll be out serving your favorite MadTree beers at Party Source in Newport, Ky.",
+      "date" : "Thursday, June 5",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "DCCH Music Festival",
+      "url" : "http://www.dcchcenter.org/events/festival.aspx",
+      "description" : "The DCCH Music Festival is a two-day event showcasing the region's best live music, food and beer! Local bands will perform on two stages; food trucks will cater to your every craving and beer enthusiasts will love our Craft Beer Garden featuring MadTree Brewing Co.",
+      "date" : "Friday, June 6",
+      "time" : "4:30 p.m."
+    },
+  {
+      "title" : "Cincinnati Rollergirls",
+      "url" : "https://www.facebook.com/events/285091548335301/",
+      "description" : "The Cincinnati Rollergirls Violent Lambs will take on the Black-n-Bluegrass Rollergirls' Blackouts in the third annual Crosstown Knockdown. After the game head to the taproom for the after party.",
+      "date" : "Saturday, June 7",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Taproom Trivia",
+      "url" : "https://www.facebook.com/MadTree",
+      "description" : "Test your trivia skills at the taproom.",
+      "date" : "Monday, June 9",
+      "time" : "6:30 p.m."
+    },
+    {
+      "title" : "Music. Beer. Tacos.",
+      "url" : "https://www.facebook.com/events/1429298544004238/",
+      "description" : "What else do you need? Tim Easton will provide the music, MadTree Brewing will provide the beer, and Django Western Taco Taco will provide the tacos. Ticket proceeds help support 89.7 WNKU! Tickets are just $50 and include all you can eat southwestern buffet, a night of live music, and your choice of one beer. This is a ticketed event. For more information and to purchase tickets, visit the following site: http://wnku.org/post/music-beer-tacos",
+      "date" : "Monday, June 16",
+      "time" : "6:00 p.m."
     }
   ]
 }
