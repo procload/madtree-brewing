@@ -12,14 +12,14 @@
   $tertiary_color  : <%= tertiary_color %>;
 
   body.interior.<%= beer.url %> {
-    background-color: <%= primary_color %>; 
+    background-color: <%= primary_color %>;
     <% if background_image == "/images/backgrounds/bg-beer-default.png" %>
       @include background(image-url("<%= background_image %>") no-repeat top right, image-url("backgrounds/subtle_carbon.png") repeat top left);
       <% no_design = true %>
     <% else %>
       @include background(<%= primary_color %> image-url("<%= background_image %>") no-repeat top right);
     <% end %>
-    
+
     .caret {
       border-top-color: <%= primary_color %>;
     }
@@ -98,17 +98,13 @@
     .beer-details {
       h2 {
         color: <%= text_color %>;
-        &.no-image {
-          font-family: "flood-std";
-        }
-      } //h2 
+      } //h2
       p {
         color: <%= text_color %>;
         > a {
           color: $tertiary_color;
         }
       }
-      
     } //beer-details
     .site-footer {
       background: $secondary_color;
@@ -124,7 +120,7 @@
     }
     .nav-item-header {
       h4 {
-        color: #FFF; 
+        color: #FFF;
         <% if no_design %>
           color: #000;
         <% end %>

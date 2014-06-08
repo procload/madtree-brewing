@@ -255,7 +255,7 @@
       "tertiary_color" : "#000",
       "text_color" : "#FFF",
       "background_image" : "/images/backgrounds/bg-beer-default.png",
-      "image" : "/images/beers/batch-one/img-tap.png",
+      "image" : "",
       "availability" : "limited",
       "logo" : "img-logo.png"
     },

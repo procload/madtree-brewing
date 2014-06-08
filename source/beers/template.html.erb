@@ -27,11 +27,9 @@
 
 <div class="container">
   <section class="beer-description <%= 'with-image' if beer_image != "" %>">
-    <% if beer_image != "" %>
     <div class="beer-images">
-      <%= image_tag beer_image %>
+      <%= (beer_image != "") ? image_tag(beer_image) : content_tag(:h2, beer_name ) %>
     </div> <!-- /beer-images -->
-    <% end %>
     <div class="beer-details">
       <div class="beer-details-text">
         <header class="beer-detail-header">

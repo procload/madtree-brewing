@@ -3,7 +3,7 @@ body.beers {
   .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
     color: $white;
-    background: $body-bg; 
+    background: $body-bg;
   }
   .caret {
     border-top-color: $white;
@@ -19,27 +19,58 @@ body.beers {
   .beer-description {
     @extend %group;
     margin-bottom: calc-em(64px);
+    position: relative;
+    overflow: hidden;
+    &.with-image {
+      position: static;
+      .beer-images {
+        background: none;
+      }
+    }
     a {
       color: $white;
     }
-    &.with-image {
-      .beer-images {
+    .beer-images {
+      text-align: center;
+      margin-bottom: calc-em(16px);
+      position: relative;
+      height: calc-em(280px);
+      @include background(image-url("beers/img-generic-handle.png") no-repeat top);
+      background-size: contain;
+      @include respond-to(61.875em) {
+        height: calc-em(400px);
+      }
+      > h2 {
+        font-family: "flood-std";
+        font-size: calc-em(30px);
+        line-height: 1em;
+        color: #333;
+        font-family: "flood-std";
         text-align: center;
-        margin-bottom: calc-em(16px);
-        @include respond-to(32.5em) {
-          @include span-columns(4);
-        }
-      } //beer-images
-      .beer-details {
-        @include respond-to(32.5em) {
-          @include span-columns(7 omega);
+        position: absolute;
+        top: 30%;
+        left: 2.5%;
+        width: 93%;
+        @include respond-to(58.75em) {
+          width: 90%;
+          font-size: calc-em(50px);
         }
       }
-      .beer-details-text,
-      .beer-stats {
-        @include reset-columns;
+
+
+      @include respond-to(32.5em) {
+        @include span-columns(4);
       }
-    } //with-image
+    } //beer-images
+    .beer-details {
+      @include respond-to(32.5em) {
+        @include span-columns(7 omega);
+      }
+    }
+    .beer-details-text,
+    .beer-stats {
+      @include reset-columns;
+    }
   } //beer-description
   .beer-details {
     margin-bottom: calc-em(16px);
@@ -60,7 +91,7 @@ body.beers {
       float: left;
       margin-right: 5%;
       width: 7%;
-    }    
+    }
     h2 {
       float: left;
       line-height: 1em;
