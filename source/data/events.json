@@ -258,6 +258,28 @@
       "description" : "What else do you need? Tim Easton will provide the music, MadTree Brewing will provide the beer, and Django Western Taco Taco will provide the tacos. Ticket proceeds help support 89.7 WNKU! Tickets are just $50 and include all you can eat southwestern buffet, a night of live music, and your choice of one beer. This is a ticketed event. For more information and to purchase tickets, visit the following site: http://wnku.org/post/music-beer-tacos",
       "date" : "Monday, June 16",
       "time" : "6:00 p.m."
+    },
+     {
+      "title" : "Eatwell Hop Up Dinner",
+      "url" : "http://www.eatwellonline.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, June 18",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Pickin' and Grindin' at Devou Park",
+      "url" : "http://www.bcmuseum.org/index.php?option=com_content&view=article&id=48&Itemid=107",
+      "description" : "OK Rambers Old Time Music Revue: Dave Edmundson & the Ramblers take us down some forgotten roads and up some beautiful trails.",
+      "date" : "Thursday, June 19",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Barresi's Hop Up Dinner",
+      "url" : "http://www.barresis.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, June 25",
+      "time" : "6:00 p.m."
     }
+
   ]
 }
