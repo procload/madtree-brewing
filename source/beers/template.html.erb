@@ -1,62 +1,66 @@
----
-current_page: "beers"
-sub_page: "kolsch"
----
-
 <%
-  beer_name = data.beers.beer.beer_name.value
-  beer_description = data.beers.beer.beer_description.value
-  beer_can = data.beers.beer.beer_can.value
-  beer_illustration = data.beers.beer.beer_illustration.value
-  abv = data.beers.beer.abv.value
-  ibu = ""
-  malts = data.beers.beer.malts.value
-  hops = data.beers.beer.hops.value
-  adjuncts = ""
-  recipe = ""
-  primary_color = data.beers.beer.primary_color.value
-  secondary_color =data.beers.beer.secondary_color.value
+  beer_name = beer.name
+  beer_url = beer.url
+  beer_description = beer.description
+  beer_image = beer.image || ""
+  beer_illustration = ""
+  beer_recipe = beer.recipe || ""
+  abv = beer.abv
+  ibu = beer.ibu
+  malts = beer.malts
+  hops = beer.hops
+  adjuncts = beer.adjuncts
+  recipe = beer.recipe
 %>
 
-<%= beer_name %>
-
 <% content_for :page_classes do %>
-  interior kolsch 
+  interior beers <%= beer_url %>
 <% end %>
 <% content_for :site_header do %>
   <%= partial '../partials/interior-nav' %>
-  <%= partial '../partials/section-nav-beer' %>
+  <%= partial '../partials/section-nav-beer', locals: { current_page: beer_url } %>
 <% end %>
 
+
 <div class="container">
-  <section class="beer-description">
+  <section class="beer-description <%= 'with-image' if beer_image != "" %>">
     <div class="beer-images">
-      <%= image_tag "beers/kolsch/img-tap.png" %>
+      <%= (beer_image != "") ? image_tag(beer_image) : content_tag(:h2, beer_name ) %>
     </div> <!-- /beer-images -->
     <div class="beer-details">
-      <header class="beer-detail-header">
-        <h2>K&ouml;lsch</h2>
-      </header> <!-- /beer-detail-header -->
-      <p>Timber - It's what you yell when a tree comes falling down.  Maybe it's also the sound of pre-conceived notions falling of what a craft beer should taste like.  Or what you yell when you ditch your assumptions that a beer snob only drinks dark or high ABV beers. Either way the Timber will give you plenty of flavor in a light and refreshing drink.  If a tree falls in the woods, and there's no one around to hear it, we're pretty sure you'll still enjoy this beer.</p>
+      <div class="beer-details-text">
+        <header class="beer-detail-header">
+          <% if beer_image == "" %>
+            <h2 class="no-image"><%= beer_name %></h2>
+          <% else %>
+            <h2><%= beer_name %></h2>
+          <% end %>
+        </header> <!-- /beer-detail-header -->
+        <p><%= beer_description %></p>
+        <p><%= (beer_recipe != "") ? link_to("<i class='icon-beaker'></i> Download the recipe", "/recipes/#{beer_recipe}") : link_to("<i class='icon-beaker'></i> Email us for the recipe", "mailto:recipes@madtreebrewing.com") %>
+      </div> <!-- /beer-details-text -->
       <table class="table beer-stats">
         <tr class="numbers">
           <th class="abv-label">ABV</th>
-          <td class="abv-amount">4.7%</td>
+          <td class="abv-amount"><%= abv %></td>
           <th class="ibu-label">IBU</th>
-          <td class="ibu-amount">11</td>
+          <td class="ibu-amount"><%= ibu %></td>
         </tr>
         <tr>
           <th>Malts</th>
-          <td colspan="3" class="ingredients">2-Row, Red Wheat, Vienna, Flaked Barley</td>
+          <td colspan="3" class="ingredients"><%= malts %></td>
         </tr>
         <tr>
           <th>Hops</th>
-          <td colspan="3" class="ingredients hops">Pacifica</td>
+          <td colspan="3" class="ingredients hops"><%= hops %></td>
         </tr>
+        <% unless adjuncts == "" %>
+        <tr>
+          <th>Adjuncts</th>
+          <td colspan="3" class="ingredients hops"><%= adjuncts %></td>
+        </tr>
+        <% end %>
       </table> <!-- /beer-stats -->
     </div> <!-- /beer-details -->
   </section> <!-- /beer-description -->
 </div>
-
-
-

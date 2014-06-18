@@ -1,33 +1,33 @@
-body.identity-crisis {
-  background: $identity-crisis; 
-  @include background($identity-crisis image-url('backgrounds/bg-identity-crisis.png') no-repeat top right);
+body.the-great-pumpcan {
+  @include background($great-pumpcan image-url('backgrounds/bg-beer-default.png') no-repeat top right);
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus {
+    background: $great-pumpcan;
+  }
   .caret {
-    border-top-color: $identity-crisis;
+    border-top-color: $great-pumpcan;
   }
   .site-header {
-    color: $identity-crisis;
+    color: $great-pumpcan;
   } //site-header
   .header-toolbar {
-    background: $black;
-    color: $gray-light;
+    background: $great-pumpcan-alt;
+    color: $white;
   }
   .navbar {
-    background: rgba(0,0,0,.6);
+    background: $great-pumpcan-alt;
     &.section-navbar {
-      background: rgba(0,0,0,.8);
+      background: $great-pumpcan-nav;
       a {
-        color: $gray-light;
+        color: $great-pumpcan;
       }
       li.active {
-       > a {
+      > a {
           color: $white;
         }
       } //active
     } //section-navbar
     .main-nav li {
-      > a {
-        color: $white;
-      }
       &:nth-child(even) {
         background: rgba(53,53,53,.8);
         @include respond-to(41.25em) {
@@ -45,23 +45,20 @@ body.identity-crisis {
   .navbar-inner {
     .logo {
       @include respond-to(41.25em) {
-        @include replace-text(362px, 183px, image-url('img-logo-ic.png') no-repeat top left);         
+        @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left);
       }
     }
   }
   .beer-details {
     h2 {
-      color: $identity-crisis-alt;
+      color: $white;
     } //h2
     p {
-      color: $identity-crisis-alt;
-    }
-    a {
-      color: $identity-crisis-alt;
+      color: $white;
     }
   } //beer-details
   .site-footer {
-    background: $black;
+    background: $great-pumpcan-alt;
     a {
       color: $white;
     } //a
@@ -75,13 +72,15 @@ body.identity-crisis {
     color: $white;
   }
   .beer-stats {
-    background: rgba(0,0,0,.4);
-    border-color: rgba(0,0,0,.8);
+    background: transparentize(darken($great-pumpcan, 10%), .8);
+    border-color: transparentize($great-pumpcan-alt, .5);
+
     th {
       color: $gray-lighter;
     }
   }
-} //identity-crisis
+} //great-pumpcan
+
 
 
 

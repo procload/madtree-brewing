@@ -2,7 +2,7 @@ body.axis-mundi {
   @include background($axis-mundi image-url('backgrounds/bg-beer-default.png') no-repeat top right);
   .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
-    background: $axis-mundi; 
+    background: $axis-mundi;
   }
   .caret {
     border-top-color: $axis-mundi;
@@ -45,14 +45,14 @@ body.axis-mundi {
   .navbar-inner {
     .logo {
       @include respond-to(41.25em) {
-        @include replace-text(362px, 183px, image-url('img-logo-am.png') no-repeat top left);         
+        @include replace-text(362px, 183px, image-url('img-logo-am.png') no-repeat top left);
       }
     }
   }
   .beer-details {
     h2 {
       color: $axis-mundi-alt;
-    } //h2 
+    } //h2
     p {
       color: $white;
     }

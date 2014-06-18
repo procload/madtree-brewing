@@ -1,10 +1,10 @@
 body.interior.happy-amber {
-  background: $happy-amber; 
+  background: $happy-amber;
   @include background($happy-amber image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
   .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
     color: $white;
-    background: $happy-amber; 
+    background: $happy-amber;
   }
   .caret {
     border-top-color: $happy-amber;
@@ -48,14 +48,14 @@ body.interior.happy-amber {
   .navbar-inner {
     .logo {
       @include respond-to(41.25em) {
-        @include replace-text(362px, 183px, image-url('img-logo-ha.png') no-repeat top left);         
+        @include replace-text(362px, 183px, image-url('img-logo-ha.png') no-repeat top left);
       }
     }
   }
   .beer-details {
     h2 {
       color: $happy-amber-alt;
-    } //h2 
+    } //h2
     p {
       color: $happy-amber-alt;
     }
