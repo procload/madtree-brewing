@@ -321,6 +321,35 @@
       "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
       "date" : "Wednesday, July 9",
       "time" : "6:00 p.m."
-    }
+    },
+    {
+      "title" : "Daveeds Hop Up Dinner",
+      "url" : "http://www.daveedsnext.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, July 16",
+      "time" : "6 p.m."
+    },
+    {
+      "title" : "Mama Mimi's Hop Up Dinner",
+      "url" : "http://www.mamamimis.com/locations/oakley-cincinnati-oh/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, July 23",
+      "time" : "6 p.m."
+    },
+    {
+      "title" : "Jungle Jim's Tap Takeover",
+      "url" : "http://www.junglejims.com/",
+      "description" : "Join us at the the Jungle Jim's in Fairfield for some of your favorite Madtree beers.",
+      "date" : "Friday, July 25",
+      "time" : "5:00 p.m."
+    },
+    {
+      "title" : "Please Hop Up Dinner",
+      "url" : "https://www.facebook.com/pleasecincinnati",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, July 30",
+      "time" : "6 p.m."
+    },
+
   ]
 }
