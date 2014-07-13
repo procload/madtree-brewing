@@ -9,7 +9,7 @@
       "malts" : "Malts 2-Row, Munich 10L, Melanoidin, Carmel 80L, Victory",
       "ibu" : "30",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "happyAmberRecipe.pdf",
       "image" : "/images/beers/img-happy-amber-combined-rev.png",
       "availability" : "regular"
     },
@@ -23,7 +23,7 @@
       "malts" : "2-Row, Vienna, Caramel 40L, Carapils",
       "ibu" : "70",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "psychopathyRecipe.pdf",
       "image" : "/images/beers/img-psychopathy-combined-rev.png",
       "availability" : "regular"
     },
@@ -37,7 +37,7 @@
       "malts" : "2-Row, Victory, Extra Special Brown, Pale Chocolate, Roasted Barley",
       "ibu" : "32",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "gnarlyBrownRecipe.pdf",
       "image" : "/images/beers/img-gnarly-brown-combined-rev.png",
       "availability" : "regular"
     },
@@ -51,7 +51,7 @@
       "malts" : "2-Row, Red Wheat, Vienna, Flaked Barley",
       "ibu" : "11",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "liftRecipe.pdf",
       "image" : "/images/beers/img-lift-combined-rev.png",
       "availability" : "regular"
     },
@@ -65,7 +65,7 @@
       "malts" : "2-Row, Extra Special, Caramel 60L, Chocolate, Black, Roasted Barley, Carafa",
       "ibu" : "61",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "identityCrisis.pdf",
       "image" : "/images/beers/identity-crisis/img-tap.png",
       "availability" : "limited-year-round"
     },
@@ -79,7 +79,7 @@
       "malts" : "2-Row, Vienna, Caramel 40L, Carapils, Dextrose",
       "ibu" : "120",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "galaxyHighRecipe.pdf",
       "image" : "/images/beers/galaxy-high/img-tap.png",
       "availability" : "limited-year-round"
     },
@@ -93,7 +93,7 @@
       "malts" : "A metric shit ton",
       "ibu" : "72",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "axisMundiRecipe.pdf",
       "image" : "/images/beers/axis-mundi/img-handle.png",
       "availability" : "limited-year-round"
     },
@@ -107,7 +107,7 @@
       "malts" : "Rye, Flaked Barley, Munich 10L, Melanoidin",
       "ibu" : "40",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "spryRecipe.pdf",
       "image" : "/images/beers/img-sprye-combined-rev.png",
       "availability" : "seasonal"
     },
@@ -121,7 +121,7 @@
       "malts" : "2-Row, Red Wheat, Vienna, Carapils, Caramel 80L",
       "ibu" : "18",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "solDrifterRecipe.pdf",
       "availability" : "seasonal"
     },
      {
@@ -147,7 +147,7 @@
       "malts" : "2-Row, Caramel 60L, Victory, Extra Special, Melanoidin, Carapils",
       "ibu" : "18",
       "adjuncts" : "Molasses, Cinnamon, Nutmeg, Ginger, Allspice",
-      "recipe" : "",
+      "recipe" : "theGreatPumpcanRecipe.pdf",
       "image" : "/images/beers/pumpcan/img-tap.png",
       "availability" : "seasonal"
     },
@@ -161,7 +161,7 @@
       "malts" : "2-Row, Caramel 90L, Victory, Extra Special, Melanoidin, Chocolate Rye, Chocolate",
       "ibu" : "18",
       "adjuncts" : "Nutmeg, Ginger, Vanilla Beans, Cinnamon, Cloves",
-      "recipe" : "",
+      "recipe" : "thundersnowRecipe.pdf",
       "image" : "/images/beers/thundersnow/img-tap.png",
       "availability" : "seasonal"
     },
@@ -256,7 +256,7 @@
       "malts" : "2-Row, Munich 10L, Rye, Melanoidin, Barley Flakes",
       "ibu" : "14",
       "adjuncts" : "Cranberry, Walnut, Vanilla Beans",
-      "recipe" : "",
+      "recipe" : "thePilgrimRecipe.pdf",
       "availability" : "limited"
     },
     {
@@ -297,7 +297,7 @@
       "malts" : "2-row, Chocolate, Caramel 60L, Roasted Barley, Black Malt, Carapils, Flaked Oats",
       "ibu" : "12",
       "adjuncts" : "Raspberries, Cocoa nibs",
-      "recipe" : "",
+      "recipe" : "rubusCacaoRecipe.pdf",
       "image" : "/images/beers/rubus-cacao/img-tap.png",
       "availability" : "limited"
     },
