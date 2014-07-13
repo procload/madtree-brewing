@@ -1,9 +1,5 @@
 body.the-great-pumpcan {
   @include background($great-pumpcan image-url('backgrounds/bg-beer-default.png') no-repeat top right);
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    background: $great-pumpcan;
-  }
   .caret {
     border-top-color: $great-pumpcan;
   }
@@ -26,6 +22,22 @@ body.the-great-pumpcan {
           color: $white;
         }
       } //active
+      .dropdown-menu > li {
+        > a {
+          color: $great-pumpcan-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $great-pumpcan;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $great-pumpcan;
+          }
+        }
+      } //dropdown-menu
     } //section-navbar
     .main-nav li {
       &:nth-child(even) {

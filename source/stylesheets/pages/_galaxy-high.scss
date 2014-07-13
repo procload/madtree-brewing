@@ -1,9 +1,5 @@
 body.galaxy-high {
   @include background($galaxy-high image-url('backgrounds/bg-beer-default.png') no-repeat top right);
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    background: $galaxy-high;
-  }
   .caret {
     border-top-color: $galaxy-high;
   }
@@ -26,6 +22,22 @@ body.galaxy-high {
           color: $white;
         }
       } //active
+      .dropdown-menu > li {
+        > a {
+          color: $galaxy-high-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $galaxy-high;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $galaxy-high;
+          }
+        }
+      } //dropdown-menu
     } //section-navbar
     .main-nav li {
       &:nth-child(even) {

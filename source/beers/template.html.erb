@@ -1,5 +1,6 @@
 <%
   beer_name = beer.name
+  beer_series = beer.series
   beer_url = beer.url
   beer_description = beer.description
   beer_image = beer.image || ""
@@ -24,17 +25,16 @@
 
 <div class="container">
   <section class="beer-description <%= 'with-image' if beer_image != "" %>">
-    <div class="beer-images">
-      <%= (beer_image != "") ? image_tag(beer_image) : content_tag(:h2, beer_name ) %>
-    </div> <!-- /beer-images -->
+    <% if beer_image != "" %>
+      <div class="beer-images">
+        <%=image_tag(beer_image) %>
+      </div> <!-- /beer-images -->
+    <% end %>
     <div class="beer-details">
       <div class="beer-details-text">
         <header class="beer-detail-header">
-          <% if beer_image == "" %>
-            <h2 class="no-image"><%= beer_name %></h2>
-          <% else %>
-            <h2><%= beer_name %></h2>
-          <% end %>
+          <h2><%= beer_name %></h2>
+          <%= content_tag :span, beer_series, class: "chef-series" if beer_series %>
         </header> <!-- /beer-detail-header -->
         <p><%= beer_description %></p>
         <p><%= (beer_recipe != "") ? link_to("<i class='icon-beaker'></i> Download the recipe", "/recipes/#{beer_recipe}") : link_to("<i class='icon-beaker'></i> Email us for the recipe", "mailto:recipes@madtreebrewing.com") %>

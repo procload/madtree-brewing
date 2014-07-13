@@ -1,9 +1,6 @@
-body.axis-mundi {
+body.axis-mundi,
+body.bourbon-barrel-aged-axis-mundi {
   @include background($axis-mundi image-url('backgrounds/bg-beer-default.png') no-repeat top right);
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    background: $axis-mundi;
-  }
   .caret {
     border-top-color: $axis-mundi;
   }
@@ -26,6 +23,22 @@ body.axis-mundi {
           color: $white;
         }
       } //active
+      .dropdown-menu > li {
+        > a {
+          color: $axis-mundi-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $axis-mundi;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $axis-mundi;
+          }
+        }
+      } //dropdown-menu
     } //section-navbar
     .main-nav li {
       &:nth-child(even) {

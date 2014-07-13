@@ -1,11 +1,6 @@
 body.soldrifter {
   background: $soldrifter; 
   @include background($soldrifter image-url('backgrounds/bg-sol-drifter.png') no-repeat left);
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    color: $white;
-    background: $soldrifter; 
-  }
   .caret {
     border-top-color: $soldrifter;
   }
@@ -29,6 +24,22 @@ body.soldrifter {
           color: $white;
         }
       } //active
+      .dropdown-menu > li {
+        > a {
+          color: $soldrifter-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $soldrifter;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $soldrifter;
+          }
+        }
+      } //dropdown-menu
     }
     .main-nav li {
       &:nth-child(even) {

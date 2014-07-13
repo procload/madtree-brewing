@@ -1,11 +1,6 @@
 body.lift {
   background: $lift; 
   @include background($lift image-url('backgrounds/bg-lift.png') no-repeat top right);
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    color: $white;
-    background: $lift; 
-  }
   .caret {
     border-top-color: $lift;
   }
@@ -21,7 +16,7 @@ body.lift {
     background: transparentize($lift-alt, .05);
     &.section-navbar {
       background: $lift-alt; 
-    background: transparentize($lift-alt, .2);
+      background: transparentize($lift-alt, .2);
       a {
         color: $lift;
       }
@@ -29,7 +24,33 @@ body.lift {
        > a {
           color: $white;
         }
+        .dropdown-menu > li {
+          > a {
+            color: $lift-alt;
+            &:hover,
+            &:focus {
+              color: $white;
+              background: $lift;
+            }
+          }
+          &.active {
+            > a {
+              color: $white;
+              background: $lift;
+            }
+          }
+        } //dropdown-menu
       } //active
+      .dropdown-menu > li {
+        > a {
+          color: $lift-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $lift-alt;
+          }
+        }
+      } //dropdown-menu
     }
     .main-nav li {
       &:nth-child(even) {

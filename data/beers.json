@@ -14,7 +14,7 @@
       "availability" : "regular"
     },
     {
-      "name" : "PsycHOPathy",
+      "name" : "PsycHOPathy IPA",
       "url" : "psychopathy",
       "description" : "The subtle malt backbone combats the bitterness and intensity of floral, grassy and citrus hop flavors. However, taste is perception. What's your slant?",
       "series" : "",
@@ -99,7 +99,7 @@
     },
     {
       "name" : "sprye",
-      "url" : "spyre",
+      "url" : "sprye",
       "description" : "Citrus and piney notes burst forth on top of an earthy and spicy rye flavor. As the ice melts away from your cans, meet life head on this spring with a Sprye in hand.",
       "series" : "",
       "abv" : "5%",
@@ -125,13 +125,13 @@
       "availability" : "seasonal"
     },
      {
-      "name" : "Pleasant Wheat",
-      "url" : "pleasant-wheat",
+      "name" : "Misnomer",
+      "url" : "Misnomer",
       "description" : "A crisp and refreshing summer ale that pleasantly blends grapefruit, citrus, and lemon zest flavors with the slight sweetness of malted wheat.",
       "series" : "",
       "abv" : "4.7%",
-      "hops" : "Galena, Fuggle, Falconer’s Flight, Zythos",
-      "malts" : "2-Row, Wheat, Carapils, Munich 10L",
+      "hops" : "2-Row, Wheat, Carapils, Munich 10L",
+      "malts" : "Galena, Fuggle, Falconer’s Flight, Zythos",
       "ibu" : "29",
       "adjuncts" : "",
       "recipe" : "",
@@ -181,7 +181,7 @@
     },
     {
       "name" : "Wheat Eater",
-      "url" : "wheat-eater",
+      "url" : "wheateater",
       "description" : "A light, slightly sweet, crisp Kölsch ale with notes of citrus and orange marmalade. Inspired by Michael Makin, a Starfire student with a passion for life and beer, the Wheat Eater was brewed in collaboration with Fifty West Brewing Company.",
       "series" : "",
       "abv" : "5.4%",
@@ -208,7 +208,7 @@
     },
     {
       "name" : "Flight of Simcoe",
-      "url" : "flight-of-simicoe",
+      "url" : "flight-of-simcoe",
       "description" : "A bitter yet balanced IPA that is aromatically pleasing due to the heavy amount of dry-hopping with Falconer’s Flight and Simcoe. The Falconer’s Flight provides the slight citrus aroma while the Simcoe compliments it with strong pine aroma.",
       "series" : "",
       "abv" : "6.3%",
@@ -234,7 +234,7 @@
       "availability" : "limited"
     },
     {
-      "name" : "Gnarly Brown With Deeper Roots Coffee &amp; Vanilla",
+      "name" : "Gnarly Brown Coffee",
       "url" : "gnarly-brown-coffee",
       "description" : "Gnarly Vanilla with Deeper Roots Coffee added!",
       "series" : "",

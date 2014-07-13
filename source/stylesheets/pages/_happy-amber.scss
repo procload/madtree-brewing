@@ -1,11 +1,7 @@
-body.interior.happy-amber {
+body.interior.happy-amber,
+body.interior.un-happy-amber {
   background: $happy-amber;
   @include background($happy-amber image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    color: $white;
-    background: $happy-amber;
-  }
   .caret {
     border-top-color: $happy-amber;
   }
@@ -29,6 +25,22 @@ body.interior.happy-amber {
           color: $white;
         }
       } //active
+      .dropdown-menu > li {
+        > a {
+          color: $happy-amber-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $happy-amber;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $happy-amber;
+          }
+        }
+      } //dropdown-menu
     }
     .main-nav li {
       &:nth-child(even) {
