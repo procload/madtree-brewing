@@ -1,85 +1,345 @@
-{
-  "beer" : {
-    "beer_name" : {
-      "fieldset" : "Beer Name and Description",
-      "type" : "Text",
-      "value" : "Happy Amber",
-      "config" : {
-        "label" : "Beer name"
-      }
+[
+    {
+      "name" : "Happy Amber",
+      "url" : "happy-amber",
+      "series" : "",
+      "description" : "This dry-hopped ale combines carmel and biscuit malt flavors in happy equilibrium with late addition American hops. The approachable balance is intentional although the name is \"hoppy accident.\"",
+      "abv" : "6.0%",
+      "hops" : "Cascade, Chinook",
+      "malts" : "Malts 2-Row, Munich 10L, Melanoidin, Carmel 80L, Victory",
+      "ibu" : "30",
+      "adjuncts" : "",
+      "recipe" : "happyAmberRecipe.pdf",
+      "image" : "/images/beers/img-happy-amber-combined-rev.png",
+      "availability" : "regular"
     },
-    "beer_description" : {
-      "type" : "Text",
-      "value" : "This dry-hopped ale combines carmel and biscuit malt flavors in happy equilibrium with late addition American hops. The approachable balance is intentional although the name is \"hoppy accident.\"",
-      "config" : {
-        "label" : "Beer description"
-      }
+    {
+      "name" : "PsycHOPathy IPA",
+      "url" : "psychopathy",
+      "description" : "The subtle malt backbone combats the bitterness and intensity of floral, grassy and citrus hop flavors. However, taste is perception. What's your slant?",
+      "series" : "",
+      "abv" : "6.9%",
+      "hops" : "Cascade, Chinook, Centennial",
+      "malts" : "2-Row, Vienna, Caramel 40L, Carapils",
+      "ibu" : "70",
+      "adjuncts" : "",
+      "recipe" : "psychopathyRecipe.pdf",
+      "image" : "/images/beers/img-psychopathy-combined-rev.png",
+      "availability" : "regular"
     },
-    "beer_can" : {
-      "fieldset" : "Beer Can or Tap Handle Image",
-      "type" : "Image",
-      "value" : "beers/img-happy-amber-combined-rev.png",
-      "config" : {
-        "label" : "Can or Tap Handle"
-      }
+    {
+      "name" : "Gnarly Brown",
+      "url" : "gnarly-brown",
+      "description" : "Specialty malts bring intimations of brown sugar and vanilla which meld into the Gnarly's character. Roasted coffee malt flavors and residual sweetness dance in harmony, obscuring the line between brown ale and porter.",
+      "series" : "",
+      "abv" : "7.0%",
+      "hops" : "Cascade, Chinook",
+      "malts" : "2-Row, Victory, Extra Special Brown, Pale Chocolate, Roasted Barley",
+      "ibu" : "32",
+      "adjuncts" : "",
+      "recipe" : "gnarlyBrownRecipe.pdf",
+      "image" : "/images/beers/img-gnarly-brown-combined-rev.png",
+      "availability" : "regular"
     },
-    "beer_illustration" : {
-      "fieldset" : "Beer Illustration",
-      "type" : "Image",
-      "value" : "backgrounds/bg-happy-amber.png",
-      "config" : {
-        "label" : "Beer Illustration"
-      }
+    {
+      "name" : "Lift",
+      "url" : "lift",
+      "description" : "Whether taking a break from a hard day of work or just a huge day of hops, this crisp refreshing beer with a hint of orange will lift your spirits without lowering your expectations for what a craft beer should be.",
+      "series" : "",
+      "abv" : "4.7%",
+      "hops" : "Cascade, Hallertauer Mittelfrher, Pacifica",
+      "malts" : "2-Row, Red Wheat, Vienna, Flaked Barley",
+      "ibu" : "11",
+      "adjuncts" : "",
+      "recipe" : "liftRecipe.pdf",
+      "image" : "/images/beers/img-lift-combined-rev.png",
+      "availability" : "regular"
     },
-    "abv" : {
-      "fieldset" : "Beer Details",
-      "type" : "Text",
-      "value" : "6.0",
-      "config" : {
-        "label" : "ABV"
-      }
+    {
+      "name" : "Identity Crisis",
+      "url" : "identity-crisis",
+      "description" : "Not a ray of light penetrates the soul of this beer. Combining the roasted malt backbone of a Porter with a huge amount of earthy and citrusy hops typical in many IPA's, this unique ale will leave you questioning it's identity and maybe yours.",
+      "series" : "",
+      "abv" : "6.9%",
+      "hops" : "Cascade, Chinook, and Simcoe",
+      "malts" : "2-Row, Extra Special, Caramel 60L, Chocolate, Black, Roasted Barley, Carafa",
+      "ibu" : "61",
+      "adjuncts" : "",
+      "recipe" : "identityCrisis.pdf",
+      "image" : "/images/beers/identity-crisis/img-tap.png",
+      "availability" : "limited-year-round"
     },
-    "malts" : {
-      "type" : "Text",
-      "value" : "Malts 2-Row, Munich 10L, Melanoidin, Carmel 80L, Victory",
-      "config" : {
-        "label" : "Malts"
-      }
+    {
+      "name" : "Galaxy High",
+      "url" : "galaxy-high",
+      "description" : "At Galaxy High, the beer has 120 IBUs, 10.2% ABV yet finishes nice and dry. Join two New Zealand hops as you encounter a crazy collection of tropical and dank flavors throughout this Imperial IPA. It’s big on your palate… disruptive even. Think 'trophic cascades' disruptive.",
+      "series" : "",
+      "abv" : "10.2%",
+      "hops" : "Topaz, Galaxy",
+      "malts" : "2-Row, Vienna, Caramel 40L, Carapils, Dextrose",
+      "ibu" : "120",
+      "adjuncts" : "",
+      "recipe" : "galaxyHighRecipe.pdf",
+      "image" : "/images/beers/galaxy-high/img-tap.png",
+      "availability" : "limited-year-round"
     },
-    "hops" : {
-      "type" : "Text",
-      "value" : "Cascade, Chinooks",
-      "config" : {
-        "label" : "Hops"
-      }
+    {
+      "name" : "Axis Mundi",
+      "url" : "axis-mundi",
+      "description" : "The Siberians believed there was a ‘World Tree’ that served as the Axis Mundi, connecting the different worlds through its roots and branches. While this Russian Imperial Stout isn’t necessarily the world’s cosmic axis, it does connect rich flavors in a way to deliver you a cosmic beer.",
+      "series" : "",
+      "abv" : "9.5%",
+      "hops" : "Galena, Cascade, Perle",
+      "malts" : "A metric shit ton",
+      "ibu" : "72",
+      "adjuncts" : "",
+      "recipe" : "axisMundiRecipe.pdf",
+      "image" : "/images/beers/axis-mundi/img-handle.png",
+      "availability" : "limited-year-round"
     },
-    "adjuncts" : {
-      "type" : "Text",
-      "config" : {
-        "label" : "Adjuncts"
-      }
+    {
+      "name" : "sprye",
+      "url" : "sprye",
+      "description" : "Citrus and piney notes burst forth on top of an earthy and spicy rye flavor. As the ice melts away from your cans, meet life head on this spring with a Sprye in hand.",
+      "series" : "",
+      "abv" : "5%",
+      "hops" : "Centennial, Chinook, Simcoe",
+      "malts" : "Rye, Flaked Barley, Munich 10L, Melanoidin",
+      "ibu" : "40",
+      "adjuncts" : "",
+      "recipe" : "spryeRecipe.pdf",
+      "image" : "/images/beers/img-sprye-combined-rev.png",
+      "availability" : "seasonal"
     },
-    "recipe" : {
-      "fieldset" : "Beer Recipe",
-      "type" : "Image",
-      "config" : {
-        "label" : "Recipe"
-      }
+     {
+      "name" : "Sol Drifter",
+      "url" : "soldrifter",
+      "description" : "A refreshing blonde ale made for extended periods of drinking during summer days well into the evening. With copious amounts of New Zealand Motueka hops lending lemon and lime notes, Sol Drifter ends with a crisp and tart strawberry finish.",
+      "series" : "",
+      "abv" : "4.3%",
+      "hops" : "Galena, Fuggle, Motueka",
+      "malts" : "2-Row, Red Wheat, Vienna, Carapils, Caramel 80L",
+      "ibu" : "18",
+      "adjuncts" : "",
+      "recipe" : "solDrifterRecipe.pdf",
+      "availability" : "seasonal"
     },
-    "primary_color" : {
-      "fieldset" : "Beer Colors",
-      "type" : "Text",
-      "value" : "#CD521F",
-      "config" : {
-        "label" : "Primary Color"
-      }
+     {
+      "name" : "Misnomer",
+      "url" : "Misnomer",
+      "description" : "A crisp and refreshing summer ale that pleasantly blends grapefruit, citrus, and lemon zest flavors with the slight sweetness of malted wheat.",
+      "series" : "",
+      "abv" : "4.7%",
+      "hops" : "2-Row, Wheat, Carapils, Munich 10L",
+      "malts" : "Galena, Fuggle, Falconer’s Flight, Zythos",
+      "ibu" : "29",
+      "adjuncts" : "",
+      "recipe" : "",
+      "availability" : "limited"
     },
-    "secondary_color" : {
-      "type" : "Text",
-      "value" : "#CD521F",
-      "config" : {
-        "label" : "Secondary Color"
-      }
+     {
+      "name" : "The Great Pumpcan",
+      "url" : "the-great-pumpcan",
+      "description" : "There are three things we have learned to never discuss with people here: religion, politics and The Great Pumpkin, But that doesn't mean we can't welcome our own Great PumpCan. So sing pumpkin carols and enjoy MadTree's way of delivering some delicious pumpkin pie flavor right to your gullet.",
+      "series" : "",
+      "abv" : "7.9%",
+      "hops" : "Fuggle",
+      "malts" : "2-Row, Caramel 60L, Victory, Extra Special, Melanoidin, Carapils",
+      "ibu" : "18",
+      "adjuncts" : "Molasses, Cinnamon, Nutmeg, Ginger, Allspice",
+      "recipe" : "theGreatPumpCanRecipe.pdf",
+      "image" : "/images/beers/pumpcan/img-tap.png",
+      "availability" : "seasonal"
+    },
+     {
+      "name" : "Thundersnow",
+      "url" : "thundersnow",
+      "description" : "The conditions have to be just right for the formation of Thundersnow. Ginger, nutmeg and vanilla, hints of cinnamon and a bready malt sweetness create a storm of flavors. When you find this rare occurrence, savor it as long as you can.",
+      "series" : "",
+      "abv" : "7.7%",
+      "hops" : "Northern Brewer Chinook, Perle",
+      "malts" : "2-Row, Caramel 90L, Victory, Extra Special, Melanoidin, Chocolate Rye, Chocolate",
+      "ibu" : "18",
+      "adjuncts" : "Nutmeg, Ginger, Vanilla Beans, Cinnamon, Cloves",
+      "recipe" : "thundersnowRecipe.pdf",
+      "image" : "/images/beers/thundersnow/img-tap.png",
+      "availability" : "seasonal"
+    },
+     {
+      "name" : "Batch One",
+      "url" : "batch-one",
+      "description" : "The first batch ever produced by MadTree.",
+      "series" : "",
+      "abv" : "6%",
+      "hops" : "Cascade, Chinook",
+      "malts" : "2-Row, Munich 10L, Melanoidin, Caramel 80L, Victory",
+      "ibu" : "30",
+      "adjuncts" : "",
+      "recipe" : "",
+      "image" : "",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Wheat Eater",
+      "url" : "wheateater",
+      "description" : "A light, slightly sweet, crisp Kölsch ale with notes of citrus and orange marmalade. Inspired by Michael Makin, a Starfire student with a passion for life and beer, the Wheat Eater was brewed in collaboration with Fifty West Brewing Company.",
+      "series" : "",
+      "abv" : "5.4%",
+      "hops" : "Galena, Pacifica, Falconer’s Flight",
+      "malts" : "Pilsen, Red Wheat",
+      "ibu" : "18",
+      "adjuncts" : "",
+      "recipe" : "",
+      "image" : "/images/beers/wheat-eater/img-tap.png",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Bourbon Barrel Aged Axis Mundi",
+      "url" : "bourbon-barrel-aged-axis-mundi",
+      "description" : "Axis Mundi aged in bourbon barrels. Delicious.",
+      "series" : "",
+      "abv" : "10.5%",
+      "hops" : "Galena, Cascade, Perle",
+      "malts" : "A metric shit ton",
+      "ibu" : "72",
+      "adjuncts" : "",
+      "recipe" : "",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Flight of Simcoe",
+      "url" : "flight-of-simcoe",
+      "description" : "A bitter yet balanced IPA that is aromatically pleasing due to the heavy amount of dry-hopping with Falconer’s Flight and Simcoe. The Falconer’s Flight provides the slight citrus aroma while the Simcoe compliments it with strong pine aroma.",
+      "series" : "",
+      "abv" : "6.3%",
+      "hops" : "Galena, Cascade, Chinook, Centennial, Falconer's Flight, Simcoe, Pacifica",
+      "malts" : "2-Row, Vienna, Caramel 40L, Carapils",
+      "ibu" : "70",
+      "adjuncts" : "",
+      "recipe" : "",
+      "image" : "/images/beers/flight-of-simcoe/img-tap.png",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Gnarly Brown Vanilla",
+      "url" : "gnarly-brown-vanilla",
+      "description" : "Gnarly on Vanilla!",
+      "series" : "",
+      "abv" : "7%",
+      "hops" : "Cascade, Chinook",
+      "malts" : "2-Row, Victory, Extra Special, Brown, Pale Chocolate, Roasted Barley",
+      "ibu" : "32",
+      "adjuncts" : "Vanilla Beans",
+      "recipe" : "",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Gnarly Brown Coffee",
+      "url" : "gnarly-brown-coffee",
+      "description" : "Gnarly Vanilla with Deeper Roots Coffee added!",
+      "series" : "",
+      "abv" : "7%",
+      "hops" : "Cascade, Chinook",
+      "malts" : "Victory, Extra Special, Brown, Pale Chocolate, Roasted Barley",
+      "ibu" : "",
+      "adjuncts" : "Vanilla Beans, Deeper Roots Coffee",
+      "recipe" : "",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Pilgrim Pale Ale",
+      "url" : "pilgrim-pale-ale",
+      "description" : "We are thankful for hops, malted barley, cranberries, walnuts, vanilla beans and that only Pilgrim hops were sacrificed in the making of this beer.",
+      "series" : "",
+      "abv" : "5%",
+      "hops" : "Pilgrim",
+      "malts" : "2-Row, Munich 10L, Rye, Melanoidin, Barley Flakes",
+      "ibu" : "14",
+      "adjuncts" : "Cranberry, Walnut, Vanilla Beans",
+      "recipe" : "thePilgrimRecipe.pdf",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Un-Happy Amber",
+      "url" : "un-happy-amber",
+      "description" : "More malt. More hops. Less happy. Just right.",
+      "series" : "",
+      "abv" : "7.8%",
+      "hops" : "Chinook, Cascade, Nugget",
+      "malts" : "2-Row, Crystal 60, Victory, Extra Special, Melanoidin, Cara-Pils",
+      "ibu" : "71",
+      "adjuncts" : "",
+      "recipe" : "",
+      "image" : "/images/beers/unhappy-amber/img-tap.png",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Everything Went Black",
+      "url" : "everything-went-black",
+      "description" : "Something terrifying has happened to this beer. What was once an herbal and spicy IPA has been overcome with a climactic wave of rye dryness and the impermeable darkness of carafa malts. Fear not however, this coalescence of flavors will leave you craving for more. Just be forewarned, it is better to give in to this beer as its darkness cannot be stopped.",
+      "series" : "Brewers Series by Simon Kretchik",
+      "abv" : "7%",
+      "hops" : "Millenium, Centennial, Nugget",
+      "malts" : "2-Row, Carafa Type III, Caramel 40L, Rye",
+      "ibu" : "",
+      "adjuncts" : "",
+      "recipe" : "",
+      "image" : "/images/beers/ewb/img-tap.png",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Rubus Cacao",
+      "url" : "rubus-cacao",
+      "description" : "Raspberries and chocolate go together like two peas in a pod. But don't worry, there's no peas in the Rubus Cacao. Rather the sweet chocolate, roasty bitterness and dark raspberry fruit combine in perfect harmony. Who knows, the Rubus might even become the pea in your pod!",
+      "series" : "Brewers Series by Ryan Blevins",
+      "abv" : "7%",
+      "hops" : "Experimental 05256",
+      "malts" : "2-row, Chocolate, Caramel 60L, Roasted Barley, Black Malt, Carapils, Flaked Oats",
+      "ibu" : "12",
+      "adjuncts" : "Raspberries, Cocoa nibs",
+      "recipe" : "rubusCacaoRecipe.pdf",
+      "image" : "/images/beers/rubus-cacao/img-tap.png",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Old Battering Ram",
+      "url" : "old-battering-ram",
+      "description" : "Knock, knock. Who's there? Door shards and knockers in your face! This beer doesn't wait to be let in. Dark as night but scarier. Barricade your palate and batten down the hatches cause Old Battering Ram is coming.",
+      "series" : "Brewers Series by Kevin Johnson",
+      "abv" : "11.??%",
+      "hops" : "Experimental 05256",
+      "malts" : "2-row, Caramel 120L, Midnight Wheat, Carapils",
+      "ibu" : "101",
+      "adjuncts" : "",
+      "recipe" : "",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Flölsch",
+      "url" : "flolsch",
+      "description" : "A Kölsch ale brewed with lime, ginger and a hint of Ancho ends up smooth and refreshing. In fact, that was Chef Mike Florea's nickname in high school. Now he just goes by Flo. And you may just find you want to keep this Flolsch flowing.",
+      "series" : "Chef Series by Chef Mike Florea",
+      "abv" : "4.7%",
+      "hops" : "Cascade, Pacifica",
+      "malts" : "2-Row, Red Wheat, Caramel 60L, Vienna, Flaked Barley",
+      "ibu" : "12",
+      "adjuncts" : "Lime Juice, Ginger, Ancho Chilies",
+      "recipe" : "",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Dead Flowers",
+      "url" : "dead-flowers",
+      "description" : "You can send me dead flowers every morning. Send me dead flowers by mail. Send me dead flowers to my wedding. A strong ale brewed with elderflower and chamomile, Chef Dave Taylor can send me his Dead Flowers anytime, anywhere.",
+      "series" : "Chef Series by Chef Dave Taylor",
+      "abv" : "9%",
+      "hops" : "Chinook, Perle",
+      "malts" : "Victory, Extra Special, Melanoidin, Caramel 40L",
+      "ibu" : "17",
+      "adjuncts" : "Elderflower, chamomile",
+      "recipe" : "",
+      "image" : "/images/beers/dead-flowers/img-tap.png",
+      "availability" : "limited"
     }
-  }
-}
+]
+

@@ -6,11 +6,12 @@ $ ->
       $("#event-list").html(template(result))
 
   currentEvents = []
+
   isCurrent = (event) ->
-    now = moment()
-    currentYear = moment().year()
-    eventDate = moment(event.date).year(currentYear)
-    if eventDate > now
+    now = new Date()
+    year = now.getFullYear()
+    event_date = "#{event.date}, #{year}"
+    if Date.parse(event_date) > Date.parse(now)
       currentEvents.push(event) unless event.title == ""
     else
       return

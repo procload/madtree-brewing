@@ -45,14 +45,14 @@ body.identity-crisis {
   .navbar-inner {
     .logo {
       @include respond-to(41.25em) {
-        @include replace-text(362px, 183px, image-url('img-logo-ic.png') no-repeat top left);         
+        @include replace-text(362px, 183px, image-url('img-logo-ic.png') no-repeat top left);
       }
     }
   }
   .beer-details {
     h2 {
       color: $identity-crisis-alt;
-    } //h2 
+    } //h2
     p {
       color: $identity-crisis-alt;
     }

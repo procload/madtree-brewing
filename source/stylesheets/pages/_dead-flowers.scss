@@ -1,0 +1,89 @@
+body.dead-flowers {
+  background: $dead-flowers;
+  .caret {
+    border-top-color: $dead-flowers;
+  }
+  .site-header {
+    color: $dead-flowers;
+  }
+  .header-toolbar {
+    background: $dead-flowers-alt;
+    background: transparentize($dead-flowers-alt, .2);
+  }
+  .navbar {
+    background: $dead-flowers-alt;
+    background: transparentize($dead-flowers-alt, .05);
+    &.section-navbar {
+      background: $dead-flowers-alt;
+      background: transparentize($dead-flowers-alt, .2);
+      a {
+        color: $dead-flowers;
+      }
+      li.active {
+       > a {
+          color: $white;
+        }
+      } //active
+      .dropdown-menu > li {
+        > a {
+          color: $dead-flowers-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $dead-flowers;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $dead-flowers;
+          }
+        }
+      } //dropdown-menu
+    }
+    .main-nav li {
+      &:nth-child(even) {
+        background: transparentize($dead-flowers-alt, .2);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: $dead-flowers-alt;
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
+  }
+  .beer-details {
+    h2 {
+      color: $dead-flowers-nav;
+    }
+    p {
+       color: #FFF;
+    }
+    p a {
+      color: $dead-flowers-nav;
+    }
+  }
+  .site-footer {
+    background: $dead-flowers-alt;
+    a {
+      color: $dead-flowers;
+    }
+  }
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $dead-flowers;
+  }
+  .beer-stats {
+    border-color: transparentize($dead-flowers-alt, .2);
+    background: transparentize($dead-flowers-alt, .4);
+  }
+} //happy-amber
+

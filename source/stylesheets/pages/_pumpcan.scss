@@ -1,22 +1,21 @@
-body.axis-mundi,
-body.bourbon-barrel-aged-axis-mundi {
-  @include background($axis-mundi image-url('backgrounds/bg-beer-default.png') no-repeat top right);
+body.the-great-pumpcan {
+  @include background($great-pumpcan image-url('backgrounds/bg-beer-default.png') no-repeat top right);
   .caret {
-    border-top-color: $axis-mundi;
+    border-top-color: $great-pumpcan;
   }
   .site-header {
-    color: $axis-mundi;
+    color: $great-pumpcan;
   } //site-header
   .header-toolbar {
-    background: $black;
-    color: $gray-light;
+    background: $great-pumpcan-alt;
+    color: $white;
   }
   .navbar {
-    background: rgba(0,0,0,.95);
+    background: $great-pumpcan-alt;
     &.section-navbar {
-      background: rgba(0,0,0,.6);
+      background: $great-pumpcan-nav;
       a {
-        color: $gray-light;
+        color: $great-pumpcan;
       }
       li.active {
       > a {
@@ -25,17 +24,17 @@ body.bourbon-barrel-aged-axis-mundi {
       } //active
       .dropdown-menu > li {
         > a {
-          color: $axis-mundi-alt;
+          color: $great-pumpcan-alt;
           &:hover,
           &:focus {
             color: $white;
-            background: $axis-mundi;
+            background: $great-pumpcan;
           }
         }
         &.active {
           > a {
             color: $white;
-            background: $axis-mundi;
+            background: $great-pumpcan;
           }
         }
       } //dropdown-menu
@@ -58,20 +57,20 @@ body.bourbon-barrel-aged-axis-mundi {
   .navbar-inner {
     .logo {
       @include respond-to(41.25em) {
-        @include replace-text(362px, 183px, image-url('img-logo-am.png') no-repeat top left);
+        @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left);
       }
     }
   }
   .beer-details {
     h2 {
-      color: $axis-mundi-alt;
+      color: $white;
     } //h2
     p {
       color: $white;
     }
   } //beer-details
   .site-footer {
-    background: $black;
+    background: $great-pumpcan-alt;
     a {
       color: $white;
     } //a
@@ -85,13 +84,14 @@ body.bourbon-barrel-aged-axis-mundi {
     color: $white;
   }
   .beer-stats {
-    background: rgba(0,0,0,.4);
-    border-color: rgba(0,0,0,.8);
+    background: transparentize(darken($great-pumpcan, 10%), .8);
+    border-color: transparentize($great-pumpcan-alt, .5);
+
     th {
       color: $gray-lighter;
     }
   }
-} //identity-crisis
+} //great-pumpcan
 
 
 

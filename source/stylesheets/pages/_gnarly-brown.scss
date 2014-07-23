@@ -1,11 +1,8 @@
-body.gnarly-brown {
+body.gnarly-brown,
+body.gnarly-brown-vanilla,
+body.gnarly-brown-coffee {
   background: $gnarly-brown; 
   @include background($gnarly-brown image-url('backgrounds/bg-gnarly-brown.png') no-repeat top right);
-  .dropdown-menu > li > a:hover,
-  .dropdown-menu > li > a:focus {
-    color: $white;
-    background: $gnarly-brown; 
-  }
   .caret {
     border-top-color: $gnarly-brown;
   }
@@ -30,6 +27,22 @@ body.gnarly-brown {
           color: $white;
         }
       } //active
+      .dropdown-menu > li {
+        > a {
+          color: $gnarly-brown-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $gnarly-brown;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $gnarly-brown;
+          }
+        }
+      } //dropdown-menu
     }
     .main-nav li {
       &:nth-child(even) {

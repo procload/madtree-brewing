@@ -1,0 +1,88 @@
+body.thundersnow {
+  background: $thundersnow;
+  background: #FFF;
+  @include background($thundersnow image-url('backgrounds/bg-thundersnow.png') no-repeat top right);
+  .caret {
+    border-top-color: $thundersnow;
+  }
+  .site-header {
+    color: $thundersnow;
+  }
+  .header-toolbar {
+    background: $thundersnow-alt;
+    background: transparentize($thundersnow-alt, .2);
+  }
+  .navbar {
+    background: $thundersnow-alt;
+    background: transparentize($thundersnow-alt, .05);
+    &.section-navbar {
+      background: $thundersnow-alt;
+    background: transparentize($thundersnow-alt, .2);
+      a {
+        color: $thundersnow;
+      }
+      li.active {
+       > a {
+          color: $white;
+        }
+      } //active
+      .dropdown-menu > li {
+        > a {
+          color: $thundersnow-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $thundersnow;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $thundersnow;
+          }
+        }
+      } //dropdown-menu
+    }
+    .main-nav li {
+      &:nth-child(even) {
+        background: transparentize($thundersnow-alt, .2);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: $thundersnow-alt;
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
+  }
+  .beer-details {
+    h2 {
+      color: #FFF;
+    }
+    p {
+      color: $thundersnow-alt;
+    }
+  }
+  .site-footer {
+    background: $thundersnow-alt;
+    a {
+      color: $thundersnow;
+    }
+  }
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $thundersnow;
+  }
+  .beer-stats {
+    border-color: transparentize($thundersnow-alt, .2);
+
+    background: transparentize($thundersnow-alt, .4);
+  }
+} //thundersnow

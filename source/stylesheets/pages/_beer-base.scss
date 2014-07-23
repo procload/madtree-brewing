@@ -1,9 +1,12 @@
 body.beers {
   @include background($body-bg image-url('backgrounds/bg-beer-default.png') no-repeat top right);
+  .dropdown-menu .active a {
+    background: $red;
+  }
   .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
     color: $white;
-    background: $body-bg; 
+    background: $body-bg;
   }
   .caret {
     border-top-color: $white;
@@ -19,23 +22,44 @@ body.beers {
   .beer-description {
     @extend %group;
     margin-bottom: calc-em(64px);
+    position: relative;
+    overflow: hidden;
+    &.with-image {
+      position: static;
+      .beer-images {
+        background: none;
+      }
+    }
     a {
       color: $white;
     }
-  } //beer-description
-  .beer-images {
-    text-align: center;
-    margin-bottom: calc-em(16px);
-    @include respond-to(32.5em) {
-      @include span-columns(4);
+    &.with-image {
+      .beer-details {
+        h2 {
+          font-family: $font-family-display;
+        }
+        @include respond-to(32.5em) {
+          @include span-columns(7 omega);
+        }
+      }
+      .beer-images {
+        margin: 0 0 calc-em(30px);
+        @include respond-to(32.5em) {
+          margin-bottom: 0;
+          @include span-columns(4);
+        }
+      }
+      .beer-details-text,
+      .beer-stats {
+        @include reset-columns;
+      }
     }
-  } //beer-images
+  } //beer-description
   .beer-details {
     margin-bottom: calc-em(16px);
-    @include respond-to(32.5em) {
-      @include span-columns(7 omega);
-    }
+    @extend %group;
     h2 {
+      font-family: "flood-std";
       font-size: calc-em(42px);
       margin: 0;
       color: $white;
@@ -51,7 +75,7 @@ body.beers {
       float: left;
       margin-right: 5%;
       width: 7%;
-    }    
+    }
     h2 {
       float: left;
       line-height: 1em;
@@ -68,9 +92,21 @@ body.beers {
         text-transform: none;
       }
   }
+  .beer-details-text {
+    margin-bottom: 16px;
+    @include respond-to(46.25em) {
+      //760px
+      @include span-columns(7);
+    }
+  }
   .beer-stats {
+    @include respond-to(46.25em) {
+      //760px
+      @include span-columns(5 omega);
+    }
     th {
       color: $white;
     }
   }
 } //beers
+

@@ -1,10 +1,10 @@
 body.sprye {
-  background: $sprye; 
+  background: $sprye;
   @include background($sprye image-url('backgrounds/bg-sprye.png') no-repeat top right);
   .dropdown-menu > li > a:hover,
   .dropdown-menu > li > a:focus {
     color: $white;
-    background: $sprye; 
+    background: $sprye;
   }
   .caret {
     border-top-color: $sprye;
@@ -20,7 +20,7 @@ body.sprye {
     background: $sprye-alt;
     background: transparentize($sprye-alt, .05);
     &.section-navbar {
-      background: $sprye-alt; 
+      background: $sprye-alt;
     background: transparentize($sprye-alt, .2);
       a {
         color: $sprye;

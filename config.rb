@@ -4,6 +4,9 @@ require "susy"
 activate :livereload
 page "/index.html", :layout => "interstitial"
 
+data.beers.each do |beer|
+  proxy "/beer/#{beer.url}/index.html", "/beers/template.html", :locals => { :beer => beer }, :ignore => true
+end
 
 ###
 # Helpers
@@ -25,7 +28,7 @@ end
 configure :build do
   # For example, change the Compass output style for deployment
   activate :minify_css
-  
+
   # Minify Javascript on build
   activate :minify_javascript
 
@@ -36,6 +39,5 @@ configure :build do
   # First: gem install middleman-smusher
   require "middleman-smusher"
   # activate :smusher
-  
 end
 
