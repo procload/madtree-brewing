@@ -271,7 +271,6 @@ a {
     content: " ";
     display: table;
   }
-  
 } //navbar-inner
 
 .header-hero {
@@ -319,6 +318,9 @@ a {
     position: absolute;
     width: 835px;
     right: 0;
+    > ul {
+      @extend %zero-list;
+    }
   } //top-beer-nav
 
   .happy-amber,
@@ -413,11 +415,12 @@ a {
   overflow-x: visible;
   @include respond-to(41.25em) {
     max-height: none;
-    display: block;
+    display: inline-block;
     font-size: .1px;
     height: auto;
     margin-top: 0;
     text-align: justify;
+    margin-top: calc-em(6px, .1px);
     @include transition(none);
   }
 
@@ -429,8 +432,10 @@ a {
     content: " ";
     display: table;
     @include respond-to(41.25em) {
-      content: '';
+      content: ' ';
       width: 100%;
+      line-height: 0;
+      height: 0;
       display: inline-block;
     }
   } //:after
@@ -452,7 +457,7 @@ a {
     display: block;
     @include respond-to(41.25em) {
       display: inline-block;
-      width: 33.333333%;
+      width: 33.32%;
       text-align: center;
     }
     &:nth-child(odd) {

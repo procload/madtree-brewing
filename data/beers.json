@@ -107,7 +107,7 @@
       "malts" : "Rye, Flaked Barley, Munich 10L, Melanoidin",
       "ibu" : "40",
       "adjuncts" : "",
-      "recipe" : "spryRecipe.pdf",
+      "recipe" : "spryeRecipe.pdf",
       "image" : "/images/beers/img-sprye-combined-rev.png",
       "availability" : "seasonal"
     },
@@ -147,7 +147,7 @@
       "malts" : "2-Row, Caramel 60L, Victory, Extra Special, Melanoidin, Carapils",
       "ibu" : "18",
       "adjuncts" : "Molasses, Cinnamon, Nutmeg, Ginger, Allspice",
-      "recipe" : "theGreatPumpcanRecipe.pdf",
+      "recipe" : "theGreatPumpCanRecipe.pdf",
       "image" : "/images/beers/pumpcan/img-tap.png",
       "availability" : "seasonal"
     },
