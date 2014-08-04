@@ -349,6 +349,34 @@
       "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
       "date" : "Wednesday, July 30",
       "time" : "6 p.m."
+    },
+    {
+      "title" : "President's Room at the Phoenix Hop Up Dinner",
+      "url" : "https://www.facebook.com/events/670967026325396/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, August 6",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Beer at the Pier",
+      "url" : "http://www.clevelandmetroparks.com/Main/Beer-at-the-Pier.aspx",
+      "description" : "Join as at the inaugural Beer at the Pier event in Cleveland. Proceeds from the event will help support Cleveland Metro Parks Trail Fund.",
+      "date" : "Friday, August 9",
+      "time" : "3:00 p.m."
+    },
+    {
+      "title" : "Django Hop Up Dinner",
+      "url" : "http://djangonorthside.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, August 13",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Arnolds Hop Up Dinner",
+      "url" : "http://www.arnoldsbarandgrill.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, August 20",
+      "time" : "6:00 p.m."
     }
   ]
 }
