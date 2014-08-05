@@ -1,5 +1,5 @@
 body.the-great-pumpcan {
-  @include background($great-pumpcan image-url('backgrounds/bg-beer-default.png') no-repeat top right);
+  @include background($great-pumpcan image-url('backgrounds/bg-pumpcan.png') no-repeat top right);
   .caret {
     border-top-color: $great-pumpcan;
   }

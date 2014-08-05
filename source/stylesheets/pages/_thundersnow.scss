@@ -17,9 +17,9 @@ body.thundersnow {
     background: transparentize($thundersnow-alt, .05);
     &.section-navbar {
       background: $thundersnow-alt;
-    background: transparentize($thundersnow-alt, .2);
+    background: transparentize($thundersnow-nav, .2);
       a {
-        color: $thundersnow;
+        color: $thundersnow-alt;
       }
       li.active {
        > a {
@@ -67,18 +67,18 @@ body.thundersnow {
     }
   }
   .site-footer {
-    background: $thundersnow-alt;
+    background: $thundersnow-nav;
     a {
-      color: $thundersnow;
+      color: $thundersnow-alt;
     }
   }
   .nav-item-header {
     h4 {
-      color: $white;
+      color: $thundersnow;
     }
   }
   .nav-item-body {
-    color: $thundersnow;
+    color: $thundersnow-alt;
   }
   .beer-stats {
     border-color: transparentize($thundersnow-alt, .2);

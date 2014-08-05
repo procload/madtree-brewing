@@ -72,7 +72,7 @@
     {
       "name" : "Galaxy High",
       "url" : "galaxy-high",
-      "description" : "At Galaxy High, the beer has 120 IBUs, 10.2% ABV yet finishes nice and dry. Join two New Zealand hops as you encounter a crazy collection of tropical and dank flavors throughout this Imperial IPA. It’s big on your palate… disruptive even. Think 'trophic cascades' disruptive.",
+      "description" : "At Galaxy High, the beer has 120 IBUs, 10.2% ABV yet finishes nice and dry. Join two New Zealand hops as you encounter a crazy collection of tropical and dank flavors throughout this Imperial IPA. It&rsquo;s big on your palate&hellip; disruptive even. Think 'trophic cascades' disruptive.",
       "series" : "",
       "abv" : "10.2%",
       "hops" : "Topaz, Galaxy",
@@ -86,7 +86,7 @@
     {
       "name" : "Axis Mundi",
       "url" : "axis-mundi",
-      "description" : "The Siberians believed there was a ‘World Tree’ that served as the Axis Mundi, connecting the different worlds through its roots and branches. While this Russian Imperial Stout isn’t necessarily the world’s cosmic axis, it does connect rich flavors in a way to deliver you a cosmic beer.",
+      "description" : "The Siberians believed there was a &lsquo;World Tree&rsquo; that served as the Axis Mundi, connecting the different worlds through its roots and branches. While this Russian Imperial Stout isn’t necessarily the world’s cosmic axis, it does connect rich flavors in a way to deliver you a cosmic beer.",
       "series" : "",
       "abv" : "9.5%",
       "hops" : "Galena, Cascade, Perle",
@@ -131,7 +131,7 @@
       "series" : "",
       "abv" : "4.7%",
       "hops" : "2-Row, Wheat, Carapils, Munich 10L",
-      "malts" : "Galena, Fuggle, Falconer’s Flight, Zythos",
+      "malts" : "Galena, Fuggle, Falconer&rsquo;s Flight, Zythos",
       "ibu" : "29",
       "adjuncts" : "",
       "recipe" : "",
@@ -148,7 +148,6 @@
       "ibu" : "18",
       "adjuncts" : "Molasses, Cinnamon, Nutmeg, Ginger, Allspice",
       "recipe" : "theGreatPumpCanRecipe.pdf",
-      "image" : "/images/beers/pumpcan/img-tap.png",
       "availability" : "seasonal"
     },
      {
@@ -185,7 +184,7 @@
       "description" : "A light, slightly sweet, crisp Kölsch ale with notes of citrus and orange marmalade. Inspired by Michael Makin, a Starfire student with a passion for life and beer, the Wheat Eater was brewed in collaboration with Fifty West Brewing Company.",
       "series" : "",
       "abv" : "5.4%",
-      "hops" : "Galena, Pacifica, Falconer’s Flight",
+      "hops" : "Galena, Pacifica, Falconer&rsquo;s Flight",
       "malts" : "Pilsen, Red Wheat",
       "ibu" : "18",
       "adjuncts" : "",
@@ -204,12 +203,13 @@
       "ibu" : "72",
       "adjuncts" : "",
       "recipe" : "",
+      "image" : "/images/beers/axis-mundi-bourbon/img-tap.png",
       "availability" : "limited"
     },
     {
       "name" : "Flight of Simcoe",
       "url" : "flight-of-simcoe",
-      "description" : "A bitter yet balanced IPA that is aromatically pleasing due to the heavy amount of dry-hopping with Falconer’s Flight and Simcoe. The Falconer’s Flight provides the slight citrus aroma while the Simcoe compliments it with strong pine aroma.",
+      "description" : "A bitter yet balanced IPA that is aromatically pleasing due to the heavy amount of dry-hopping with Falconer&rsquo;s Flight and Simcoe. The Falconer&rsquo;s Flight provides the slight citrus aroma while the Simcoe compliments it with strong pine aroma.",
       "series" : "",
       "abv" : "6.3%",
       "hops" : "Galena, Cascade, Chinook, Centennial, Falconer's Flight, Simcoe, Pacifica",
