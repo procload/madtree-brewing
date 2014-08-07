@@ -26,10 +26,24 @@
 </head>
 <body class="<%= page_classes %> <%= yield_content :page_classes %>">
 
-  
   <main class="main-content">
     <%= yield %>
   </main><!-- /main-content -->
+
+  <%= javascript_include_tag "public" %>
+
+  <script type="text/javascript">
+    $(function() {
+      var cookie = 'age-check-cookie';
+      $go = $.cookie(cookie);
+      if ($go == 'checked') {
+        window.location = "/home.html"
+      }
+      else {
+        $.cookie(cookie, 'checked', { path: '/', expires: 120 });
+      }
+    });
+  </script>
 
   <script type="text/javascript">
 

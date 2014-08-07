@@ -1,4 +1,5 @@
 //= require libs/jquery
+//= require libs/jquery.cookie
 //= require bootstrap
 //= require libs/instafeed
 //= require libs/handlebars

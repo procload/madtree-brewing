@@ -165,3 +165,4 @@ $ ->
         source = $("#untappd_template").html()
         template = Handlebars.compile(source)
         $("#untappd").html(template(untappd))
+
