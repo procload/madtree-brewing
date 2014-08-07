@@ -72,7 +72,6 @@ $ ->
       $(".main-nav").toggleClass("expanded")
 
     activeGroup = $(".main-nav .active a").data("children")
-    console.log activeGroup
     if $(".section-navbar").data("group") == activeGroup
       copiedNav = $(".section-navbar").clone().addClass("cloned")
       $(".main-nav > .active").append(copiedNav)
