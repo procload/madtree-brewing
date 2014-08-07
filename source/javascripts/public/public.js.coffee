@@ -44,7 +44,7 @@ $ ->
       clientId: "6add59c8eadf4ca0a4f718bfda1e3699"
       template: '<li class="photo"><a href="{{link}}" data-toggle="modal" data-target="#myModal{{id}}"><img src={{image}} /></a><div class="modal fade" id="myModal{{id}}" tabindex="-1" role="dialog" aria-labelledby="myModal{{id}}" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button></div><div class="modal-body"><img src="{{image}}" /></div></div></div></div></li>'
       )
-   
+
     feed.run() if $("body.home").length > 0
 
     $(".founder a").click (e) ->
@@ -72,10 +72,10 @@ $ ->
       $(".main-nav").toggleClass("expanded")
 
     activeGroup = $(".main-nav .active a").data("children")
+    console.log activeGroup
     if $(".section-navbar").data("group") == activeGroup
       copiedNav = $(".section-navbar").clone().addClass("cloned")
       $(".main-nav > .active").append(copiedNav)
-
 
 
     $(".main-nav .active > a").click (e) ->
