@@ -160,25 +160,10 @@ a {
   .social-links {
     @extend %zero-list;
     li {
-      width: calc-em(18px);
-      height: calc-em(18px);
-      @include background(transparent image-url('sprites/spr-social@2x.png') no-repeat 0 0);
-      text-indent: -9999px;
-      background-size: 18px;
-      vertical-align: middle;
-      &.facebook {
-        background-position: 0 0;
-      } //facebook
-      &.untappd {
-        background-position: 0 -25px;
-      } //untappd
-      &.twitter {
-        background-position: 0 -51px;
-      } //twitter
-      &.yelp {
-        background-position: 0 -78px;
-      } //yelp
       a {
+        font-size: calc-em(14px);
+        width: calc-em(18px, 14px);
+        color: #D8D8D8;
         display: block;
       }
     } //li
