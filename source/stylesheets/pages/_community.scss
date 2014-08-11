@@ -1,48 +1,15 @@
 body.community {
-  .founders {
-    @extend %group;
-    overflow: hidden;
-    margin-bottom: calc-em(128px);
-    background: rgba(255,255,255,.2);
-  }
-  .founder-photos {
-    padding: calc-em(10px);
-    @include respond-to(50em) {
-      //800px
-      float: left;
-      width: 60%;
+  .employee {
+    @include respond-to(38.75em) {
+      @include span-columns(5.5);
+      @include nth-omega(2n);
     }
-  }
-  .founder-text {
-    padding: calc-em(10px);
-    @include respond-to(50em) {
-      //800px
-      float: left;
-      width: 40%;
-    }
-  }
-  .founder-info {
-    display: none;
-    background: rgba(0,0,0,.4); 
-    padding: calc-em(20px);
-    &.active {
-      display: block;
-    }
-  }
-  .section-nav {
-    li {
-      @include respond-to(41.25em) {
-        width: 50%;
-        text-align: center;
+    &:nth-child(2n) {
+      @include respond-to(38.75em) {
+        @include nth-omega(2n);
+        clear: both;
       }
     }
   }
-  .founder {
-    -webkit-filter: grayscale(1);    
-    @include transition(all .2s linear);
-    &:hover,
-    &.active {
-      -webkit-filter: none; 
-    } 
-  }
+
 }

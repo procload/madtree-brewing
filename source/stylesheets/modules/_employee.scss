@@ -1,0 +1,50 @@
+
+//
+//
+// Employee module for Madtree
+//
+//
+
+.employee {
+  @extend %group;
+  border-bottom: 1px solid #424242;
+  margin: 0 0 calc-em(38px);
+  padding: 0 0 calc-em(36px);
+  // Elements
+  ///////////////////////////////////////////////////////////////////////////////
+  .employee__photo {
+    float: left;
+    width: 33%;
+    margin-right: 5%;
+    margin-bottom: calc-em(12px);
+  }
+
+  .employee__header {
+    float: left;
+    width: 62%;
+    padding-top: 30px;
+    > a {
+      font-size: calc-em(13px);
+    }
+    h3 {
+      font-size: calc-em(32px);
+      line-height: calc-em(32px, 32px);
+      margin: 0 0 calc-em(6px, 32px);
+    }
+
+    h4 {
+      font-size: calc-em(21px);
+      line-height: calc-em(26px, 21px);
+    }
+  }
+  .employee__info {
+    display: none;
+    clear: both;
+  }
+
+  // Modifiers
+  ///////////////////////////////////////////////////////////////////////////////
+
+} //label
+
+

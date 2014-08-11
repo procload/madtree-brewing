@@ -1,0 +1,11 @@
+# Logfile created on 2014-08-10 19:33:24 -0400 by logger.rb/41954
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] INFO : Starting the New Relic agent in "development" environment.
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] INFO : To prevent agent startup add a NEWRELIC_AGENT_ENABLED=false environment variable or modify the "development" section of your newrelic.yml.
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] WARN : No configuration file found. Working directory = /Users/ryan/Sites/madtree-brewing
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] WARN : Looked in these locations (based on defaults): /Users/ryan/Sites/madtree-brewing/config/newrelic.yml, /Users/ryan/Sites/madtree-brewing/newrelic.yml, /Users/ryan/Sites/madtree-brewing/config/newrelic.yml, /Users/ryan/Sites/madtree-brewing/newrelic.yml, /Users/ryan/.newrelic/newrelic.yml, /Users/ryan/newrelic.yml
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] INFO : Environment: development
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] INFO : No known dispatcher detected.
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] INFO : Application: development
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] WARN : No license key found. This often means your newrelic.yml file was not found, or it lacks a section for the running environment, 'development'.
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] INFO : Installing Net instrumentation
+[08/10/14 19:33:24 -0400 ryans-mbp-2 (35741)] INFO : Finished instrumentation

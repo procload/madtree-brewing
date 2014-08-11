@@ -47,12 +47,11 @@ $ ->
 
     feed.run() if $("body.home").length > 0
 
-    $(".founder a").click (e) ->
-      target = $(this).data("target")
-      $(".founder-info.active").removeClass("active")
-      $(target).addClass("active")
-      $(".founder").removeClass("active")
-      $(this).closest(".founder").addClass("active")
+    $(".employee__header > a").click (e) ->
+      e.preventDefault()
+      $this = $(this)
+      $header = $($this.closest(".employee__header"))
+      $header.next().slideDown("50")
 
 
     $("#map-canvas").storeLocator
@@ -106,7 +105,7 @@ $ ->
       longitude = p.coords.longitude
       $("#user-location").addClass("can-geolocate")
       reverseGeocode(latitude,longitude)
-      
+
     error_callback = (p) ->
 
 
@@ -116,7 +115,7 @@ $ ->
           enableHighAccuracy: true
       else
         return
-      
+
     #$("#loc-list").on "click", ".show-on-map", (e) ->
       #e.preventDefault()
       #$("#map").addClass("now-showing")
