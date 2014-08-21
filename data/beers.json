@@ -140,7 +140,7 @@
      {
       "name" : "The Great Pumpcan",
       "url" : "the-great-pumpcan",
-      "description" : "There are three things we have learned to never discuss with people here: religion, politics and The Great Pumpkin, But that doesn't mean we can't welcome our own Great PumpCan. So sing pumpkin carols and enjoy MadTree's way of delivering some delicious pumpkin pie flavor right to your gullet.",
+      "description" : "There are three things we have learned never to discuss: religion, politics, and the Great PumpCan. While The Establishment is spooked by the mere mention of the PumpCan, we bravely ponder its existence. So go ahead, sing fall carols and enjoy our way of delivering grandma's baked goodness straight to your pie hole.",
       "series" : "",
       "abv" : "7.9%",
       "hops" : "Fuggle",
@@ -148,20 +148,21 @@
       "ibu" : "18",
       "adjuncts" : "Molasses, Cinnamon, Nutmeg, Ginger, Allspice",
       "recipe" : "theGreatPumpCanRecipe.pdf",
+      "image" : "/images/beers/img-pumpcan-combined.png",
       "availability" : "seasonal"
     },
      {
       "name" : "Thundersnow",
       "url" : "thundersnow",
-      "description" : "The conditions have to be just right for the formation of Thundersnow. Ginger, nutmeg and vanilla, hints of cinnamon and a bready malt sweetness create a storm of flavors. When you find this rare occurrence, savor it as long as you can.",
+      "description" : "The conditions have to be just right for the formation of Thundersnow. Ginger, nutmeg, vanilla, hints of cinnamon and a bready malt sweetness are the secret. When you find this rare occurrence, savor it as long as you can.",
       "series" : "",
-      "abv" : "7.7%",
+      "abv" : "8.5%",
       "hops" : "Northern Brewer Chinook, Perle",
       "malts" : "2-Row, Caramel 90L, Victory, Extra Special, Melanoidin, Chocolate Rye, Chocolate",
       "ibu" : "18",
       "adjuncts" : "Nutmeg, Ginger, Vanilla Beans, Cinnamon, Cloves",
       "recipe" : "thundersnowRecipe.pdf",
-      "image" : "/images/beers/thundersnow/img-tap.png",
+      "image" : "/images/beers/img-thundersnow-combined.png",
       "availability" : "seasonal"
     },
      {
