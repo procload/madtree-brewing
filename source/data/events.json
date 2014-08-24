@@ -377,7 +377,22 @@
       "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
       "date" : "Wednesday, August 20",
       "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Dutch's Hop Up Dinner",
+      "url" : "http://www.arnoldsbarandgrill.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, August 28",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Pumpcan Launch",
+      "url" : "https://www.facebook.com/events/680642638681272/",
+      "description" : "Nothing says Fall like a pumpkin spiced beer. The Great PumpCan will be officially released for the first time ever in a can. 50% of All PumpCan sales for the day including Tshirts, posters, and cans will go to Susan G. Komen. Can designer, John Pattison, and logo illustrator, Tom Post, will be here signing PumpCan posters as well.",
+      "date" : "Thursday, August 29",
+      "time" : "4:00 p.m."
     }
+
   ]
 }
 
