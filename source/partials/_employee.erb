@@ -1,0 +1,15 @@
+<% employee.each do |employee| %>
+<div class="employee">
+  <div class="employee__photo">
+    <%= image_tag("community/#{employee.photo}") %>
+  </div> <!-- /employee__photo -->
+  <header class="employee__header">
+    <h3><%= employee.name %></h3>
+    <h4><%= employee.title %></h4>
+    <%= link_to "About #{employee.name}&hellip;", "#" %>
+  </header> <!-- /employee__header -->
+  <div class="employee__info">
+    <p><%= employee.bio %></p>
+  </div>
+</div> <!-- /employee -->
+<% end %>

@@ -1,4 +1,7 @@
 body.community {
+  .employee-group {
+    @extend %group;
+  }
   .employee {
     @include respond-to(38.75em) {
       @include span-columns(5.5);
@@ -7,9 +10,14 @@ body.community {
     &:nth-child(2n) {
       @include respond-to(38.75em) {
         @include nth-omega(2n);
-        clear: both;
       }
     }
   }
-
+  &.artists {
+    .employee {
+      &:last-child {
+        float: left;
+      }
+    }
+  }
 }

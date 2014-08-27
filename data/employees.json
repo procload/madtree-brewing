@@ -3,96 +3,112 @@
       "name" : "Simon",
       "title" : "Canicidal Maniac",
       "bio" : "Simon, originally from Scranton PA, graduated from Lycoming College with a degree in Marketing in 2008. Immediately moving to Cincinnati he worked as a sales rep for an advertising specialties company for several years. During this time he began home brewing and discovering craft beers. After graduating from Xavier University with an M.B.A. he decided to pursue his passion of craft beer and search for work in the brewing industry of Cincinnati, which is how he came to MadTree and traded a cubicle for keg racks.",
+      "department" : "Production",
       "photo" : "img-simon.jpg"
     },
     {
       "name" : "George Huston-a.k.a Dusty or Monkey Boy",
       "title" : "Taptender",
       "bio" : "Dusty was born and raised in Cincinnati, Hyde Park Ave. (wrong side of the tracks). He graduated from Withrow H.S. and Cincinnati State with a degree in Applied Science/ Nursing. He has a certificate of mixology from the International bartending Institute and applied it at Habit's cafe for 22yrs! His hobbies include (but not limited to) hunting, rock climbing, mountain biking and anything that has beer at the finish line. He&rsquo;s most notorious for being annoyingly early for anything, yelling \"Yehaaw\" when things get rough, and strolling through Oakley square \"all natural\"! He&rsquo;s proud to be a member of the MadTree family.",
+      "department" : "Taproom",
       "photo" : "img-dusty.jpg"
     },
     {
       "name" : "Matt",
       "title" : "Brewery Utility Man",
       "bio" : "Matt is a native of Cincinnati, Ohio and graduated from Penn State University with a degree in Economics and Business Law.  Upon his return to Cincinnati after school to work, a good high-school friend showed Matt some old wine and beer making equipment he had found in his dad's basement and as they often say, the rest is history.  Homebrewing began as a hobby but quickly spiraled into a full time obsession, including Matt building a fully functional brewery in the basement of his home and brewing two, three, and even four times a month.  That obsession took the next step when he began looking for opportunities to volunteer at local breweries around town, and when Matt enrolled in The Siebel Institute of Technology for some formal brewing education.  What once was a frequent day-dream became a true reality when Matt got the opportunity to trade in his dress shoes for a pair of brewer's boots and join MadTree as an Assistant Brewer & Cellarman, and he's never looked back.",
+      "department" : "Production",
       "photo" : "img-matt.jpg"
     },
     {
       "name" : "Kevin",
       "title" : "Fugilist/Brewer",
       "bio" : "Kevin was born and raised in Cincinnati.  He grew up in Oakley and Madisonville and currently resides in Pleasant Ridge. During his early drinking days he was known to enjoy a \"champagne\" beer.  He started trying craftier beers as the years went by and began getting interested in trying to concoct his own.  A friend of his used to teach classes on homebrewing when it was first legalized and was kind enough to share his knowledge.  He is currently enrolled at The Siebel Institute working on his Associates in Brewing degree.  Kevin is married to Elizabeth and has a son Aiden (5) a daughter Caroline (4) and a dog Megan (?).",
+      "department" : "Production",
       "photo" : "img-kevin.png"
     },
     {
       "name" : "Kris",
       "title" : "Beer Ambassador",
       "bio" : "Kris was born in Wisconsin, spent a few years in Michigan but has called Cincinnati home since 1991. After attending The Ohio State University and the University of Cincinnati, he is currently studying Graphic Design at Cincinnati State. Kris has was worn a variety of hats in the restaurant and bar industry until he found his true passion... craft beer. Once learning of MadTree from reviews from a tasting in the bowels of Kenny's basement, it reinforced his decision to pursue a new hat, taproom manager.",
+      "department" : "Taproom",
       "photo" : "img-kris.png"
     },
     {
       "name" : "Ryan",
       "title" : "Black Beerd/Brewer",
       "bio" : "Ryan was born and raised in Cincinnati, Ohio (the westside that is!).  He found a passion for the automotive industry at a very young age.  He went to Cincinnati State Community College to follow that passion and studied in Automotive Service Management.  Ryan, not satisfied with the \"normal\" beer selection, found himself in search of something more diverse.  Around 2008 or so he started homebrewing with a close friend and the rest is history.  Now the wrench has been traded in for the mash paddle and he couldn't be happier.  He is currently living in Northern Kentucky with his wife, Katie.",
+      "department" : "Production",
       "photo" : "img-ryan.jpg"
     },
     {
       "name" : "Matt",
       "title" : "Cannosaurus Rex",
       "bio" : "Matt was born and raised on the eastside of Cincinnati, and current resides in Over the Rhine. After high school he attended Wright State (wrong college) University graduating with a bachelors in psychology. After graduation, he enrolled at Xavier University where he is currently perusing his Masters and licensure in special education. He connected with MadTree after a Facebook post from his former 6th grade teacher. Volunbeer turned employee, Matt can be found doing everything but brewing.",
+      "department" : "Packaging",
       "photo" : "img-mattd.jpg"
     },
     {
       "name" : "Adam",
       "title" : "Global Can'bassador - Central Ohio Division",
       "bio" : "Adam Pratt grew up in Western New York drinking Canadian pilsner and playing street hockey. After earning his Bachelor's degree in English and a penchant for good beer from Denison University, Adam and his wife Stephanie moved to Cincinnati to be near her family and find gainful employment. They settled in the community of Pleasant Ridge, and Adam followed a career path in restaurant and retail management. After several years as a Beer & Wine Buyer for a global specialty retailer, the siren's call of Central Ohio once again summoned him North. He brings with him Pleasant Ridge's finest export - MadTree Brewing cans and kegs - to share with the good citizens of Ohio. Adam, Stephanie, their daughter Harper, and their dogs Ollie &amp; Cooper live in Columbus.",
+      "department" : "Sales",
       "photo" : "img-adamp.jpg"
     },
     {
       "name" : "Dusty",
       "title" : "Beer'ded Balded Bean Counter",
       "bio" : "Dusty was born &amp; raised in Dayton, OH where he graduated from UD with a degree in accounting (and a double-major in a certain \"blue beast\"). He moved to Cincinnati to start his career and quickly developed a more discerning palate.  Eventually Dusty started homebrewing with some close friends and craft beer - along with everything related to brewing - rapidly became an obsession. He started bugging the guys at MadTree about a job before they had even started brewing, so perhaps it was karma when over a year later they decided to hire an accountant and Dusty was able to join the team.  He is married to Karen and they have a daughter and a son.",
+      "department" : "Accounting/Office",
       "photo" : "img-dustyb.jpg"
     },
     {
       "name" : "Trent",
       "title" : "Beerologist",
       "bio" : "Trent was raised in Ashland, Ohio and graduated from Saint Louis University in 2006 with a bachelor's degree in aerospace engineering. He then changed course, spending a few years in southeast Kansas as an oil & gas landman researching title in courthouses and negotiating contracts with landowners. In 2009, he changed course again and moved to Cincinnati to study biology at the University of Cincinnati and spend more time with Sarah, his future wife and fellow craft beer enthusiast. He married in 2012 and graduated with a master's degree in biology in 2013. Another long-time homebrewer and volunteer turned employee, Trent spends his time at MadTree on the canning line and spearheading the development of the brewery lab.",
+      "department" : "Op Support",
       "photo" : "img-trent.jpg"
     },
     {
       "name" : "Pat",
       "title" : "Sir Cans-A-Lot/Brewer",
       "bio" : "Pat was born in Minnesota and grew up in Wisconsin.  He graduated from the University of Wisconsin with a bachelor&rsquo;s degree in psychology and then moved back to the Land of 10,000 Lakes shortly after.  A few years ago his wife bought him a home brewing kit for his birthday and this is where his passion for good beer started.  He has been making beer for friends and family ever since.  Pat moved to Cincinnati from Minnesota in 2013 and started volunteering the very next day.  He kept volunteering and eventually ended up becoming an employee. He is currently living in Oakley with his wife, Jenna and their dog, Roscoe.",
+      "department" : "Production",
       "photo" : "img-pat.jpg"
     },
     {
       "name" : "Dan",
       "title" : "Director of Hoppyness – Greater Cincinnati Sales",
       "bio" : "Dan grew up in Sharonville Ohio and graduated from Princeton High School where he met his wife Samantha. While in high school Dan started his brewing career at Watson brothers brewery where he worked under Toby Hunt (now with Bluegrass Brewing Company) as his assistant brewer. During his time with Watson Brothers he went to school at Cincinnati State studying Hospitality Management. After working for Watson's, Dan went on to work for Firehouse Grill where he helped build a local beer scene in Blue Ash. During his time with Firehouse he built a relationship with MadTree which led to him joining the team in early January 2014.",
+      "department" : "Packaging",
       "photo" : "img-dan.jpg"
     },
     {
       "name" : "Garrett",
       "title" : "The Can Whisperer/Cellarman",
       "bio" : "Garrett is a native of Cincinnati, Ohio and the youngest son of a Local 392 pipefitter and CPS school teacher. After graduating from Walnut Hills HS, Garrett attended the University of Cincinnati studying both engineering and art history. While doing a bit of soul searching Garrett found himself opening an art gallery with friends in Brighton, volunteering at a few non-profits such as Public Allies, and discovering the joys of home brewing; after Garrett moved to Columbus this hobby blossomed into passion through working at a new brewery. Garrett attended the Siebel Institute in the fall of 2013, moved back home in the Spring and started volunteering at MadTree. He is thrilled and proud to be a part of the MadTree family. He can usually be found watching as much footie as possible and drinking a pint of something hoppy (Sprye please).",
+      "department" : "Production",
       "photo" : "img-garrett.jpg"
     },
     {
       "name" : "Brady",
       "title" : "Secretary of Beer Defense",
       "bio" : "Brady grew up in Massillon Ohio and graduated from the University of Dayton with a degree in public relations and marketing. At UD he mostly drank cheap beer and is now atoning for his mistakes by consuming copious amounts of good beer. Passionate to discover the beautiful South (or follow his wife's career), he worked in sales for two years before going back to school for his MBA at the University of Alabama. He was recruited to P&G where he worked for 4 years in the analytics space. While in Bama he developed a passion for good beer through his buddy (and investor) Shane. After attending GABF in 2008 the passion turned into obsession and he began homebrewing shortly after. He met Jeff and Kenny in 2009 and the rest is that of folklore. He is married to Amie with a son, Crosby, and dog, Gus.",
+      "department" : "Founder",
       "photo" : "img-brady.jpg"
     },
     {
       "name" : "Jeff",
       "title" : "Beer Can&rsquo;noisseur",
       "bio" : "After getting his degree in Electrical and Computer Engineering at The Ohio State University, Jeff found his way back to his hometown of Cincinnati to spend 6 years as an engineer. While in Columbus he joined a craft \"beer of the week\" club.  He brought the idea back to Cincinnati, and the club helped develop his craft beer palate and encouraged a love for brewing. His passion for craft beer pushed him to turn dream into reality by starting MadTree with Kenny and Brady. He has a wonderful wife, Cassandra, who has helped make all this possible and two amazing kids.",
+      "department" : "Founder",
       "photo" : "img-jeff.jpg"
     },
     {
       "name" : "Kenny",
       "title" : "The &lsquo;Beer&rsquo;ded Baron",
       "bio" : "With a Master&rsquo;s Degree in Engineering from Cornell University and an MBA from Xavier University, Kenny McNutt brings a mix of experience dealing with technical as well as business challenges. Prior to founding MadTree, Kenny managed a team of engineers for a major defense contractor and developed processes for tracking cost and schedule for a $10M+ program. At MadTree, Kenny is known as the man with the financial plan.",
+      "department" : "Founder",
       "photo" : "img-kenny.jpg"
     }
 ]

@@ -2,7 +2,25 @@
 current_page: "community"
 sub_page: "founders"
 ---
-<% employees = data.employees %>
+<%
+  founders = [];
+  ops = [];
+  office = [];
+  production = [];
+  sales = [];
+  packaging = [];
+  taproom = [];
+%>
+
+<% data.employees.each do |employee| %>
+  <% founders << employee if employee.department == "Founder" %>
+  <% ops << employee if employee.department == "Op Support" %>
+  <% office << employee if employee.department == "Accounting/Office" %>
+  <% production << employee if employee.department == "Production" %>
+  <% sales << employee if employee.department == "Sales" %>
+  <% packaging << employee if employee.department == "Packaging" %>
+  <% taproom << employee if employee.department == "Taproom" %>
+<% end %>
 
 <% content_for :page_classes do %>
   interior
@@ -14,19 +32,34 @@ sub_page: "founders"
 
 <div class="container">
   <h2>Employees</h2>
-    <% employees.each do |employee| %>
-    <div class="employee">
-      <div class="employee__photo">
-        <%= image_tag("community/#{employee.photo}") %>
-      </div> <!-- /employee__photo -->
-      <header class="employee__header">
-        <h3><%= employee.name %></h3>
-        <h4><%= employee.title %></h4>
-        <%= link_to "About #{employee.name}&hellip;", "#" %>
-      </header> <!-- /employee__header -->
-      <div class="employee__info">
-        <p><%= employee.bio %></p>
-      </div>
-    </div> <!-- /employee -->
-    <% end %>
+  <h4>Production</h4>
+  <div class="employee-group">
+    <%= partial 'partials/employee', locals: { employee: production } %>
+  </div>
+  <h4>Packaging</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: packaging } %>
+  </div>
+  <h4>Op Support</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: ops } %>
+  </div>
+  <h4>Sales</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: sales } %>
+  </div>
+  <h4>Accounting/Office</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: office } %>
+  </div>
+  <h4>Taproom</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: taproom } %>
+  </div>
+  <h4>Founders</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: founders } %>
+  </div>
 </div>
+
+
