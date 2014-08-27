@@ -15,6 +15,11 @@ body.community {
   }
   &.artists {
     .employee {
+      &:nth-child(2n + 1) {
+        @include respond-to(38.75em) {
+          clear: both;
+        }
+      }
       &:last-child {
         float: left;
       }
