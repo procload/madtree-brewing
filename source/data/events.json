@@ -391,8 +391,49 @@
       "description" : "Nothing says Fall like a pumpkin spiced beer. The Great PumpCan will be officially released for the first time ever in a can. 50% of All PumpCan sales for the day including Tshirts, posters, and cans will go to Susan G. Komen. Can designer, John Pattison, and logo illustrator, Tom Post, will be here signing PumpCan posters as well.",
       "date" : "Thursday, August 29",
       "time" : "4:00 p.m."
+    },
+    {
+      "title" : "Fifty Fest",
+      "url" : "http://fiftywestbrew.com/beer-events/fifty-fest/",
+      "description" : "Enjoy local food and local beers, including MadTree, at Fifty West's Fifty Fest",
+      "date" : "Saturday, September 6",
+      "time" : "12:00 p.m."
+    },
+    {
+      "title" : "Meatball Kitchen Hop Up Dinner",
+      "url" : "http://www.meatballkitchenusa.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, September 10",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "St. Vincent Ferrer Festival",
+      "url" : "https://www.facebook.com/pages/St-Vincent-Ferrer-Festival/110826745672297",
+      "description" : "Live music, rides, games, food and beer!",
+      "date" : "Friday, September 12",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "St. Vincent Ferrer Festival",
+      "url" : "https://www.facebook.com/pages/St-Vincent-Ferrer-Festival/110826745672297",
+      "description" : "Live music, rides, games, food and beer!",
+      "date" : "Saturday, September 13",
+      "time" : "4:00 p.m."
+    },
+    {
+      "title" : "St. Vincent Ferrer Festival",
+      "url" : "https://www.facebook.com/pages/St-Vincent-Ferrer-Festival/110826745672297",
+      "description" : "Live music, rides, games, food and beer!",
+      "date" : "Sunday, September 14",
+      "time" : "2:00 p.m."
+    },
+     {
+      "title" : "The Smokin' Ox Hop Up Dinner",
+      "url" : "http://www.yelp.com/biz/the-smokin-ox-oxford",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, September 17",
+      "time" : "6:00 p.m."
     }
-
   ]
 }
 
