@@ -150,7 +150,14 @@ a {
       @include respond-to(33.125em) {
         display: inline-block;
         margin-right: calc-em(6px, 11px);
-      } 
+      }
+    }
+    em {
+      font-style: normal;
+      display: none;
+      @include respond-to(25em) {
+        display: inline;
+      }
     }
   } //taproom-hours
   .social-nav {
