@@ -1,0 +1,72 @@
+---
+current_page: "limited"
+---
+
+<% content_for :page_classes do %>
+  interior beers beer-limited
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+  <%= partial '../partials/section-nav-beer', locals: { current_page: 'limited' } %>
+<% end %>
+
+<% beers = data.beers %>
+<section class="limited-beers">
+  <header class="limited-header">
+    <h2>Limited Beer</h2>
+    <p class="intro">Ut justo lacus, consectetur nec dapibus at, tristique efficitur justo. Curabitur volutpat auctor neque at gravida. Aenean id ex in tellus accumsan bibendum. Aliquam est nisl, facilisis eget lacus a, ullamcorper convallis dolor. Aenean interdum consectetur congue. Suspendisse ut auctor magna. Nam ornare risus sit amet nibh sodales porta. Aliquam lacinia nunc quis mauris tincidunt tincidunt. Nullam ac elit eleifend, imperdiet lorem sit amet, rutrum lorem. Vivamus pharetra vehicula libero. Morbi condimentum sollicitudin tortor eu elementum.</p>
+  </header> <!-- /limited-header -->
+  <% beers.each do |beer| %>
+    <% if beer.availability == "limited" %>
+    <div class="beer">
+      <div class="beer-info">
+        <header class="beer-header">
+          <%= content_tag :h2, beer.name %>
+        </header> <!-- /beer-header -->
+        <div class="beer-description">
+          <%= content_tag :p, beer.description %>
+          <p><%= (beer.recipe != "") ? link_to("<i class='icon-beaker'></i> Download the recipe", "/recipes/#{beer.recipe}") : link_to("<i class='icon-beaker'></i> Email us for the recipe", "mailto:recipes@madtreebrewing.com") %>
+        </div> <!-- /beer-description -->
+      </div> <!-- /beer-info -->
+      <table class="table beer-stats">
+        <tr class="numbers">
+          <th class="abv-label">
+            ABV
+          </th>
+          <td class="abv-amount">
+            <%= beer.abv %>
+          </td>
+          <th class="ibu-amount">
+            IBU
+          </th>
+          <td class="ibu-amount">
+            <%= beer.ibu %>
+          </td>
+        </tr>
+        <tr>
+          <th>Hops</th>
+          <td class="ingredients" colspan="3">
+            <%= beer.hops %>
+          </td>
+        </tr>
+        <tr>
+          <th>Malts</th>
+          <td class="ingredients" colspan="3">
+            <%= beer.malts %>
+          </td>
+        </tr>
+        <% if beer.adjuncts != "" %>
+          <tr>
+            <th>Adjuncts</th>
+            <td class="ingredients" colspan="3">
+              <%= beer.adjuncts %>
+            </td>
+          </tr>
+        <% end %>
+      </tr>
+    </table> <!-- /beer-stats -->
+    </div> <!-- /beer -->
+    <% end %>
+  <% end %>
+
+</section> <!-- /limited-beers -->
