@@ -4,6 +4,7 @@
       <% sub_page = data.page.sub_page %>
       <%= content_tag :li, link_to("Employees", "../community/index.html"), class: (sub_page == "founders" ? "active" : "") %>
       <%= content_tag :li, link_to("Artists", "../community/artists.html"), class: (sub_page == "artists" ? "active" : "") %>
+      <%= content_tag :li, link_to("Videos", "../community/videos.html"), class: (sub_page == "videos" ? "active" : "") %>
     </ul> <!-- /section-nav -->
   </div> <!-- /navbar-inner -->
 </nav> <!-- /navbar -->

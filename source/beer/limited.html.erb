@@ -13,8 +13,7 @@ current_page: "limited"
 <% beers = data.beers %>
 <section class="limited-beers">
   <header class="limited-header">
-    <h2>Limited Beer</h2>
-    <p class="intro">Ut justo lacus, consectetur nec dapibus at, tristique efficitur justo. Curabitur volutpat auctor neque at gravida. Aenean id ex in tellus accumsan bibendum. Aliquam est nisl, facilisis eget lacus a, ullamcorper convallis dolor. Aenean interdum consectetur congue. Suspendisse ut auctor magna. Nam ornare risus sit amet nibh sodales porta. Aliquam lacinia nunc quis mauris tincidunt tincidunt. Nullam ac elit eleifend, imperdiet lorem sit amet, rutrum lorem. Vivamus pharetra vehicula libero. Morbi condimentum sollicitudin tortor eu elementum.</p>
+    <h2>Limited Beers</h2>
   </header> <!-- /limited-header -->
   <% beers.each do |beer| %>
     <% if beer.availability == "limited" %>

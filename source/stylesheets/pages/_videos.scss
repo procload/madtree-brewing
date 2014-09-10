@@ -1,0 +1,31 @@
+.videos {
+  h2 {
+
+  }
+  .all-videos {
+    @extend %group;
+  }
+  .video {
+    margin-bottom: calc-em(32px);
+
+    @include respond-to(35em) {
+      @include span-columns(6);
+      @include nth-omega(2n);
+    }
+
+    &:nth-child(2n+1) {
+      clear: both;
+    }
+    h3 {
+      font-size: calc-em(24px);
+    }
+    > a {
+      display: block;
+      img {
+        border: 2px solid rgba(255,255,255,.2);
+        margin-bottom: calc-em(16px);
+      }
+    }
+
+  }
+}

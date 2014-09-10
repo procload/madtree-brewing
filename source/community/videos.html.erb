@@ -1,0 +1,26 @@
+---
+current_page: "community"
+sub_page: "videos"
+---
+
+<% content_for :page_classes do %>
+  interior videos
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+  <%= partial '../partials/section-nav-community' %>
+<% end %>
+
+<% videos = data.videos %>
+
+<div class="container">
+  <h2>Videos</h2>
+  <div class="all-videos">
+    <% videos.each do |video| %>
+      <div class="video">
+        <%= link_to image_tag("http://img.youtube.com/vi/#{video.id}/maxresdefault.jpg"), "https://www.youtube.com/watch?v=#{video.id}" %>
+        <%= link_to content_tag(:h3, video.title), "https://www.youtube.com/watch?v=#{video.id}" %>
+      </div> <!-- /video -->
+    <% end %>
+  </div> <!-- /all-videos -->
+</div>
