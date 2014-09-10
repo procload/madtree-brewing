@@ -110,5 +110,26 @@
       "bio" : "With a Master&rsquo;s Degree in Engineering from Cornell University and an MBA from Xavier University, Kenny McNutt brings a mix of experience dealing with technical as well as business challenges. Prior to founding MadTree, Kenny managed a team of engineers for a major defense contractor and developed processes for tracking cost and schedule for a $10M+ program. At MadTree, Kenny is known as the man with the financial plan.",
       "department" : "Founder",
       "photo" : "img-kenny.jpg"
+    },
+    {
+      "name" : "Dave Winchell",
+      "title" : "Canny Devito",
+      "bio" : "Dave and his Family moved to Cincinnati in 1987. He graduated from Sycamore High School and moved on to U.C. where a demon pulled him aside and convinced him that becoming a Restaurant Manager was better than finishing his college career. After managing many a restaurants and bars, trying to make a career at Improv Comedy and catering for the rock stars, he landed at the Incline Public House. His natural love for craft beer suddenly exploded. He discovered a new community of beer lovers, of beer friends and of beer itself. Dave started volunteering at MadTree and they kept hoping he would go away but his tenacity proved endearing. Now a volunteer turned employee, Dave works on the packaging line while absorbing all the information surrounding him. When he goes home he's got his girlfriend Sharon, 2 cats, a dog and a ferret all lovingly waiting for him.",
+      "department" : "Packaging",
+      "photo" : "img-dave.jpg"
+    },
+    {
+      "name" : "Michael Makin",
+      "title" : "Beer Makin Machine",
+      "bio" : "Michael Makin graduated from Anderson High school  and then attended Starfire U for 4 years and graduated in 2013.  He is most proud of his Capstone Project that took place at the end of his senior year at Starfire U where he and a committee of 20+ people planned and held the Anderson Beer Review for 170+ people. MadTree in conjunction with 50 West supported this project.  The event was held at 50 West and MadTree brewed a special beer to serve called "Wheat Eater".  As a result of this project, Michael has been given the opportunity to work at MadTree in their Taproom and 50 West as a host.  Michael very much enjoys his work at MadTree and loves making new friends.",
+      "department" : "Production",
+      "photo" : "img-makin.jpg"
+    },
+    {
+      "name" : "Brian Mulroy",
+      "title" : "Magistrate of Hop Up Dinners",
+      "bio" : "Brain’s background is filled with a love of all things booze and food; early champion of the seriousness of food and beer pairings being just as viable as wine. Born in raised in Canton, Ohio, Brian has spent most of the last 28 years as a Cincinnati resident and is most often perched behind or in front of its greatest bars, from the seedy to the classy. While food and wine and liquor are all part of his passion, beer has really become his primary focus. Recently made more available (i.e. slightly unemployed) he approached the brewers with a plan to invite all of Cincinnati’s finest restaurateurs into the walls of the taproom, creating the holy marriage of great food and great beer, that is known as Hop Up Dinners, every Wednesday at MadTree…",
+      "department" : "Taproom",
+      "photo" : "img-brian.jpg"
     }
 ]
