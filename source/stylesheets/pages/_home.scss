@@ -139,9 +139,10 @@ body.home {
 
   .collage {
     clear: both;
+    margin-top: calc-em(80px);
     margin-bottom: calc-em(80px);
   } //community-feedback
-  
+
   .twitter-stream {
     margin-bottom: calc-em(80px);
     @include respond-to(41.25em) {
@@ -166,23 +167,5 @@ body.home {
       width: 100%;
     }
   } //madtree-photo
-
-
-  #collage {
-    /* Prevent vertical gaps */
-    line-height: 0;
-    -webkit-column-count: 5;
-    -webkit-column-gap:   0px;
-    -moz-column-count:    5;
-    -moz-column-gap:      0px;
-    column-count:         5;
-    column-gap:           0px;
-
-  }
-  #collage img {
-    /* Just in case there are inline attributes */
-    width: 100% !important;
-    height: auto !important;
-  }
 
 } //index
