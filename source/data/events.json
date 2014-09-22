@@ -433,7 +433,50 @@
       "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
       "date" : "Wednesday, September 17",
       "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Pleae Hop Up Dinner",
+      "url" : "http://pleasecincinnati.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, September 24",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Quan Hapa Up Dinner",
+      "url" : "http://www.quanhapa.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, October 1",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Great American Beer Festival",
+      "url" : "http://www.greatamericanbeerfestival.com/",
+      "description" : "Each year, GABF represents the largest collection of U.S. beer ever served, in a public tasting event plus a private competition. The Great American Beer Festival takes place at the Colorado Convention Center in Denver.",
+      "date" : "Thursday, October 2",
+      "time" : "5:30 p.m."
+    },
+    {
+      "title" : "Great American Beer Festival",
+      "url" : "http://www.greatamericanbeerfestival.com/",
+      "description" : "Each year, GABF represents the largest collection of U.S. beer ever served, in a public tasting event plus a private competition. The Great American Beer Festival takes place at the Colorado Convention Center in Denver.",
+      "date" : "Friday, October 3",
+      "time" : "5:30 p.m."
+    },
+    {
+      "title" : "Great American Beer Festival",
+      "url" : "http://www.greatamericanbeerfestival.com/",
+      "description" : "Each year, GABF represents the largest collection of U.S. beer ever served, in a public tasting event plus a private competition. The Great American Beer Festival takes place at the Colorado Convention Center in Denver.",
+      "date" : "Saturday, October 3",
+      "time" : "12:00 p.m."
+    },
+    {
+      "title" : "Butcher Betties Up Dinner",
+      "url" : "http://www.butcherbetties.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, October 8",
+      "time" : "6:00 p.m."
     }
+
   ]
 }
 
