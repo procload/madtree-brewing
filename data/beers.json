@@ -122,6 +122,7 @@
       "ibu" : "18",
       "adjuncts" : "",
       "recipe" : "solDrifterRecipe.pdf",
+      "image" : "/images/beers/sol-drifter/img-sol-drifter-combined.png",
       "availability" : "seasonal"
     },
      {
@@ -130,8 +131,8 @@
       "description" : "A crisp and refreshing summer ale that pleasantly blends grapefruit, citrus, and lemon zest flavors with the slight sweetness of malted wheat.",
       "series" : "",
       "abv" : "4.7%",
-      "hops" : "2-Row, Wheat, Carapils, Munich 10L",
-      "malts" : "Galena, Fuggle, Falconer&rsquo;s Flight, Zythos",
+      "hops" : "Galena, Fuggle, Falconer&rsquo;s Flight, Zythos",
+      "malts" : "2-Row, Wheat, Carapils, Munich 10L",
       "ibu" : "29",
       "adjuncts" : "",
       "recipe" : "",
@@ -303,11 +304,11 @@
       "availability" : "limited"
     },
     {
-      "name" : "Old Battering Ram",
+      "name" : "Olde Battering Ram",
       "url" : "old-battering-ram",
       "description" : "Knock, knock. Who's there? Door shards and knockers in your face! This beer doesn't wait to be let in. Dark as night but scarier. Barricade your palate and batten down the hatches cause Old Battering Ram is coming.",
       "series" : "Brewers Series by Kevin Johnson",
-      "abv" : "11.??%",
+      "abv" : "11.99%",
       "hops" : "Experimental 05256",
       "malts" : "2-row, Caramel 120L, Midnight Wheat, Carapils",
       "ibu" : "101",

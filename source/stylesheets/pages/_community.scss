@@ -12,6 +12,11 @@ body.community {
         @include nth-omega(2n);
       }
     }
+    &:nth-child(2n + 1) {
+      @include respond-to(38.75em) {
+        clear: both;
+      }
+    }
   }
   &.artists {
     .employee {
