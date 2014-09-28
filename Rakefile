@@ -22,12 +22,6 @@ task :update_untappd do
   puts "done."
 end
 
-desc "This task is called by the Heroku scheduler add-on"
-task :update_events do
-
-
-end
-
 task :build do
   puts "## Building site"
   system "bundle exec middleman build"

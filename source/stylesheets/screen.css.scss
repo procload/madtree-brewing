@@ -173,6 +173,7 @@ a {
   .social-links {
     @extend %zero-list;
     li {
+      text-align: center;
       a {
         font-size: calc-em(14px);
         width: calc-em(18px, 14px);
