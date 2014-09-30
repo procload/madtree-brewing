@@ -164,28 +164,64 @@
 }
 
 
+.btn-load-more {
+  background: $red;
+  margin: 0 auto;
+  font-family: $nav-font-family;
+  font-weight: 300;
+  &:hover,
+  &:active,
+  &:focus {
+    color: #FFF;
+  }
+}
+
 .collage {
   width: 100%;
   overflow: auto;
+  text-align: center;
 }
+
+#instagram-photos {
+  margin-bottom: calc-em(24px);
+}
+
 .collage-row {
   @extend %zero-list;
   @extend %group;
-  overflow: auto;
-  width: 2880px;
   @include respond-to(47.5em) {
     width: auto;
   }
+
   li {
-    width: 144px;
-    height: 144px;
     display: inline-block;
-  @include respond-to(47.5em) {
-    width: 10%;
-    max-height: calc-em(150px);
-    height: auto;
     float: left;
-  }
+    width: 25%;
+    @include respond-to(30em) {
+      width: 20%;
+    }
+    @include respond-to(47.5em) {
+      width: 10%;
+    }
+    &:nth-child(4n+1) {
+      clear: both;
+      @include respond-to(30em) {
+        clear: none;
+      }
+    }
+    &:nth-child(5n+1) {
+      @include respond-to(30em) {
+        clear: both;
+      }
+      @include respond-to(47.5em) {
+        clear: none;
+      }
+    }
+    &:nth-child(10n+1) {
+      @include respond-to(47.5em) {
+        clear: both;
+      }
+    }
     > a {
       display: block;
       -webkit-filter: grayscale(1);    

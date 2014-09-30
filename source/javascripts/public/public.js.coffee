@@ -47,6 +47,12 @@ $ ->
 
     feed.run() if $("body.home").length > 0
 
+    loadBtn = $(".btn-load-more")
+
+    loadBtn.click (e) ->
+      e.preventDefault();
+      feed.next();
+
     $(".employee__header > a").click (e) ->
       e.preventDefault()
       $this = $(this)
