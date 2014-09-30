@@ -1,16 +1,28 @@
 .beer-limited {
+  .site-header {
+    margin-bottom: 0;
+  }
+  &.interior {
+    .main-content { padding-top: 0; }
+  }
   .limited-beers {
-    @include container;
+    .limited-wrapper { @include container; }
   }
 
   .limited-header {
     margin-bottom: calc-em(32px);
     padding-bottom: calc-em(32px);
-    @include respond-to(41.875em) {
-      margin-bottom: calc-em(64px);
-      padding-bottom: calc-em(64px);
+    .limited-bg {
+      @include respond-to(41.875em) {
+        height: calc-em(150px);
+        background: image-url('beers/beers.jpg') repeat-x top left;
+        background-size: 50%;
+      }
     }
-    border-bottom: 1px solid rgba(255,255,255,.1);
+    @include respond-to(41.875em) {
+      margin-bottom: calc-em(16px);
+      padding-bottom: calc-em(16px);
+    }
     h2 {
       font-size: calc-em(48px);
       margin: 0 0 calc-em(12px, 48px);
