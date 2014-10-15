@@ -409,7 +409,7 @@ a {
   height: 1px;
   display: block;
   margin-top: calc-em(60px);
-  @include transition(.2s linear all); 
+  @include transition(.2s linear all);
   max-height: calc-em(340px);
   overflow-x: visible;
   @include respond-to(41.25em) {
@@ -456,7 +456,7 @@ a {
     display: block;
     @include respond-to(41.25em) {
       display: inline-block;
-      width: 33.32%;
+      width: 24%;
       text-align: center;
     }
     &:nth-child(odd) {
