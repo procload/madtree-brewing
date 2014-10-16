@@ -475,8 +475,42 @@
       "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
       "date" : "Wednesday, October 8",
       "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Cold Beer. Cool Books. Release Party!",
+      "url" : "https://www.facebook.com/events/638938429560519/?ref=22",
+      "description" : "Hosted at Madtree Brewing Company. Come celebrate the release of Print Book’s newest publication “Cool Beer Labels,” a book featuring great packaging from over 150 breweries from all over the world. ",
+      "date" : "Tuesday, October 21",
+      "time" : "7:00 p.m."
+    },
+    {
+      "title" : "Park + Vine Hop Up Dinner",
+      "url" : "http://www.parkandvine.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, October 22",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Benchmark Outdoor Outfitters Grand Reopening",
+      "url" : "https://www.facebook.com/events/1557585874462241/?ref=22",
+      "description" : "Join us in celebrating the re-opening of Cincinnati's one tried and true outfitter. Roadtrippers and MadTree Brewing will be here to help host a fundraiser for the The Buckeye Trail Association.",
+      "date" : "Thursday, October 23",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Thundersnow Pre-Release Party with Cincinnati Magazine",
+      "url" : "https://www.facebook.com/events/732703613432010/?ref=5",
+      "description" : "Cincinnati Magazine celebrates October’s beer issue with pre-release sampling of Thundersnow, a spiced winter seasonal beer. Tickets are $25 and include 2 drink tickets, a MadTree pint glass and food from Catch-A-Fire-Pizza.",
+      "date" : "Monday, October 27",
+      "time" : "6:30 p.m."
+    },
+    {
+      "title" : "Babushka Pierogies Hop Up Dinner",
+      "url" : "https://www.facebook.com/BabushkaPierogies",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, October 29",
+      "time" : "6:00 p.m."
     }
-
   ]
 }
 
