@@ -1,0 +1,81 @@
+---
+current_page: "store"
+---
+
+
+<% content_for :page_classes do %>
+  interior
+<% end %>
+<% content_for :site_header do %>
+  <%= partial 'partials/interior-nav' %>
+  <%= partial 'partials/section-nav-store' %>
+<% end %>
+
+<div class="store-container">
+  <nav class="category-nav">
+    <ul class="category-nav-list">
+      <%= content_tag :li, link_to("Men's MadTree Logo", "#"), class: "active" %>
+      <%= content_tag :li, link_to("Women's MadTree Logo", "#") %>
+      <%= content_tag :li, link_to("MadTree Classic Beer Logo", "#") %>
+      <%= content_tag :li, link_to("MadTree Seasonal Beer Logo", "#") %>
+      <%= content_tag :li, link_to("Women's Tank", "#") %>
+      <%= content_tag :li, link_to("MadTree Work Shirt", "#") %>
+      <%= content_tag :li, link_to("MadTree Polo", "#") %>
+      <%= content_tag :li, link_to("MadTree Zip-Up Hoodie", "#") %>
+    </ul> <!-- /category-nav-list -->
+  </nav> <!-- /category-nav -->
+
+  <section class="store-item">
+    <div class="item-photos">
+      <div class="main-photo">
+        <%= image_tag "http://placehold.it/460x500" %>
+      </div> <!-- /main-photo -->
+      <div class="alt-photos">
+        <%= image_tag "http://placehold.it/65x65" %>
+        <%= image_tag "http://placehold.it/65x65" %>
+        <%= image_tag "http://placehold.it/65x65" %>
+      </div> <!-- /alt-photos -->
+    </div>
+    <div class="store-item-details">
+      <header class="store-item-header">
+        <h3>Men's MadTree Logo</h3>
+        <h4>$20.00</h4>
+      </header> <!-- /store-item-header -->
+      <div class="item-sizes">
+        <label>Size</label>
+        <ul class="item-size-selection">
+          <%= content_tag :li, link_to("S", "#") %>
+          <%= content_tag :li, link_to("M", "#") %>
+          <%= content_tag :li, link_to("L", "#") %>
+          <%= content_tag :li, link_to("XL", "#") %>
+          <%= content_tag :li, link_to("XXL", "#") %>
+          <%= content_tag :li, link_to("XXXL", "#") %>
+        </ul> <!--/item-size-selection -->
+        <%= link_to "Size chart", "#" %>
+      </div> <!-- /item-sizes -->
+      <div class="item-quantity">
+        <label>Quantity</label>
+        
+      </div> <!--/item-quantity -->
+      <div class="item-actions">
+        <%= content_tag :button, "Add to cart", class: "btn btn-default" %>
+      </div> <!-- /item-actions -->
+      <div class="item-description">
+        <h4>Description</h4>
+        <%= content_tag :p, lorem.sentences(3) %>
+      </div> <!-- /item-description -->
+      <div class="item-details">
+        <h4>Details</h4>
+        <ul class="detail-list">
+          <li>Unisex Style</li>
+          <li>Crewneck Tee Shirt</li>
+          <li>Slimmer Fit</li>
+        </ul>
+      </div> <!-- /item-details -->
+      <div class="item-shipping">
+        <h4>Shipping &amp; Handling</h4>
+        <%= content_tag :p, lorem.sentence %>
+      </div> <!-- /item-shipping -->
+    </div> <!-- /store-item-details -->
+  </section> <!-- /store-item -->
+</div> <!-- /store-container -->

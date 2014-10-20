@@ -1,0 +1,21 @@
+<% content_for :page_classes do %>
+  interior
+<% end %>
+<% content_for :site_header do %>
+  <%= partial 'partials/interior-nav' %>
+  <%= partial 'partials/section-nav-store' %>
+<% end %>
+<div class="store-container">
+  <header class="section-header">
+    <h2>Apparel</h2>
+  </header>
+
+  <section class="category-items">
+    <% 8.times do %>
+    <div class="category-item">
+     <%= link_to image_tag("http://placehold.it/200x180"), "item.html" %>
+     <%= link_to "Category Name", "#" %>
+    </div>
+    <% end %>
+  </section> <!-- /category-items -->
+</div>

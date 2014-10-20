@@ -7,6 +7,7 @@
       <%= content_tag :li, link_to("Beers <i class='icon-caret-right'></i>", "../beer/happy-amber", data: { children: "beers" }), class: (current_page == "beers" ? "active" : "")  %>
       <%= content_tag :li, link_to("Taproom <i class='icon-caret-right'></i>", "../taproom/"), class: (current_page == "taproom" ? "active taproom-nav-item" : "") %>
       <%= content_tag :li, link_to("Community <i class='icon-caret-right'></i>", "../community/", data: { children: "community" }), class: (current_page == "community" ? "active" : "") %>
+      <%= content_tag :li, link_to("Store <i class='icon-caret-right'></i>", "../community/", data: { children: "store" }), class: (current_page == "store" ? "active" : "") %>
     </ul> <!-- /main-nav -->
   </div> <!-- /navbar-inner -->
 </nav> <!-- /navbar -->
