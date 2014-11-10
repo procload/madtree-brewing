@@ -456,7 +456,7 @@ a {
     display: block;
     @include respond-to(41.25em) {
       display: inline-block;
-      width: 33.32%;
+      width: 24%;
       text-align: center;
     }
     &:nth-child(odd) {
