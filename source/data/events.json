@@ -510,6 +510,27 @@
       "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
       "date" : "Wednesday, October 29",
       "time" : "6:00 p.m."
+    },
+     {
+      "title" : "HalfCut MadTree and Jackie O's Tap Takeover",
+      "url" : "http://www.halfcut.com/",
+      "description" : "Head to HalfCut in OTR for your favorite MadTree and Jackie O's beers on tap.",
+      "date" : "Tuesday, November 18",
+      "time" : "5:30 p.m."
+    },
+    {
+      "title" : "Mama Mimi's Hop Up Dinner",
+      "url" : "https://www.facebook.com/MamaMimisTakenBakePizzaCincinnati",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, November 19",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Barley Corn's MadTree Tap Takeover",
+      "url" : "http://www.barleycorns.com/",
+      "description" : "Head to Barley Corn's in Florence for your favorite MadTree beers on tap.",
+      "date" : "Thursday, November 20",
+      "time" : "4:00 p.m."
     }
   ]
 }
