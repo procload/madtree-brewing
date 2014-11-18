@@ -7,4 +7,5 @@
 //= require libs/fittext
 //= require libs/jquery-store-locator
 //= require libs/jrespond
+//= require libs/tabletop
 //= require_tree ./public

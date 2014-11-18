@@ -171,3 +171,17 @@ $ ->
         template = Handlebars.compile(source)
         $("#untappd").html(template(untappd))
 
+    insertBeers = (beers) ->
+      tapList = $('.on-tap')
+      onTap = ""
+      for beer in beers
+        onTap += "<li>#{beer.beer}</li>"
+
+      tapList.append(onTap)
+
+    Tabletop.init
+      key: "1xIDGzkSMZh3mF2wrYbO6eG0ndBDQ5okUIqmyixrPm7k"
+      callback: (data) ->
+        insertBeers(data)
+
+      simpleSheet: true
