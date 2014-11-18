@@ -149,17 +149,30 @@ $ ->
       )
       infowindow.open map, marker
 
-      
+    insertBeers = (beers) ->
+      tapList = $('.on-tap')
+      onTap = ""
+      for beer in beers
+        onTap += "<li>#{beer.beer}</li>"
+
+      tapList.append(onTap)
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
+
+      Tabletop.init
+        key: "1xIDGzkSMZh3mF2wrYbO6eG0ndBDQ5okUIqmyixrPm7k"
+        callback: (data) ->
+          insertBeers(data)
+
+        simpleSheet: true
 
     untappdData =
       client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
       client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
 
     $.getJSON "/untappd.json", (result) ->
-      untappd = 
+      untappd =
         beerCount: result.beer_count
         breweryRating: result.rating.rating_score
         totalBeers: result.stats.total_count
@@ -171,17 +184,3 @@ $ ->
         template = Handlebars.compile(source)
         $("#untappd").html(template(untappd))
 
-    insertBeers = (beers) ->
-      tapList = $('.on-tap')
-      onTap = ""
-      for beer in beers
-        onTap += "<li>#{beer.beer}</li>"
-
-      tapList.append(onTap)
-
-    Tabletop.init
-      key: "1xIDGzkSMZh3mF2wrYbO6eG0ndBDQ5okUIqmyixrPm7k"
-      callback: (data) ->
-        insertBeers(data)
-
-      simpleSheet: true
