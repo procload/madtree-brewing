@@ -149,24 +149,8 @@ $ ->
       )
       infowindow.open map, marker
 
-
-    formatBeers = (beers) ->
-      formattedBeers = []
-      i = 1
-      for i in [0..beers.length] by 1
-        for key, val of beers[i]
-          if key != "Beer"
-            myString = val.slice(0, -2)
-          this.key = myString
-          console.log this
-
-      console.log beers[2].Snifter
-      return beers
-
     insertBeers = (beers) ->
-      console.log beers
-      formatBeers(beers)
-      console.log beers
+      beers.pop()
       source = $("#tap_template").html()
       template = Handlebars.compile(source)
       $("#ontap").html(template(beers))
