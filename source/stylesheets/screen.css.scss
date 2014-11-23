@@ -92,7 +92,9 @@ p {
 
 a {
   color: $red;
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     color: saturate($red, 20%);
   }
 }

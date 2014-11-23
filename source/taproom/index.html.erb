@@ -27,24 +27,6 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
         </div> <!-- /phone -->
       </section> <!-- /address-phone -->
     </div> <!-- /taproom-address -->
-  </section> <!-- /taproom-location -->
-  <section class="taproom-about">
-    <header class="taproom-about-header">
-      <h2>The MadTree Taproom</h2>
-    </header> <!-- /taproom-about-header -->
-    <div class="taproom-about-body">
-      <h3>What's on tap?</h3>
-      <p>
-        Like any respectable brewery, we're always changing out what we have on tap with something new. Of course, we'll always have a slew of stables on tap year-round. Here's what's being poured right now.
-      </p>
-      <ul class="on-tap">
-        
-      </ul>
-      <p>
-      Carryout, bar, cafe, family hangout, club meeting&hellip; the MadTree taproom is a little bit of everything. Whether you want to fill up your growler ($10 and up) or you want to meet up with some of your friends for dinner and a beer, we are happy to have you drop in. Check <%= link_to "our Facebook page", "http://facebook.com/madtree" %> for the latest rotating taps and which local Chef is cooking something up.
-      </p>
-      <h3>Did somebody say tours?</h3>
-      <p>MadTree offers tours to the public every Saturday at 3pm and 4pm.</p>
       <h3>Taproom Hours</h3>
       <table class="table table-striped">
         <tbody>
@@ -97,6 +79,56 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
           </tr>
         </tbody>
       </table> <!-- /table-striped -->
+  </section> <!-- /taproom-location -->
+  <section class="taproom-about">
+    <header class="taproom-about-header">
+      <h2>The MadTree Taproom</h2>
+    </header> <!-- /taproom-about-header -->
+    <div class="taproom-about-body">
+      <h3>What's on tap?</h3>
+      <p>
+        Like any respectable brewery, we're always changing out what we have on tap with something new. Of course, we'll always have a slew of stables on tap year-round. Here's what's being poured right now.
+      </p>
+      <div id="ontap"></div>
+      <h3>About the Taproom</h3>
+      <p>
+      Carryout, bar, cafe, family hangout, club meeting&hellip; the MadTree taproom is a little bit of everything. Whether you want to fill up your growler ($10 and up) or you want to meet up with some of your friends for dinner and a beer, we are happy to have you drop in. Check <%= link_to "our Facebook page", "http://facebook.com/madtree" %> for the latest rotating taps and which local Chef is cooking something up.
+      </p>
+      <h3>Did somebody say tours?</h3>
+      <p>MadTree offers tours to the public every Saturday at 3pm and 4pm.</p>
     </div> <!--/taproom-about-body -->
   </section> <!-- /taproom-about -->
 </section> <!-- /taproom-info -->
+
+<script id="tap_template" type="text/x-handlebars-template">
+  <table class="table table-striped tap-table">
+    {{#each this}}
+    <tr>
+      <td>
+        <table cellpadding="0" cellspacing="0" class="table">
+          <tr>
+            <th>{{Beer}} <a href="#">Prices</a></th>
+          </tr>
+          <tr class="prices">
+            <td>
+            <table class="table">
+              <tr>
+                {{#if Growler-32}}<td><span>32oz Growler:</span> ${{Growler-32}}</td>{{/if}}
+                {{#if Growler-40}}<td><span>40oz Growler:</span> ${{Growler-40}}</td>{{/if}}
+                {{#if Growler-64}}<td><span>64oz Growler:</span> ${{Growler-64}}</td>{{/if}}
+                {{#if Pint}}<td><span>Pint:</span> ${{Pint}}</td>{{/if}}
+                {{#if Sixer}}<td><span>Sixer:</span> ${{Sixer}}</td>{{/if}}
+                {{#if Snifter}}<td><span>Snifter:</span> ${{Snifter}}</td>{{/if}}
+                {{#if Taster}}<td><span>Taster:</span> ${{Taster}}</td>{{/if}}
+              </tr>
+            </table>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    {{/each}}
+  </table>
+</script>
+
+

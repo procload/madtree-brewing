@@ -139,7 +139,7 @@ $ ->
         <div>5164 Kennedy Ave.<br /> Cincinnati, OH 45213</div>
         <div>513-836-8733</div>
       </div>'
-      
+
       infowindow = new google.maps.InfoWindow(content: contentString)
 
       marker = new google.maps.Marker(
@@ -149,23 +149,40 @@ $ ->
       )
       infowindow.open map, marker
 
-    insertBeers = (beers) ->
-      tapList = $('.on-tap')
-      onTap = ""
-      for beer in beers
-        onTap += "<li>#{beer.beer}</li>"
 
-      tapList.append(onTap)
+    formatBeers = (beers) ->
+      formattedBeers = []
+      i = 1
+      for i in [0..beers.length] by 1
+        for key, val of beers[i]
+          if key != "Beer"
+            myString = val.slice(0, -2)
+          this.key = myString
+          console.log this
+
+      console.log beers[2].Snifter
+      return beers
+
+    insertBeers = (beers) ->
+      console.log beers
+      formatBeers(beers)
+      console.log beers
+      source = $("#tap_template").html()
+      template = Handlebars.compile(source)
+      $("#ontap").html(template(beers))
+
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
+      Papa.parse "http://googledrive.com/host/0B9x2jm0Y1L07M2JDRXdubUd3Rm8",
+        header: true,
+        download: true,
+        complete: (results) ->
+          insertBeers(results.data)
 
-      Tabletop.init
-        key: "1xIDGzkSMZh3mF2wrYbO6eG0ndBDQ5okUIqmyixrPm7k"
-        callback: (data) ->
-          insertBeers(data)
-
-        simpleSheet: true
+    $("#ontap").on "click", "th a", (e) ->
+      e.preventDefault()
+      $(this).closest("tr").siblings(".prices").slideDown()
 
     untappdData =
       client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
