@@ -166,7 +166,14 @@ $ ->
 
     $("#ontap").on "click", "th a", (e) ->
       e.preventDefault()
-      $(this).closest("tr").siblings(".prices").slideDown()
+      $this = $(this)
+      beer = $(this.closest("tr"))
+      prices = $(beer.siblings(".prices"))
+
+      if prices.hasClass("expanded")
+        prices.removeClass("expanded")
+      else
+        prices.addClass("expanded")
 
     untappdData =
       client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",

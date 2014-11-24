@@ -61,6 +61,7 @@ body.taproom {
       line-height: 1;
       text-transform: uppercase;
       font-family: $nav-font-family;
+      padding: 0;
       a {
         float: right;
         font-family: $font-family-sans-serif;
@@ -78,6 +79,10 @@ body.taproom {
     }
     .prices {
       display: none;
+      > td { padding: 0; }
+      &.expanded {
+        display: table-row;
+      }
       td {
         font-size: calc-em(18px, 18px);
         @include respond-to(28.125em) {
