@@ -137,7 +137,7 @@ $ ->
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
-      Papa.parse "http://googledrive.com/host/0B9x2jm0Y1L07M2JDRXdubUd3Rm8",
+      Papa.parse "http://googledrive.com/0B9x2jm0Y1L07ZF9DcjZfdk1rcU0",
         header: true,
         download: true,
         complete: (results) ->
