@@ -60,11 +60,12 @@ $ ->
       $header.next().slideDown("50")
 
 
-    $("#map-canvas").storeLocator
-      dataType: "json"
-      dataLocation: "/data/stores.json"
-      callbackSuccess: ->
-        $(".find-beer").addClass("showing-results")
+    if $("body.home").length > 1
+      $("#map-canvas").storeLocator
+        dataType: "json"
+        dataLocation: "/data/stores.json"
+        callbackSuccess: ->
+          $(".find-beer").addClass("showing-results")
 
 
     $(".find-beer h2").fitText(.66)
@@ -169,7 +170,6 @@ $ ->
       $this = $(this)
       beer = $(this.closest("tr"))
       prices = $(beer.siblings(".prices"))
-
       if prices.hasClass("expanded")
         prices.removeClass("expanded")
       else
