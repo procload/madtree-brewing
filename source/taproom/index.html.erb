@@ -109,13 +109,13 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
             <td>
             <table class="table">
               <tr>
-                {{#if Pint}}<td><span>Pint:</span> ${{Pint}}</td>{{/if}}
-                {{#if Snifter}}<td><span>Snifter:</span> ${{Snifter}}</td>{{/if}}
-                {{#if Taster}}<td><span>Taster:</span> ${{Taster}}</td>{{/if}}
-                {{#if Growler-64}}<td><span>64oz Growler:</span> ${{Growler-64}}</td>{{/if}}
-                {{#if Growler-40}}<td><span>40oz Growler:</span> ${{Growler-40}}</td>{{/if}}
-                {{#if Growler-32}}<td><span>32oz Growler:</span> ${{Growler-32}}</td>{{/if}}
-                {{#if Sixer}}<td><span>Sixer:</span> ${{Sixer}}</td>{{/if}}
+                {{#if Pint}}<td><span>Pint:</span> ${{trimString Pint}}</td>{{/if}}
+                {{#if Snifter}}<td><span>Snifter:</span> ${{trimString Snifter}}</td>{{/if}}
+                {{#if Taster}}<td><span>Taster:</span> ${{trimString Taster}}</td>{{/if}}
+                {{#if Growler-64}}<td><span>64oz Growler:</span> ${{trimString Growler-64}}</td>{{/if}}
+                {{#if Growler-40}}<td><span>40oz Growler:</span> ${{trimString Growler-40}}</td>{{/if}}
+                {{#if Growler-32}}<td><span>32oz Growler:</span> ${{trimString Growler-32}}</td>{{/if}}
+                {{#if Sixer}}<td><span>Sixer:</span> ${{trimString Sixer}}</td>{{/if}}
               </tr>
             </table>
             </td>

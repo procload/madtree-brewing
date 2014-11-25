@@ -150,12 +150,18 @@ $ ->
       )
       infowindow.open map, marker
 
+
+
     insertBeers = (beers) ->
       beers.pop()
       source = $("#tap_template").html()
       template = Handlebars.compile(source)
       $("#ontap").html(template(beers))
 
+
+    Handlebars.registerHelper "trimString", (passedString) ->
+      theString = passedString.substring(0, passedString.length - 2)
+      new Handlebars.SafeString(theString)
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
