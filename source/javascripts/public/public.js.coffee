@@ -60,7 +60,7 @@ $ ->
       $header.next().slideDown("50")
 
 
-    if $("body.home").length > 1
+    if $("body.home").length > 0
       $("#map-canvas").storeLocator
         dataType: "json"
         dataLocation: "/data/stores.json"
@@ -168,7 +168,7 @@ $ ->
     $("#ontap").on "click", "th a", (e) ->
       e.preventDefault()
       $this = $(this)
-      beer = $(this.closest("tr"))
+      beer = $($this.closest("tr"))
       prices = $(beer.siblings(".prices"))
       if prices.hasClass("expanded")
         prices.removeClass("expanded")
