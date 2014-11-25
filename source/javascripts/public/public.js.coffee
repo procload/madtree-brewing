@@ -14,27 +14,6 @@ $ ->
       $(this).find("input[placeholder]").each ->
         @value = ""  if @value is $(this).attr("placeholder")
 
-    handleTweets = (tweets) ->
-      x = tweets.length
-      n = 0
-      element = document.getElementById("tweets")
-      html = ""
-
-      while n < x
-        tweetText = $("#{tweets[n]} p.tweet")[1].innerHTML
-        tweetUser = $($("#{tweets[n]} p.tweet")[0].innerHTML)
-        tweetUserLink = tweetUser[0].href
-        tweetUsername = tweetUser.children("span:last-child")[0].innerHTML
-        html += "<div class='tweet'>"
-        html += "<div class='tweet-content'><p>#{tweetText}</p></div>"
-        html += "<cite class='tweet-source'><a href='#{tweetUserLink}'>#{tweetUsername}</a></cite>"
-        html += "</div>"
-        n++
-      element.innerHTML = html
-
-    #$(window).bind "load", ->
-      #rowTotal = $("#instagram-photos li").length
-
     feed = new Instafeed(
       get: "tagged"
       tagName: "madtreebrewing"
@@ -123,10 +102,6 @@ $ ->
       else
         return
 
-    #$("#loc-list").on "click", ".show-on-map", (e) ->
-      #e.preventDefault()
-      #$("#map").addClass("now-showing")
-
     showTaproom = (long, lat) ->
       myLatlng = new google.maps.LatLng(long, lat)
       mapOptions =
@@ -150,14 +125,11 @@ $ ->
       )
       infowindow.open map, marker
 
-
-
     insertBeers = (beers) ->
       beers.pop()
       source = $("#tap_template").html()
       template = Handlebars.compile(source)
       $("#ontap").html(template(beers))
-
 
     Handlebars.registerHelper "trimString", (passedString) ->
       theString = passedString.substring(0, passedString.length - 2)
@@ -185,7 +157,7 @@ $ ->
       client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
       client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
 
-    $.getJSON "/untappd.json", (result) ->
+    $.getJSON "../untappd.json", (result) ->
       untappd =
         beerCount: result.beer_count
         breweryRating: result.rating.rating_score
