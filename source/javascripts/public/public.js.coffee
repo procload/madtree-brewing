@@ -137,7 +137,7 @@ $ ->
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
-      Papa.parse "/data/beers.csv",
+      Papa.parse "https://www.dropbox.com/s/cnpz8jys0u8idy5/beerlist.csv",
         header: true,
         download: true,
         complete: (results) ->
