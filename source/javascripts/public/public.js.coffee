@@ -137,11 +137,14 @@ $ ->
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
-      Papa.parse "https://docs.google.com/spreadsheets/d/1o-9E88aLciKasGqonrApMdxVdVTQn6E79dZfpYvONEE/export?format=csv&id",
-        header: true,
-        download: true,
-        complete: (results) ->
-          insertBeers(results.data)
+      Tabletop.init
+        key: "1o-9E88aLciKasGqonrApMdxVdVTQn6E79dZfpYvONEE"
+        callback: (data, tabletop) ->
+          console.log data
+          insertBeers(data)
+          return
+
+        simpleSheet: true
 
     $("#ontap").on "click", "th a", (e) ->
       e.preventDefault()
