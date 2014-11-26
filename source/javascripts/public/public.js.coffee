@@ -137,7 +137,7 @@ $ ->
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
-      Papa.parse "/data/beers.csv",
+      Papa.parse "https://docs.google.com/spreadsheets/d/1o-9E88aLciKasGqonrApMdxVdVTQn6E79dZfpYvONEE/export?format=csv&id",
         header: true,
         download: true,
         complete: (results) ->
