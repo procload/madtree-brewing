@@ -140,7 +140,6 @@ $ ->
       Tabletop.init
         key: "1o-9E88aLciKasGqonrApMdxVdVTQn6E79dZfpYvONEE"
         callback: (data, tabletop) ->
-          console.log data
           insertBeers(data)
           return
 
