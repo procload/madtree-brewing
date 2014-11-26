@@ -138,7 +138,6 @@ a {
     font-size: calc-em(10px);
     line-height: calc-em(23px, 10px);
     .more-text {
-      display: none;
       @include respond-to(33.125em) {
         display: inline;
       }
@@ -147,13 +146,13 @@ a {
       color: $white;
     }
     @include respond-to(42.5em) {
-      font-size: calc-em(12px);
+      font-size: calc-em(11px);
       @include span-columns(9);
     }
     .day {
       @include respond-to(33.125em) {
         display: inline-block;
-        margin-right: calc-em(6px, 11px);
+        margin-right: calc-em(4px, 11px);
       }
     }
     em {
