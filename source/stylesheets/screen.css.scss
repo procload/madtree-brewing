@@ -158,7 +158,7 @@ a {
     em {
       font-style: normal;
       display: none;
-      @include respond-to(25em) {
+      @include respond-to(27.5em) {
         display: inline;
       }
     }

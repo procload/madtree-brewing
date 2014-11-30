@@ -140,10 +140,8 @@ $ ->
       Tabletop.init
         key: "1QDM8s0t_Ilg8Px_vPpsyrSBT7UNGLGCWLJrddB2gWKo"
         callback: (data, tabletop) ->
-          insertBeers(data)
-          return
+          insertBeers(data.Sheet1.elements)
 
-        simpleSheet: true
 
     $("#ontap").on "click", "th a", (e) ->
       e.preventDefault()
