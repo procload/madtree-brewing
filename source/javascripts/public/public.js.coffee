@@ -134,18 +134,18 @@ $ ->
       theString = passedString.substring(0, passedString.length - 2)
       new Handlebars.SafeString(theString)
 
-
     Tabletop.init
       key: "1QDM8s0t_Ilg8Px_vPpsyrSBT7UNGLGCWLJrddB2gWKo"
       simpleSheet: true
       callback: (data, tabletop) ->
+        console.log data
         insertBeers(data)
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
 
 
-    $("#ontap").on "click", "th a", (e) ->
+    $("#ontap").on "click", "th .price", (e) ->
       e.preventDefault()
       $this = $(this)
       beer = $($this.closest("tr"))

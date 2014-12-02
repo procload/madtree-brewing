@@ -62,7 +62,12 @@ body.taproom {
       text-transform: uppercase;
       font-family: $nav-font-family;
       padding: 0;
-      a {
+      @extend %group;
+      .name {
+        float: left;
+        color: #FFF;
+      }
+      .price {
         float: right;
         font-family: $font-family-sans-serif;
         font-size: calc-em(13px, 18px);
