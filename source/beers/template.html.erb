@@ -17,6 +17,14 @@ current_page: "beers"
   recipe = beer.recipe
 %>
 
+<% content_for :meta_information do %>
+  <meta property="og:title" content='<%= beer_name %>' />
+  <meta property="og:image" content='<%= beer_image %>' />
+  <meta property="og:url" content='http://madtreebrewing.com/beer/<%= beer_url %>'/>
+  <meta property="og:description" content='<%= beer_description %>' />
+  <meta name="description" content='<%= beer_description %>' />
+<% end %>
+
 <% content_for :page_classes do %>
   interior beers <%= beer_url %>
 <% end %>
