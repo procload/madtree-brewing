@@ -135,7 +135,7 @@
       "malts" : "2-Row, Wheat, Carapils, Munich 10L",
       "ibu" : "29",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "misnomerRecipe.pdf",
       "availability" : "limited"
     },
      {
@@ -218,7 +218,7 @@
       "malts" : "2-Row, Vienna, Caramel 40L, Carapils",
       "ibu" : "70",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "simcoeRecipe.pdf",
       "image" : "/images/beers/flight-of-simcoe/img-tap.png",
       "availability" : "limited"
     },
@@ -232,7 +232,7 @@
       "malts" : "2-Row, Victory, Extra Special, Brown, Pale Chocolate, Roasted Barley",
       "ibu" : "32",
       "adjuncts" : "Vanilla Beans",
-      "recipe" : "",
+      "recipe" : "gnarlyBrownVanillaCoffeeRecipe.pdf",
       "availability" : "limited"
     },
     {
@@ -258,7 +258,7 @@
       "malts" : "2-Row, Munich 10L, Rye, Melanoidin, Barley Flakes",
       "ibu" : "14",
       "adjuncts" : "Cranberry, Walnut, Vanilla Beans",
-      "recipe" : "thePilgrimRecipe.pdf",
+      "recipe" : "pilgrimRecipe.pdf",
       "availability" : "limited"
     },
     {
@@ -299,7 +299,7 @@
       "malts" : "2-row, Chocolate, Caramel 60L, Roasted Barley, Black Malt, Carapils, Flaked Oats",
       "ibu" : "12",
       "adjuncts" : "Raspberries, Cocoa nibs",
-      "recipe" : "rubusCacaoRecipe.pdf",
+      "recipe" : "rubusRecipe.pdf",
       "image" : "/images/beers/rubus-cacao/img-tap.png",
       "availability" : "limited"
     },
