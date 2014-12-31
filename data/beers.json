@@ -11,7 +11,9 @@
       "adjuncts" : "",
       "recipe" : "happyAmberRecipe.pdf",
       "image" : "/images/beers/img-happy-amber-combined-rev.png",
-      "availability" : "regular"
+      "availability" : "regular",
+      "t_shirt" : "http://madtree-brewing.myshopify.com/collections/apparel/products/happy-amber-t-shirt",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/happy-amber-poster"
     },
     {
       "name" : "PsycHOPathy IPA",
@@ -25,7 +27,9 @@
       "adjuncts" : "",
       "recipe" : "psychopathyRecipe.pdf",
       "image" : "/images/beers/img-psychopathy-combined-rev.png",
-      "availability" : "regular"
+      "availability" : "regular",
+      "t_shirt" : "http://madtree-brewing.myshopify.com/collections/apparel/products/psychhopathy-t-shirt",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/psychopathy-poster"
     },
     {
       "name" : "Gnarly Brown",
@@ -39,7 +43,9 @@
       "adjuncts" : "",
       "recipe" : "gnarlyBrownRecipe.pdf",
       "image" : "/images/beers/img-gnarly-brown-combined-rev.png",
-      "availability" : "regular"
+      "availability" : "regular",
+      "t_shirt" : "http://madtree-brewing.myshopify.com/collections/apparel/products/gnarly-brown-t-shirt",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/gnarly-brown-poster"
     },
     {
       "name" : "Lift",
@@ -53,7 +59,8 @@
       "adjuncts" : "",
       "recipe" : "liftRecipe.pdf",
       "image" : "/images/beers/img-lift-combined-rev.png",
-      "availability" : "regular"
+      "availability" : "regular",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/lift-poster"
     },
     {
       "name" : "Identity Crisis",
@@ -109,7 +116,8 @@
       "adjuncts" : "",
       "recipe" : "spryeRecipe.pdf",
       "image" : "/images/beers/img-sprye-combined-rev.png",
-      "availability" : "seasonal"
+      "availability" : "seasonal",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/sprye-poster"
     },
      {
       "name" : "Sol Drifter",
@@ -123,7 +131,9 @@
       "adjuncts" : "",
       "recipe" : "solDrifterRecipe.pdf",
       "image" : "/images/beers/sol-drifter/img-sol-drifter-combined.png",
-      "availability" : "seasonal"
+      "availability" : "seasonal",
+      "t_shirt" : "http://madtree-brewing.myshopify.com/collections/apparel/products/sol-drifter-t-shirt",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/sol-drifter-poster"
     },
      {
       "name" : "Misnomer",
@@ -150,7 +160,9 @@
       "adjuncts" : "Molasses, Cinnamon, Nutmeg, Ginger, Allspice",
       "recipe" : "theGreatPumpCanRecipe.pdf",
       "image" : "/images/beers/img-pumpcan-combined.png",
-      "availability" : "seasonal"
+      "availability" : "seasonal",
+      "t_shirt" : "http://madtree-brewing.myshopify.com/collections/apparel/products/pumpcan-t-shirt",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/pumpcan-poster"
     },
      {
       "name" : "Thundersnow",
@@ -164,7 +176,9 @@
       "adjuncts" : "Nutmeg, Ginger, Vanilla Beans, Cinnamon, Cloves",
       "recipe" : "thundersnowRecipe.pdf",
       "image" : "/images/beers/img-thundersnow-combined.png",
-      "availability" : "seasonal"
+      "availability" : "seasonal",
+      "t_shirt" : "http://madtree-brewing.myshopify.com/collections/apparel/products/thundersnow-t-shirt",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/thundersnow-poster"
     },
      {
       "name" : "Batch One",

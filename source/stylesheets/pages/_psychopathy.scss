@@ -62,7 +62,7 @@ body.psychopathy {
       > span {
         color: #044034
       }
-    }  
+    }
   }
   .site-footer {
     background: #77732B;
@@ -81,6 +81,13 @@ body.psychopathy {
   .beer-stats {
     border-color: rgba(81, 78, 26, .8);
     background: rgba(81, 78, 26, .6);
+  }
+  .beer-merch {
+    border-color: rgba(81, 78, 26, .8);
+    background: rgba(81, 78, 26, .6);
+    h4 {
+      color: $psychopathy;
+    }
   }
 } //happy-amber
 

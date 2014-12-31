@@ -91,6 +91,13 @@ body.galaxy-high {
       color: $gray-lighter;
     }
   }
+  .beer-merch {
+    background: transparentize(darken($galaxy-high, 10%), .8);
+    border-color: transparentize($galaxy-high-alt, .5);
+    h4 {
+      color: $galaxy-high-alt;
+    }
+  }
 } //galaxy-high
 
 

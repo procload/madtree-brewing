@@ -668,6 +668,12 @@ a {
   .social-links {
     font-size: calc-em(24px);
     @extend %zero-list;
+    .untappd a {
+      font-size: calc-em(23px, 24px);
+      color: $red;
+      position: relative;
+      left: -2px;
+    }
   }
 }
 

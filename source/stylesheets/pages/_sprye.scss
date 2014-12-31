@@ -70,8 +70,14 @@ body.sprye {
   }
   .beer-stats {
     border-color: transparentize($sprye-alt, .2);
-
     background: transparentize($sprye-alt, .4);
+  }
+  .beer-merch {
+    border-color: transparentize($sprye-alt, .2);
+    background: transparentize($sprye-alt, .4);
+    h4 {
+      color: $sprye-alt;
+    }
   }
 } //happy-amber
 

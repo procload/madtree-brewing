@@ -93,10 +93,16 @@ body.lift {
   }
   .beer-stats {
     border-color: transparentize($lift-alt, .2);
-
     background: transparentize($lift-alt, .4);
   }
-} //happy-amber
+  .beer-merch {
+    border-color: transparentize($lift-alt, .2);
+    background: transparentize($lift-alt, .4);
+    h4 {
+      color: $lift-alt;
+    }
+  }
+} //lift
 
 
 

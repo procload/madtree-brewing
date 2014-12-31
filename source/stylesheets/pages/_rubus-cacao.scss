@@ -85,4 +85,11 @@ body.rubus-cacao {
     border-color: transparentize($rubus-cacao-alt, .2);
     background: transparentize($rubus-cacao-alt, .4);
   }
+  .beer-merch {
+    border-color: transparentize($rubus-cacao-alt, .2);
+    background: transparentize($rubus-cacao-alt, .4);
+    h4 {
+      color: $rubus-cacao-alt;
+    }
+  }
 } //happy-amber

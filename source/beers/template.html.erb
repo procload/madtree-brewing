@@ -15,6 +15,8 @@ current_page: "beers"
   hops = beer.hops
   adjuncts = beer.adjuncts
   recipe = beer.recipe
+  t_shirt = beer.t_shirt
+  poster = beer.poster
 %>
 
 <% content_for :meta_information do %>
@@ -73,5 +75,12 @@ current_page: "beers"
         <% end %>
       </table> <!-- /beer-stats -->
     </div> <!-- /beer-details -->
+    <% if t_shirt != nil || poster != nil %>
+      <div class="beer-merch">
+        <%= content_tag :h4, "Looking for more #{beer_name}?" %>
+        <%= link_to "Buy a shirt", poster if t_shirt != nil %>
+        <%= link_to "Buy a poster", poster if poster != nil %>
+      </div>
+    <% end %>
   </section> <!-- /beer-description -->
 </div>

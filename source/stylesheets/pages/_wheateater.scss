@@ -83,8 +83,14 @@ body.wheateater {
   }
   .beer-stats {
     border-color: transparentize($wheateater-alt, .2);
-
     background: transparentize($wheateater-alt, .4);
+  }
+  .beer-merch {
+    border-color: transparentize($wheateater-alt, .2);
+    background: transparentize($wheateater-alt, .4);
+    h4 {
+      color: $wheateater-alt;
+    }
   }
 } //happy-amber
 

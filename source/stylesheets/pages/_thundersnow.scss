@@ -82,7 +82,13 @@ body.thundersnow {
   }
   .beer-stats {
     border-color: transparentize($thundersnow-alt, .2);
-
     background: transparentize($thundersnow-alt, .4);
+  }
+  .beer-merch {
+    border-color: transparentize($thundersnow-alt, .2);
+    background: transparentize($thundersnow-alt, .4);
+    h4 {
+      color: $thundersnow-alt;
+    }
   }
 } //thundersnow

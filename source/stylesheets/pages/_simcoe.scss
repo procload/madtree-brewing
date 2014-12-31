@@ -83,8 +83,14 @@ body.flight-of-simcoe {
   }
   .beer-stats {
     border-color: transparentize($flight-of-simcoe-alt, .2);
-
     background: transparentize($flight-of-simcoe-alt, .4);
+  }
+  .beer-merch {
+    border-color: transparentize($flight-of-simcoe-alt, .2);
+    background: transparentize($flight-of-simcoe-alt, .4);
+    h4 {
+      color: $flight-of-simcoe-alt;
+    }
   }
 } //happy-amber
 

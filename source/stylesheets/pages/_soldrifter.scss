@@ -82,6 +82,13 @@ body.soldrifter {
     background: rgba(201, 10, 64, .6);
     border-color: rgba(201, 10, 64, .8);
   }
+  .beer-merch {
+    background: rgba(201, 10, 64, .6);
+    border-color: rgba(201, 10, 64, .8);
+    h4 {
+      color: $soldrifter;
+    }
+  }
 } //happy-amber
 
 

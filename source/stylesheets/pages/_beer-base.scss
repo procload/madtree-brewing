@@ -45,7 +45,6 @@ body.beers {
       .beer-images {
         margin: 0 0 calc-em(30px);
         @include respond-to(32.5em) {
-          margin-bottom: 0;
           @include span-columns(4);
         }
       }
@@ -107,6 +106,27 @@ body.beers {
     }
     th {
       color: $white;
+    }
+  }
+
+  .beer-merch {
+    @extend %group;
+    padding: calc-em(8px) calc-em(12px);
+    border: 5px solid;
+    clear: both;
+    display: block;
+    @include respond-to(43.75em) {
+      clear: left;
+      @include span-columns(4);
+    }
+    h4 {
+      font-size: calc-em(22px);
+    }
+    a {
+      display: inline-block;
+      width: 47%;
+      float: left;
+      font-size: calc-em(18px);
     }
   }
 } //beers

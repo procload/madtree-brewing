@@ -91,6 +91,13 @@ body.the-great-pumpcan {
       color: $gray-lighter;
     }
   }
+  .beer-merch {
+    background: transparentize(darken($great-pumpcan, 10%), .8);
+    border-color: transparentize($great-pumpcan-alt, .5);
+    h4 {
+      color: $great-pumpcan-alt;
+    }
+  }
 } //great-pumpcan
 
 
