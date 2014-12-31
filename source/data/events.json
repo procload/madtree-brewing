@@ -531,6 +531,48 @@
       "description" : "Head to Barley Corn's in Florence for your favorite MadTree beers on tap.",
       "date" : "Thursday, November 20",
       "time" : "4:00 p.m."
+    },
+    {
+      "title" : "Rookwood Hop Up Dinner",
+      "url" : "https://www.facebook.com/TheRookwood",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, January 7",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "BlackTart Cincinnati Collaboration Beer Release",
+      "url" : "https://www.facebook.com/events/950993548247535/",
+      "description" : "MadTree is the 2015 Collaboration Beer host and will be releasing BlackTart, an 8% ABV Tart Stout brewed with cinnamon, lactose, and blackberries.",
+      "date" : "Thursday, January 8",
+      "time" : "4:00 p.m."
+    },
+    {
+      "title" : "Butcher Bettie's Hop Up Dinner",
+      "url" : "http://www.butcherbetties.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, January 14",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "President's Room Hop Up Dinner",
+      "url" : "http://www.thepresidentsrm.com/",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, January 21",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Babushka Hop Up Dinner",
+      "url" : "https://www.facebook.com/BabushkaPierogies",
+      "description" : "Enjoy our weekly Hop Up dinner where we collaborate with a local restaurant to serve a unique pairing of food and beer.",
+      "date" : "Wednesday, January 28",
+      "time" : "6:00 p.m."
+    },
+    {
+      "title" : "Winter Bonanza II",
+      "url" : "https://www.facebook.com/events/826238157438141/",
+      "description" : "MadTree is turning two! Before the production facility, we hosted an annual celebration in our backyards with friends over big, delicious, and warming craft beers. Once again we want to share the Winter Bonanza with everyone!",
+      "date" : "Saturday, January 31",
+      "time" : "12:00 p.m."
     }
   ]
 }
