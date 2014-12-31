@@ -15,7 +15,10 @@ body.galaxy-high {
     &.section-navbar {
       background: $galaxy-high-nav;
       a {
-        color: $galaxy-high;
+        color: $white;
+        @include respond-to(41.25em) {
+          color: $galaxy-high-nav;
+        }
       }
       li.active {
       > a {
@@ -24,7 +27,10 @@ body.galaxy-high {
       } //active
       .dropdown-menu > li {
         > a {
-          color: $galaxy-high-alt;
+          color: $white;
+          @include respond-to(41.25em) {
+            color: $galaxy-high-alt;
+          }
           &:hover,
           &:focus {
             color: $white;

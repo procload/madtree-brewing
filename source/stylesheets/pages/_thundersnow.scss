@@ -17,9 +17,12 @@ body.thundersnow {
     background: transparentize($thundersnow-alt, .05);
     &.section-navbar {
       background: $thundersnow-alt;
-    background: transparentize($thundersnow-nav, .2);
+      background: transparentize($thundersnow-nav, .2);
       a {
-        color: $thundersnow-alt;
+        color: $white;
+        @include respond-to(41.25em) {
+          color: $thundersnow-alt;
+        }
       }
       li.active {
        > a {
