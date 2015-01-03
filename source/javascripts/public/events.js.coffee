@@ -11,10 +11,10 @@ $ ->
     now = new Date()
     year = now.getFullYear()
     event_date = "#{event.date}, #{year}"
-    #if Date.parse(event_date) > Date.parse(now)
-    currentEvents.push(event) unless event.title == ""
-    #else
-    # return
+    if Date.parse(event_date) > Date.parse(now)
+      currentEvents.push(event) unless event.title == ""
+    else
+      return
 
   Handlebars.registerHelper "listFirstThree", (events, options) ->
     currentEvents = []

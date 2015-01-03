@@ -17,7 +17,7 @@ $ ->
     feed = new Instafeed(
       get: "tagged"
       tagName: "madtreebrewing"
-      target: "instagram-photos" 
+      target: "instagram-photos"
       limit: "20"
       resolution: "standard_resolution"
       clientId: "6add59c8eadf4ca0a4f718bfda1e3699"
@@ -136,6 +136,7 @@ $ ->
 
     Tabletop.init
       key: "1QDM8s0t_Ilg8Px_vPpsyrSBT7UNGLGCWLJrddB2gWKo"
+      proxy: "https://madtree.s3.amazonaws.com/"
       simpleSheet: true
       callback: (data, tabletop) ->
         insertBeers(data)
@@ -157,7 +158,7 @@ $ ->
       client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
       client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
 
-    $.getJSON "../untappd.json", (result) ->
+    $.getJSON "https://madtree-data.herokuapp.com/untappd", (result) ->
       untappd =
         beerCount: result.beer_count
         breweryRating: result.rating.rating_score
