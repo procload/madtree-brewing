@@ -78,7 +78,7 @@ current_page: "beers"
     <% if t_shirt != nil || poster != nil %>
       <div class="beer-merch">
         <%= content_tag :h4, "Looking for more #{beer_name}?" %>
-        <%= link_to "Buy a shirt", poster if t_shirt != nil %>
+        <%= link_to "Buy a shirt", t_shirt if t_shirt != nil %>
         <%= link_to "Buy a poster", poster if poster != nil %>
       </div>
     <% end %>
