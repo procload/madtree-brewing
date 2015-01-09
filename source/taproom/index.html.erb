@@ -20,6 +20,18 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
 <% end %>
 
 <section class="taproom-info">
+  <section class="taproom-about">
+    <header class="taproom-about-header">
+      <h2>The MadTree Taproom</h2>
+    </header> <!-- /taproom-about-header -->
+    <div class="taproom-about-body">
+      <h3>What's on tap?</h3>
+      <p>
+        Carryout, bar, cafe, family hangout, club meeting&hellip; the MadTree taproom is a little bit of everything. Whether you want to fill up your growler or meet up with some of your friends for dinner and a beer, we are happy to have you drop in. See below for the latest rotating taps.
+      </p>
+      <div id="ontap"></div>
+    </div> <!--/taproom-about-body -->
+  </section> <!-- /taproom-about -->
   <section class="taproom-location">
     <div id="taproom-map" class="taproom-map">
     </div>
@@ -92,18 +104,6 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
         </tbody>
       </table> <!-- /table-striped -->
   </section> <!-- /taproom-location -->
-  <section class="taproom-about">
-    <header class="taproom-about-header">
-      <h2>The MadTree Taproom</h2>
-    </header> <!-- /taproom-about-header -->
-    <div class="taproom-about-body">
-      <h3>What's on tap?</h3>
-      <p>
-        Carryout, bar, cafe, family hangout, club meeting&hellip; the MadTree taproom is a little bit of everything. Whether you want to fill up your growler or meet up with some of your friends for dinner and a beer, we are happy to have you drop in. See below for the latest rotating taps.
-      </p>
-      <div id="ontap"></div>
-    </div> <!--/taproom-about-body -->
-  </section> <!-- /taproom-about -->
 </section> <!-- /taproom-info -->
 
 <script id="tap_template" type="text/x-handlebars-template">
@@ -125,7 +125,7 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
                 {{#if growler-64}}<td><span>64oz Growler:</span> ${{growler-64}}</td>{{/if}}
                 {{#if growler-40}}<td><span>40oz Growler:</span> ${{growler-40}}</td>{{/if}}
                 {{#if growler-32}}<td><span>32oz Growler:</span> ${{growler-32}}</td>{{/if}}
-                {{#if sixer}}<td><span>Sixer:</span> ${{sixer}}</td>{{/if}}
+                {{#if cans}}<td><span>Cans:</span> ${{cans}}</td>{{/if}}
               </tr>
             </table>
             </td>
