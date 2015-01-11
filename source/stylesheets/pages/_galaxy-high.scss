@@ -16,9 +16,6 @@ body.galaxy-high {
       background: $galaxy-high-nav;
       a {
         color: $white;
-        @include respond-to(41.25em) {
-          color: $galaxy-high-nav;
-        }
       }
       li.active {
       > a {
