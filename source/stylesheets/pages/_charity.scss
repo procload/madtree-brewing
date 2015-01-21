@@ -1,0 +1,44 @@
+body.charity {
+
+  .core-partners {
+    @extend %group;
+    @include pad(1,1);
+  } //core-partners
+
+  .core-partner {
+    @include span-columns(4.5);
+
+    &:nth-child(2n) {
+      @include omega;
+    }
+
+    &:nth-child(3n) {
+      clear: both;
+    }
+  } //core-partner
+
+  .monthly-partners {
+    @extend %group;
+  }
+
+  .current-and-next {
+    @include span-columns(6);
+  }
+
+  .previous-partners {
+    @include span-columns(6 omega);
+
+    .monthly-partner {
+      @include span-columns(3, 6);
+
+      &:nth-child(2n) {
+        @include omega;
+      }
+
+      &:nth-child(3n) {
+        clear: both;
+      }
+    } //monthly-partner
+  } //previous-partners
+}
+

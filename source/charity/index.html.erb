@@ -1,0 +1,62 @@
+---
+current_page: "charity"
+---
+
+<% content_for :meta_information do %>
+  <meta property="og:title" content='MadTree Brewing Artists' />
+  <meta property="og:image" content='http://madtreebrewing.com/images/cans.png' />
+  <meta property="og:url" content='http://madtreebrewing.com/community/artists.html'/>
+  <meta property="og:description" content='Meet the artists of MadTree Brewing.' />
+  <meta name="description" content='Meet the artists of MadTree Brewing.' />
+<% end %>
+
+<header class="">
+  <h2>Community Partners</h2>
+  <p class="intro">
+    <%= lorem.paragraph %>.
+  </p>
+  <p class="intro">
+    <%= lorem.paragraph %>.
+  </p>
+</header>
+
+<section class="money-raised">
+  <h3>Raised in 2015</h3>
+  <h4 class="money">$23,123</h4>
+</section> <!-- /money-raised -->
+
+<section class="core-partners">
+  <h3>Core Partners</h3>
+  <% 4.times do %>
+  <div class="core-partner">
+    <%= link_to image_tag("http://placehold.it/260x100"), "#" %>
+    <p><%= lorem.paragraph %>.</p>
+    <%= link_to "Donate Now", "#", class: "btn" %>
+  </div> <!-- /core-partner -->
+  <% end %>
+</section> <!-- /core-partners -->
+
+<section class="monthly-partners">
+  <div class="current-and-next">
+    <div class="current-partner">
+      <h3>February Partner</h3>
+      <h4 class="money">$10,341</h4>
+      <p><%= lorem.paragraph %>.</p>
+      <%= link_to "Donate Now", "#", class: "btn" %>
+    </div> <!-- /current-partner -->
+    <div class="on-deck">
+      <h3>On Deck</h3>
+    </div> <!-- /on-deck -->
+  </div> <!-- /current-and-next -->
+  <div class="previous-partners">
+    <h3>Previous Monthly Partners</h3>
+    <% 3.times do %>
+    <div class="monthly-partner">
+      <%= link_to image_tag("http://placehold.it/180x60"), "#" %>
+      <h4 class="money">$10,341</h4>
+      <p><%= lorem.paragraph %>.</p>
+      <%= link_to "View Charity", "#" %>
+    </div> <!-- /monthly-partner -->
+    <% end %>
+  </div> <!-- /previous-partners -->
+</section> <!-- /monthly-partners -->
