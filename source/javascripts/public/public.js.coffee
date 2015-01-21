@@ -36,8 +36,12 @@ $ ->
       e.preventDefault()
       $this = $(this)
       $header = $($this.closest(".employee__header"))
-      $header.next().slideDown("50")
-
+      if $header.hasClass "open"
+        $header.removeClass "open"
+        $header.next().slideUp("50")
+      else
+        $header.addClass "open"
+        $header.next().slideDown("50")
 
     if $("body.home").length > 0
       $("#map-canvas").storeLocator
