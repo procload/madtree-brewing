@@ -1,5 +1,39 @@
 body.charity {
 
+  h4.money {
+    color: $green;
+    font-size: calc-em(80px);
+  }
+
+  .main-content {
+    background: #FFF;
+    color: $black;
+  }
+
+  .charity-container {
+    @extend %container;
+  }
+
+  .charity-header {
+    text-align: center;
+    @extend %group;
+
+    h2 {
+      font-size: calc-em(48px);
+      line-height: 1.25;
+      margin-bottom: calc-em(8px, 48px);
+    }
+
+    @include pad(2,2);
+    .intro {
+      float: left;
+      width: 45%;
+      &:last-child {
+        float: right;
+      }
+    }
+  }
+
   .core-partners {
     @extend %group;
     @include pad(1,1);
@@ -19,6 +53,14 @@ body.charity {
 
   .monthly-partners {
     @extend %group;
+  }
+
+  .money-raised {
+    text-align: center;
+    h3 {
+      color: $gray-light;
+      font-size: calc-em(21px);
+    }
   }
 
   .current-and-next {
