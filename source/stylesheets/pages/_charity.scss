@@ -2,7 +2,19 @@ body.charity {
 
   h4.money {
     color: $green;
-    font-size: calc-em(80px);
+    text-align: center;
+    font-size: calc-em(32px);
+  }
+
+  h3 {
+    color: $gray-light;
+    font-size: calc-em(21px);
+    margin-bottom: calc-em(21px, 21px);
+  }
+
+  h5 {
+    color: $gray-light;
+    margin-bottom: 0; 
   }
 
   .main-content {
@@ -35,12 +47,17 @@ body.charity {
   }
 
   .core-partners {
-    @extend %group;
     @include pad(1,1);
+    margin-bottom: calc-em(32px);
   } //core-partners
 
+  .core-content {
+    @extend %group;
+  }
+
   .core-partner {
-    @include span-columns(4.5);
+    @include span-columns(4.5, 10);
+    text-align: center;
 
     &:nth-child(2n) {
       @include omega;
@@ -51,15 +68,33 @@ body.charity {
     }
   } //core-partner
 
+  .core-image {
+    display: block;
+    margin-bottom: calc-em(6px);
+  }
+
   .monthly-partners {
     @extend %group;
+    @include pad(1,1);
+    margin-bottom: calc-em(64px);
   }
 
   .money-raised {
     text-align: center;
-    h3 {
-      color: $gray-light;
-      font-size: calc-em(21px);
+
+    .money {
+      font-size: calc-em(80px);
+    }
+
+  }
+
+  .current-partner,
+  .on-deck,
+  .monthly-partner {
+    text-align: center;
+    a {
+      display: block;
+      margin-bottom: calc-em(12px);
     }
   }
 
@@ -70,8 +105,13 @@ body.charity {
   .previous-partners {
     @include span-columns(6 omega);
 
+    .previous-content {
+      @extend %group;
+    }
+
     .monthly-partner {
       @include span-columns(3, 6);
+      text-align: center;
 
       &:nth-child(2n) {
         @include omega;

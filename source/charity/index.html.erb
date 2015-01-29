@@ -2,6 +2,24 @@
 current_page: "charity"
 ---
 
+<%
+  core = [];
+  monthly = [];
+%>
+
+<% content_for :meta_information do %>
+  <meta property="og:title" content='MadTree Brewing Employees' />
+  <meta property="og:image" content='http://madtreebrewing.com/images/map.png' />
+  <meta property="og:url" content='http://madtreebrewing.com/community/employees.html'/>
+  <meta property="og:description" content='Meet the employees of MadTree Brewing.' />
+  <meta name="description" content='Meet the employees of MadTree Brewing.' />
+<% end %>
+
+<% data.charity.each do |charity| %>
+  <% core << charity if charity.type == "core" %>
+  <% monthly << charity if charity.type == "monthly" %>
+<% end %>
+
 <% content_for :meta_information do %>
   <meta property="og:title" content='MadTree Brewing Artists' />
   <meta property="og:image" content='http://madtreebrewing.com/images/cans.png' />
@@ -22,51 +40,47 @@ current_page: "charity"
   <header class="charity-header">
     <h2>Community Partners</h2>
     <p class="intro">
-      <%= lorem.paragraph %>.
+      In an effort to make more of an impact in our community, MadTree is excited to partner with the above non-profits. These organizations collectively represent our philanthropic interests. This is a diverse group doing standout work. Our investment in them is a commitment to becoming an integral part of the community; a goal at the heart of our mission.
     </p>
     <p class="intro">
-      <%= lorem.paragraph %>.
+      We strive to be a company not only respected for producing quality craft beer that competes at a national level but also a top employer and pillar of the community. We feel that our charitable involvements, giving back to our community, are part of the recipe for success. We're more than a brewery. We're MadTree.
     </p>
   </header>
 
-  <section class="money-raised">
-    <h3>Raised in 2015</h3>
-    <h4 class="money">$23,123</h4>
-  </section> <!-- /money-raised -->
-
   <section class="core-partners">
     <h3>Core Partners</h3>
-    <% 4.times do %>
-      <div class="core-partner">
-        <%= link_to image_tag("http://placehold.it/260x100"), "#" %>
-        <p><%= lorem.paragraph %>.</p>
-        <%= link_to "Donate Now", "#", class: "btn" %>
-      </div> <!-- /core-partner -->
-    <% end %>
+    <div class="core-content">
+      <% core.each do |charity| %>
+        <div class="core-partner">
+          <%= link_to image_tag(charity.image), charity.url, class: "core-image" %>
+          <p><%= charity.description %></p>
+          <%= link_to "Donate Now", charity.url, class: "btn" %>
+        </div> <!-- /core-partner -->
+      <% end %>
+    </div>
   </section> <!-- /core-partners -->
 
   <section class="monthly-partners">
     <div class="current-and-next">
+      <h3>February Partner</h3>
       <div class="current-partner">
-        <h3>February Partner</h3>
-        <h4 class="money">$10,341</h4>
-        <p><%= lorem.paragraph %>.</p>
+        <%= link_to image_tag(monthly[1].image), "#" %>
         <%= link_to "Donate Now", "#", class: "btn" %>
       </div> <!-- /current-partner -->
+      <h3>On Deck</h3>
       <div class="on-deck">
-        <h3>On Deck</h3>
+        <%= link_to image_tag(monthly.last.image), "#" %>
       </div> <!-- /on-deck -->
     </div> <!-- /current-and-next -->
     <div class="previous-partners">
       <h3>Previous Monthly Partners</h3>
-      <% 3.times do %>
+      <div class="previous-content">
         <div class="monthly-partner">
-          <%= link_to image_tag("http://placehold.it/180x60"), "#" %>
+          <%= link_to image_tag(monthly.first.image), "#" %>
+          <h5>January</h5>
           <h4 class="money">$10,341</h4>
-          <p><%= lorem.paragraph %>.</p>
-          <%= link_to "View Charity", "#" %>
         </div> <!-- /monthly-partner -->
-      <% end %>
+      </div>
     </div> <!-- /previous-partners -->
   </section> <!-- /monthly-partners -->
 </div>

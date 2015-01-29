@@ -1,0 +1,145 @@
+[
+    {
+      "name" : "Cincinnati Community ToolBank",
+      "image" : "/images/charity/img-toolbank.jpg",
+      "url" : "http://cincinnatitoolbank.org/",
+      "money" : "",
+      "description" : "The Cincinnati Community ToolBank is a nonprofit tool lending program that provides fellow not-for-profit organizations with year-round access to an inventory of tools for use in volunteer projects and for facility and grounds maintenance. We provide tools to enhance the charitable sector’s capacity to serve, facilitating hands-on volunteerism in the greater Cincinnati area.",
+      "type" : "core"
+    },
+    {
+      "name" : "CityLink Center",
+      "image" : "/images/charity/img-citylink.jpg",
+      "url" : "http://citylinkcenter.org/",
+      "money" : "",
+      "description" : "CityLink is a city-wide initiative started by a group of social service agencies who recognized the need for integrated services. CityLink leverages the strengths of various social service agencies in Cincinnati and continues to build support from a broad base of faith-based, corporate, foundation and individual supporters.",
+      "type" : "core"
+    },
+    {
+      "name" : "Green Umbrella",
+      "image" : "/images/charity/img-greenumbrella.jpg",
+      "url" : "http://www.greenumbrella.org",
+      "money" : "",
+      "description" : "The Green Umbrella is a non-profit organization working to improve the economic vitality and quality of life in the region around Cincinnati by maximizing the collective impact of individuals and organizations dedicated to environmental sustainability. Green Umbrella facilitates collaboration among over 200 area non-profits, businesses, educational institutions and governmental entities focused on the environmental aspects of sustainability.  With our members, we aim to meet the environmental, social, and economic needs of today while preserving the ability of future generations to do the same.",
+      "type" : "core"
+    },
+    {
+      "name" : "Starfire",
+      "image" : "/images/charity/img-starfire.jpg",
+      "url" : "http://www.starfirecouncil.org/#&panel1-1",
+      "money" : "",
+      "description" : "Starfire is focused on decreasing the social isolation felt by people with disabilities, by helping people with disabilities and their families connect to a network of friends, neighbors, and others in their community. Working with one person at a time, we believe we can decrease people's sense of loneliness, and work toward a good life. Starfire is a conduit to relationships. So whether you are a person with a disability, a family member, or a community member looking to get involved, we will help you connect to people who you share things in common with.",
+      "type" : "core"
+    },
+    {
+      "name" : "Cystic Fibrosis",
+      "image" : "/images/charity/img-cysticfibrosis.jpg",
+      "url" : "",
+      "money" : "",
+      "description" : "",
+      "type" : "monthly",
+      "month" : "January"
+    },
+    {
+      "name" : "Interfaith Hospitality Network",
+      "image" : "/images/charity/img-interfaith.jpg",
+      "url" : "",
+      "money" : "",
+      "description" : "",
+      "type" : "monthly",
+      "month" : "February"
+    },
+    {
+      "name" : "Give Back Cincinnati",
+      "image" : "/images/charity/img-giveback.jpg",
+      "url" : "",
+      "money" : "",
+      "description" : "",
+      "type" : "monthly",
+      "month" : "March"
+    }
+    /* { */
+    /*   "name" : "Autism Society", */
+    /*   "image" : "/images/charity/img-autism.jpg", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "April" */
+    /* }, */
+    /* { */
+    /*   "name" : "Riding Forward", */
+    /*   "image" : "/images/charity/img-ridingforward.jpg", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "May" */
+    /* }, */
+    /* { */
+    /*   "name" : "The First Tee of Greater Miami Valley", */
+    /*   "image" : "/images/charity/img-firsttee.jpg", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "June" */
+    /* }, */
+    /* { */
+    /*   "name" : "The Children’s Home of Cincinnati", */
+    /*   "image" : "/images/charity/img-childrenshome.jpg", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "July" */
+    /* }, */
+    /* { */
+    /*   "name" : "Lab Rescue", */
+    /*   "image" : "/images/charity/img-labrescue.jpg", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "August" */
+    /* }, */
+    /* { */
+    /*   "name" : "CancerFree Kids", */
+    /*   "image" : "/images/charity/img-cancerfree.jpg", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "September" */
+    /* }, */
+    /* { */
+    /*   "name" : "I Have Wings Breast Cancer Foundation", */
+    /*   "image" : "/images/charity/img-wings.jpg", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "October" */
+    /* }, */
+    /* { */
+    /*   "name" : "University of Dayton: Christmas off Campus", */
+    /*   "image" : "/images/charity/", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "November" */
+    /* }, */
+    /* { */
+    /*   "name" : "Ohio River Foundation", */
+    /*   "image" : "/images/charity/", */
+    /*   "url" : "", */
+    /*   "money" : "", */
+    /*   "description" : "", */
+    /*   "type" : "monthly", */
+    /*   "month" : "December" */
+    /* } */
+]
+
+
+
