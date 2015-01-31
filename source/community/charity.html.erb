@@ -1,5 +1,6 @@
 ---
-current_page: "charity"
+current_page: "community"
+sub_page: "charity"
 ---
 
 <%
@@ -8,11 +9,9 @@ current_page: "charity"
 %>
 
 <% content_for :meta_information do %>
-  <meta property="og:title" content='MadTree Brewing Employees' />
+  <meta property="og:title" content='MadTree Brewing Community Partners' />
   <meta property="og:image" content='http://madtreebrewing.com/images/map.png' />
-  <meta property="og:url" content='http://madtreebrewing.com/community/employees.html'/>
-  <meta property="og:description" content='Meet the employees of MadTree Brewing.' />
-  <meta name="description" content='Meet the employees of MadTree Brewing.' />
+  <meta property="og:url" content='http://madtreebrewing.com/community/charity.html'/>
 <% end %>
 
 <% data.charity.each do |charity| %>
@@ -25,7 +24,7 @@ current_page: "charity"
 <% end %>
 <% content_for :site_header do %>
   <%= partial '../partials/interior-nav' %>
-  <%= partial '../partials/section-nav-beer', locals: { current_page: 'limited' } %>
+  <%= partial '../partials/section-nav-community' %>
 <% end %>
 
 <div class="charity-container">
