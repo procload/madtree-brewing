@@ -1,5 +1,9 @@
 body.charity {
 
+  .site-header {
+    margin-bottom: 0;
+  }
+
   h4.money {
     color: $green;
     text-align: center;
@@ -14,7 +18,12 @@ body.charity {
 
   h5 {
     color: $gray-light;
-    margin-bottom: 0; 
+    margin-bottom: 0;
+  }
+
+  hr {
+    width: 60%;
+    margin-bottom: calc-em(72px);
   }
 
   .main-content {
@@ -27,8 +36,13 @@ body.charity {
   }
 
   .charity-header {
-    text-align: center;
     @extend %group;
+    text-align: center;
+    margin-bottom: calc-em(32px);
+
+    @include respond-to(640px) {
+      @include pad(2,2);
+    }
 
     h2 {
       font-size: calc-em(48px);
@@ -36,19 +50,22 @@ body.charity {
       margin-bottom: calc-em(8px, 48px);
     }
 
-    @include pad(2,2);
     .intro {
-      float: left;
-      width: 45%;
-      &:last-child {
-        float: right;
+      @include respond-to(480px) {
+        float: left;
+        width: 45%;
+        &:last-child {
+          float: right;
+        }
       }
     }
   }
 
   .core-partners {
-    @include pad(1,1);
     margin-bottom: calc-em(32px);
+    @include respond-to(640px) {
+      @include pad(1,1);
+    }
   } //core-partners
 
   .core-content {
@@ -56,8 +73,12 @@ body.charity {
   }
 
   .core-partner {
-    @include span-columns(4.5, 10);
     text-align: center;
+
+    @include respond-to(480px) {
+      @include span-columns(4.5, 10);
+
+    }
 
     &:nth-child(2n) {
       @include omega;
@@ -98,20 +119,34 @@ body.charity {
     }
   }
 
+  .current-partner {
+    margin-bottom: calc-em(32px);
+  }
+
   .current-and-next {
-    @include span-columns(6);
+    margin-bottom: calc-em(64px);
+
+    @include respond-to(480px) {
+      @include span-columns(4.5);
+      margin-bottom: 0;
+    }
   }
 
   .previous-partners {
-    @include span-columns(6 omega);
+    @include respond-to(480px) {
+      @include span-columns(4.5 omega);
+    }
 
     .previous-content {
       @extend %group;
     }
 
     .monthly-partner {
-      @include span-columns(3, 6);
       text-align: center;
+
+      @include respond-to(480px) {
+        @include span-columns(2.25, 4.5);
+      }
 
       &:nth-child(2n) {
         @include omega;

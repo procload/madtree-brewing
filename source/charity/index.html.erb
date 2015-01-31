@@ -20,14 +20,6 @@ current_page: "charity"
   <% monthly << charity if charity.type == "monthly" %>
 <% end %>
 
-<% content_for :meta_information do %>
-  <meta property="og:title" content='MadTree Brewing Artists' />
-  <meta property="og:image" content='http://madtreebrewing.com/images/cans.png' />
-  <meta property="og:url" content='http://madtreebrewing.com/community/artists.html'/>
-  <meta property="og:description" content='Meet the artists of MadTree Brewing.' />
-  <meta name="description" content='Meet the artists of MadTree Brewing.' />
-<% end %>
-
 <% content_for :page_classes do %>
   interior charity
 <% end %>
@@ -60,23 +52,24 @@ current_page: "charity"
     </div>
   </section> <!-- /core-partners -->
 
+  <hr />
+
   <section class="monthly-partners">
     <div class="current-and-next">
       <h3>February Partner</h3>
       <div class="current-partner">
-        <%= link_to image_tag(monthly[1].image), "#" %>
-        <%= link_to "Donate Now", "#", class: "btn" %>
+        <%= image_tag(monthly[1].image) %>
       </div> <!-- /current-partner -->
       <h3>On Deck</h3>
       <div class="on-deck">
-        <%= link_to image_tag(monthly.last.image), "#" %>
+        <%= image_tag(monthly.last.image) %>
       </div> <!-- /on-deck -->
     </div> <!-- /current-and-next -->
     <div class="previous-partners">
       <h3>Previous Monthly Partners</h3>
       <div class="previous-content">
         <div class="monthly-partner">
-          <%= link_to image_tag(monthly.first.image), "#" %>
+          <%= image_tag(monthly.first.image) %>
           <h5>January</h5>
           <h4 class="money">$10,341</h4>
         </div> <!-- /monthly-partner -->
