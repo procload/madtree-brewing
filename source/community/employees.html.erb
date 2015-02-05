@@ -24,8 +24,8 @@ sub_page: "founders"
 
 <% data.employees.each do |employee| %>
   <% founders << employee if employee.department == "Founder" %>
-  <% ops << employee if employee.department == "Op Support" %>
-  <% office << employee if employee.department == "Accounting/Office" %>
+  <% ops << employee if employee.department == "Quality Lab" %>
+  <% office << employee if employee.department == "Front Office" %>
   <% production << employee if employee.department == "Production" %>
   <% sales << employee if employee.department == "Sales" %>
   <% packaging << employee if employee.department == "Packaging" %>
@@ -51,7 +51,7 @@ sub_page: "founders"
   <div class="employee-group">
   <%= partial 'partials/employee', locals: { employee: packaging } %>
   </div>
-  <h3>Op Support</h3>
+  <h3>Quality Lab</h3>
   <div class="employee-group">
   <%= partial 'partials/employee', locals: { employee: ops } %>
   </div>
@@ -59,7 +59,7 @@ sub_page: "founders"
   <div class="employee-group">
   <%= partial 'partials/employee', locals: { employee: sales } %>
   </div>
-  <h3>Accounting/Office</h3>
+  <h3>Front Office</h3>
   <div class="employee-group">
   <%= partial 'partials/employee', locals: { employee: office } %>
   </div>
