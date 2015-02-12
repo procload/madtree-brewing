@@ -3,7 +3,7 @@
       "name" : "Simon",
       "title" : "Canicidal Maniac",
       "bio" : "Simon, originally from Scranton PA, graduated from Lycoming College with a degree in Marketing in 2008. Immediately moving to Cincinnati he worked as a sales rep for an advertising specialties company for several years. During this time he began home brewing and discovering craft beers. After graduating from Xavier University with an M.B.A. he decided to pursue his passion of craft beer and search for work in the brewing industry of Cincinnati, which is how he came to MadTree and traded a cubicle for keg racks.",
-      "department" : "Production",
+      "department" : "Production/Packaging",
       "photo" : "img-simon.jpg"
     },
     {
@@ -17,14 +17,14 @@
       "name" : "Matt",
       "title" : "Brewery Utility Man",
       "bio" : "Matt is a native of Cincinnati, Ohio and graduated from Penn State University with a degree in Economics and Business Law.  Upon his return to Cincinnati after school to work, a good high-school friend showed Matt some old wine and beer making equipment he had found in his dad's basement and as they often say, the rest is history.  Homebrewing began as a hobby but quickly spiraled into a full time obsession, including Matt building a fully functional brewery in the basement of his home and brewing two, three, and even four times a month.  That obsession took the next step when he began looking for opportunities to volunteer at local breweries around town, and when Matt enrolled in The Siebel Institute of Technology for some formal brewing education.  What once was a frequent day-dream became a true reality when Matt got the opportunity to trade in his dress shoes for a pair of brewer's boots and join MadTree as an Assistant Brewer & Cellarman, and he's never looked back.",
-      "department" : "Production",
+      "department" : "Production/Packaging",
       "photo" : "img-matt.jpg"
     },
     {
       "name" : "Kevin",
       "title" : "Fugilist/Brewer",
       "bio" : "Kevin was born and raised in Cincinnati.  He grew up in Oakley and Madisonville and currently resides in Pleasant Ridge. During his early drinking days he was known to enjoy a \"champagne\" beer.  He started trying craftier beers as the years went by and began getting interested in trying to concoct his own.  A friend of his used to teach classes on homebrewing when it was first legalized and was kind enough to share his knowledge.  He is currently enrolled at The Siebel Institute working on his Associates in Brewing degree.  Kevin is married to Elizabeth and has a son Aiden (5) a daughter Caroline (4) and a dog Megan (?).",
-      "department" : "Production",
+      "department" : "Quality Lab",
       "photo" : "img-kevin.png"
     },
     {
@@ -38,7 +38,7 @@
       "name" : "Ryan",
       "title" : "Black Beerd/Brewer",
       "bio" : "Ryan was born and raised in Cincinnati, Ohio (the westside that is!).  He found a passion for the automotive industry at a very young age.  He went to Cincinnati State Community College to follow that passion and studied in Automotive Service Management.  Ryan, not satisfied with the \"normal\" beer selection, found himself in search of something more diverse.  Around 2008 or so he started homebrewing with a close friend and the rest is history.  Now the wrench has been traded in for the mash paddle and he couldn't be happier.  He is currently living in Northern Kentucky with his wife, Katie.",
-      "department" : "Production",
+      "department" : "Production/Packaging",
       "photo" : "img-ryan.jpg"
     },
     {
@@ -53,7 +53,7 @@
       "title" : "Global Can'bassador - Central Ohio Division",
       "bio" : "Adam Pratt grew up in Western New York drinking Canadian pilsner and playing street hockey. After earning his Bachelor's degree in English and a penchant for good beer from Denison University, Adam and his wife Stephanie moved to Cincinnati to be near her family and find gainful employment. They settled in the community of Pleasant Ridge, and Adam followed a career path in restaurant and retail management. After several years as a Beer & Wine Buyer for a global specialty retailer, the siren's call of Central Ohio once again summoned him North. He brings with him Pleasant Ridge's finest export - MadTree Brewing cans and kegs - to share with the good citizens of Ohio. Adam, Stephanie, their daughter Harper, and their dogs Ollie &amp; Cooper live in Columbus.",
       "department" : "Sales",
-      "photo" : "img-adamp.jpg"
+      "photo" : "img-adam.jpg"
     },
     {
       "name" : "Dusty",
@@ -73,7 +73,7 @@
       "name" : "Pat",
       "title" : "Sir Cans-A-Lot/Brewer",
       "bio" : "Pat was born in Minnesota and grew up in Wisconsin.  He graduated from the University of Wisconsin with a bachelor&rsquo;s degree in psychology and then moved back to the Land of 10,000 Lakes shortly after.  A few years ago his wife bought him a home brewing kit for his birthday and this is where his passion for good beer started.  He has been making beer for friends and family ever since.  Pat moved to Cincinnati from Minnesota in 2013 and started volunteering the very next day.  He kept volunteering and eventually ended up becoming an employee. He is currently living in Oakley with his wife, Jenna and their dog, Roscoe.",
-      "department" : "Production",
+      "department" : "Production/Packaging",
       "photo" : "img-pat.jpg"
     },
     {
@@ -87,7 +87,7 @@
       "name" : "Garrett",
       "title" : "The Can Whisperer/Cellarman",
       "bio" : "Garrett is a native of Cincinnati, Ohio and the youngest son of a Local 392 pipefitter and CPS school teacher. After graduating from Walnut Hills HS, Garrett attended the University of Cincinnati studying both engineering and art history. While doing a bit of soul searching Garrett found himself opening an art gallery with friends in Brighton, volunteering at a few non-profits such as Public Allies, and discovering the joys of home brewing; after Garrett moved to Columbus this hobby blossomed into passion through working at a new brewery. Garrett attended the Siebel Institute in the fall of 2013, moved back home in the Spring and started volunteering at MadTree. He is thrilled and proud to be a part of the MadTree family. He can usually be found watching as much footie as possible and drinking a pint of something hoppy (Sprye please).",
-      "department" : "Production",
+      "department" : "Production/Packaging",
       "photo" : "img-garrett.jpg"
     },
     {
@@ -115,7 +115,7 @@
       "name" : "Dave Winchell",
       "title" : "Canny Devito",
       "bio" : "Dave and his Family moved to Cincinnati in 1987. He graduated from Sycamore High School and moved on to U.C. where a demon pulled him aside and convinced him that becoming a Restaurant Manager was better than finishing his college career. After managing many a restaurants and bars, trying to make a career at Improv Comedy and catering for the rock stars, he landed at the Incline Public House. His natural love for craft beer suddenly exploded. He discovered a new community of beer lovers, of beer friends and of beer itself. Dave started volunteering at MadTree and they kept hoping he would go away but his tenacity proved endearing. Now a volunteer turned employee, Dave works on the packaging line while absorbing all the information surrounding him. When he goes home he's got his girlfriend Sharon, 2 cats, a dog and a ferret all lovingly waiting for him.",
-      "department" : "Packaging",
+      "department" : "Production/Packaging",
       "photo" : "img-dave.jpg"
     },
     {
@@ -131,5 +131,68 @@
       "bio" : "Brain’s background is filled with a love of all things booze and food; early champion of the seriousness of food and beer pairings being just as viable as wine. Born in raised in Canton, Ohio, Brian has spent most of the last 28 years as a Cincinnati resident and is most often perched behind or in front of its greatest bars, from the seedy to the classy. While food and wine and liquor are all part of his passion, beer has really become his primary focus. Recently made more available (i.e. slightly unemployed) he approached the brewers with a plan to invite all of Cincinnati’s finest restaurateurs into the walls of the taproom, creating the holy marriage of great food and great beer, that is known as Hop Up Dinners, every Wednesday at MadTree…",
       "department" : "Taproom",
       "photo" : "img-brian.jpg"
+    },
+    {
+      "name" : "Sarah",
+      "title" : "VP of Making Things Cool",
+      "bio" : "Sarah was born and raised in Cincinnati (Deerfield Township, back when it was mostly cornfields) and currently resides in Pleasant Ridge. School was never her thing but she ended up going to college twice (go figure) and eventually ended up with a degree in Visual Communication Design from the Art Academy of Cincinnati. While obtaining her last degree she worked slinging produce at a global specialty retailer. When she moved from Produce onto the Marketing Team, she was introduced to the MadTree guys. A lover of all things Local, and amazing beer, Sarah’s wish of joining the MadTree family came true in December of 2014. She is wicked excited to be a part of the MadTree Family, supporting it as it grows. In her free time you can find her enjoying time with her boyfriend, family and friends (including her dog and 3 cats), enjoying the outdoors and seeing live music. A lover of animals she volunteers each week at Save the Animals Foundation taking care of the dogs.",
+      "department" : "Front Office",
+      "photo" : "img-sarah.jpg"
+    },
+    {
+      "name" : "Chuck",
+      "title" : "Canverse All-Star",
+      "bio" : "Chuck graduated from Coconut Creek High School in Coconut Creek, Florida, though he’s a native of the west-side of Cincinnati.  After high school he tried his hands in many career fields while attending college and trade school.  After school, Chuck joined the Air Force, stationed in Denver, CO where he worked in telecommunications for the armed service. In Denver he discovered craft beer while attending one of the first GABFs. Chuck began to brew with his brother and brother-in-law once he moved back to the area. After completing his degree in Information Technology he caught a lucky break and landed a position at MadTree after just a few weeks of volunteering! In his free time he enjoys photography, boats and the outdoors.",
+      "department" : "Production/Packaging",
+      "photo" : "img-chuck.jpg"
+    },
+    {
+      "name" : "Trevor",
+      "title" : "Beer Cansultant",
+      "bio" : "Trevor was born and raised in Cincinnati, OH.  During college he went on a trip with his brother to Boston where he toured the Samuel Adams brewery. In awe of the beer making process as well as how many styles of beer available, upon his return, he was eager to try more craft beer and branch out from what the rest of the college crowd was drinking.  After graduating from Miami University, he returned to Cincinnati and started homebrewing with a fellow friend in his spare time. Coincidentally, MadTree had just opened so Trevor inquired about getting involved. He started volunteering whenever his schedule would allow, eventually leaving his desk job to join the MadTree community as an employee.  Trevor enjoys spending time and going on adventures with his wonderful wife and handsome son.",
+      "department" : "Production/Packaging",
+      "photo" : "img-trevor.jpg"
+    },
+    {
+      "name" : "Madison",
+      "title" : "Beerista",
+      "bio" : "Madison is proud to call Cincinnati her hometown. She realized her love for craft beer while attending the University of Cincinnati. Though she may may have been your typical penny-pinching college student, Madison never skimped when it came to enjoying quality, hoppy beers. After graduating with a degree in Journalism, Madison took her passion international, spending eight weeks backpacking through Europe, sipping on the finest craft beers that each country had to offer. Madison lived in Cleveland while Cincinnati’s craft beer scene exploded. Needless to say, she was ecstatic upon returning home. She began tending bar at Firehouse Grill where 22 constantly rotating local taps introduced her to what Cincinnati’s new breweries had to offer. While impressed by the diversity of flavors from all, MadTree swept her off her feet from the very first sip. Beginning as a volunteer at the first Winter Bonanza, Madison officially became a member of the MadTree family in September 2014.",
+      "department" : "Taproom",
+      "photo" : "img-madison.jpg"
+    },
+    {
+      "name" : "Lauren",
+      "title" : "The Responsible One",
+      "bio" : "Lauren was born and raised in Cincinnati. After attending high school in Amelia she went to South Hampton College, a division of Long Island University, where she studied Psychology and Biology. She worked for ten years in the Non Profit Sector and was introduced to the guys at MadTree through collaborative projects. Lauren began volunteering in February of 2014, officially joining the MadTree family in September of 2014. Lauren comes from a long lineage of Domestic Light Beer drinkers, but, thankfully, her palate has had a change of heart. Once she began trying different craft beers, she never looked back. If Madmann were on tap year round you could find her living off of it. She is also obsessed with the deliciousness that is Pilgrim Pale Ale. When she isn’t working you will find her hanging out with her husband, two children and two dogs. She enjoys DIY projects and working on her house. A self-proclaimed foodie, she enjoys trying new foods and recipes.",
+      "department" : "Front Office",
+      "photo" : "img-lauren.jpg"
+    },
+    {
+      "name" : "Zack",
+      "title" : "Beermonger",
+      "bio" : "Zack grew up just up the hill from MadTree in Pleasant Ridge. He attended Purcell Marian HS followed by Midwest Culinary Institute at Cincinnati State. Working in the service industry as a Cheesemonger, Zack began to develop a taste for more bold flavors and naturally, turned to craft beer and homebrewing. As time went on his passion for craft beer snowballed into an obsession to learn any and every beer style. A few years later, Zack discovered MadTree and knew he wanted to be a part of something amazing happening so close to his childhood neighborhood. After becoming a taproom regular, a brewer job opening came available, and Zack jumped at the opportunity. He has been learning every day since.",
+      "department" : "Production/Packaging",
+      "photo" : "img-zach.jpg"
+    },
+    {
+      "name" : "Anthony",
+      "title" : "",
+      "bio" : "Anthony grew up in Cincinnati, OH, attended SCD followed by the University of Toledo. He worked at Dilly Cafe where his passion for craft beer and fine wine was sparked. He then became the maître d' of Hugo Southern Sophisticated in Oakley. Currently Anthony is the Beverage Director at Dutch's Larder and helps the MadTree crew on Thursday and Friday lunch shifts. ‘I help out at MadTree because it's one of my favorite breweries and I think the people that are involved are passionate and do an amazing job!’",
+      "department" : "Taproom",
+      "photo" : "img-anthony.jpg"
+    },
+    {
+      "name" : "Rick",
+      "title" : "Nightshift",
+      "bio" : "Rick found a love for craft beer early on at the University of Cincinnati:  borne of research-paper procrastination and a skepticism that the “Champagne of Beers” is truly top-shelf, drinking fine potables became a cherished hobby of this one-time English Lit major.  After graduating in 2007, Rick decided to pursue a longstanding interest in farming by relocating to a small organic market farm in central Maine where he managed a weekly farm stand in Waterville and grew most commonly-known vegetables (and some rarer ones too - - Daikon! Celeriac! Purple Viking potatoes!)  Ultimately, Rick came back to his hometown for a quick stint farming in Mason, OH before delving into the tastefully messy world of brewing beer here at MadTree, where he works, drinks, cavorts and feels definitively at home. In his off time, you can find this guy either hiking with his dog Maple or playing pool at The Comet.",
+      "department" : "Production/Packaging",
+      "photo" : "img-rick.jpg"
+    },
+    {
+      "name" : "Tyler",
+      "title" : "Not Jeff",
+      "bio" : "Tyler, a Cincinnati native, received a Bachelor of Science in Biology from the University of Cincinnati. Tyler’s older brother, Jeff, started MadTree with Kenny and Brady and threatened Tyler with a lifetime of noogies if he didn’t help out. Tyler has helped with brewing duties, assisted on the packaging line, bartended in the taproom, and currently puts his degree to use in the quality control lab.",
+      "department" : "Quality Lab",
+      "photo" : "img-tyler.jpg"
     }
 ]

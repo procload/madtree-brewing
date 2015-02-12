@@ -8,7 +8,6 @@ sub_page: "founders"
   office = [];
   production = [];
   sales = [];
-  packaging = [];
   taproom = [];
 %>
 
@@ -25,9 +24,8 @@ sub_page: "founders"
   <% founders << employee if employee.department == "Founder" %>
   <% ops << employee if employee.department == "Quality Lab" %>
   <% office << employee if employee.department == "Front Office" %>
-  <% production << employee if employee.department == "Production" %>
+  <% production << employee if employee.department == "Production/Packaging" %>
   <% sales << employee if employee.department == "Sales" %>
-  <% packaging << employee if employee.department == "Packaging" %>
   <% taproom << employee if employee.department == "Taproom" %>
 <% end %>
 
@@ -44,10 +42,6 @@ sub_page: "founders"
   <h4>Production</h4>
   <div class="employee-group">
     <%= partial 'partials/employee', locals: { employee: production } %>
-  </div>
-  <h4>Packaging</h4>
-  <div class="employee-group">
-  <%= partial 'partials/employee', locals: { employee: packaging } %>
   </div>
   <h4>Quality Lab</h4>
   <div class="employee-group">

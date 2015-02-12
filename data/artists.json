@@ -15,7 +15,7 @@
     },
     {
       "name" : "TOM POST",
-      "title" : "HAPPY AMBER, THE GREAT PUMPCAN AND LIFT ILLUSTRATOR",
+      "title" : "“Happy Amber, Great PumpCan, and Lift",
       "bio" : "Growing up in Ohio, Tom can remember being excited about drawing as far back as age five. A freelance illustrator with a BFA in Fine Arts from Columbus College of Art and Design, he has a knack for creating unique, inspirational art for the project at hand. He has done advertising work for a variety of corporate clients and when time permits he pulls out his favorite medium, oil paints. Tom has been pursuing oil painting and expanding his teaching activities since 2001. He specializes in portraiture, figurative and painting en plein air. Tom is a member of the Cincinnati Art Club and his paintings are in the personal collection of various notable collectors. His works have been shown at The Cincinnati Nature Center, Homerama and can currently be seen at The Raymond Gallery in Hyde Park, Ohio.",
       "website" : "http://tompostart.com/",
       "photo" : "img-tom.jpg"
@@ -61,6 +61,20 @@
       "bio" : "Since the mid-90’s, John Doubet has partnered with some of the most respected brands around the globe. Through these successful synergies Doubet has garnered numerous advertising and design awards. In addition, his work has been published in leading industry trades such as Graphis (widely regarded as an international bastion of design and visual imagery) and Print (which annually features the most comprehensive survey of graphic design in the US) magazines. Further, Doubet is the proud recipient of a national American Advertising Award (ADDY). Doubet has designed successful campaigns in multiple disciplines ranging from the retail industry to consumer packaging to business-to-business. His unique ability to adapt his creative and vision to meet and exceed the needs of the target audience is the driving force behind his branding success. A self-professed minimalist, Doubet believes it's the simplest and cleanest ideas that breakthrough a saturated marketplace. When not expanding a company’s position in the marketplace, you can find him recording music, golfing, fishing, hiking, and spending time with his family. And not necessarily in that order.",
       "website" : "http://www.doubetdesign.com/",
       "photo" : "img-johnd.jpg"
+    },
+    {
+      "name" : "Emil Robinson",
+      "title" : "",
+      "bio" : "Emil is an artist and educator based in Cincinnati, Ohio. His work has been featured in numerous national and international exhibitions. Emil has had solo exhibitions in London and the Taft Museum of Art here in Cincinnati. In addition, his work was featured at the Smithsonian Institution in Washington, D.C. Most of Emil's art takes the form of painting and drawing which he teaches at the University of Cincinnati. Emil has Bachelor’s and Master’s degree in fine art, and has a PhD in libation enjoyment. For more of Emil's work please visit emilrobinson.com",
+      "website" : "http://emilrobinson.com",
+      "photo" : "img-emil.jpg"
+    },
+    {
+      "name" : "Nick Sturges",
+      "title" : "",
+      "bio" : "Originally from Northwest Indiana, he relocated to Indianapolis shortly after high school. He is currently a Firearms Instructor with the United States Coast Guard. His art portfolio includes clothing, poster, and tattoo design.",
+      "website" : "",
+      "photo" : "img-nick.jpg"
     }
 ]
 
