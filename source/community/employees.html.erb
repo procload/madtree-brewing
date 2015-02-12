@@ -1,0 +1,74 @@
+---
+current_page: "community"
+sub_page: "founders"
+---
+<%
+  founders = [];
+  ops = [];
+  office = [];
+  production = [];
+  sales = [];
+  packaging = [];
+  taproom = [];
+%>
+
+<% content_for :meta_information do %>
+  <meta property="og:title" content='MadTree Brewing Employees' />
+  <meta property="og:image" content='http://madtreebrewing.com/images/cans.png' />
+  <meta property="og:url" content='http://madtreebrewing.com/community/employees.html'/>
+  <meta property="og:description" content='Meet the employees of MadTree Brewing.' />
+  <meta name="description" content='Meet the employees of MadTree Brewing.' />
+<% end %>
+
+
+<% data.employees.each do |employee| %>
+  <% founders << employee if employee.department == "Founder" %>
+  <% ops << employee if employee.department == "Quality Lab" %>
+  <% office << employee if employee.department == "Front Office" %>
+  <% production << employee if employee.department == "Production" %>
+  <% sales << employee if employee.department == "Sales" %>
+  <% packaging << employee if employee.department == "Packaging" %>
+  <% taproom << employee if employee.department == "Taproom" %>
+<% end %>
+
+<% content_for :page_classes do %>
+  interior
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+  <%= partial '../partials/section-nav-community' %>
+<% end %>
+
+<div class="container">
+  <h2>Employees</h2>
+  <h4>Production</h4>
+  <div class="employee-group">
+    <%= partial 'partials/employee', locals: { employee: production } %>
+  </div>
+  <h4>Packaging</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: packaging } %>
+  </div>
+  <h4>Quality Lab</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: ops } %>
+  </div>
+  <h4>Sales</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: sales } %>
+  </div>
+  <h4>Front Office</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: office } %>
+  </div>
+  <h4>Taproom</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: taproom } %>
+  </div>
+  <h4>Founders</h4>
+  <div class="employee-group">
+  <%= partial 'partials/employee', locals: { employee: founders } %>
+  </div>
+</div>
+
+
