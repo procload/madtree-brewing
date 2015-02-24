@@ -96,7 +96,7 @@
       "description" : "The Siberians believed there was a &lsquo;World Tree&rsquo; that served as the Axis Mundi, connecting the different worlds through its roots and branches. While this Russian Imperial Stout isn’t necessarily the world’s cosmic axis, it does connect rich flavors in a way to deliver you a cosmic beer.",
       "series" : "",
       "abv" : "9.5%",
-      "hops" : "Galena, Cascade, Perle",
+      "hops" : " Cascade, Perle",
       "malts" : "A metric shit ton",
       "ibu" : "72",
       "adjuncts" : "",
@@ -125,7 +125,7 @@
       "description" : "A refreshing blonde ale made for extended periods of drinking during summer days well into the evening. With copious amounts of New Zealand Motueka hops lending lemon and lime notes, Sol Drifter ends with a crisp and tart strawberry finish.",
       "series" : "",
       "abv" : "4.3%",
-      "hops" : "Galena, Fuggle, Motueka",
+      "hops" : " Fuggle, Motueka",
       "malts" : "2-Row, Red Wheat, Vienna, Carapils, Caramel 80L",
       "ibu" : "18",
       "adjuncts" : "",
@@ -141,7 +141,7 @@
       "description" : "A crisp and refreshing summer ale that pleasantly blends grapefruit, citrus, and lemon zest flavors with the slight sweetness of malted wheat.",
       "series" : "",
       "abv" : "4.7%",
-      "hops" : "Galena, Fuggle, Falconer&rsquo;s Flight, Zythos",
+      "hops" : " Fuggle, Falconer&rsquo;s Flight, Zythos",
       "malts" : "2-Row, Wheat, Carapils, Munich 10L",
       "ibu" : "29",
       "adjuncts" : "",
@@ -200,13 +200,13 @@
       "description" : "A light, slightly sweet, crisp Kölsch ale with notes of citrus and orange marmalade. Inspired by Michael Makin, a Starfire student with a passion for life and beer, the Wheat Eater was brewed in collaboration with Fifty West Brewing Company.",
       "series" : "",
       "abv" : "5.4%",
-      "hops" : "Galena, Pacifica, Falconer&rsquo;s Flight",
+      "hops" : " Pacifica, Falconer&rsquo;s Flight",
       "malts" : "Pilsen, Red Wheat",
       "ibu" : "18",
       "adjuncts" : "",
       "recipe" : "",
       "image" : "/images/beers/wheat-eater/img-tap.png",
-      "availability" : "seasonal"
+      "availability" : "collaboration"
     },
     {
       "name" : "Bourbon Barrel Aged Axis Mundi",
@@ -214,7 +214,7 @@
       "description" : "Axis Mundi aged in bourbon barrels. Delicious.",
       "series" : "",
       "abv" : "10.5%",
-      "hops" : "Galena, Cascade, Perle",
+      "hops" : " Cascade, Perle",
       "malts" : "A metric shit ton",
       "ibu" : "72",
       "adjuncts" : "",
@@ -228,7 +228,7 @@
       "description" : "A bitter yet balanced IPA that is aromatically pleasing due to the heavy amount of dry-hopping with Falconer&rsquo;s Flight and Simcoe. The Falconer&rsquo;s Flight provides the slight citrus aroma while the Simcoe compliments it with strong pine aroma.",
       "series" : "",
       "abv" : "6.3%",
-      "hops" : "Galena, Cascade, Chinook, Centennial, Falconer's Flight, Simcoe, Pacifica",
+      "hops" : "Cascade, Chinook, Centennial, Falconer's Flight, Simcoe, Pacifica",
       "malts" : "2-Row, Vienna, Caramel 40L, Carapils",
       "ibu" : "70",
       "adjuncts" : "",
@@ -273,7 +273,7 @@
       "ibu" : "14",
       "adjuncts" : "Cranberry, Walnut, Vanilla Beans",
       "recipe" : "pilgrimRecipe.pdf",
-      "availability" : "limited"
+      "availability" : "limited-seasonal"
     },
     {
       "name" : "Un-Happy Amber",
@@ -287,7 +287,7 @@
       "adjuncts" : "",
       "recipe" : "unHappyAmberRecipe.pdf",
       "image" : "/images/beers/unhappy-amber/img-tap.png",
-      "availability" : "limited"
+      "availability" : "limited-seasonal"
     },
     {
       "name" : "Everything Went Black",
@@ -315,7 +315,7 @@
       "adjuncts" : "Raspberries, Cocoa nibs",
       "recipe" : "rubusRecipe.pdf",
       "image" : "/images/beers/rubus-cacao/img-tap.png",
-      "availability" : "limited"
+      "availability" : "limited-seasonal"
     },
     {
       "name" : "Ye Olde Battering Ram",
@@ -356,6 +356,90 @@
       "recipe" : "deadFlowersRecipe.pdf",
       "image" : "/images/beers/dead-flowers/img-tap.png",
       "availability" : "limited"
+    },
+    {
+      "name" : "Citra High",
+      "url" : "citra-high",
+      "description" : "Explore new worlds of flavor as two American hops collide to create waves of tropically dank flavors",
+      "series" : "",
+      "abv" : "",
+      "hops" : "Citra, Simcoe",
+      "malts" : "2-Row, Vienna, Caramel 40L, Carapils, Dextrose",
+      "ibu" : "High",
+      "adjuncts" : "",
+      "recipe" : "",
+      "image" : "",
+      "availability" : "limited"
+    },
+    {
+      "name" : "Rounding Third",
+      "url" : "rounding-third",
+      "description" : "Brewed to celebrate the start of our favorite pastime. Rounding Third has a slight caramel semisweet malt backbone balanced by a strong hop profile. Dry hopped with Falconers Flight and Simcoe that will have your pallet rounding third and heading for home. ",
+      "series" : "",
+      "abv" : "7.50%",
+      "hops" : "Nugget, Simcoe, Cascade",
+      "malts" : "2-Row, Munich 10, Crystal 60, Chocolate, Melanoidin, Carapils",
+      "ibu" : "51",
+      "adjuncts" : "",
+      "recipe" : "",
+      "image" : "",
+      "availability" : "limited-seasonal"
+    },
+    {
+      "name" : "Lemon Basil Blonde",
+      "url" : "lemon-basil",
+      "description" : "It's lemon. It's basil. It's Lemon Basil Blonde.",
+      "series" : "",
+      "abv" : "5.00%",
+      "hops" : "Wakatu, Helga",
+      "malts" : "2-Row, Red Wheat, Vienna, Crystal 60, Carapils",
+      "ibu" : "51",
+      "adjuncts" : "Basil, Dried Lemon Peel",
+      "recipe" : "",
+      "image" : "",
+      "availability" : ""
+    },
+    {
+      "name" : "Black Forest",
+      "url" : "black-forest",
+      "description" : "Big roasted flavor in the beginning, chocolate in the middle and a slight sweetness from lactose make this milk stout full of flavor while having a light silky body.",
+      "series" : "",
+      "abv" : "4.90%",
+      "hops" : "Styrian Bobek, Cascade",
+      "malts" : "2-Row, Chocolate, Crystal 80, Victory, Black",
+      "ibu" : "19.1",
+      "adjuncts" : "Lactose",
+      "recipe" : "",
+      "image" : "",
+      "availability" : "limited-seasonal"
+    },
+    {
+      "name" : "MadMann",
+      "url" : "madmann",
+      "description" : "Coral in color, the blackberry aromatics give way to a semisweet yet acidic and tart flavor complimented by a slightly saltiness.",
+      "series" : "",
+      "abv" : "4.90%",
+      "hops" : "Perle, Sorachi Ace",
+      "malts" : "White Wheat, Pilsen, Acidulated",
+      "ibu" : "9.5",
+      "adjuncts" : "Sea Salt, Blackberry Puree, Lactic Acid",
+      "recipe" : "",
+      "image" : "/images/beers/madmann/img-tap.png",
+      "availability" : "collaboration"
+    },
+    {
+      "name" : "BlackTart",
+      "url" : "blacktart",
+      "description" : "BlackTart Stout is a collaborative effort among fifteen Cincinnati, Ohio breweries as part of the celebration during Cincinnati Beer Week. Each star represents our individual breweries. Together they represent a partnership between some of the finest craft breweries in our state. An amalgamation of breweries. A dichotomous combination of flavors. Tart and refreshing yet full bodied and malty. It's not black magic, it's BlackTart. Brewed with cinnamon, lactose, and blackberries.",
+      "series" : "",
+      "abv" : "8.00%",
+      "hops" : "Apollo, Experimental #05256",
+      "malts" : "2-Row, Victory, Acidulated, Crystal 120, Extra Special, Midnight Wheat, Carafa II, Chocolate",
+      "ibu" : "18",
+      "adjuncts" : "Dextrose, Cinnamon, Lactose, Blackberry Puree, Lactic Acid",
+      "recipe" : "",
+      "image" : "/images/beers/blacktart/img-tap.png",
+      "availability" : "collaboration"
     }
 ]
 

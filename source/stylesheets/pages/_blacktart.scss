@@ -1,0 +1,92 @@
+body.blacktart {
+  background-color: $blacktart;
+  .caret {
+    border-top-color: $blacktart;
+  }
+  .site-header {
+    color: #FFF;
+  }
+  .header-toolbar {
+    background: $blacktart-alt;
+  }
+  .navbar {
+    background: $blacktart-alt;
+    &.section-navbar {
+      background: $blacktart-nav;
+      a {
+        color: #FFF;
+        @include respond-to(41.25em) {
+          color: $blacktart;
+        }
+      }
+      li.active {
+       > a {
+          color: $white;
+        }
+      } //active
+      .dropdown-menu > li {
+        > a {
+          color: $blacktart-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $blacktart;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $blacktart;
+          }
+        }
+      } //dropdown-menu
+    }
+    .main-nav li {
+      &:nth-child(even) {
+        background: lighten($blacktart, .5);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: $blacktart;
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
+  }
+  .beer-details {
+    h2 {
+      color: $white;
+      > span {
+        color: #044034;
+      }
+    }
+  }
+  .site-footer {
+    background: $blacktart-alt;
+    a {
+      color: #FFF;
+    }
+  }
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: #FFF;
+  }
+  .beer-stats {
+    background: $blacktart-alt;
+    border-color: #FFF;
+  }
+  .beer-merch {
+    background: transparentize(darken($blacktart, 10%), .8);
+    border-color: transparentize($blacktart-alt, .5);
+    h4 {
+      color: $blacktart;
+    }
+  }
+} //blacktart

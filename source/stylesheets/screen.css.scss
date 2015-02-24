@@ -19,6 +19,8 @@
 @import "pages/simcoe";
 @import "pages/rubus-cacao";
 @import "pages/dead-flowers";
+@import "pages/blacktart";
+@import "pages/madmann";
 @import "pages/taproom";
 @import "pages/interstitial";
 @import "pages/beer-limited";
@@ -576,14 +578,14 @@ a {
   li {
     @include respond-to(41.25em) {
       display: inline-block;
-      font-size: calc-em(17px, .1px);
+      font-size: calc-em(15px, .1px);
       text-transform: uppercase;
     }
     @include respond-to(49.375em) {
-      font-size: calc-em(20px, .1px);  
+      font-size: calc-em(17px, .1px);
     }
     @include respond-to(56.25em) {
-      font-size: calc-em(24px, .1px);  
+      font-size: calc-em(20px, .1px);
     }
     a {
       line-height: 2em;

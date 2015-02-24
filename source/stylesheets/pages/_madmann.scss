@@ -1,0 +1,108 @@
+body.madmann {
+  background-color: $madmann;
+  .caret {
+    border-top-color: $madmann;
+  }
+  .site-header {
+    color: $madmann;
+  } //site-header
+  .header-toolbar {
+    background: $madmann-alt;
+    color: $white;
+  }
+  .navbar {
+    background: $madmann-alt;
+    &.section-navbar {
+      background: $madmann-nav;
+      a {
+        color: #FFF;
+        @include respond-to(41.25em) {
+          color: $madmann;
+        }
+      }
+      li.active {
+      > a {
+          color: $white;
+        }
+      } //active
+      .dropdown-menu > li {
+        > a {
+          color: $madmann-alt;
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $madmann;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $madmann;
+          }
+        }
+      } //dropdown-menu
+    } //section-navbar
+    .main-nav li {
+      &:nth-child(even) {
+        background: rgba(53,53,53,.8);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: rgba(53,53,53,1);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
+  } //navbar
+  .navbar-inner {
+    .logo {
+      @include respond-to(41.25em) {
+        @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left);
+      }
+    }
+  }
+  .beer-details {
+    h2 {
+      color: $white;
+    } //h2
+    p {
+      color: $white;
+    }
+  } //beer-details
+  .site-footer {
+    background: $madmann-alt;
+    a {
+      color: $white;
+    } //a
+  } //site-footer
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $white;
+  }
+  .beer-stats {
+    background: transparentize(darken($madmann, 10%), .8);
+    border-color: transparentize($madmann-alt, .5);
+
+    th {
+      color: $gray-lighter;
+    }
+  }
+  .beer-merch {
+    background: transparentize(darken($madmann, 10%), .8);
+    border-color: transparentize($madmann-alt, .5);
+    h4 {
+      color: $madmann-alt;
+    }
+  }
+} //madmann
+
+
+
+

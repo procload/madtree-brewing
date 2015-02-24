@@ -24,9 +24,12 @@ body.wheateater {
           color: $white;
         }
       } //active
+      .dropdown-menu {
+        background: $wheateater-alt;
+      }
       .dropdown-menu > li {
         > a {
-          color: $wheateater-alt;
+          color: $wheateater;
           &:hover,
           &:focus {
             color: $white;
