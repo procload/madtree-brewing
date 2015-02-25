@@ -1,9 +1,15 @@
 $ ->
-  $.getJSON "/data/events.json", (result) ->
+
+  insertEvents = (result, tabletop) ->
     if $("body.home").length > 0
       source = $("#events_template").html()
       template = Handlebars.compile(source)
       $("#event-list").html(template(result))
+
+  eventsTable = Tabletop(
+    key: "1xe0nnxmyjinDmn25HQwAfP_odHTKx1bwUDNEnxWPVtw"
+    proxy: "https://madtree.s3.amazonaws.com/"
+    callback: insertEvents)
 
   currentEvents = []
 

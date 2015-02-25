@@ -50,7 +50,6 @@ $ ->
         callbackSuccess: ->
           $(".find-beer").addClass("showing-results")
 
-
     $(".find-beer h2").fitText(.66)
 
     $(".beer-details h2").fitText(.75)
@@ -64,7 +63,6 @@ $ ->
     if $(".section-navbar").data("group") == activeGroup
       copiedNav = $(".section-navbar").clone().addClass("cloned")
       $(".main-nav > .active").append(copiedNav)
-
 
     $(".main-nav .active > a").click (e) ->
       e.preventDefault()
@@ -84,7 +82,7 @@ $ ->
           if results[1]
             $("#address").val(results[0].formatted_address)
           else
-           return 
+           return
         else
           return
 
@@ -97,7 +95,6 @@ $ ->
       reverseGeocode(latitude,longitude)
 
     error_callback = (p) ->
-
 
     $("#user-location #address").focus ->
       if geoPosition.init() # Geolocation Initialisation
@@ -130,20 +127,21 @@ $ ->
       infowindow.open map, marker
 
     insertBeers = (beers) ->
-      source = $("#tap_template").html()
-      template = Handlebars.compile(source)
-      $("#ontap").html(template(beers))
+        source = $("#tap_template").html()
+        template = Handlebars.compile(source)
+        $("#ontap").html(template(beers))
 
     Handlebars.registerHelper "trimString", (passedString) ->
       theString = passedString.substring(0, passedString.length - 2)
       new Handlebars.SafeString(theString)
 
-    Tabletop.init
-      key: "1QDM8s0t_Ilg8Px_vPpsyrSBT7UNGLGCWLJrddB2gWKo"
-      proxy: "https://madtree.s3.amazonaws.com/"
-      simpleSheet: true
-      callback: (data, tabletop) ->
-        insertBeers(data)
+    if $("body.taproom").length > 0
+      Tabletop.init
+        key: "1QDM8s0t_Ilg8Px_vPpsyrSBT7UNGLGCWLJrddB2gWKo"
+        proxy: "https://madtree.s3.amazonaws.com/"
+        simpleSheet: true
+        callback: (data, tabletop) ->
+          insertBeers(data)
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
@@ -174,4 +172,3 @@ $ ->
         source = $("#untappd_template").html()
         template = Handlebars.compile(source)
         $("#untappd").html(template(untappd))
-
