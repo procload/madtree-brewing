@@ -57,7 +57,7 @@ sub_page: "charity"
     <div class="current-and-next">
       <h3>February Partner</h3>
       <div class="current-partner">
-        <%= image_tag(monthly[1].image) %>
+        <%= image_tag(monthly[2].image) %>
       </div> <!-- /current-partner -->
       <h3>On Deck</h3>
       <div class="on-deck">
@@ -69,6 +69,9 @@ sub_page: "charity"
       <div class="previous-content">
         <div class="monthly-partner">
           <%= image_tag(monthly.first.image) %>
+        </div> <!-- /monthly-partner -->
+        <div class="monthly-partner">
+          <%= image_tag(monthly[1].image) %>
         </div> <!-- /monthly-partner -->
       </div>
     </div> <!-- /previous-partners -->

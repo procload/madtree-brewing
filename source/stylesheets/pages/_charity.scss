@@ -145,7 +145,7 @@ body.charity {
       text-align: center;
 
       @include respond-to(480px) {
-        @include span-columns(2.25, 4.5);
+        @include span-columns(2, 4.5);
       }
 
       &:nth-child(2n) {
