@@ -15,11 +15,10 @@ $ ->
 
   isCurrent = (event) ->
     now = new Date()
-    tomorrow = new Date(now)
-    tomorrow.setDate(now.getDate()-1)
+    now.setDate(now.getDate()-1)
     year = now.getFullYear()
     event_date = "#{event.date}, #{year}"
-    if Date.parse(event_date) > Date.parse(tomorrow)
+    if Date.parse(event_date) > Date.parse(now)
       currentEvents.push(event) unless event.title == ""
     else
       return
