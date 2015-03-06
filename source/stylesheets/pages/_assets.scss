@@ -4,18 +4,18 @@ body.assets {
   }
 
   .asset-section {
-    @include span-columns(6);
-    margin-bottom: calc-em(16px);
+    margin-bottom: calc-em(32px);
 
-    &:nth-child(2n) {
-      @include omega;
-    }
-
-    &:nth-child(2n + 1) {
-      clear: both;
+    h2 {
+      margin-bottom: calc-em(6px);
     }
 
     &.press {
+
+      @include respond-to(37.5em) {
+        @include span-columns(6);
+      }
+
       a {
         margin: calc-em(8px);
         display: inline-block;
@@ -25,9 +25,13 @@ body.assets {
       }
     }
 
+    &.salessheets {
+      @include respond-to(37.5em) {
+        @include span-columns(6 omega);
+      }
+    }
+
     &.tapstickers {
-      @include reset-columns;
-      clear: both;
       > a {
         margin: calc-em(8px);
         display: inline-block;
