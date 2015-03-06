@@ -19,38 +19,113 @@ current_page: "assets"
 <% end %>
 
 <div class="container">
-  <nav class="asset-nav">
-    <ul class="navlist">
-      <li><a href="#logos">Logos</a></li>
-      <li><a href="#pressphotos">Press Photos</a></li>
-      <li><a href="#salessheets">Sales Sheets</a></li>
-      <li><a href="#canartwork">Flat Can Artwork</a></li>
-      <li><a href="#canphotos">Can Photos</a></li>
-      <li><a href="#tapstickers">Tap Stickers</a></li>
-    </ul> <!-- /navlist -->
-  </nav> <!-- /asset-nav -->
+  <div class="asset-sections">
+    <section id="logos" class="asset-section">
+      <h2>Logos</h2>
+    </section> <!-- /asset-section -->
 
-  <section id="logos" class="asset-section">
+    <section id="pressphotos" class="asset-section press">
+      <h2>Press Photos</h2>
+      <%
+        photos = ["brewery", "cans", "columbus_cans", "kegs", "spring_cans", "tap_handles", "taproom"]
+      %>
+      <% photos.each do |photo| %>
+        <%= link_to image_tag("assets/press/#{photo}_thumb.jpg"), "/images/assets/press/#{photo}.jpg" %>
+      <% end %>
+    </section> <!-- /asset-section -->
 
-  </section> <!-- /asset-section -->
+    <section id="salessheets" class="asset-section">
+      <h2>Sales Sheets</h2>
+      <%
+          sales_sheets = [
+            ["Axis Mundi", "axis_mundi"],
+            ["Brawny", "brawny_full_page"],
+            ["Galaxy High Full Page", "galaxy_high_full_page"],
+            ["Galaxy High", "galaxy_high"],
+            ["Gnarly Brown Full Page", "gnarly_brown_full_page"],
+            ["Gnarly Brown", "gnarly_brown"],
+            ["Great Pumpcan Full Page", "great_pumpcan_full_page"],
+            ["Great Pumpcan", "great_pumpcan"],
+            ["Happy Amber Full Page", "happy_amber_full_page"],
+            ["Happy Amber", "happy_amber"],
+            ["Identity Crisis", "identity_crisis"],
+            ["Lift Full Page", "lift_full_page"],
+            ["Lift", "lift"],
+            ["Misnomer Full Page", "misnomer_full_page"],
+            ["PsycHOPathy Full Page", "psychopathy_full_page"],
+            ["PsycHOPathy", "psychopathy"],
+            ["Rubus Cacao", "rubus_cacao"],
+            ["Salazar", "salazar"],
+            ["Sol Drifter Drink Recipes", "sol_drifter_drink_recipes"],
+            ["Sol Drifter Full Page", "sol_drifter_full_page"],
+            ["Sol Drifter", "sol_drifter"],
+            ["Sprye", "sprye"],
+            ["Thundersnow Full Page", "thundersnow_full_page"],
+            ["Thundersnow", "thundersnow"]
+          ]
+      %>
+      <ul>
+        <% sales_sheets.each do |sales_sheet| %>
+          <%= content_tag :li, link_to(sales_sheet.first, "/images/assets/sales/#{sales_sheet.last}.pdf") %>
+        <% end %>
+      </ul>
+    </section> <!-- /asset-section -->
 
-  <section id="pressphotos" class="asset-section">
+    <section id="canartwork" class="asset-section">
+      <h2>Flat Can Artwork</h2>
+    </section> <!-- /asset-section -->
 
-  </section> <!-- /asset-section -->
+    <section id="canphotos" class="asset-section">
+      <h2>Can Photos</h2>
+    </section> <!-- /asset-section -->
 
-  <section id="salessheets" class="asset-section">
-
-  </section> <!-- /asset-section -->
-
-  <section id="canartwork" class="asset-section">
-
-  </section> <!-- /asset-section -->
-
-  <section id="canphotos" class="asset-section">
-
-  </section> <!-- /asset-section -->
-
-  <section id="tapstickers" class="asset-section">
-
-  </section> <!-- /asset-section -->
+    <section id="tapstickers" class="asset-section tapstickers">
+      <h2>Tap Stickers</h2>
+      <%
+        taps = [
+          "axis_mundi_bourbon_barrel",
+          "axis_mundi",
+          "axis_mundi_vanilla",
+          "black_forest",
+          "blacktart",
+          "citra_high",
+          "daywalker",
+          "dead_flowers",
+          "everything_went_black",
+          "flight_of_simcoe",
+          "galaxy_high",
+          "gedde_up",
+          "gnarly_brown_bourbon_barrel",
+          "gnarly_brown_coffee",
+          "gnarly_brown_vanilla",
+          "grapefrute_moon",
+          "great_pumpcan",
+          "happy_amber_bourbon_barrel",
+          "happy_amber",
+          "identity_crisis",
+          "kolsch_experimental",
+          "lemon_basil",
+          "lift",
+          "madmann",
+          "olde_battering_ram",
+          "oyster_pale_ale",
+          "pilgrim",
+          "pleasant_wheat",
+          "proper_session_ale",
+          "psychopathy",
+          "relegation",
+          "rubus_cacao",
+          "sol_drifter",
+          "sprye",
+          "thundersnow",
+          "unhappy_amber",
+          "wheat_eater",
+          "ypa"
+        ]
+      %>
+      <% taps.each do |tap| %>
+        <%= link_to image_tag("assets/taps/#{tap}_thumb.png"), "/images/assets/taps/#{tap}.jpg" %>
+      <% end %>
+    </section> <!-- /asset-section -->
+  </div>
 </div> <!-- /container -->

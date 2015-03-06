@@ -1,0 +1,39 @@
+body.assets {
+  .main-content {
+    background: $black;
+  }
+
+  .asset-section {
+    @include span-columns(6);
+    margin-bottom: calc-em(16px);
+
+    &:nth-child(2n) {
+      @include omega;
+    }
+
+    &:nth-child(2n + 1) {
+      clear: both;
+    }
+
+    &.press {
+      a {
+        margin: calc-em(8px);
+        display: inline-block;
+        width: calc-em(100px);
+        height: calc-em(100px);
+        border: 1px solid #EFEFEF;
+      }
+    }
+
+    &.tapstickers {
+      @include reset-columns;
+      clear: both;
+      > a {
+        margin: calc-em(8px);
+        display: inline-block;
+        width: calc-em(100px);
+        height: calc-em(140px);
+      }
+    }
+  }
+}
