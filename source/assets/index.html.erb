@@ -20,6 +20,14 @@ current_page: "assets"
 
 <div class="container">
   <div class="asset-sections">
+
+    <section id="logos" class="asset-section logos">
+      <h2>Logos</h2>
+      <%= link_to image_tag("assets/logos/img-white-preview.png"), "/images/assets/logos/logo-white.pdf" %>
+      <%= link_to image_tag("assets/logos/img-dark-preview.png"), "/images/assets/logos/logo-dark.png" %>
+      <%= link_to image_tag("assets/logos/img-circle-preview.png"), "/images/assets/logos/logo-circle.pdf" %>
+    </section>
+
     <section id="tapstickers" class="asset-section tapstickers">
       <h2>Tap Stickers</h2>
       <%
@@ -72,7 +80,7 @@ current_page: "assets"
     <section id="pressphotos" class="asset-section press">
       <h2>Press Photos</h2>
       <%
-        photos = ["brewery", "cans", "columbus_cans", "kegs", "spring_cans", "tap_handles", "taproom"]
+        photos = ["brewery", "cans", "columbus_cans", "kegs", "spring_cans", "tap_handles", "taproom", "boiler", "tap", "jeff", "jeff2"]
       %>
       <% photos.each do |photo| %>
         <%= link_to image_tag("assets/press/#{photo}_thumb.jpg"), "/images/assets/press/#{photo}.jpg" %>

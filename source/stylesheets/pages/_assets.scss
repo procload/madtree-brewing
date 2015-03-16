@@ -10,6 +10,20 @@ body.assets {
       margin-bottom: calc-em(6px);
     }
 
+    &.logos {
+      > a {
+        display: block;
+        @include respond-to(37.5em) {
+          display: inline-block;
+          width: 30%;
+          margin-right: 4%;
+        }
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+
     &.press {
 
       @include respond-to(37.5em) {
