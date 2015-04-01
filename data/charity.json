@@ -66,16 +66,16 @@
       "description" : "",
       "type" : "monthly",
       "month" : "April"
+    },
+    {
+      "name" : "Riding Forward",
+      "image" : "/images/charity/img-ridingforward.jpg",
+      "url" : "",
+      "money" : "",
+      "description" : "",
+      "type" : "monthly",
+      "month" : "May"
     }
-    /* { */
-    /*   "name" : "Riding Forward", */
-    /*   "image" : "/images/charity/img-ridingforward.jpg", */
-    /*   "url" : "", */
-    /*   "money" : "", */
-    /*   "description" : "", */
-    /*   "type" : "monthly", */
-    /*   "month" : "May" */
-    /* }, */
     /* { */
     /*   "name" : "The First Tee of Greater Miami Valley", */
     /*   "image" : "/images/charity/img-firsttee.jpg", */
