@@ -1,0 +1,108 @@
+body.citra-high {
+  @include background($citra-high image-url('backgrounds/bg-beer-default.png') no-repeat top right);
+  .caret {
+    border-top-color: $citra-high;
+  }
+  .site-header {
+    color: $citra-high;
+  } //site-header
+  .header-toolbar {
+    background: $citra-high-alt;
+    color: $white;
+  }
+  .navbar {
+    background: $citra-high-alt;
+    &.section-navbar {
+      background: $citra-high-nav;
+      a {
+        color: $white;
+      }
+      li.active {
+      > a {
+          color: $white;
+        }
+      } //active
+      .dropdown-menu > li {
+        > a {
+          color: $white;
+          @include respond-to(41.25em) {
+            color: $citra-high-alt;
+          }
+          &:hover,
+          &:focus {
+            color: $white;
+            background: $citra-high;
+          }
+        }
+        &.active {
+          > a {
+            color: $white;
+            background: $citra-high;
+          }
+        }
+      } //dropdown-menu
+    } //section-navbar
+    .main-nav li {
+      &:nth-child(even) {
+        background: rgba(53,53,53,.8);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+      &:nth-child(odd) {
+        background: rgba(53,53,53,1);
+        @include respond-to(41.25em) {
+          background: none;
+        }
+      }
+    } //main-nav
+  } //navbar
+  .navbar-inner {
+    .logo {
+      @include respond-to(41.25em) {
+        @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left);
+      }
+    }
+  }
+  .beer-details {
+    h2 {
+      color: $white;
+    } //h2
+    p {
+      color: $white;
+    }
+  } //beer-details
+  .site-footer {
+    background: $citra-high-alt;
+    a {
+      color: $white;
+    } //a
+  } //site-footer
+  .nav-item-header {
+    h4 {
+      color: $white;
+    }
+  }
+  .nav-item-body {
+    color: $white;
+  }
+  .beer-stats {
+    background: transparentize(darken($citra-high, 10%), .8);
+    border-color: transparentize($citra-high-alt, .5);
+
+    th {
+      color: $gray-lighter;
+    }
+  }
+  .beer-merch {
+    background: transparentize(darken($citra-high, 10%), .8);
+    border-color: transparentize($citra-high-alt, .5);
+    h4 {
+      color: $citra-high-alt;
+    }
+  }
+} //citra-high
+
+
+
+
