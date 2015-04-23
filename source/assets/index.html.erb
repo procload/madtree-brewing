@@ -79,7 +79,7 @@ current_page: "assets"
     <section id="pressphotos" class="asset-section press">
       <h2>Press Photos</h2>
       <%
-        photos = ["brewery", "cans", "columbus_cans", "kegs", "spring_cans", "tap_handles", "taproom", "boiler", "tap", "jeff", "jeff2"]
+        photos = ["brewery", "cans", "kegs", "tap_handles", "taproom", "boiler", "tap", "jeff", "jeff2"]
       %>
       <% photos.each do |photo| %>
         <%= link_to image_tag("assets/press/#{photo}_thumb.jpg"), "/images/assets/press/#{photo}.jpg" %>
