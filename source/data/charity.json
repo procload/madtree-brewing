@@ -41,7 +41,7 @@
         "description": "",
         "type": "monthly",
         "month": "January",
-        "month_number": "0"
+        "month_number": 0
       },
       {
         "name": "Interfaith Hospitality Network",
@@ -51,7 +51,7 @@
         "description": "",
         "type": "monthly",
         "month": "February",
-        "month_number": "1"
+        "month_number": 1
       },
       {
         "name": "Give Back Cincinnati",
@@ -61,7 +61,7 @@
         "description": "",
         "type": "monthly",
         "month": "March",
-        "month_number": "2"
+        "month_number": 2
       },
       {
         "name": "Autism Society",
@@ -71,7 +71,7 @@
         "description": "",
         "type": "monthly",
         "month": "April",
-        "month_number": "3"
+        "month_number": 3
       },
       {
         "name": "Riding Forward",
@@ -81,7 +81,7 @@
         "description": "",
         "type": "monthly",
         "month": "May",
-        "month_number": "4"
+        "month_number": 4
       },
       {
         "name": "The First Tee of Greater Miami Valley",
@@ -91,7 +91,7 @@
         "description": "",
         "type": "monthly",
         "month": "June",
-        "month_number": "5"
+        "month_number": 5
       },
       {
         "name": "The Children\u2019s Home of Cincinnati",
@@ -101,7 +101,7 @@
         "description": "",
         "type": "monthly",
         "month": "July",
-        "month_number": "6"
+        "month_number": 6
       },
       {
         "name": "Lab Rescue",
@@ -111,7 +111,7 @@
         "description": "",
         "type": "monthly",
         "month": "August",
-        "month_number": "7"
+        "month_number": 7
       },
       {
         "name": "CancerFree Kids",
@@ -121,7 +121,7 @@
         "description": "",
         "type": "monthly",
         "month": "September",
-        "month_number": "8"
+        "month_number": 8
       },
       {
         "name": "I Have Wings Breast Cancer Foundation",
@@ -131,7 +131,7 @@
         "description": "",
         "type": "monthly",
         "month": "October",
-        "month_number": "9"
+        "month_number": 9
       },
       {
         "name": "University of Dayton: Christmas off Campus",
@@ -141,7 +141,7 @@
         "description": "",
         "type": "monthly",
         "month": "November",
-        "month_number": "10"
+        "month_number": 10
       },
       {
         "name": "Ohio River Foundation",
@@ -151,8 +151,9 @@
         "description": "",
         "type": "monthly",
         "month": "December",
-        "month_number": "11"
+        "month_number": 11
       }
     ]
   }
 ]
+

@@ -54,29 +54,29 @@ sub_page: "charity"
   <hr />
 
   <section class="monthly-partners">
+    <div id="current-and-next"></div>
+  </section>
+</div>
+
+<script id="current_charity_template" type="text/x-handlebars-template">
     <div class="current-and-next">
-      <h3>April Partner</h3>
+      <h3>{{month_name}} Partner</h3>
       <div class="current-partner">
-        <%= image_tag(monthly[3].image) %>
-      </div> <!-- /current-partner -->
+        <img src="{{current_partner_image}}" alt="" />
+      </div>
       <h3>On Deck</h3>
       <div class="on-deck">
-        <%= image_tag(monthly.last.image) %>
-      </div> <!-- /on-deck -->
-    </div> <!-- /current-and-next -->
+        <img src="{{next_partner_image}}" alt="" />
+      </div>
+    </div>
     <div class="previous-partners">
       <h3>Previous Monthly Partners</h3>
       <div class="previous-content">
+      {{#each previous_months}}
         <div class="monthly-partner">
-          <%= image_tag(monthly.first.image) %>
-        </div> <!-- /monthly-partner -->
-        <div class="monthly-partner">
-          <%= image_tag(monthly[2].image) %>
-        </div> <!-- /monthly-partner -->
-        <div class="monthly-partner">
-          <%= image_tag(monthly[1].image) %>
-        </div> <!-- /monthly-partner -->
+        <img src="{{this.image}}" />
+        </div>
+      {{/each}}
       </div>
-    </div> <!-- /previous-partners -->
-  </section> <!-- /monthly-partners -->
-</div>
+    </div>
+</script>
