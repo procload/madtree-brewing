@@ -46,11 +46,25 @@ body.assets {
     }
 
     &.tapstickers {
-      > a {
-        margin: calc-em(8px);
-        display: inline-block;
-        width: calc-em(100px);
-        height: calc-em(140px);
+      @extend %group;
+      div {
+        margin-bottom: calc-em(24px);
+        @include respond-to(37.5em) {
+          @include span-columns(6);
+          @include nth-omega(2n);
+        }
+        > a {
+          margin: calc-em(8px);
+          display: inline-block;
+          width: calc-em(100px);
+          height: calc-em(140px);
+        }
+        &.limited {
+          @include respond-to(37.5em) {
+            clear: both;
+            @include reset-columns;
+          }
+        }
       }
     }
   }

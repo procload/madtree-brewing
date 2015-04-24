@@ -28,59 +28,112 @@ current_page: "assets"
       <%= link_to image_tag("assets/logos/img-circle-preview.png"), "/images/assets/logos/logo-circle.pdf" %>
     </section>
 
-    <section id="tapstickers" class="asset-section tapstickers">
       <h2>Tap Stickers</h2>
-      <%
+    <section id="tapstickers" class="asset-section tapstickers">
+      <div>
+        <h4>Year-round</h4>
+        <%
+            taps = [
+              "happy_amber",
+              "lift",
+              "psychopathy"
+        ]
+        %>
+        <% taps.each do |tap| %>
+          <%= link_to image_tag("assets/taps/#{tap}_thumb.png"), "/images/assets/taps/#{tap}.jpg" %>
+        <% end %>
+      </div>
+      <div>
+        <h4>Limited Year-Round</h4>
+        <%
+            taps = [
+              "axis_mundi",
+              "identity_crisis",
+              "galaxy_high",
+              "citra_high"
+          ]
+        %>
+        <% taps.each do |tap| %>
+          <%= link_to image_tag("assets/taps/#{tap}_thumb.png"), "/images/assets/taps/#{tap}.jpg" %>
+        <% end %>
+      </div>
+      <div>
+        <h4>Collaboration</h4>
+        <%
+            taps = [
+              "wheat_eater",
+              "madmann",
+              "blacktart"
+        ]
+      %>
+    <% taps.each do |tap| %>
+      <%= link_to image_tag("assets/taps/#{tap}_thumb.png"), "/images/assets/taps/#{tap}.jpg" %>
+    <% end %>
+    </div>
+    <div>
+    <h4>Seasonals</h4>
+    <%
         taps = [
-          "axis_mundi_bourbon_barrel",
-          "axis_mundi",
-          "axis_mundi_vanilla",
-          "black_forest",
-          "blacktart",
-          "citra_high",
-          "dead_flowers",
-          "everything_went_black",
-          "flight_of_simcoe",
-          "galaxy_high",
-          "gedde_up",
-          "gnarly_brown_bourbon_barrel",
-          "gnarly_brown_coffee",
-          "gnarly_brown_vanilla",
-          "grapefrute_moon",
-          "great_pumpcan",
-          "happy_amber_bourbon_barrel",
-          "happy_amber",
-          "identity_crisis",
-          "kolsch_experimental",
-          "lemon_basil",
-          "lift",
-          "madmann",
-          "olde_battering_ram",
-          "oyster_pale_ale",
-          "pilgrim",
-          "pleasant_wheat",
-          "proper_session_ale",
-          "psychopathy",
-          "relegation",
-          "rubus_cacao",
           "sol_drifter",
           "sprye",
           "thundersnow",
-          "unhappy_amber",
-          "wheat_eater",
-          "ypa"
+          "great_pumpcan"
+    ]
+  %>
+<% taps.each do |tap| %>
+  <%= link_to image_tag("assets/taps/#{tap}_thumb.png"), "/images/assets/taps/#{tap}.jpg" %>
+<% end %>
+    </div>
+    <div>
+      <h4>Limited Seasonals</h4>
+        <%
+            taps = [
+              "pilgrim",
+              "unhappy_amber",
+              "rubus_cacao",
+              "black_forest"
         ]
       %>
-      <% taps.each do |tap| %>
-        <%= link_to image_tag("assets/taps/#{tap}_thumb.png"), "/images/assets/taps/#{tap}.jpg" %>
-      <% end %>
+    <% taps.each do |tap| %>
+      <%= link_to image_tag("assets/taps/#{tap}_thumb.png"), "/images/assets/taps/#{tap}.jpg" %>
+    <% end %>
+    </div>
+    <div class="limited">
+      <h4>Limited</h4>
+      <%
+          taps = [
+            "axis_mundi_bourbon_barrel",
+            "axis_mundi_vanilla",
+            "dead_flowers",
+            "everything_went_black",
+            "flight_of_simcoe",
+            "gedde_up",
+            "gnarly_brown_bourbon_barrel",
+            "gnarly_brown_coffee",
+            "gnarly_brown_vanilla",
+            "grapefrute_moon",
+            "happy_amber_bourbon_barrel",
+            "kolsch_experimental",
+            "lemon_basil",
+            "olde_battering_ram",
+            "oyster_pale_ale",
+            "pleasant_wheat",
+            "proper_session_ale",
+            "relegation",
+            "ypa"
+        ]
+      %>
+        <% taps.each do |tap| %>
+          <%= link_to image_tag("assets/taps/#{tap}_thumb.png"), "/images/assets/taps/#{tap}.jpg" %>
+        <% end %>
+      </div>
     </section> <!-- /asset-section -->
 
     <section id="pressphotos" class="asset-section press">
       <h2>Press Photos</h2>
       <%
-        photos = ["brewery", "cans", "kegs", "tap_handles", "taproom", "boiler", "tap", "jeff", "jeff2"]
-      %>
+          photos = ["brewery", "cans", "kegs", "tap_handles", "taproom", "boiler", "tap", "jeff", "jeff2"]
+        %>
       <% photos.each do |photo| %>
         <%= link_to image_tag("assets/press/#{photo}_thumb.jpg"), "/images/assets/press/#{photo}.jpg" %>
       <% end %>
@@ -113,14 +166,14 @@ current_page: "assets"
             ["Sprye", "sprye"],
             ["Thundersnow Full Page", "thundersnow_full_page"],
             ["Thundersnow", "thundersnow"]
-          ]
-      %>
-      <ul>
-        <% sales_sheets.each do |sales_sheet| %>
-          <%= content_tag :li, link_to(sales_sheet.first, "/images/assets/sales/#{sales_sheet.last}.pdf") %>
-        <% end %>
-      </ul>
-    </section> <!-- /asset-section -->
+      ]
+    %>
+  <ul>
+    <% sales_sheets.each do |sales_sheet| %>
+      <%= content_tag :li, link_to(sales_sheet.first, "/images/assets/sales/#{sales_sheet.last}.pdf") %>
+    <% end %>
+  </ul>
+</section> <!-- /asset-section -->
 
   </div>
 </div> <!-- /container -->
