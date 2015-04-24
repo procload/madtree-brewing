@@ -7,20 +7,12 @@ body.home {
     }
   }
   #user-location {
-    &.can-geolocate {
-      #address {
-        display: none;
-        @include respond-to(30em) {
-          display: table-cell;
-        }
-      }
-      .btn-default {
-        display: block;
-        width: 100%;
-        @include respond-to(30em) {
-          width: auto;
-          display: inline-block;
-        }
+    .btn-default {
+      display: block;
+      width: 100%;
+      @include respond-to(30em) {
+        width: auto;
+        display: inline-block;
       }
     }
   }
@@ -48,26 +40,41 @@ body.home {
     padding: calc-em(24px);
     @include background(transparent image-url('backgrounds/subtle_carbon_inverse.png') repeat top left);
     margin-bottom: calc-em(32px);
+    text-align: center;
+
+    .disclaimer {
+      text-align: left;
+    }
     .btn-default {
-      font-family: $nav-font-family; 
+      font-family: $nav-font-family;
       font-weight: 300;
+      margin: 0 auto 16px;
+      &:focus,
+      &:active {
+        color: $white;
+      }
     }
     .input-group {
       margin-bottom: calc-em(16px);
+      text-align: left;
+      .btn {
+        line-height: calc-em(39px, 28px);
+        margin-bottom: 0;
+      }
     }
     .redo-search,
     .search-result-info {
       display: none;
     }
     > div {
-      display: block;  
+      display: block;
     }
     &.showing-results {
       padding: calc-em(10px);
       overflow: hidden;
       .search-result-info,
       .redo-search {
-        display: block; 
+        display: block;
       }
       > div {
         display: none;
@@ -79,7 +86,7 @@ body.home {
       @include span-columns(4, 6);
     }
     @include respond-to(40em) {
-      @include reset-columns(); 
+      @include reset-columns();
     }
     @include respond-to(57.5em) {
       @include span-columns(4, 6);
@@ -90,7 +97,7 @@ body.home {
       @include span-columns(2 omega, 6);
     }
     @include respond-to(40em) {
-      @include reset-columns(); 
+      @include reset-columns();
     }
     @include respond-to(57.5em) {
       @include span-columns(2 omega, 6);

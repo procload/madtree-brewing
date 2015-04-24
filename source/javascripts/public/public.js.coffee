@@ -91,12 +91,12 @@ $ ->
     success_callback = (p) ->
       latitude = p.coords.latitude
       longitude = p.coords.longitude
-      $("#user-location").addClass("can-geolocate")
       reverseGeocode(latitude,longitude)
 
     error_callback = (p) ->
 
-    $("#user-location #address").focus ->
+    $("#find").click (e) ->
+      e.preventDefault()
       if geoPosition.init() # Geolocation Initialisation
         geoPosition.getCurrentPosition success_callback, error_callback,
           enableHighAccuracy: true
