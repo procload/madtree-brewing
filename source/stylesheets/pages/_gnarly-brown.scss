@@ -2,7 +2,7 @@ body.gnarly-brown,
 body.gnarly-brown-vanilla,
 body.gnarly-brown-coffee {
   background: $gnarly-brown; 
-  @include background($gnarly-brown image-url('backgrounds/bg-gnarly-brown.png') no-repeat top right);
+  @include background(#131313 image-url('backgrounds/bg-gnarly-brown.png') no-repeat top right);
   .caret {
     border-top-color: $gnarly-brown;
   }
@@ -68,10 +68,10 @@ body.gnarly-brown-coffee {
   }
   .beer-details {
     h2 {
-      color: $gnarly-brown-alt;
+      color: $gnarly-brown;
     } //h2 
     p {
-      color: $gnarly-brown-alt;
+      color: $gnarly-brown;
     }
   } //beer-details
   .site-footer {

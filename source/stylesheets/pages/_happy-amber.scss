@@ -1,12 +1,12 @@
 body.interior.happy-amber,
 body.interior.un-happy-amber {
   background: $happy-amber;
-  @include background($happy-amber image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
+  @include background(#131313 image-url('backgrounds/bg-happy-amber.png') no-repeat top right);
   .caret {
     border-top-color: $happy-amber;
   }
   .site-header {
-    color: $happy-amber;
+    @include background(transparent image-url('backgrounds/subtle_carbon_inverse.png') repeat top left);
   }
   .header-toolbar {
     background: #721F0A;
@@ -60,16 +60,16 @@ body.interior.un-happy-amber {
   .navbar-inner {
     .logo {
       @include respond-to(41.25em) {
-        @include replace-text(362px, 183px, image-url('img-logo-ha.png') no-repeat top left);
+        @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left);
       }
     }
   }
   .beer-details {
     h2 {
-      color: $happy-amber-alt;
+      color: #FFF;
     } //h2
     p {
-      color: $happy-amber-alt;
+      color: #FFF;
     }
   } //beer-details
   .site-footer {
@@ -94,7 +94,7 @@ body.interior.un-happy-amber {
     border-color: rgba(97,19,9,.50);
     background: rgba(160,52,14,.6);
     h4 {
-      color: #721F0A;
+      color: $happy-amber;
     }
   }
 } //happy-amber

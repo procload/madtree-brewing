@@ -1,11 +1,10 @@
 body.psychopathy {
   background: $psychopathy; 
-  @include background($psychopathy image-url('backgrounds/bg-psychopathy.png') no-repeat top right);
+  @include background(#131313 image-url('backgrounds/bg-psychopathy.png') no-repeat top right);
   .caret {
     border-top-color: $psychopathy;
   }
   .site-header {
-    color: $psychopathy;
   }
   .header-toolbar {
     background: #721F0A;
