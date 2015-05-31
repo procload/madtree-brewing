@@ -43,11 +43,25 @@ body.beers {
         }
       }
       .beer-images {
+        @extend %group;
         margin: 0 0 calc-em(30px);
+
         @include respond-to(32.5em) {
           @include span-columns(4);
         }
       }
+
+      .beer-glass {
+        float: left;
+        width: 37%;
+        margin-right: 3%;
+      }
+
+      .beer-can {
+        float: left;
+        width: 56%;
+      }
+
       .beer-details-text,
       .beer-stats {
         @include reset-columns;

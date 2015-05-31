@@ -40,7 +40,12 @@ current_page: "beers"
   <section class="beer-description <%= 'with-image' if beer_image != "" %>">
     <% if beer_image != "" %>
       <div class="beer-images">
-        <%=image_tag(beer_image) %>
+        <div class="beer-glass">
+          <%= image_tag("beers/img-glass.png") %>
+        </div>
+        <div class="beer-can">
+          <%= image_tag(beer_image) %>
+        </div>
       </div> <!-- /beer-images -->
     <% end %>
     <div class="beer-details">
