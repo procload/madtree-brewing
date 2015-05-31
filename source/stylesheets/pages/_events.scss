@@ -1,0 +1,48 @@
+body.event-page {
+
+  .section-header {
+    margin-bottom: calc-em(32px);
+
+    h2 {
+      font-size: calc-em(42px);
+      margin-bottom: calc-em(4px, 42px);
+    }
+  }
+
+  .event-teaser {
+    margin-bottom: calc-em(24px);
+    background: #1a1a1a;
+
+    .teaser-header {
+      @extend %group;
+      background: #fff;
+      padding: calc-em(8px);
+
+      h2 {
+        font-size: calc-em(24px);
+        line-height: 1;
+        margin-bottom: 0;
+        @include respond-to(37.5em) {
+          @include span-columns(8);
+        }
+      }
+
+      span {
+        color: #969696;
+        @include respond-to(37.5em) {
+          @include span-columns(4 omega);
+          text-align: right;
+        }
+      }
+
+    }// .teaser-header
+
+    .teaser-body {
+      @include background(transparent image-url('backgrounds/subtle_carbon_inverse.png') repeat top left);
+      padding: calc-em(8px);
+      p {
+        font-size: calc-em(18px);
+      }
+    }// .teaser-body
+  }// .event-teaser
+}// .event-page

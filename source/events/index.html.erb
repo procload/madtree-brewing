@@ -1,0 +1,31 @@
+
+<% content_for :page_classes do %>
+  interior event-page
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+<% end %>
+
+<div class="container">
+    <header class="section-header">
+      <h2>Events</h2>
+      <p>Interested in booking a <%= link_to "taproom", "/taproom" %> event? Or looking for sponsorship or charitable donation? Email <%= link_to "events@madtreebrewing.com", "mailto:events@madtreebrewing.com" %> for more information.</p>
+    </header> <!-- /page-header -->
+    <div id="event-list">
+    </div>
+</div>
+
+<script type="text/x-handlebars-template" id="events_template">
+{{#currentEvents events.elements}}
+<article class="event-teaser">
+  <header class="teaser-header">
+    <h2><a href="{{url}}">{{title}}</a></h2>
+    <span class="date">{{date}} at {{time}}</span>
+  </header> <!-- /teaser-header -->
+  <div class="teaser-body">
+    <p>{{description}}</p>
+    <%= link_to "Read more", "{{url}}" %>
+  </div> <!-- /teaser-body -->
+</article> <!-- /event-teaser -->
+{{/currentEvents}}
+</script>

@@ -1,7 +1,7 @@
 $ ->
 
   insertEvents = (result, tabletop) ->
-    if $("body.home").length > 0
+    if $("body.event-page").length > 0 || $("body.home").length > 0
       source = $("#events_template").html()
       template = Handlebars.compile(source)
       $("#event-list").html(template(result))
@@ -38,3 +38,15 @@ $ ->
         ret = ret + options.fn(currentEvents[i])
         i++
     ret
+
+  Handlebars.registerHelper "currentEvents", (events, options) ->
+    currentEvents = []
+    isCurrent(event) for event in events
+    ret = ""
+    i = 0
+    while i < currentEvents.length
+      ret = ret + options.fn(currentEvents[i])
+      i++
+      console.log ret
+    ret
+
