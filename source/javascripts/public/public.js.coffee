@@ -139,9 +139,8 @@ $ ->
       Tabletop.init
         key: "1QDM8s0t_Ilg8Px_vPpsyrSBT7UNGLGCWLJrddB2gWKo"
         proxy: "https://madtree.s3.amazonaws.com/"
-        simpleSheet: true
         callback: (data, tabletop) ->
-          insertBeers(data)
+          insertBeers(data.beers.elements)
 
     if $("body.taproom").length > 0
       showTaproom(39.166675, -84.420144)
