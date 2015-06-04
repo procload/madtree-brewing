@@ -190,7 +190,7 @@
       "malts" : "2-Row, Munich 10L, Melanoidin, Caramel 80L, Victory",
       "ibu" : "30",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "batchOneRecipe.pdf",
       "image" : "",
       "availability" : "limited"
     },
@@ -204,7 +204,7 @@
       "malts" : "Pilsen, Red Wheat",
       "ibu" : "18",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "wheatEaterRecipe.pdf",
       "image" : "/images/beers/wheat-eater/img-tap.png",
       "availability" : "collaboration"
     },
@@ -259,7 +259,7 @@
       "malts" : "Victory, Extra Special, Brown, Pale Chocolate, Roasted Barley",
       "ibu" : "",
       "adjuncts" : "Vanilla Beans, Deeper Roots Coffee",
-      "recipe" : "",
+      "recipe" : "gnarlyBrownCoffeeRecipe.pdf",
       "availability" : "limited"
     },
     {
@@ -340,7 +340,7 @@
       "malts" : "2-Row, Red Wheat, Caramel 60L, Vienna, Flaked Barley",
       "ibu" : "12",
       "adjuncts" : "Lime Juice, Ginger, Ancho Chilies",
-      "recipe" : "",
+      "recipe" : "flolschRecipe.pdf",
       "availability" : "limited"
     },
     {
@@ -367,7 +367,7 @@
       "malts" : "2-Row, Vienna, Caramel 40L, Carapils, Dextrose",
       "ibu" : "High",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "citraHighRecipe.pdf",
       "image" : "/images/beers/citra-high/img-tap.png",
       "availability" : "limited-year-round"
     },
@@ -381,7 +381,7 @@
       "malts" : "2-Row, Munich 10, Crystal 60, Chocolate, Melanoidin, Carapils",
       "ibu" : "51",
       "adjuncts" : "",
-      "recipe" : "",
+      "recipe" : "roundingThirdRecipe.pdf",
       "image" : "",
       "availability" : "limited-seasonal"
     },
@@ -409,7 +409,7 @@
       "malts" : "2-Row, Chocolate, Crystal 80, Victory, Black",
       "ibu" : "19.1",
       "adjuncts" : "Lactose",
-      "recipe" : "",
+      "recipe" : "blackForestRecipe.pdf",
       "image" : "",
       "availability" : "limited-seasonal"
     },
@@ -423,7 +423,7 @@
       "malts" : "White Wheat, Pilsen, Acidulated",
       "ibu" : "9.5",
       "adjuncts" : "Sea Salt, Blackberry Puree, Lactic Acid",
-      "recipe" : "",
+      "recipe" : "madmannRecipe.pdf",
       "image" : "/images/beers/madmann/img-tap.png",
       "availability" : "collaboration"
     },
@@ -437,7 +437,7 @@
       "malts" : "2-Row, Victory, Acidulated, Crystal 120, Extra Special, Midnight Wheat, Carafa II, Chocolate",
       "ibu" : "18",
       "adjuncts" : "Dextrose, Cinnamon, Lactose, Blackberry Puree, Lactic Acid",
-      "recipe" : "",
+      "recipe" : "blacktartRecipe.pdf",
       "image" : "/images/beers/blacktart/img-tap.png",
       "availability" : "collaboration"
     }
