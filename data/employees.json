@@ -70,13 +70,6 @@
       "photo" : "img-trent.jpg"
     },
     {
-      "name" : "Pat",
-      "title" : "Sir Cans-A-Lot/Brewer",
-      "bio" : "Pat was born in Minnesota and grew up in Wisconsin.  He graduated from the University of Wisconsin with a bachelor&rsquo;s degree in psychology and then moved back to the Land of 10,000 Lakes shortly after.  A few years ago his wife bought him a home brewing kit for his birthday and this is where his passion for good beer started.  He has been making beer for friends and family ever since.  Pat moved to Cincinnati from Minnesota in 2013 and started volunteering the very next day.  He kept volunteering and eventually ended up becoming an employee. He is currently living in Oakley with his wife, Jenna and their dog, Roscoe.",
-      "department" : "Production/Packaging",
-      "photo" : "img-pat.jpg"
-    },
-    {
       "name" : "Dan",
       "title" : "Director of Hoppyness – Greater Cincinnati Sales",
       "bio" : "Dan grew up in Sharonville Ohio and graduated from Princeton High School where he met his wife Samantha. While in high school Dan started his brewing career at Watson brothers brewery where he worked under Toby Hunt (now with Bluegrass Brewing Company) as his assistant brewer. During his time with Watson Brothers he went to school at Cincinnati State studying Hospitality Management. After working for Watson's, Dan went on to work for Firehouse Grill where he helped build a local beer scene in Blue Ash. During his time with Firehouse he built a relationship with MadTree which led to him joining the team in early January 2014.",
@@ -189,10 +182,10 @@
       "photo" : "img-rick.jpg"
     },
     {
-      "name" : "Tyler",
-      "title" : "Not Jeff",
-      "bio" : "Tyler, a Cincinnati native, received a Bachelor of Science in Biology from the University of Cincinnati. Tyler’s older brother, Jeff, started MadTree with Kenny and Brady and threatened Tyler with a lifetime of noogies if he didn’t help out. Tyler has helped with brewing duties, assisted on the packaging line, bartended in the taproom, and currently puts his degree to use in the quality control lab.",
-      "department" : "Quality Lab",
-      "photo" : "img-tyler.jpg"
+      "name" : "Tom",
+      "title" : "Brewer",
+      "bio" : "Tom developed a love for craft beer while studying Mechanical Engineering at The Ohio State University. After returning to his hometown of Cincinnati and beginning to work as an engineer, he started home brewing as a hobby with a few friends. His first visit to MadTree was in August of 2013, and he became a weekly visitor to the taproom almost immediately. After 3 years of working in the electrical distribution field, he decided to turn his passion for craft beer into a career. He couldn't say “Yes!” fast enough when he heard back from MadTree about a brewer job opening, and hasn't stopped smiling since. When he's not working or hanging out in the taproom, he's most likely on the driving range.",
+      "department" : "Production/Packaging",
+      "photo" : "img-tom.jpg"
     }
 ]
