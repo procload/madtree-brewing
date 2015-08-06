@@ -1,0 +1,66 @@
+.bonanza {
+  background: #47cdc3;
+  
+  .site-header {
+    margin: 0;
+
+  }
+  
+  .header-toolbar {
+    background: darken(#47cdc3, 15%);
+  }
+  
+  .bonanza-header {
+    background: image-url("backgrounds/bg-bonanza.jpg") no-repeat top left;
+    background-size: cover;
+    
+    > img {
+      max-width: calc-em(450px);
+      display: block;
+      margin: 0 auto;
+      padding: calc-em(30px);
+
+    }
+  } //.bonanza-header
+  
+  
+  .bonanza-nav {
+    width: 100%;
+    background: darken(#47cdc3, 10%);
+    
+    ul {
+      @extend %container;
+      @extend %zero-list;
+      
+      li {
+        width: 24%;
+      }
+      
+      a {
+        color: #FAFF9C;
+        display: block;
+        text-align: center;
+        padding: calc-em(6px, 32px) calc-em(16px, 32px);
+        font-size: calc-em(32px);
+        font-family: $nav-font-family;
+        font-weight: 500;
+        text-transform: uppercase;
+        
+        &:hover {
+          background: darken(#47cdc3, 15%);
+          text-decoration: none;
+        }
+      } //a
+    } //ul
+  } //.bonanza-nav
+  
+  .bonanza-main {
+    
+  } //.bonanza-main
+  
+  .details {
+    
+  }
+  
+  
+}

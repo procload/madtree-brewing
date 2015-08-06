@@ -1,20 +1,68 @@
 <header class="bonanza-header">
+  <%= image_tag "logos/summer-bonanza.png" %>
   <nav class="bonanza-nav">
-
+    <ul>
+      <li><%= link_to "Beer List", "#beers" %></li>
+      <li><%= link_to "Bands", "#bands" %></li>
+      <li><%= link_to "Food", "#food" %></li>
+      <li><%= link_to "Parking", "#parking" %></li>
+    </ul>
   </nav> <!-- /bonanza-nav -->
 </header>
 
 <div class="bonanza-main">
-  <section class="beer-list">
-
+  <section class="details">
+    <p class="intro">Save the Date! We are bringing the fun of the epic Winter Bonanza to the Summer! Stay tuned for more details on beers, bands, and food.</p>
+    <p class="date-time">
+      <time datetime="2015-08-29T12:00">August 29 at Noon</time>
+      &ndash;
+      <time datetime="2015-08-30T01:00">August 30 at 1a.m.</time>  
+    </p>
+  </section> <!-- /details -->
+  
+  <section id="beers" class="beer-list">
+    <header class="section-header">
+      <h3>Beers</h3>
+    </header> <!-- /section-header -->
+    <p>In ullamcorper est orci, ac vulputate lacus pulvinar ut. Suspendisse potenti. Nulla efficitur, tellus sed scelerisque faucibus, magna justo suscipit mi, eget semper libero felis et ante. Vestibulum congue sagittis leo faucibus ornare.</p>
+    <section class="madtree-beers beers">
+      <h4>Madtree Beers</h4>
+      <div class="beer">
+        <h5>Psychopathy</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+    </section> <!-- /beers.madtree-beers -->
+    <section class="guest-beers beers">
+      <h4>Guest Beers</h4>
+    </section> <!-- /beers.guest-beers -->
   </section><!-- /beer-list -->
 
-  <section class="parking-info">
-
+  <section id="parking" class="parking-info">
+    <header class="section-header">
+      <h3>Parking</h3>
+    </header> <!-- /section-header -->
+    <p>In ullamcorper est orci, ac vulputate lacus pulvinar ut. Suspendisse potenti. Nulla efficitur, tellus sed scelerisque faucibus, magna justo suscipit mi, eget semper libero felis et ante. Vestibulum congue sagittis leo faucibus ornare.</p>
+    <%= image_tag "http://placehold.it/300x300" %>
   </section> <!-- /parking-info -->
 
-  <section class="bands">
-
+  <section id="bands" class="bands">
+    <header class="section-header">
+      <h3>Bands</h3>
+    </header> <!-- /section-header -->
+  </section> <!-- /bands -->
+  
+  <section id="food" class="food">
+    <header class="section-header">
+      <h3>Food</h3>
+    </header> <!-- /section-header -->
+    <p>In ullamcorper est orci, ac vulputate lacus pulvinar ut. Suspendisse potenti. Nulla efficitur, tellus sed scelerisque faucibus, magna justo suscipit mi, eget semper libero felis et ante. Vestibulum congue sagittis leo faucibus ornare.</p>
+    <ul class="food-list">
+      <li><%= link_to "Catch-a-Fire Pizza", "https://www.facebook.com/CatchaFirePizza" %></li>
+      <li><%= link_to "C'est Cheese Food Truck", "https://www.facebook.com/CestCheeseCincy" %></li>
+      <li><%= link_to "Red sesame korean BBQ/ Taco", "https://www.facebook.com/redsesamekoreanbbq" %></li>
+      <li><%= link_to "Bones' Burgers", "https://www.facebook.com/pages/Bones-Burgers/205353236171290" %></li>                  
+      <li><%= link_to "Street Pops", "https://www.facebook.com/streetpops" %></li>
+    </ul>
   </section> <!-- /bands -->
 </div> <!-- /bonanza-main -->
 
