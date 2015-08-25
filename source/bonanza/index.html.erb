@@ -5,7 +5,7 @@
       <li><%= link_to "Beer List", "#beers" %></li>
       <li><%= link_to "Bands", "#bands" %></li>
       <li><%= link_to "Food", "#food" %></li>
-      <li><%= link_to "Parking", "#parking" %></li>
+      <li><%= link_to "Map &amp; Parking", "#parking" %></li>
     </ul>
   </nav> <!-- /bonanza-nav -->
 </header>
@@ -15,18 +15,34 @@
     <p class="intro">Save the Date! We are bringing the fun of the epic Winter Bonanza to the Summer! Stay tuned for more details on beers, bands, and food.</p>
     <p class="date-time">
       <time datetime="2015-08-29T12:00">August 29 at Noon</time>
-      &ndash;
-      <time datetime="2015-08-30T01:00">August 30 at 1a.m.</time>  
+      <span>&ndash;</span>
+      <time datetime="2015-08-30T01:00">August 30 at 1a.m.</time>
     </p>
   </section> <!-- /details -->
-  
+
   <section id="beers" class="beer-list">
-    <header class="section-header">
-      <h3>Beers</h3>
-    </header> <!-- /section-header -->
-    <p>In ullamcorper est orci, ac vulputate lacus pulvinar ut. Suspendisse potenti. Nulla efficitur, tellus sed scelerisque faucibus, magna justo suscipit mi, eget semper libero felis et ante. Vestibulum congue sagittis leo faucibus ornare.</p>
     <section class="madtree-beers beers">
       <h4>Madtree Beers</h4>
+      <div class="beer">
+        <h5>Psychopathy</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Psychopathy</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Psychopathy</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Psychopathy</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Psychopathy</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
       <div class="beer">
         <h5>Psychopathy</h5>
         <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
@@ -34,28 +50,97 @@
     </section> <!-- /beers.madtree-beers -->
     <section class="guest-beers beers">
       <h4>Guest Beers</h4>
+      <div class="beer">
+        <h5>Guest Beer</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Guest Beer</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Guest Beer</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Guest Beer</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Guest Beer</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
+      <div class="beer">
+        <h5>Guest Beer</h5>
+        <p>Fusce rhoncus nibh quam, et. Fusce rhoncus nibh quam, et.</p>
+      </div> <!-- /beer -->
     </section> <!-- /beers.guest-beers -->
   </section><!-- /beer-list -->
-
-  <section id="parking" class="parking-info">
-    <header class="section-header">
-      <h3>Parking</h3>
-    </header> <!-- /section-header -->
-    <p>In ullamcorper est orci, ac vulputate lacus pulvinar ut. Suspendisse potenti. Nulla efficitur, tellus sed scelerisque faucibus, magna justo suscipit mi, eget semper libero felis et ante. Vestibulum congue sagittis leo faucibus ornare.</p>
-    <%= image_tag "http://placehold.it/300x300" %>
-  </section> <!-- /parking-info -->
-
   <section id="bands" class="bands">
     <header class="section-header">
-      <h3>Bands</h3>
+      <h3>Bands & DJs</h3>
+      <p>All bands will be playing in the warehouse and all times are approximate.</p>
     </header> <!-- /section-header -->
+    <section class="band-time">
+      <h4>Bands</h4>
+      <ul class="band-list">
+        <li>
+          <time>Noon</time>
+          <p>Cody J. Martin</p>
+        </li>
+        <li>
+          <time>2 p.m.</time>
+          <p>46 Long</p>
+        </li>
+        <li>
+          <time>4 p.m.</time>
+          <p><%= link_to "Sweet and the Sweet Sweets", "https://www.facebook.com/cincinnatisweetsweetsweets" %></p>
+        </li>
+        <li>
+          <time>5 p.m.</time>
+          <p><%= link_to "Cereal Killers", "https://www.facebook.com/cerealkillerslive" %></p>
+        </li>
+        <li>
+          <time>7 p.m.</time>
+          <p><%= link_to "Founding Fathers", "https://www.facebook.com/FoundingfathersCincinnati" %></p>
+        </li>
+        <li>
+          <time>8 p.m.</time>
+          <p><%= link_to "DAAP Girls", "https://www.facebook.com/DAAPgirls" %></p>
+        </li>
+        <li>
+          <time>10:30 p.m.</time>
+          <p><%= link_to "The Almighty Get Down", "https://www.facebook.com/TheAlmightyGetDown" %></p>
+        </li>
+      </ul>
+    </section> <!-- /band-time -->
+    <section class="dj-time">
+      <h4>DJs</h4>
+      <ul class="band-list">
+        <li>
+          <time>Noon</time>
+          <p><strong>Melvin Dillon</strong> &ndash; DJ Soul Step</p>
+        </li>
+        <li>
+          <time>3 p.m.</time>
+          <p><strong>David Corns</strong> &ndash; Sabastooge</p>
+        </li>
+        <li>
+          <time>6 p.m.</time>
+          <p><strong>Elizabeth Park</strong> &ndash; DJ Spam</p>
+        </li>
+        <li>
+          <time>9 p.m.</time>
+          <p><strong>Jackson Travis Rouse</strong> &ndash; Jackson</p>
+        </li>
+      </ul>
+    </section>
   </section> <!-- /bands -->
-  
+
   <section id="food" class="food">
     <header class="section-header">
       <h3>Food</h3>
     </header> <!-- /section-header -->
-    <p>In ullamcorper est orci, ac vulputate lacus pulvinar ut. Suspendisse potenti. Nulla efficitur, tellus sed scelerisque faucibus, magna justo suscipit mi, eget semper libero felis et ante. Vestibulum congue sagittis leo faucibus ornare.</p>
     <ul class="food-list">
       <li><%= link_to "Catch-a-Fire Pizza", "https://www.facebook.com/CatchaFirePizza" %></li>
       <li><%= link_to "C'est Cheese Food Truck", "https://www.facebook.com/CestCheeseCincy" %></li>
@@ -64,8 +149,14 @@
       <li><%= link_to "Street Pops", "https://www.facebook.com/streetpops" %></li>
     </ul>
   </section> <!-- /bands -->
+  <section id="parking" class="parking-info">
+    <header class="section-header">
+      <h3>Map &amp; Parking</h3>
+      <p>Please park at Fifth Third (5001 Kingsley Drive, 45227) or MedPace (5375 MedPace Way, 45227) and take the shuttle running from noon until 1am. There will be very limited parking at MadTree.</p>
+    </header> <!-- /section-header -->
+    <%= image_tag "bonanza/img-map.jpg" %>
+  </section> <!-- /parking-info -->
+
 </div> <!-- /bonanza-main -->
 
-<footer class="bonanza-footer">
 
-</footer> <!-- /bonanza-footer -->

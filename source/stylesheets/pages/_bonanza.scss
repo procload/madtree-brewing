@@ -1,19 +1,45 @@
 .bonanza {
-  background: #47cdc3;
-  
+  background: #41C5BB;
+
+  time {
+    font-family: $font-family-display;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: calc-em(48px);
+    color: #2B756B;
+  }
+
+  h4 {
+    color: #A7FFF4;
+    font-size: calc-em(32px);
+  }
+
+  h5 {
+    font-size: calc-em(24px);
+    margin-bottom: 0;
+  }
+
   .site-header {
     margin: 0;
-
   }
-  
+
   .header-toolbar {
     background: darken(#47cdc3, 15%);
   }
-  
+
+  .section-header {
+    margin-bottom: calc-em(16px);
+    p {
+      font-size: calc-em(18px);
+    }
+  }
+
   .bonanza-header {
     background: image-url("backgrounds/bg-bonanza.jpg") no-repeat top left;
     background-size: cover;
-    
+
     > img {
       max-width: calc-em(450px);
       display: block;
@@ -22,20 +48,19 @@
 
     }
   } //.bonanza-header
-  
-  
+
   .bonanza-nav {
     width: 100%;
     background: darken(#47cdc3, 10%);
-    
+
     ul {
       @extend %container;
       @extend %zero-list;
-      
+
       li {
         width: 24%;
       }
-      
+
       a {
         color: #FAFF9C;
         display: block;
@@ -45,7 +70,7 @@
         font-family: $nav-font-family;
         font-weight: 500;
         text-transform: uppercase;
-        
+
         &:hover {
           background: darken(#47cdc3, 15%);
           text-decoration: none;
@@ -53,14 +78,115 @@
       } //a
     } //ul
   } //.bonanza-nav
-  
   .bonanza-main {
-    
+    @extend %container;
+    @extend %group;
+
+    a {
+      color: #FAFF9C;
+    }
+
   } //.bonanza-main
-  
-  .details {
-    
+
+  .details,
+  .beer-list,
+  .food,
+  .parking-info,
+  .bands {
+    @extend %group;
+    margin-bottom: calc-em(32px);
   }
-  
-  
+
+  .details {
+    margin-bottom: 0;
+    text-align: center;
+    padding: calc-em(32px) 0;
+
+    time,
+    span {
+      font-size: calc-em(56px);
+    }
+  }
+
+  .intro {
+    font-weight: 100;
+    margin-bottom: calc-em(12px, 32px);
+    font-size: calc-em(32px);
+  }
+
+  .beer-list {
+    text-align: center;
+    .beers {
+      @include span-columns(6);
+      @include nth-omega(2n);
+    }
+  }
+
+  .beer {
+    padding: calc-em(12px);
+    p {
+      font-size: calc-em(18px);
+    }
+
+    &:nth-child(odd) {
+      background: darken(#41C5BB, 5%);
+    }
+  }
+
+  .bands,
+  .food {
+    ul {
+      @extend %zero-list;
+      li {
+        display: block;
+      }
+    }
+  }
+
+  .bands {
+    @extend %group;
+    .band-time,
+    .dj-time {
+      @include span-columns(4, 8);
+    }
+
+    .dj-time {
+      @include omega;
+    }
+  }
+
+
+  .food {
+    @include span-columns(5 omega);
+    ul li {
+      font-family: $font-family-display;
+      text-transform: uppercase;
+      font-size: calc-em(24px);
+      &:nth-child(odd) {
+        a {
+          background: darken(#41C5BB, 5%);
+        }
+      }
+      a {
+        padding: calc-em(8px, 24px);
+        display: block;
+      }
+    }
+  }
+
+  .bands {
+    @include span-columns(7);
+    ul li {
+      font-size: calc-em(18px);
+      line-height: calc-em(24px, 18px);
+      padding: calc-em(8px, 18px);
+      &:nth-child(odd) {
+        background: darken(#41C5BB, 5%);
+      }
+    }
+  }
+  .parking-info {
+    margin-bottom: calc-em(32px);
+  }
+
 }
