@@ -189,4 +189,48 @@
     margin-bottom: calc-em(32px);
   }
 
+
+  .beer-list {
+    span {
+    font-weight: bold;
+    em {
+      font-size: calc-em(12px);
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    }
+
+  }
+
+  .all-day {
+    border-radius: 4px;
+    background: #2B756B;
+    padding: calc-em(10px);
+    margin-bottom: calc-em(32px);
+    span {
+      margin-bottom: calc-em(8px);
+      display: inline-block;
+      padding: calc-em(4px) calc-em(10px);
+      border-radius: 3px;
+      background: darken(#2B756B, 10%);
+    }
+  }
+
+  .timed-releases {
+    time {
+      display: block;
+      font-size: calc-em(32px);
+    }
+    .release {
+      margin-bottom: calc-em(12px);
+      padding-bottom: calc-em(12px);
+      span {
+        display: block;
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
 }
