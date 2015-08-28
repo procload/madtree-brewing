@@ -132,11 +132,19 @@
     font-weight: 100;
     margin-bottom: calc-em(12px, 32px);
     font-size: calc-em(32px);
+    display: none;
+
+    @include respond-to(37.5em) {
+      display: block;
+    }
   }
 
   .beer-list {
     text-align: center;
     .beers {
+      h3 {
+        color: #FAFF9C;
+      }
       @include respond-to(50em) {
         @include span-columns(6);
         @include nth-omega(2n);
@@ -229,6 +237,10 @@
 
   }
 
+  .band-list p {
+    color: #FAFF9C;
+  }
+
   .all-day {
     border-radius: 4px;
     background: #2B756B;
@@ -244,6 +256,10 @@
   }
 
   .timed-releases {
+    border-radius: 4px;
+    background: #2B756B;
+    padding: calc-em(10px);
+    margin-bottom: calc-em(32px);
     time {
       display: block;
       font-size: calc-em(32px);
@@ -252,7 +268,11 @@
       margin-bottom: calc-em(12px);
       padding-bottom: calc-em(12px);
       span {
-        display: block;
+        display: inline-block;
+        margin-bottom: calc-em(8px);
+        padding: calc-em(4px) calc-em(10px);
+        border-radius: 3px;
+        background: darken(#2B756B, 10%);
       }
       &:last-child {
         border: none;
