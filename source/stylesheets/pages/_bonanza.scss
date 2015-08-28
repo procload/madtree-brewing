@@ -41,10 +41,13 @@
     background-size: cover;
 
     > img {
-      max-width: calc-em(450px);
+      padding: calc-em(60px) calc-em(20px);
+      @include respond-to(28.75em) {
+        padding: calc-em(30px);
+        max-width: calc-em(450px);
+      }
       display: block;
       margin: 0 auto;
-      padding: calc-em(30px);
 
     }
   } //.bonanza-header
@@ -54,11 +57,23 @@
     background: darken(#47cdc3, 10%);
 
     ul {
-      @extend %container;
-      @extend %zero-list;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+
+      @include respond-to(50em) {
+        @extend %container;
+        @extend %zero-list;
+      }
 
       li {
-        width: 24%;
+        display: block;
+        width: 100%;
+
+        @include respond-to(50em) {
+          width: 24%;
+        }
       }
 
       a {
@@ -104,7 +119,11 @@
 
     time,
     span {
-      font-size: calc-em(56px);
+      font-size: calc-em(30px);
+      @include respond-to(50em) {
+
+        font-size: calc-em(56px);
+      }
     }
   }
 
@@ -117,8 +136,10 @@
   .beer-list {
     text-align: center;
     .beers {
-      @include span-columns(6);
-      @include nth-omega(2n);
+      @include respond-to(50em) {
+        @include span-columns(6);
+        @include nth-omega(2n);
+      }
     }
   }
 
@@ -157,7 +178,9 @@
 
 
   .food {
-    @include span-columns(5 omega);
+    @include respond-to(37.5em) {
+      @include span-columns(5 omega);
+    }
     ul li {
       font-family: $font-family-display;
       text-transform: uppercase;
@@ -175,7 +198,9 @@
   }
 
   .bands {
-    @include span-columns(7);
+    @include respond-to(37.5em) {
+      @include span-columns(7);
+    }
     ul li {
       font-size: calc-em(18px);
       line-height: calc-em(24px, 18px);
