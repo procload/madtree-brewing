@@ -187,5 +187,12 @@
       "bio" : "Tom developed a love for craft beer while studying Mechanical Engineering at The Ohio State University. After returning to his hometown of Cincinnati and beginning to work as an engineer, he started home brewing as a hobby with a few friends. His first visit to MadTree was in August of 2013, and he became a weekly visitor to the taproom almost immediately. After 3 years of working in the electrical distribution field, he decided to turn his passion for craft beer into a career. He couldn't say “Yes!” fast enough when he heard back from MadTree about a brewer job opening, and hasn't stopped smiling since. When he's not working or hanging out in the taproom, he's most likely on the driving range.",
       "department" : "Production/Packaging",
       "photo" : "img-tom.jpg"
+    },
+    {
+      "name" : "Mike",
+      "title" : "Hype Man (Toby)",
+      "bio" : "Mike was born in Cincinnati, Ohio but lived in South Florida and the Bahamas before returning and graduating from the University of Cincinnati. After sucking down countless gallons of adjunct lagers, his San Diego-based brother began introducing him to quaint little West Coast breweries like Stone, Ballast Point, and Russian River. Then things snowballed out of control when his wife bought him a homebrew kit for Christmas one year. He went on to create The Brew Professor local beer blog that quickly became a popular source for local beer news. After more than a dozen years of a corporate day job life he decided it was time to follow his passion and burn his suits, thanks to the support of his wife and four kids (yes, four).",
+      "department" : "Front Office",
+      "photo" : "img-mike.jpg"
     }
 ]
