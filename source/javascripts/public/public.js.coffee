@@ -160,7 +160,7 @@ $ ->
       client_id: "2977D98B3AA0DB9846E5D71F619E36A1E67D5F01",
       client_secret: "445B3550C7D39BE441A45B3FDFB2E4723F08FD52"
 
-    $.getJSON "https://madtree-data.herokuapp.com/untappd", (result) ->
+    $.getJSON "untappd.json", (result) ->
       untappd =
         beerCount: result.beer_count
         breweryRating: result.rating.rating_score
