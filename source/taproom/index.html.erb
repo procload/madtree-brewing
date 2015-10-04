@@ -171,7 +171,14 @@ description: "Carryout, bar, cafe, family hangout, club meeting&hellip; the MadT
       <td>
         <table cellpadding="0" cellspacing="0" class="table">
           <tr>
-          <th><a href={{hyperlink}} class="name">{{beer}}</a> <a href="#" class="price">Prices</a></th>
+          <th>
+            <div class="details">
+              <a href={{hyperlink}} class="name">{{beer}}</a>
+              {{#if style}}{{style}}{{/if}}
+              {{#if ibu}}<span>IBU:</span> {{ibu}}{{/if}}
+              {{#if abv}}<span>ABV:</span> {{abv}}{{/if}}
+            </div>
+            <a href="#" class="price">Prices <i class="icon-caret-down"></i></a></th>
           </tr>
           <tr class="prices">
             <td>

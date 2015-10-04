@@ -63,9 +63,17 @@ body.taproom {
       font-family: $nav-font-family;
       padding: 0;
       @extend %group;
-      .name {
+      .details {
         float: left;
+        span {
+          display: inline-block;
+        }
+      }
+      .name {
+        display: block;
         color: #FFF;
+        font-size: calc-em(28px, 18px);
+        margin-bottom: calc-em(6px, 28px);
       }
       .price {
         float: right;

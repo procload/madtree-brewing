@@ -127,6 +127,7 @@ $ ->
       infowindow.open map, marker
 
     insertBeers = (beers) ->
+        console.log(beers)
         source = $("#tap_template").html()
         template = Handlebars.compile(source)
         $("#ontap").html(template(beers))
