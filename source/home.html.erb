@@ -15,57 +15,79 @@
 <% end %>
 
 <div class="container">
-  <section class="find-madtree">
-    <div id="map-canvas">
-      <div id="map"></div>
-      <div id="loc-list">
-        <ul id="list"></ul> <!-- /list -->
-      </div> <!-- /loc-list -->
-    </div> <!-- /map-canvas -->
-    <section class="find-beer">
-      <div>
-        <h2>Find Madtree Beer</h2>
-        <div id="form-container">
-          <form id="user-location" method="post" action="#">
-            <div class="input-group">
-              <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
-              <span class="input-group-btn">
-                <button class="btn btn-default" id="find"><i class="icon-compass"></i></button>
-              </span> <!-- /input-group-btn -->
-            </div><!-- /input-group -->
-            <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
-          </form> <!-- /user-location -->
-        </div> <!-- /form-container -->
-        <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
+  <div class="find-newsletter">
+    <section class="find-madtree">
+      <div id="map-canvas">
+        <div id="map"></div>
+        <div id="loc-list">
+          <ul id="list"></ul> <!-- /list -->
+        </div> <!-- /loc-list -->
+      </div> <!-- /map-canvas -->
+      <section class="find-beer">
+        <div>
+          <h2>Find Madtree Beer</h2>
+          <div id="form-container">
+            <form id="user-location" method="post" action="#">
+              <div class="input-group">
+                <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" id="find"><i class="icon-compass"></i></button>
+                </span> <!-- /input-group-btn -->
+              </div><!-- /input-group -->
+              <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
+            </form> <!-- /user-location -->
+          </div> <!-- /form-container -->
+          <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
+        </div>
+        <div class="search-result-info">
+          <p class="disclaimer"><strong>Note:</strong></p>
+          <p class="disclaimer">Accounts listed have purchased at least one MadTree product in the last 2 months. Please call the retailer to inquire if they currently carry the product.</p>
+          <p class="disclaimer">There are several accounts (ie. Dutch's, Jungle Jims, and Whole Foods) that serve for on premise consumption as well as carryout</p>
+        </div>
+      </section> <!-- /find-beer -->
+      <section class="address-phone">
+        <div class="address">
+          <h5><i class="icon-map-marker"></i> Address</h5>
+          <p>5164 Kennedy Ave.</p>
+          <p>Cincinnati, OH 45213</p>
+        </div> <!-- /address -->
+        <div class="phone">
+          <h5><i class="icon-phone"></i> Phone</h5>
+          <p>513-836-8733</p>
+        </div> <!-- /phone -->
+        <div class="email">
+          <h5><i class="icon-envelope"></i> Email</h5>
+          <p>
+          <%= link_to "Keg/Dock Sales", "mailto:docksales@madtreebrewing.com" %>
+          &mdash;
+          <%= link_to "Outside Sales", "mailto:sales@madtreebrewing.com" %>
+          &mdash;
+          <%= link_to "Taproom", "mailto:taproom@madtreebrewing.com" %>
+          </p>
+        </div> <!-- /phone -->
+      </section> <!-- /address-phone -->
+    </section> <!-- /find-madtree -->
+    <section class="email-newsletter">
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="//madtreebrewing.us10.list-manage.com/subscribe/post?u=907672076387a28aa464c3c48&amp;id=cc4baef465" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <label for="mce-EMAIL">Subscribe to our mailing list</label>
+              <div class="input-group">
+                <input type="email" value="" name="EMAIL" class="email form-control" id="mce-EMAIL" placeholder="email address" required>
+                <span class="input-group-btn">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default">
+                </span> <!-- /input-group-btn -->
+              </div><!-- /input-group -->
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_907672076387a28aa464c3c48_cc4baef465" tabindex="-1" value=""></div>
+            <div class="clear"></div>
+          </div>
+        </form>
       </div>
-      <div class="search-result-info">
-        <p class="disclaimer"><strong>Note:</strong></p>
-        <p class="disclaimer">Accounts listed have purchased at least one MadTree product in the last 2 months. Please call the retailer to inquire if they currently carry the product.</p>
-        <p class="disclaimer">There are several accounts (ie. Dutch's, Jungle Jims, and Whole Foods) that serve for on premise consumption as well as carryout</p>
-      </div>
-    </section> <!-- /find-beer -->
-    <section class="address-phone">
-      <div class="address">
-        <h5><i class="icon-map-marker"></i> Address</h5>
-        <p>5164 Kennedy Ave.</p>
-        <p>Cincinnati, OH 45213</p>
-      </div> <!-- /address -->
-      <div class="phone">
-        <h5><i class="icon-phone"></i> Phone</h5>
-        <p>513-836-8733</p>
-      </div> <!-- /phone -->
-      <div class="email">
-        <h5><i class="icon-envelope"></i> Email</h5>
-        <p>
-        <%= link_to "Keg/Dock Sales", "mailto:docksales@madtreebrewing.com" %>
-        &mdash;
-        <%= link_to "Outside Sales", "mailto:sales@madtreebrewing.com" %>
-        &mdash;
-        <%= link_to "Taproom", "mailto:taproom@madtreebrewing.com" %>
-        </p>
-      </div> <!-- /phone -->
-    </section> <!-- /address-phone -->
-  </section> <!-- /find-madtree -->
+      <!--End mc_embed_signup-->
+    </section> <!-- /email-newsletter -->
+  </div> <!-- /find-newsletter -->
 
   <section class="upcoming-events">
     <div class="event-contact">

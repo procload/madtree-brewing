@@ -22,7 +22,7 @@ body.home {
     overflow: scroll;
     -webkit-overflow-scrolling: touch;
   }
-  .find-madtree {
+  .find-newsletter {
     margin-bottom: calc-em(36px);
     @include respond-to(40em) {
       margin-bottom: 0;
@@ -36,6 +36,14 @@ body.home {
       color: $white;
     }
   } //find-madtree
+
+  .email-newsletter {
+    label {
+      font-size: calc-em(32px);
+      text-transform: uppercase;
+      font-family: $font-family-display;
+    }
+  }
 
   .find-beer {
     padding: calc-em(24px);
