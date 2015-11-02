@@ -6,6 +6,7 @@ $ ->
   this_month = ""
 
   $.getJSON "/data/charity.json", (result) ->
+    console.log result
     monthly_partners = result[4].monthly_partners
     for month in monthly_partners
       if month.month_number <= (current_month + 1)

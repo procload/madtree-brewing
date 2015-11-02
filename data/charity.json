@@ -134,8 +134,18 @@
         "month_number": "9"
       },
       {
-        "name": "University of Dayton: Christmas off Campus",
-        "image": "\/images\/charity\/",
+        "name": "I Have Wings Breast Cancer Foundation",
+        "image": "\/images\/charity\/img-wings.jpg",
+        "url": "",
+        "money": "",
+        "description": "",
+        "type": "monthly",
+        "month": "October",
+        "month_number": "9"
+      },
+      {
+        "name": "University of Dayton Christmas off Campus",
+        "image": "\/images\/charity\/img-cancerfree.jpg",
         "url": "",
         "money": "",
         "description": "",

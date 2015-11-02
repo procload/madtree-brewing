@@ -16,9 +16,9 @@ task :update_untappd do
 
   json = JSON.generate brewery.brewery
 
-  File.delete("build/untappd.json")
+  File.delete("source/untappd.json")
 
-  File.open("build/untappd.json","w") do |f|
+  File.open("source/untappd.json","w") do |f|
     f.write(json)
   end
   puts "done."
