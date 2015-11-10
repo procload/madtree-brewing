@@ -10,36 +10,46 @@ body.event-page {
   }
 
   .event-teaser {
+    padding: calc-em(20px);
     margin-bottom: calc-em(24px);
-    background: #1a1a1a;
+    background: rgba(46,46,46,.8);
+
+    @include respond-to(43.75em) {
+      @include span-columns(6);
+    }
+
+    &:nth-child(even) {
+      @include respond-to(43.75em) {
+        @include span-columns(6 omega);
+      }
+    }
+
+    .date {
+      font-family: $font-family-display;
+      text-transform: uppercase;
+      color: #E13A1C;
+      font-size: calc-em(21px);
+    }
 
     .teaser-header {
-      @extend %group;
-      background: #fff;
-      padding: calc-em(8px);
 
       h2 {
-        font-size: calc-em(24px);
+        display: block;
+        font-size: calc-em(36px);
         line-height: 1;
         margin-bottom: 0;
-        @include respond-to(37.5em) {
-          @include span-columns(8);
+        a {
+          color: #FFF;
         }
       }
 
       span {
         color: #969696;
-        @include respond-to(37.5em) {
-          @include span-columns(4 omega);
-          text-align: right;
-        }
       }
 
     }// .teaser-header
 
     .teaser-body {
-      @include background(transparent image-url('backgrounds/subtle_carbon_inverse.png') repeat top left);
-      padding: calc-em(8px);
       p {
         font-size: calc-em(18px);
       }
