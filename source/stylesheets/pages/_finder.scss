@@ -1,0 +1,39 @@
+
+.home.finder {
+  @extend %group;
+  padding: 0 0 calc-em(60px);
+
+  .find-madtree,
+  .find-newsletter {
+    @extend %group;
+    @include reset-columns;
+  }
+
+  .find-madtree {
+    margin: 0 0 calc-em(120px) 0;
+  }
+
+  .find-beer {
+
+    @include respond-to(40em) {
+      margin-bottom: 0;
+      @include span-columns(6);
+    }
+
+    &.showing-results {
+      padding: 0;
+    }
+  }
+
+  .address-phone {
+    @include respond-to(40em) {
+      margin-bottom: 0;
+      @include span-columns(6 omega);
+    }
+  }
+
+  .list-details {
+    text-align: left;
+  }
+
+}

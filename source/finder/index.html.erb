@@ -1,0 +1,75 @@
+<% content_for :meta_information do %>
+  <meta property="og:title" content='MadTree Brewing' />
+  <meta property="og:image" content='http://madtreebrewing.com/images/logo-og.png' />
+  <meta property="og:url" content='http://madtreebrewing.com/'/>
+  <meta property="og:description" content='Bringing canned craft beer to Cincinnati.' />
+  <meta name="description" content='Bringing canned craft beer to Cincinnati.' />
+<% end %>
+
+<% content_for :page_classes do %>
+  home
+<% end %>
+<% content_for :page_classes do %>
+  interior
+<% end %>
+<% content_for :site_header do %>
+  <%= partial '../partials/interior-nav' %>
+<% end %>
+
+<div class="container">
+  <div class="find-newsletter">
+    <section class="find-madtree">
+      <section class="find-beer">
+      <div id="map-canvas">
+        <div id="map"></div>
+        <div id="loc-list">
+          <ul id="list"></ul> <!-- /list -->
+        </div> <!-- /loc-list -->
+      </div> <!-- /map-canvas -->
+        <div>
+          <h2>Find Madtree Beer</h2>
+          <div id="form-container">
+            <form id="user-location" method="post" action="#">
+              <div class="input-group">
+                <input type="text" id="address" name="address" class="form-control" placeholder="Enter your address or zip code">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" id="find"><i class="icon-compass"></i></button>
+                </span> <!-- /input-group-btn -->
+              </div><!-- /input-group -->
+              <button class="btn btn-default" id="submit" type="submit">Find Beer!</button>
+            </form> <!-- /user-location -->
+          </div> <!-- /form-container -->
+          <p class="disclaimer">Note: <em>MadTree cannot guarantee beer will be available.</em></p>
+        </div>
+        <div class="search-result-info">
+          <p class="disclaimer"><strong>Note:</strong></p>
+          <p class="disclaimer">Accounts listed have purchased at least one MadTree product in the last 2 months. Please call the retailer to inquire if they currently carry the product.</p>
+          <p class="disclaimer">There are several accounts (ie. Dutch's, Jungle Jims, and Whole Foods) that serve for on premise consumption as well as carryout</p>
+        </div>
+      </section> <!-- /find-beer -->
+      <section class="address-phone">
+        <div class="address">
+          <h5><i class="icon-map-marker"></i> Address</h5>
+          <p>5164 Kennedy Ave.</p>
+          <p>Cincinnati, OH 45213</p>
+        </div> <!-- /address -->
+        <div class="phone">
+          <h5><i class="icon-phone"></i> Phone</h5>
+          <p>513-836-8733</p>
+        </div> <!-- /phone -->
+        <div class="email">
+          <h5><i class="icon-envelope"></i> Email</h5>
+          <p>
+          <%= link_to "Keg/Dock Sales", "mailto:docksales@madtreebrewing.com" %>
+          &mdash;
+          <%= link_to "Outside Sales", "mailto:sales@madtreebrewing.com" %>
+          &mdash;
+          <%= link_to "Taproom", "mailto:taproom@madtreebrewing.com" %>
+          &mdash;
+          <%= link_to "Email Feedback", "feedback@madtreebrewing.com" %>
+          </p>
+        </div> <!-- /phone -->
+      </section> <!-- /address-phone -->
+    </section> <!-- /find-madtree -->
+  </div>
+</div>

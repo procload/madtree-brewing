@@ -43,7 +43,7 @@ $ ->
         $header.addClass "open"
         $header.next().slideDown("50")
 
-    if $("body.home").length > 0
+    if $("body.home").length > 0 || ("body.finder").length > 0
       $("#map-canvas").storeLocator
         dataType: "json"
         dataLocation: "/data/stores.json"
