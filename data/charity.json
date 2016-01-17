@@ -34,8 +34,8 @@
   {
     "monthly_partners": [
       {
-        "name": "Cystic Fibrosis",
-        "image": "\/images\/charity\/img-cysticfibrosis.jpg",
+        "name": "Pleasant Ridge Montessori Boosters",
+        "image": "\/images\/charity\/img-prm.png",
         "url": "",
         "money": "",
         "description": "",
@@ -44,8 +44,8 @@
         "month_number": "0"
       },
       {
-        "name": "Interfaith Hospitality Network",
-        "image": "\/images\/charity\/img-interfaith.jpg",
+        "name": "Pro-Kids",
+        "image": "\/images\/charity\/img-pkyp.png",
         "url": "",
         "money": "",
         "description": "",
@@ -54,8 +54,8 @@
         "month_number": "1"
       },
       {
-        "name": "Give Back Cincinnati",
-        "image": "\/images\/charity\/img-giveback.jpg",
+        "name": "Keep Cincinnati Beautiful",
+        "image": "\/images\/charity\/img-cincyb.png",
         "url": "",
         "money": "",
         "description": "",
@@ -64,8 +64,8 @@
         "month_number": "2"
       },
       {
-        "name": "Autism Society",
-        "image": "\/images\/charity\/img-autism.jpg",
+        "name": "Joe Nuxhall Foundation",
+        "image": "\/images\/charity\/img-nuxhall.png",
         "url": "",
         "money": "",
         "description": "",
@@ -74,8 +74,8 @@
         "month_number": "3"
       },
       {
-        "name": "Riding Forward",
-        "image": "\/images\/charity\/img-ridingforward.jpg",
+        "name": "Chefs Collaborative",
+        "image": "\/images\/charity\/img-chefs.png",
         "url": "",
         "money": "",
         "description": "",
@@ -84,8 +84,8 @@
         "month_number": "4"
       },
       {
-        "name": "The First Tee of Greater Miami Valley",
-        "image": "\/images\/charity\/img-firsttee.jpg",
+        "name": "Tr-State Bleeding Disorders",
+        "image": "\/images\/charity\/img-bleeding.png",
         "url": "",
         "money": "",
         "description": "",
@@ -94,8 +94,8 @@
         "month_number": "5"
       },
       {
-        "name": "The Children\u2019s Home of Cincinnati",
-        "image": "\/images\/charity\/img-childrenshome.jpg",
+        "name": "Greater Cincinnati Behavioral Health",
+        "image": "",
         "url": "",
         "money": "",
         "description": "",
@@ -104,8 +104,8 @@
         "month_number": "6"
       },
       {
-        "name": "Lab Rescue",
-        "image": "\/images\/charity\/img-labrescue.jpg",
+        "name": "Community Matters",
+        "image": "\/images\/charity\/img-community.png",
         "url": "",
         "money": "",
         "description": "",
@@ -114,8 +114,8 @@
         "month_number": "7"
       },
       {
-        "name": "CancerFree Kids",
-        "image": "\/images\/charity\/img-cancerfree.jpg",
+        "name": "Alzheimer's Association",
+        "image": "",
         "url": "",
         "money": "",
         "description": "",
@@ -124,8 +124,8 @@
         "month_number": "8"
       },
       {
-        "name": "I Have Wings Breast Cancer Foundation",
-        "image": "\/images\/charity\/img-wings.jpg",
+        "name": "Ohio Alley Cat Rescue",
+        "image": "\/images\/charity\/img-oar.png",
         "url": "",
         "money": "",
         "description": "",
@@ -134,18 +134,8 @@
         "month_number": "9"
       },
       {
-        "name": "I Have Wings Breast Cancer Foundation",
-        "image": "\/images\/charity\/img-wings.jpg",
-        "url": "",
-        "money": "",
-        "description": "",
-        "type": "monthly",
-        "month": "October",
-        "month_number": "9"
-      },
-      {
-        "name": "University of Dayton Christmas off Campus",
-        "image": "\/images\/charity\/img-cancerfree.jpg",
+        "name": "Boys Hope Girls Hope",
+        "image": "\/images\/charity\/img-bghope.png",
         "url": "",
         "money": "",
         "description": "",
@@ -154,8 +144,8 @@
         "month_number": "10"
       },
       {
-        "name": "Ohio River Foundation",
-        "image": "\/images\/charity\/",
+        "name": "Fill the Truck",
+        "image": "\/images\/charity\/img-truck.png",
         "url": "",
         "money": "",
         "description": "",
@@ -166,3 +156,4 @@
     ]
   }
 ]
+

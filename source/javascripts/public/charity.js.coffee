@@ -25,4 +25,3 @@ $ ->
     source = $("#current_charity_template").html()
     template = Handlebars.compile(source)
     $("#current-and-next").html(template(charity_data))
-
