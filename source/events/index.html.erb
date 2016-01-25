@@ -26,7 +26,9 @@
   </header> <!-- /teaser-header -->
   <div class="teaser-body">
     <p>{{description}}</p>
+    {{#if url}}
     <%= link_to "Read more", "{{url}}" %>
+    {{/if}}
   </div> <!-- /teaser-body -->
 </article> <!-- /event-teaser -->
 {{/currentEvents}}
