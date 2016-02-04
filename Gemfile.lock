@@ -20,7 +20,7 @@ GEM
     em-websocket (0.5.0)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.5.3)
-    eventmachine (1.0.3)
+    eventmachine (1.0.9.1)
     execjs (1.4.0)
       multi_json (~> 1.0)
     faraday (0.8.8)
@@ -137,3 +137,6 @@ DEPENDENCIES
   newrelic_rpm
   susy
   untappd
+
+BUNDLED WITH
+   1.11.2
