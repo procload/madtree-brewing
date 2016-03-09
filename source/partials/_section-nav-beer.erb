@@ -23,8 +23,10 @@
         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Limited Year-Round <b class="caret"></b></a>
         <ul class="dropdown-menu">
           <% limited_year.each do |beer| %>
-            <%= content_tag :li, link_to(beer.name, "/beer/#{beer.url}"), class: (sub_page == beer.url ? "active" : "") %>
-          <% end %>
+            <% unless beer.name == "Gnarly Brown" %>
+              <%= content_tag :li, link_to(beer.name, "/beer/#{beer.url}"), class: (sub_page == beer.url ? "active" : "") %>
+            <% end %>
+          <% end%>
         </ul>
       </li> <!-- /limited-year-round -->
       <li class="dropdown seasonal-beers <%= 'active' if seasonal.include? sub_page %>">
