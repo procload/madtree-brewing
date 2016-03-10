@@ -32,6 +32,22 @@
       "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/psychopathy-poster"
     },
     {
+      "name" : "Gnarly Brown",
+      "url" : "gnarly-brown",
+      "description" : "Specialty malts bring intimations of brown sugar and vanilla which meld into the Gnarly's character. Roasted coffee malt flavors and residual sweetness dance in harmony, obscuring the line between brown ale and porter.",
+      "series" : "",
+      "abv" : "7.0%",
+      "hops" : "Cascade, Chinook",
+      "malts" : "2-Row, Victory, Extra Special Brown, Pale Chocolate, Roasted Barley",
+      "ibu" : "32",
+      "adjuncts" : "",
+      "recipe" : "gnarlyBrownRecipe.pdf",
+      "image" : "/images/beers/img-gnarly-brown-combined-rev.png",
+      "availability" : "regular",
+      "t_shirt" : "http://madtree-brewing.myshopify.com/collections/apparel/products/gnarly-brown-t-shirt",
+      "poster" : "http://madtree-brewing.myshopify.com/collections/posters/products/gnarly-brown-poster"
+    },
+    {
       "name" : "PSA",
       "url" : "psa",
       "description" : "PSA was designed to be just that, a Public Service Announcement that craft beer can be both thoughtful and approachable. You may choose to dissect the variety of citrus, dank, and tropical fruit hop flavors or to simply enjoy the proper balance between malt sweetness and body that PSA delivers. Either way, you bring the friends. We’ll bring the beer. Spread the word.",
