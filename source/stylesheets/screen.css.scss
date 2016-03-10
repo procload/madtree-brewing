@@ -262,14 +262,14 @@ a {
   .interior & {
     position: relative;
     .logo {
-      @include replace-text(362px, 183px, image-url('img-logo-small.png') no-repeat top left); 
+      @include replace-text(362px, 183px, image-url('img-logo-small.png') no-repeat top left);
+      background-size: cover;
       z-index: 102;
       width: 82px;
       height: 41px;
       position: fixed;
       top: 40px;
       left: 20px;
-      background-size: contain;
       @include respond-to(41.25em) {
         position: absolute;
         top: -(calc-em(102px));
@@ -285,7 +285,7 @@ a {
 } //navbar-inner
 
 .header-hero {
-  @include background(transparent image-url('backgrounds/bg-home.png') no-repeat top left);
+  @include background(transparent image-url('backgrounds/bg-home.png') no-repeat 100% 40%);
   background-size: cover;
   margin-bottom: calc-em(24px);
 
@@ -301,7 +301,7 @@ a {
     padding-top: calc-em(120px); 
     padding-bottom: calc-em(180px);
     @include respond-to(41.25em) {
-      padding-top: calc-em(40px);
+      padding-top: calc-em(140px);
       overflow:visible;
       overflow-y: hidden;
     }
@@ -317,11 +317,13 @@ a {
     left: 20px;
     background-size: contain;
     @include respond-to(41.25em) {
-      @include replace-text(362px, 183px, image-url('img-logo.png') no-repeat top left); 
+      @include replace-text(362px, 183px, image-url('img-logo-ha.png') no-repeat top left); 
       float: left;
-      position: static;
+      position: absolute;
       top: auto;
       left: auto;
+      bottom: 20px;
+      right: 30px;
     }
   } //logo
 
