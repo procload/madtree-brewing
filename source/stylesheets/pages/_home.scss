@@ -155,6 +155,14 @@ body.home {
       color: $red;
     } //date
   } //event-teaser
+
+  .gather {
+    margin-bottom: calc-em(16px);
+    .btn {
+      display: block;
+    }
+  }
+
   .teaser-header {
     a {
       color: $white;
