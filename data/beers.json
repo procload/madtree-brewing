@@ -57,6 +57,7 @@
       "malts" : "2-Row, Munich 10L, Caramel 60L, Melanoidin, Carapils",
       "ibu" : "30",
       "adjuncts" : "",
+      "recipe" : "psaRecipe.pdf",
       "image" : "/images/beers/psa/can.png",
       "availability" : "regular",
       "t_shirt" : "http://shop.madtreebrewing.com/collections/apparel/products/psa-t-shirt",

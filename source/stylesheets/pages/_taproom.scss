@@ -30,6 +30,11 @@ body.taproom {
       @include span-columns(6 omega);
     }
   }
+
+  .taproom-about-body .btn {
+    margin-bottom: 16px;
+  }
+
   #taproom-map {
     width: 100%;
     height: 400px;

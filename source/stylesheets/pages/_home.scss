@@ -134,8 +134,14 @@ body.home {
     @include background(transparent image-url('backgrounds/subtle_carbon_inverse.png') repeat top left);
     padding: calc-em(20px) calc-em(34px);
     margin-bottom: calc-em(32px);
+
     h4 {
       font-size: calc-em(32px);
+    }
+
+    .btn {
+      display: block;
+      margin-bottom: 6px;
     }
   }
 
