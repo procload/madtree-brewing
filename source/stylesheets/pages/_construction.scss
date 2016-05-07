@@ -1,0 +1,360 @@
+.comingsoon {
+  background: #018bbc;
+
+  time {
+    font-family: $font-family-display;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    font-size: calc-em(48px);
+    line-height: 1;
+    color: #15264C;
+  }
+
+  h4 {
+    color: #FFF;
+    font-size: calc-em(32px);
+  }
+
+  h5 {
+    font-size: calc-em(24px);
+    margin-bottom: 0;
+  }
+
+  .site-header {
+    margin: 0;
+    color: #FFF;
+  }
+
+  .header-toolbar {
+    background: darken(#A1C8DA, 15%);
+  }
+
+  .section-header {
+    margin-bottom: calc-em(16px);
+    p {
+      font-size: calc-em(18px);
+    }
+  }
+
+  .bonanza-header {
+    background: image-url("backgrounds/bg-construction.jpg") no-repeat top left;
+    background-position: 0 -60px; 
+    background-size: cover;
+    @include respond-to(41.25em) {
+      padding: 90px 0 0 0;
+
+    }
+
+    h1 {
+      font-size: 1em;
+      width: 100%;
+      display: block;
+      text-indent: -9999px;
+      background: image-url("construction/small_logo.png") no-repeat top left;
+      width: calc-em(181px);
+      height: calc-em(123px);
+      margin: calc-em(72px) auto calc-em(32px);
+      background-size: cover;
+
+      @include respond-to(41.25em) {
+        margin: 0 0 calc-em(30px);
+        padding: calc-em(90px) 0;
+        width: 100%;
+        height: auto;
+        background: image-url("construction/construction_logos.png") no-repeat top center;
+        background-size: contain;
+      }
+    }
+
+    > img {
+      display: block;
+      margin: 0 auto;
+
+    }
+  } //.bonanza-header
+
+  .sponsors {
+    margin-bottom: calc-em(64px);
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        display: block;
+        margin-bottom: calc-em(10px);
+
+        @include respond-to(51em) {
+          margin: 0;
+          padding: 0;
+          display: inline-block;
+          padding: 0 1%;
+          width: 13%;
+          text-align: center;
+        }
+
+        img {
+          max-width: calc-em(280px);
+          max-height: calc-em(80px);
+          margin-bottom: calc-em(10px);
+          @include respond-to(51em) {
+            max-width: 100%;
+            max-height: none;
+          }
+        }
+      }
+
+      .redi {
+        img {
+          @include respond-to(51em) {
+            max-height: calc-em(80px);
+          }
+        }
+      }
+
+      .neyer {
+
+      }
+
+      
+    }
+  }
+
+  .bonanza-nav {
+    width: 100%;
+    background: darken(#A1C8DA, 10%);
+
+    ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      text-align: center;
+
+      @include respond-to(50em) {
+        @extend %container;
+        @extend %zero-list;
+      }
+
+      li {
+        display: block;
+        width: 100%;
+
+        @include respond-to(50em) {
+          display: inline-block;
+          width: 24%;
+        }
+      }
+
+      a {
+        color: #15264C;
+        display: block;
+        text-align: center;
+        padding: calc-em(6px, 32px) calc-em(16px, 32px);
+        font-size: calc-em(32px);
+        font-family: $nav-font-family;
+        font-weight: 500;
+        text-transform: uppercase;
+
+        &:hover {
+          background: darken(#A1C8DA, 15%);
+          text-decoration: none;
+        }
+      } //a
+    } //ul
+  } //.bonanza-nav
+  .bonanza-main {
+    @extend %container;
+    @extend %group;
+
+    a {
+      color: #15264C;
+    }
+
+  } //.bonanza-main
+
+  .details,
+  .beer-list,
+  .food,
+  .parking-info,
+  .bands {
+    @extend %group;
+    margin-bottom: calc-em(32px);
+  }
+
+  .details {
+    margin-bottom: 0;
+    text-align: center;
+    padding: calc-em(32px) 0;
+
+    p {
+      font-size: calc-em(18px);
+      text-align: left;
+      @include respond-to(51em) {
+        font-size: calc-em(21px);
+      }
+    }
+
+    time,
+    span {
+      font-size: calc-em(30px);
+      @include respond-to(50em) {
+
+        font-size: calc-em(56px);
+      }
+    }
+  }
+
+  .intro {
+    font-weight: 100;
+    margin-bottom: calc-em(12px, 32px);
+    font-size: calc-em(32px);
+    display: none;
+
+    @include respond-to(37.5em) {
+      display: block;
+    }
+  }
+
+  .beer-list {
+    text-align: center;
+    .beers {
+      h3 {
+        color: #15264C;
+      }
+      @include respond-to(50em) {
+        @include span-columns(6);
+        @include nth-omega(2n);
+      }
+    }
+  }
+
+  .beer {
+    padding: calc-em(12px);
+    p {
+      font-size: calc-em(18px);
+    }
+
+    &:nth-child(odd) {
+      background: darken(#A1C8DA, 5%);
+    }
+  }
+
+  .bands,
+  .food {
+    ul {
+      @extend %zero-list;
+      li {
+        display: block;
+      }
+    }
+  }
+
+  .bands {
+    @extend %group;
+    .band-time,
+    .dj-time {
+      @include span-columns(4, 8);
+    }
+
+    .dj-time {
+      @include omega;
+    }
+  }
+
+
+  .food {
+    @include respond-to(37.5em) {
+      @include span-columns(5 omega);
+    }
+    ul li {
+      font-family: $font-family-display;
+      text-transform: uppercase;
+      font-size: calc-em(24px);
+      &:nth-child(odd) {
+        a {
+          background: darken(#A1C8DA, 5%);
+        }
+      }
+      a {
+        padding: calc-em(8px, 24px);
+        display: block;
+      }
+    }
+  }
+
+  .bands {
+    @include respond-to(37.5em) {
+      @include span-columns(7);
+    }
+    ul li {
+      font-size: calc-em(18px);
+      line-height: calc-em(24px, 18px);
+      padding: calc-em(8px, 18px);
+      &:nth-child(odd) {
+        background: darken(#A1C8DA, 5%);
+      }
+    }
+  }
+  .parking-info {
+    margin-bottom: calc-em(32px);
+  }
+
+
+  .beer-list {
+    span {
+    font-weight: bold;
+    em {
+      font-size: calc-em(12px);
+      font-style: normal;
+      font-weight: normal;
+    }
+
+    }
+
+  }
+
+  .band-list p {
+    color: #15264C;
+  }
+
+  .all-day {
+    border-radius: 4px;
+    background: #15264C;
+    padding: calc-em(10px);
+    margin-bottom: calc-em(32px);
+    span {
+      margin-bottom: calc-em(8px);
+      display: inline-block;
+      padding: calc-em(4px) calc-em(10px);
+      border-radius: 3px;
+      background: lighten(#15264C, 10%);
+    }
+  }
+
+  .timed-releases {
+    border-radius: 4px;
+    background: #15264C;
+    padding: calc-em(10px);
+    margin-bottom: calc-em(32px);
+    time {
+      display: block;
+      font-size: calc-em(32px);
+    }
+    .release {
+      margin-bottom: calc-em(12px);
+      padding-bottom: calc-em(12px);
+      span {
+        display: inline-block;
+        margin-bottom: calc-em(8px);
+        padding: calc-em(4px) calc-em(10px);
+        border-radius: 3px;
+        background: lighten(#15264C, 10%);
+      }
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+}
