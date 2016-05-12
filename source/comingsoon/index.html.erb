@@ -3,8 +3,8 @@
   <nav class="bonanza-nav">
     <ul>
       <li><%= link_to "BLOG", "#blog" %></li>
+      <li><%= link_to "SPONSORS", "#mailinglist" %></li>
       <li><%= link_to "MAILING LIST", "#mailinglist" %></li>
-      <li><%= link_to "SPONSORS", "#sponsors" %></li>
     </ul>
   </nav> <!-- /bonanza-nav -->
 </header>
@@ -32,17 +32,11 @@
     <header class="section-header">
       <h3>Construction Updates</h3>
     </header>
-    <script type='text/javascript' src='http://madtreeconstruction.tumblr.com/js'></script>
+    <div class="embed-blog">
+      <script type='text/javascript' src='http://madtreeconstruction.tumblr.com/js'></script>
+    </div>
   </section><!-- /blog -->
 
-  <section id="mailinglist">
-    <header class="section-header">
-      <h3>Newsletter Signup</h3>
-      <p>
-      Suspendisse facilisis bibendum semper. Vivamus. Curabitur imperdiet dictum blandit. Morbi.
-      </p>
-    </header> <!-- /section-header -->
-  </section> <!-- /bands -->
   <section id="sponsors">
     <header class="section-header">
       <h3>Sponsors</h3>
@@ -61,6 +55,8 @@
         <li class="redi">
           <%= image_tag "construction/redi.png" %>
         </li>
+      </ul>
+      <ul>
         <li class="dsg">
           <%= image_tag "construction/dsg.png" %>
         </li>
@@ -70,8 +66,36 @@
         <li class="jobsohio">
           <%= image_tag "construction/jobsohio.png" %>
         </li>
+        <li class="hcdc">
+          <%= image_tag "construction/hcdc.png" %>
+        </li>
       </ul>
     </section>
+  </section> <!-- /bands -->
+  <section id="mailinglist">
+    <header class="section-header">
+      <h3>Newsletter Signup</h3>
+      <!-- Begin MailChimp Signup Form -->
+      <div id="mc_embed_signup">
+        <form action="//madtreebrewing.us10.list-manage.com/subscribe/post?u=907672076387a28aa464c3c48&amp;id=3bf643be1f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+            <h4>Subscribe to our mailing list</h4>
+              <div class="input-group">
+              <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
+                <span class="input-group-btn">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default">
+                </span> <!-- /input-group-btn -->
+              </div><!-- /input-group -->
+            <div id="mce-responses" class="clear">
+              <div class="response" id="mce-error-response" style="display:none"></div>
+              <div class="response" id="mce-success-response" style="display:none"></div>
+            </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_907672076387a28aa464c3c48_3bf643be1f" tabindex="-1" value=""></div>
+            <div class="clear"></div>
+          </div>
+        </form>
+      </div>
+    </header> <!-- /section-header -->
   </section> <!-- /bands -->
 </div> <!-- /bonanza-main -->
 
