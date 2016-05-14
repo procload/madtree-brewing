@@ -1,12 +1,5 @@
 <header class="bonanza-header">
   <h1>Madtree Brewing, 3301 Madison Road</h1>
-  <nav class="bonanza-nav">
-    <ul>
-      <li><%= link_to "BLOG", "#blog" %></li>
-      <li><%= link_to "PARTNERS", "#partners" %></li>
-      <li><%= link_to "MAILING LIST", "#mailinglist" %></li>
-    </ul>
-  </nav> <!-- /bonanza-nav -->
 </header>
 
 <div class="bonanza-main">
@@ -26,66 +19,24 @@
     <p>
       Construction will continue throughout 2016 with opening targeted for Winter 2016/2017. Check back here regularly for updates on the project.
     </p>
+
+    <p class="btn-container">
+      <%= link_to "View our blog for updates", "http://madtreeconstruction.tumblr.com", class: "btn btn-default" %>
+    </p>
   </section> <!-- /details -->
 
-  <section id="blog">
-    <header class="section-header">
-      <h3>Construction Updates</h3>
-    </header>
-    <div class="embed-blog">
-      <script type='text/javascript' src='http://madtreeconstruction.tumblr.com/js'></script>
-    </div>
-  </section><!-- /blog -->
-
-  <section id="partners">
-    <header class="section-header">
-      <h3>Partners</h3>
-    </header> <!-- /section-header -->
-    <section class="partners">
-      <ul>
-        <li class="neyer">
-          <%= image_tag "construction/neyer.png" %>
-        </li>
-        <li class="oakley">
-          <%= image_tag "construction/oakley.png" %>
-        </li>
-        <li class="cincinnati">
-          <%= image_tag "construction/cincinnati.png" %>
-        </li>
-        <li class="redi">
-          <%= image_tag "construction/redi.png" %>
-        </li>
-      </ul>
-      <ul>
-        <li class="dsg">
-          <%= image_tag "construction/dsg.png" %>
-        </li>
-        <li class="chase">
-          <%= image_tag "construction/chase.png" %>
-        </li>
-        <li class="jobsohio">
-          <%= image_tag "construction/jobsohio.png" %>
-        </li>
-        <li class="hcdc">
-          <%= image_tag "construction/hcdc.png" %>
-        </li>
-      </ul>
-    </section>
-  </section> <!-- /bands -->
-  <section id="mailinglist">
-    <header class="section-header">
-      <h3>Newsletter Signup</h3>
-      <!-- Begin MailChimp Signup Form -->
+  <div class="mailing-partners">
+    <section id="mailinglist">
       <div id="mc_embed_signup">
         <form action="//madtreebrewing.us10.list-manage.com/subscribe/post?u=907672076387a28aa464c3c48&amp;id=3bf643be1f" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div id="mc_embed_signup_scroll">
             <h4>Subscribe to our mailing list</h4>
-              <div class="input-group">
+            <div class="input-group">
               <input type="email" value="" name="EMAIL" class="form-control required email" id="mce-EMAIL">
-                <span class="input-group-btn">
-                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default">
-                </span> <!-- /input-group-btn -->
-              </div><!-- /input-group -->
+              <span class="input-group-btn">
+                <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-default">
+              </span> <!-- /input-group-btn -->
+            </div><!-- /input-group -->
             <div id="mce-responses" class="clear">
               <div class="response" id="mce-error-response" style="display:none"></div>
               <div class="response" id="mce-success-response" style="display:none"></div>
@@ -95,8 +46,47 @@
           </div>
         </form>
       </div>
-    </header> <!-- /section-header -->
-  </section> <!-- /bands -->
+    </section> <!-- /bands -->
+    <section class="partners">
+      <header class="section-header">
+        <h4>Partners</h4>
+      </header> <!-- /section-header -->
+      <section>
+        <ul class="first">
+          <li class="neyer">
+            <%= image_tag "construction/neyer.png" %>
+          </li>
+          <li class="oakley">
+            <%= image_tag "construction/oakley.png" %>
+          </li>
+          <li class="cincinnati">
+            <%= image_tag "construction/cincinnati.png" %>
+          </li>
+          <li class="redi">
+            <%= image_tag "construction/redi.png" %>
+          </li>
+          <li class="colliers">
+            <%= image_tag "construction/colliers.png" %>
+          </li>
+        </ul>
+        <ul class="second">
+          <li class="dsg">
+            <%= image_tag "construction/dsg.png" %>
+          </li>
+          <li class="chase">
+            <%= image_tag "construction/chase.png" %>
+          </li>
+          <li class="jobsohio">
+            <%= image_tag "construction/jobsohio.png" %>
+          </li>
+          <li class="hcdc">
+            <%= image_tag "construction/hcdc.png" %>
+          </li>
+        </ul>
+      </section>
+    </section> <!-- /bands -->
+  </div>
+
 </div> <!-- /bonanza-main -->
 
 

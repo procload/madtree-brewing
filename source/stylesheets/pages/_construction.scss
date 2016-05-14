@@ -29,7 +29,13 @@
   }
 
   .btn-default {
+    color: #FFF;
     background: #15264C;
+
+    &:hover {
+      background: lighten(#15264C, 15%);
+
+    }
   }
 
 
@@ -81,25 +87,36 @@
     }
   }
 
-  #partners {
-    clear: both;
-    @include respond-to(51em) {
+  .details {
+    @include respond-to(55em) {
       @include span-columns(7);
     }
   }
 
-  #mailinglist {
-    @include respond-to(51em) {
+  .mailing-partners {
+    padding: calc-em(32px) 0;
+    @include respond-to(55em) {
       @include span-columns(5 omega);
     }
   }
 
+  #mailinglist {
+    margin-bottom: calc-em(32px);
+  }
+
+
   .bonanza-header {
     background: image-url("backgrounds/bg-construction.jpg") no-repeat top left;
-    background-position: 0 -60px;
     background-size: cover;
+    border-bottom: 20px solid darken(#A1C8DA, 10%);
+
+
     @include respond-to(41.25em) {
       padding: 40px 0 0 0;
+    }
+
+    @include respond-to(43.125em) {
+      background-position: 0 -60px;
     }
 
     @include respond-to(61.25em) {
@@ -145,31 +162,32 @@
     ul {
       margin: 0;
       padding: 0;
-
-      @include respond-to(42.5em) {
-        float: left;
-        width: 50%;
-
-      }
+      display: block;
 
       li {
         list-style-type: none;
         display: block;
         margin-bottom: calc-em(10px);
+        margin: 0;
+        display: inline-block;
+        text-align: center;
+        width: 45%;
+        padding: 0 2.5%;
 
-        @include respond-to(51em) {
-          padding: 0;
-          padding: 0 1%;
-          width: 50%;
-          text-align: center;
+        @include respond-to(31.25em) {
+          width: 30%;
+          padding: 0 1.5%;
+        }
+
+        @include respond-to(55em) {
+          width: 45%;
+          padding: 0 2.5%;
         }
 
         img {
-          max-width: calc-em(280px);
-          max-height: calc-em(80px);
           margin-bottom: calc-em(10px);
+          max-width: 100%;
           @include respond-to(51em) {
-            max-width: 100%;
             max-height: none;
           }
         }
@@ -234,11 +252,6 @@
   .bonanza-main {
     @extend %container;
     @extend %group;
-
-    a {
-      color: #15264C;
-    }
-
   } //.bonanza-main
 
   .details,
@@ -255,12 +268,18 @@
     text-align: center;
     padding: calc-em(32px) 0;
 
+
+    .btn-container {
+      text-align: center;
+    }
+
     p {
       font-size: calc-em(18px);
       text-align: left;
-      @include respond-to(51em) {
-        font-size: calc-em(21px);
-      }
+    }
+
+    .btn {
+      white-space: normal;
     }
 
     time,
