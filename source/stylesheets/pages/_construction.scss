@@ -81,7 +81,8 @@
     }
   }
 
-  #sponsors {
+  #partners {
+    clear: both;
     @include respond-to(51em) {
       @include span-columns(7);
     }
@@ -91,10 +92,6 @@
     @include respond-to(51em) {
       @include span-columns(5 omega);
     }
-  }
-
-  #sponsors {
-    clear: both;
   }
 
   .bonanza-header {
@@ -141,7 +138,7 @@
     }
   } //.bonanza-header
 
-  .sponsors {
+  .partners {
     @extend %group;
     margin-bottom: calc-em(64px);
 
