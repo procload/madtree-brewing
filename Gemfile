@@ -3,6 +3,8 @@ ruby '2.2.4'
 
 gem "susy"
 
+gem "rack-rewrite"
+
 gem "untappd"
 gem 'newrelic_rpm'
 
