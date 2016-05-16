@@ -108,19 +108,20 @@
   .bonanza-header {
     background: image-url("backgrounds/bg-construction.jpg") no-repeat top left;
     background-size: cover;
-    border-bottom: 20px solid darken(#A1C8DA, 10%);
+    padding-bottom: calc-em(20px);
 
 
     @include respond-to(41.25em) {
-      padding: 40px 0 0 0;
+      padding: 40px 0 40px 0;
     }
 
     @include respond-to(43.125em) {
-      background-position: 0 -60px;
+      background-position: 0 0;
     }
 
     @include respond-to(61.25em) {
-      padding: 90px 0 0 0;
+      padding: 90px 0 40px 0;
+
     }
 
     h1 {
@@ -131,7 +132,7 @@
       background: image-url("construction/small_logo.png") no-repeat top left;
       width: calc-em(181px);
       height: calc-em(123px);
-      margin: calc-em(72px) auto calc-em(32px);
+      margin: calc-em(72px) auto 0;
       background-size: cover;
 
       @include respond-to(41.25em) {

@@ -1,10 +1,15 @@
 body.home {
 
+  .site-header {
+    margin-bottom: 0;
+  }
+
   .bonanza-teaser {
     padding: calc-em(20px) 0;
     text-align: center;
     width: 100%;
-    background: #A1C8DA;
+    background: #0076B0;
+    margin-bottom: calc-em(16px);
 
     a {
       font-family: $font-family-display;
@@ -23,6 +28,7 @@ body.home {
       max-width: none;
     }
   }
+
   #user-location {
     .btn-default {
       display: block;
