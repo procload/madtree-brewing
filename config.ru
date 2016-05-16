@@ -6,6 +6,12 @@
 # - `/foo` will try to serve `build/foo` or `build/foo.html` in that order
 # - missing files will try to serve build/404.html or a tiny default 404 page
 
+require 'rack/rewrite'
+use Rack::Rewrite do
+  r301      '/COMINGSOON',   '/comingsoon'
+end
+
+
 module Rack
   class TryStatic
     def initialize(app, options)
